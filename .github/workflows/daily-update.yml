@@ -64,7 +64,10 @@ jobs:
   deploy:
     needs: refresh
     runs-on: ubuntu-latest
+    # Job-level permissions REPLACE the workflow-level block rather than adding
+    # to it, so contents: read has to be repeated here for checkout to work.
     permissions:
+      contents: read
       pages: write
       id-token: write
     environment:
