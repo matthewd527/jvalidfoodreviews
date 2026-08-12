@@ -87,14 +87,37 @@ def created_from_id(video_id: str) -> int | None:
 
 
 def categorise(caption: str) -> tuple[str, str]:
-    """Return (cat_key, human_label) for a caption. Falls back to misc."""
+    """Return (cat_key, human_label) for a caption. Falls back to misc.
+
+    Two signals, in order of trust:
+      1. An explicit hashtag (#burger) - he tags almost every post, so this is
+         near-decisive.
+      2. Otherwise the keyword that appears EARLIEST in the caption, on the
+         theory that the subject is named before the side dish. That is what
+         separates "smash burger and a milkshake" (a burger review) from
+         "milkshake and a side of fries" (a dessert review).
+
+    Counting keyword hits instead would be wrong: "smash burger" also contains
+    "burger", and "milkshake" also contains "shake", so scores inflate purely on
+    how the synonym lists happen to overlap.
+    """
     text = caption.lower()
-    best, best_score = None, 0
+    matches = []  # (hashtag_first, position, -length, key, label)
+
     for key, label, words in CATEGORIES:
-        score = sum(1 for w in words if w in text)
-        if score > best_score:
-            best, best_score = (key, label), score
-    return best if best else ("misc", "Off-menu")
+        for w in words:
+            tag = "#" + w.replace(" ", "")
+            i = text.find(tag)
+            if i >= 0:
+                matches.append((0, i, -len(w), key, label))
+            j = text.find(w)
+            if j >= 0:
+                matches.append((1, j, -len(w), key, label))
+
+    if matches:
+        matches.sort()
+        return matches[0][3], matches[0][4]
+    return "misc", "Off-menu"
 
 
 def counties_for(caption: str) -> list[str]:
@@ -394,7 +417,16 @@ def main() -> int:
             print("! overrides.json is not valid JSON - ignoring it")
 
     print(f"→ fetching {EMBED_URL}")
-    fresh = scrape_tiktok()
+    try:
+        fresh = scrape_tiktok()
+    except Exception as e:  # noqa: BLE001 - a clean message beats a traceback in CI
+        print(f"\n✗ could not read TikTok: {e}", file=sys.stderr)
+        print("  The site still has its last good data; nothing was overwritten.",
+              file=sys.stderr)
+        print("  If this repeats for days, TikTok likely changed the embed page "
+              "and scripts/update.py needs a fix.", file=sys.stderr)
+        return 1
+
     print(f"  got {fresh['followers']} followers, {fresh['likes']} likes, "
           f"{len(fresh['videos'])} videos in the feed")
 
