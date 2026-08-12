@@ -64,13 +64,6 @@ if (stamp && DATA.updated && DATA.updated !== 'seed') {
   }
 }
 
-// menu tallies
-$$('.mcard[data-cat]').forEach(card => {
-  const n = VIDEOS.filter(v => v.cat === card.dataset.cat).length;
-  const b = card.querySelector('.mcard__n b');
-  if (b) b.textContent = n;
-});
-
 // turf table, ranked by how many reviews came out of each county
 const turfList = $('#turfList');
 if (turfList) {
