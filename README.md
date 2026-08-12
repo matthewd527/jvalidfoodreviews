@@ -1,65 +1,133 @@
 # JVALID FOOD REVIEWS — fan site
 
-A one-page, heavily animated site for [@jvalidfoodreviews](https://www.tiktok.com/@jvalidfoodreviews) on TikTok.
+A one-page, heavily animated site for [@jvalidfoodreviews](https://www.tiktok.com/@jvalidfoodreviews),
+which **refreshes its own numbers once a day** with no human involvement.
 
-## Run it
+## Run it locally
 
-Just double-click `index.html`, or serve it locally:
+Double-click `index.html`, or serve it:
 
 ```bash
 python3 -m http.server 8777
 ```
 
-Then open http://localhost:8777
-
-## What's here
+## Layout
 
 ```
-index.html          all the markup
-css/style.css       all the styling + animation
-js/main.js          video data, counters, filters, lightbox, cursor
-assets/             avatar + 10 video thumbnails (downloaded locally)
+index.html            markup (numbers are placeholders, filled at runtime)
+css/style.css         styling + animation
+js/main.js            reads window.SITE_DATA and renders everything
+data/site.js          ← THE DATA. Regenerated daily. Do not hand-edit.
+data/history.json     one dated snapshot per day, for growth over time
+data/overrides.json   optional: pin a video's category by hand (see below)
+assets/               avatar + one committed thumbnail per video
+scripts/update.py     the updater
+.github/workflows/    the daily job
 ```
 
-## Where the content came from
+Data is a plain `window.SITE_DATA = {...}` assignment rather than JSON fetched at
+runtime, specifically so the page still works when opened straight off the disk.
+A `fetch()` would hit CORS on `file://`.
 
-Everything on the page is real data pulled from the public TikTok profile:
+## How the refresh works
 
-| Thing | Value |
-|---|---|
-| Display name | Jvalidfoodreviews |
-| Bio | "What's a food review without a little laughter" |
-| Followers | 398 |
-| Likes | 5,940 |
-| Videos | 31 total (the 10 most recent are embedded) |
-| Counties | Bergen (NJ), Rockland (NY), Westchester (NY), Orange (NY) |
+One request to `https://www.tiktok.com/embed/@jvalidfoodreviews` returns
+everything: follower count, total likes, and the 10 newest videos with captions
+and play counts. No API key, no OAuth, no login, nothing that expires. A second
+best-effort request to the profile page picks up his true total video count.
 
-The menu counts (3 burgers / 2 pizza / 2 ice cream / 3 off-menu) and the turf
-counts are tallied straight from the real hashtags on those 10 captions.
+Each run:
 
-**Thumbnails are stored locally on purpose.** TikTok's CDN URLs are signed and
-expire in about 24 hours, so hot-linking them would leave you with broken
-images by tomorrow. The videos themselves stream live from TikTok's official
-embed player when you click a card.
+1. Fetches and parses the embed payload.
+2. **Validates before trusting it** — see below.
+3. Merges into the existing data, keeping videos that have scrolled out of the
+   10-item window so the archive only grows.
+4. Categorises any new video from its caption.
+5. Downloads thumbnails for new videos only.
+6. Writes `data/site.js`, appends to `data/history.json`, commits, pushes.
+7. GitHub Pages redeploys.
 
-## Updating it later
+### It cannot corrupt the site
 
-When he posts new videos, edit the `VIDEOS` array at the top of
-`js/main.js` — each entry needs an `id`, `cap`, `views`, `cat`
-(`pizza` | `burger` | `dessert` | `misc`) and `label`. Then drop the new
-thumbnail into `assets/` as `thumb-<id>.jpg`.
+This is the important part of an unattended job. A run is **rejected outright**,
+leaving the previous data untouched and exiting non-zero, if:
 
-To grab a thumbnail for a new video:
+- the follower or like count comes back as 0
+- the video list is empty, or every video reports 0 views
+- followers or likes fell by more than 50% since yesterday
+
+Per-video view counts are also clamped so they can only ever move up — a
+transient bad read can't erase a real number. Videos whose thumbnail failed to
+download are held back rather than shipped as a hole in the grid.
+
+Tested by pointing it at a dead handle and by feeding it faked payloads:
+`data/site.js` came back byte-identical every time.
+
+### Categorising
+
+Hashtags are the primary signal, since he tags nearly every post. An explicit
+`#burger` wins outright. Failing that, the food word that appears **earliest** in
+the caption wins — that's what separates "smash burger and a milkshake" (burger)
+from "milkshake, then a burger" (dessert). Nothing matches → `misc`.
+
+Counties are extracted separately and are multi-valued, since one post is tagged
+both `#orangecounty` and `#rocklandcounty`.
+
+Scores 13/13 on a spot-check set including tricky overlaps.
+
+To override a call, create `data/overrides.json` — it is read but never written,
+so your pins survive every future run:
+
+```json
+{
+  "7673101535743577375": { "cat": "pizza", "label": "Pizza", "counties": ["bergen"] }
+}
+```
+
+## Adding Instagram
+
+Instagram support is written and off by default. Set `IG_HANDLE` to switch it on:
 
 ```bash
-curl -s "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@jvalidfoodreviews/video/VIDEO_ID" | python3 -c "import sys,json;print(json.load(sys.stdin)['thumbnail_url'])"
+IG_HANDLE=hishandle python3 scripts/update.py --dry-run
 ```
 
-Also bump the follower/like/video numbers in the `data-count` attributes in
-`index.html` so the counters stay accurate.
+**Read this before relying on it.** Unlike TikTok, there is no dependable free
+and hands-off route:
 
-## Little things
+- The anonymous endpoint the site uses (`/api/v1/users/web_profile_info/`) works
+  with no token and nothing that expires — but it is metered hard per IP. In
+  testing it returned `200` twice from CI, then `429` from every subsequent
+  runner, and `401` from a home connection for 40+ minutes after a burst of
+  requests. **Expect it to fail on plenty of days.**
+- The code treats that as normal: on a 401/429 it keeps yesterday's Instagram
+  numbers, flags them `stale`, and retries tomorrow from a different IP. TikTok
+  is unaffected either way — the two run independently.
+- It is also against Meta's terms of service, which is worth deciding on
+  knowingly rather than by accident.
+- Instagram publishes no lifetime-likes figure, so `likesTracked` is a sum over
+  only the ~12 posts the endpoint returns. Label it as such; it is not
+  comparable to TikTok's total.
 
-- Press **F** anywhere on the page for a food rain easter egg.
-- Everything respects `prefers-reduced-motion`.
-- Fonts load from Google Fonts, so first paint needs a connection.
+The dependable alternative is Meta's official API, which needs his account to be
+a Business/Creator account and a one-time OAuth grant **from him**. Its long-lived
+token lasts 60 days and auto-refreshes, but if the refresh ever fails for 60
+straight days the token dies for good and only he can restore it.
+
+## Updating it by hand
+
+You shouldn't need to, but:
+
+```bash
+python3 scripts/update.py --dry-run   # show what would change
+python3 scripts/update.py             # do it
+```
+
+## Maintenance, honestly
+
+Nothing here expires — no token, no card, no annual renewal. But TikTok changes
+the shape of that embed payload a few times a year without warning. When it does,
+the job fails loudly (red X, failure email) rather than writing garbage, and the
+fix is usually a small path correction in `scrape_tiktok()`.
+
+Budget one or two of those a year. Everything else runs itself.

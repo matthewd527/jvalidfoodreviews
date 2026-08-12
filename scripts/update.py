@@ -239,6 +239,111 @@ def scrape_total_videos() -> int | None:
         return None
 
 
+# ── instagram ─────────────────────────────────────────────────────────────────
+# Set IG_HANDLE to switch this on; leave it unset and Instagram is skipped
+# entirely. Uses the same anonymous web endpoint the instagram.com profile page
+# calls. No token, no app, no login, so there is nothing to expire - but see the
+# README: this is an undocumented endpoint and it is rate-limited per IP.
+IG_HANDLE = os.environ.get("IG_HANDLE", "").lstrip("@").strip()
+IG_APP_ID = "936619743392459"
+
+
+def scrape_instagram() -> dict | None:
+    """Follower count and the ~12 most recent posts. None if unavailable.
+
+    Never raises: Instagram going quiet must not take the TikTok half of the
+    run down with it.
+    """
+    if not IG_HANDLE:
+        return None
+
+    url = (
+        "https://www.instagram.com/api/v1/users/web_profile_info/"
+        f"?username={urllib.parse.quote(IG_HANDLE)}"
+    )
+    req = urllib.request.Request(url, headers={**HEADERS, "x-ig-app-id": IG_APP_ID})
+    try:
+        # Deliberately no retry loop. This endpoint rate-limits by IP and
+        # answers a burst with a 401 lockout lasting 30+ minutes, so one polite
+        # request a day is the whole strategy.
+        with urllib.request.urlopen(req, timeout=25) as r:
+            payload = json.loads(r.read().decode("utf-8", "ignore"))
+    except urllib.error.HTTPError as e:
+        if e.code in (401, 429):
+            # Expected and common. Instagram meters this endpoint hard per IP,
+            # and CI runners share a pool that other people are also hitting,
+            # so some runs simply will not get through. Yesterday's numbers stay
+            # on the site and we try again tomorrow from a different IP.
+            print(f"  instagram: rate-limited ({e.code}) - keeping last known "
+                  "numbers, will retry tomorrow")
+        else:
+            print(f"  instagram: HTTP {e.code} - skipping this run")
+        return None
+    except Exception as e:  # noqa: BLE001
+        print(f"  instagram: unavailable ({type(e).__name__}) - skipping this run")
+        return None
+
+    user = (payload.get("data") or {}).get("user")
+    if not user:
+        print("  instagram: response had no user object - skipping")
+        return None
+
+    media = user.get("edge_owner_to_timeline_media") or {}
+    posts = []
+    for edge in media.get("edges", []):
+        n = edge.get("node") or {}
+        cap_edges = (n.get("edge_media_to_caption") or {}).get("edges") or []
+        caption = (cap_edges[0]["node"]["text"] if cap_edges else "").strip()
+        posts.append({
+            "id": n.get("shortcode") or n.get("id"),
+            "cap": caption,
+            "likes": int((n.get("edge_liked_by") or {}).get("count") or 0),
+            "views": int(n.get("video_view_count") or 0),
+            "created": n.get("taken_at_timestamp"),
+        })
+
+    followers = int((user.get("edge_followed_by") or {}).get("count") or 0)
+    if followers <= 0:
+        print("  instagram: follower count came back 0 - ignoring this run")
+        return None
+
+    return {
+        "handle": IG_HANDLE,
+        "followers": followers,
+        "following": int((user.get("edge_follow") or {}).get("count") or 0),
+        "postCount": int(media.get("count") or 0),
+        # Instagram exposes no lifetime-likes metric, so this is a sum over the
+        # posts we can actually see. Labelled honestly on the page.
+        "likesTracked": sum(p["likes"] for p in posts),
+        "postsTracked": len(posts),
+        "posts": posts,
+    }
+
+
+def merge_instagram(fresh_ig: dict | None, prev_ig: dict | None) -> dict | None:
+    """Keep the last good Instagram block if today's fetch was skipped."""
+    if fresh_ig is None:
+        if prev_ig:
+            print("  instagram: keeping yesterday's numbers")
+            out = dict(prev_ig)
+            out["stale"] = True
+            return out
+        return None
+
+    # Guard against a sudden collapse the same way TikTok is guarded.
+    if prev_ig:
+        before = prev_ig.get("followers") or 0
+        if before > 100 and fresh_ig["followers"] < before * 0.5:
+            print(f"  instagram: followers fell {before} → {fresh_ig['followers']}, "
+                  "looks wrong - keeping previous")
+            out = dict(prev_ig)
+            out["stale"] = True
+            return out
+
+    fresh_ig["stale"] = False
+    return fresh_ig
+
+
 def fetch_thumb(video_id: str, cover_url: str | None = None) -> bool:
     """Download a video's cover image. Returns True if a file now exists.
 
@@ -368,7 +473,7 @@ def merge(fresh: dict, prev: dict, overrides: dict) -> dict:
                 or max(len(merged), (prev.get("profile") or {}).get("videoCount", 0))
             ),
         },
-        "instagram": prev.get("instagram"),
+        "instagram": merge_instagram(fresh.get("instagram"), prev.get("instagram")),
         "videos": merged,
     }, new_ids
 
@@ -429,6 +534,15 @@ def main() -> int:
 
     print(f"  got {fresh['followers']} followers, {fresh['likes']} likes, "
           f"{len(fresh['videos'])} videos in the feed")
+
+    # Instagram is strictly optional and never fails the run.
+    if IG_HANDLE:
+        print(f"→ fetching instagram @{IG_HANDLE}")
+        fresh["instagram"] = scrape_instagram()
+        if fresh["instagram"]:
+            ig = fresh["instagram"]
+            print(f"  got {ig['followers']} followers, {ig['postsTracked']} "
+                  f"of {ig['postCount']} posts visible")
 
     problems = validate(fresh, prev)
     if problems:
