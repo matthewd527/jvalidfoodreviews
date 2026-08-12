@@ -1,0 +1,82 @@
+name: Daily stats refresh
+
+on:
+  schedule:
+    # 07:12 America/New_York. GitHub cron is UTC and has no DST, so this drifts
+    # by an hour in winter - which does not matter for a once-a-day job.
+    # The odd minute is deliberate: jobs scheduled on the hour queue behind
+    # everyone else's and get delayed the most.
+    - cron: "12 11 * * *"
+  workflow_dispatch: {} # lets you run it by hand from the Actions tab
+
+# Only one refresh at a time; a manual run supersedes a queued scheduled one.
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh data from TikTok
+        id: refresh
+        run: python3 scripts/update.py
+
+      - name: Commit any changes
+        id: commit
+        run: |
+          git config user.name  "jvalid-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data assets
+          if git diff --staged --quiet; then
+            echo "nothing changed today"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: refresh stats $(date -u +%Y-%m-%d)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # A scheduled workflow is disabled automatically after 60 days with no
+      # repository activity. Bot pushes made with GITHUB_TOKEN do NOT reset that
+      # clock, so on quiet stretches we touch a heartbeat file to keep the
+      # schedule alive without needing a human commit.
+      - name: Keep the schedule alive
+        if: steps.commit.outputs.changed == 'false'
+        run: |
+          mkdir -p .github
+          date -u +%Y-%m-%dT%H:%M:%SZ > .github/last-run.txt
+          git add .github/last-run.txt
+          git commit -m "chore: heartbeat $(date -u +%Y-%m-%d)" || exit 0
+          git push
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main # pick up the commit the refresh job just pushed
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
