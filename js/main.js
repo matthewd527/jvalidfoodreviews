@@ -260,7 +260,10 @@ const io = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
 
-$$('.reveal, .card, .turf__row, .pull').forEach(el => io.observe(el));
+// Every selector here starts at opacity:0 in the stylesheet and is only made
+// visible by the .in class, so anything omitted stays permanently invisible
+// while still occupying its space. Keep this list in sync with the CSS.
+$$('.reveal, .card, .turf__row, .pull, .pod').forEach(el => io.observe(el));
 
 /* stagger the cards as they enter */
 $$('.card').forEach((c, i) => { c.style.transitionDelay = `${(i % 5) * 70}ms`; });
