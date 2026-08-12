@@ -490,7 +490,6 @@ body:not(.is-loaded) .word{animation-play-state:paused}
   border-color:var(--mustard);
   z-index:5;
 }
-.card.is-out{opacity:0;transform:scale(.85);pointer-events:none;position:absolute;visibility:hidden}
 
 .card__img{position:absolute;inset:0}
 .card__img img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease-out),filter .5s;filter:saturate(1.05)}
@@ -562,8 +561,11 @@ body:not(.is-loaded) .word{animation-play-state:paused}
   rotate:7deg;animation:bob 3.4s ease-in-out infinite;
 }
 
+.grid__more{display:flex;justify-content:center;margin-top:1.8rem}
+.grid__more .btn[hidden]{display:none}
+
 .grid__note{
-  margin-top:2.2rem;font-family:var(--f-mono);font-size:.8rem;
+  margin-top:1.2rem;font-family:var(--f-mono);font-size:.8rem;
   color:rgba(255,244,223,.5);text-align:center;
 }
 .grid__note a{color:var(--mustard);border-bottom:1px solid rgba(255,194,32,.4);transition:color .25s}

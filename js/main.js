@@ -23,6 +23,68 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const fmt = n => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K' : String(n);
 
+/* ─── Scroll reveal ────────────────────────────────
+   Everything these watch starts at opacity:0 and is only shown by the .in
+   class, so anything missed stays invisible forever while still occupying its
+   space — a silent, hard-to-spot failure.
+
+   IntersectionObserver alone is not enough. It only reports when the
+   intersection state CHANGES, and an element that goes from "below the fold"
+   straight to "above the fold" in a single jump — a nav anchor, the End key, a
+   scroll position restored on reload — was never intersecting either side of
+   the jump, so no callback ever fires for it.
+
+   So: the observer handles the normal case and drives the animation, and a
+   cheap sweep on scroll catches anything the jump skipped. Elements drop out of
+   `pending` as soon as they are revealed, so the sweep shrinks to nothing. */
+const pending = new Map();   // element -> the observer watching it
+
+function revealNow(el) {
+  el.classList.add('in');
+  const obs = pending.get(el);
+  if (obs) { obs.unobserve(el); pending.delete(el); }
+}
+
+function makeRevealObserver(options) {
+  if (reduced) return { observe: el => el.classList.add('in') };
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting || e.boundingClientRect.top < 0) revealNow(e.target);
+    });
+  }, options);
+  return { observe(el) { pending.set(el, obs); obs.observe(el); } };
+}
+
+// Counters share the problem: they read "0" until seen, so one that is jumped
+// past would display a permanent zero.
+const pendingCounts = new Set();
+
+function sweep() {
+  sweepTimer = null;
+  for (const el of [...pending.keys()]) {
+    // fully above the viewport = definitely scrolled past
+    if (el.getBoundingClientRect().bottom < 0) revealNow(el);
+  }
+  for (const el of [...pendingCounts]) {
+    if (el.getBoundingClientRect().bottom < 0) {
+      el.textContent = (+el.dataset.count).toLocaleString();
+      pendingCounts.delete(el);
+    }
+  }
+}
+
+// setTimeout rather than requestAnimationFrame on purpose: rAF is paused while
+// a tab is in the background, so a scroll restored on a background tab would
+// leave the sweep queued and never run.
+let sweepTimer = null;
+function queueSweep() {
+  if (sweepTimer) return;
+  sweepTimer = setTimeout(sweep, 120);
+}
+addEventListener('scroll', queueSweep, { passive: true });
+addEventListener('resize', queueSweep, { passive: true });
+addEventListener('load', queueSweep);
+
 /* ─── Preloader ────────────────────────────────── */
 window.addEventListener('load', () => {
   setTimeout(() => document.body.classList.add('is-loaded'), reduced ? 0 : 900);
@@ -86,10 +148,27 @@ if (turfList) {
   `).join('');
 }
 
-/* ─── Build the video grid ─────────────────────── */
+/* ─── Video grid, ten at a time ─────────────────── */
+/* The archive only grows - the updater keeps every video it has ever seen - so
+   the grid pages instead of dumping hundreds of cards on the first paint. */
 const grid = $('#grid');
+const moreBtn = $('#showMore');
+const moreLabel = $('#showMoreLabel');
+const gridNote = $('#gridNote');
 
-grid.innerHTML = VIDEOS.map((v, i) => `
+const PAGE_SIZE = 10;
+let activeFilter = 'all';
+let shownCount = PAGE_SIZE;
+
+// Cards are added after this observer is built, so they get their own rather
+// than relying on the one-shot query the page-load reveal uses.
+const cardIO = makeRevealObserver({ threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+
+const pool = () => activeFilter === 'all'
+  ? VIDEOS
+  : VIDEOS.filter(v => v.cat === activeFilter);
+
+const cardHTML = (v, i) => `
   <article class="card" data-cat="${v.cat}" data-id="${v.id}" data-cursor="tap" tabindex="0" role="button"
            aria-label="Play review: ${v.cap.replace(/"/g, '&quot;')}">
     <div class="card__img">
@@ -111,8 +190,49 @@ grid.innerHTML = VIDEOS.map((v, i) => `
         <span class="card__cat">${v.label}</span>
       </div>
     </div>
-  </article>
-`).join('');
+  </article>`;
+
+function renderGrid({ appended = 0 } = {}) {
+  const all = pool();
+  const slice = all.slice(0, shownCount);
+
+  grid.innerHTML = slice.map(cardHTML).join('');
+
+  $$('.card', grid).forEach((c, i) => {
+    // Cards carried over from the previous render are already on screen, so
+    // only the newly appended ones animate - otherwise the whole grid
+    // re-animates every time you press the button.
+    const isNew = i >= slice.length - appended;
+    if (appended && !isNew) { c.classList.add('in'); return; }
+    c.style.transitionDelay = `${(appended ? i - (slice.length - appended) : i % 5) * 60}ms`;
+    cardIO.observe(c);
+  });
+
+  const remaining = all.length - slice.length;
+  moreBtn.hidden = remaining <= 0;
+  if (remaining > 0) {
+    moreLabel.textContent = `Show ${Math.min(PAGE_SIZE, remaining)} more`;
+    moreBtn.setAttribute('aria-label', `Show more reviews, ${remaining} remaining`);
+  }
+
+  const total = PROFILE.videoCount ?? VIDEOS.length;
+  gridNote.innerHTML = activeFilter === 'all'
+    ? `Showing ${slice.length} of ${VIDEOS.length} saved ${VIDEOS.length === 1 ? 'review' : 'reviews'}`
+      + (total > VIDEOS.length ? ` &middot; he has posted ${total}. ` : '. ')
+      + `<a href="https://www.tiktok.com/@${HANDLE}" target="_blank" rel="noopener">See the full archive on TikTok →</a>`
+    : `Showing ${slice.length} of ${all.length} in this category.`;
+}
+
+moreBtn.addEventListener('click', () => {
+  const before = Math.min(shownCount, pool().length);
+  shownCount += PAGE_SIZE;
+  const after = Math.min(shownCount, pool().length);
+  renderGrid({ appended: after - before });
+  // keep focus somewhere sensible when the button disappears
+  if (moreBtn.hidden) grid.lastElementChild?.focus?.();
+});
+
+renderGrid();
 
 /* ─── Ranking ──────────────────────────────────── */
 /* Scores come from data/ratings.js, imported from the ratings spreadsheet by
@@ -222,11 +342,7 @@ if (RANK && RANK.ranked?.length) {
     });
   }
 
-  const rankIO = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); rankIO.unobserve(e.target); }
-    });
-  }, { threshold: 0.05, rootMargin: '0px 0px -4% 0px' });
+  const rankIO = makeRevealObserver({ threshold: 0.05, rootMargin: '0px 0px -4% 0px' });
 
   renderRows('best');
 
@@ -251,32 +367,28 @@ if (RANK && RANK.ranked?.length) {
 }
 
 /* ─── Scroll reveal ────────────────────────────── */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('in');
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
+const io = makeRevealObserver({ threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
 
 // Every selector here starts at opacity:0 in the stylesheet and is only made
 // visible by the .in class, so anything omitted stays permanently invisible
 // while still occupying its space. Keep this list in sync with the CSS.
-$$('.reveal, .card, .turf__row, .pull, .pod').forEach(el => io.observe(el));
+$$('.reveal, .turf__row, .pull, .pod').forEach(el => io.observe(el));  // .card has its own (cardIO)
 
-/* stagger the cards as they enter */
-$$('.card').forEach((c, i) => { c.style.transitionDelay = `${(i % 5) * 70}ms`; });
 
 /* ─── Animated counters ────────────────────────── */
+/* Same trap as the reveals: these render "0" until seen, so a counter that is
+   scrolled past without ever intersecting would show a permanent zero. If it is
+   already above the viewport, skip the animation and just print the number. */
 const countIO = new IntersectionObserver(entries => {
   entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    countIO.unobserve(e.target);
-
     const el = e.target;
+    const scrolledPast = e.boundingClientRect.top < 0;
+    if (!e.isIntersecting && !scrolledPast) return;
+    countIO.unobserve(el);
+    pendingCounts.delete(el);
+
     const target = +el.dataset.count;
-    if (reduced) { el.textContent = target.toLocaleString(); return; }
+    if (reduced || scrolledPast) { el.textContent = target.toLocaleString(); return; }
 
     const dur = 1700;
     const t0 = performance.now();
@@ -290,23 +402,19 @@ const countIO = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.5 });
 
-$$('[data-count]').forEach(el => countIO.observe(el));
+$$('[data-count]').forEach(el => { pendingCounts.add(el); countIO.observe(el); });
 
 /* ─── Filters ──────────────────────────────────── */
 $$('.chip').forEach(chip => {
   chip.addEventListener('click', () => {
-    $$('.chip').forEach(c => c.classList.remove('is-on'));
-    chip.classList.add('is-on');
-
-    const f = chip.dataset.filter;
-    $$('.card').forEach((card, i) => {
-      const show = f === 'all' || card.dataset.cat === f;
-      card.classList.toggle('is-out', !show);
-      if (show) {
-        card.style.transitionDelay = `${(i % 5) * 45}ms`;
-        card.classList.add('in');
-      }
+    if (chip.classList.contains('is-on')) return;
+    $$('.chip').forEach(c => {
+      c.classList.toggle('is-on', c === chip);
+      c.setAttribute('aria-pressed', String(c === chip));
     });
+    activeFilter = chip.dataset.filter;
+    shownCount = PAGE_SIZE;   // a new category starts from the first page
+    renderGrid();
   });
 });
 

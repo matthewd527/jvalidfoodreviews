@@ -163,7 +163,13 @@
 
   <div class="grid" id="grid"><!-- injected --></div>
 
-  <p class="grid__note reveal">Showing <span data-fill="shown">10</span> of <span data-fill="videoCount">31</span> reviews. <a href="https://www.tiktok.com/@jvalidfoodreviews" target="_blank" rel="noopener">See the full archive on TikTok →</a></p>
+  <div class="grid__more">
+    <button class="btn btn--ghost" id="showMore" data-cursor="tap" data-magnet hidden>
+      <span id="showMoreLabel">Show more</span>
+    </button>
+  </div>
+
+  <p class="grid__note reveal" id="gridNote"></p>
 </section>
 
 <!-- ══ RANKING ══ -->

@@ -1,12 +1,19 @@
-name: Daily stats refresh
+name: Stats refresh
 
 on:
   schedule:
-    # 07:12 America/New_York. GitHub cron is UTC and has no DST, so this drifts
-    # by an hour in winter - which does not matter for a once-a-day job.
-    # The odd minute is deliberate: jobs scheduled on the hour queue behind
-    # everyone else's and get delayed the most.
-    - cron: "12 11 * * *"
+    # Five times a day, roughly every five hours (UTC; GitHub cron ignores DST).
+    #
+    # Why five and not one: the TikTok embed feed only ever exposes his ten most
+    # recent videos, and he posts three or four a day. A single daily check
+    # leaves less than three days of slack before a video scrolls out of that
+    # window and is lost for good. Checking every five hours means roughly one
+    # new video per run, so the window can never overflow between runs - and if
+    # GitHub drops or delays a run under load, four others still cover the day.
+    #
+    # The odd minute matters: workflows scheduled on the hour queue behind
+    # everyone else's and are the first to be delayed or dropped.
+    - cron: "12 2,7,12,17,22 * * *"
   workflow_dispatch: {} # lets you run it by hand from the Actions tab
 
 # Only one refresh at a time; a manual run supersedes a queued scheduled one.
@@ -40,11 +47,17 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data assets
           if git diff --staged --quiet; then
-            echo "nothing changed today"
+            echo "nothing changed"
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "chore: refresh stats $(date -u +%Y-%m-%d)"
-            git push
+            git commit -m "chore: refresh stats $(date -u +'%Y-%m-%d %H:%M')"
+            # Another run may have landed while this one was working, so rebase
+            # onto whatever is on the remote rather than failing the push.
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "push attempt $attempt failed, retrying"
+              sleep 5
+            done
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
