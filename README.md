@@ -17,13 +17,18 @@ python3 -m http.server 8777
 index.html            markup (numbers are placeholders, filled at runtime)
 css/style.css         styling + animation
 js/main.js            reads window.SITE_DATA and renders everything
-data/site.js          ← THE DATA. Regenerated daily. Do not hand-edit.
-data/history.json     one dated snapshot per day, for growth over time
-data/overrides.json   optional: pin a video's category by hand (see below)
-assets/               avatar + one committed thumbnail per video
-scripts/update.py     the updater
-.github/workflows/    the daily job
+data/site.js            ← SCRAPED DATA. Regenerated daily. Do not hand-edit.
+data/ratings.js         ← RESEARCHED DATA. Imported from the spreadsheet.
+data/history.json       one dated snapshot per day, for growth over time
+data/overrides.json     optional: pin a video's category by hand (see below)
+assets/                 avatar + one committed thumbnail per video
+scripts/update.py       the daily updater
+scripts/import_ratings.py  spreadsheet → data/ratings.js
+.github/workflows/      the daily job
 ```
+
+The two data files are separate on purpose: one is rewritten by a robot every
+morning, the other is hand-researched and must survive that.
 
 Data is a plain `window.SITE_DATA = {...}` assignment rather than JSON fetched at
 runtime, specifically so the page still works when opened straight off the disk.
@@ -83,6 +88,37 @@ so your pins survive every future run:
   "7673101535743577375": { "cat": "pizza", "label": "Pizza", "counties": ["bergen"] }
 }
 ```
+
+## The ranking
+
+`THE RANKING` orders every place he has given a number to, best to worst, with
+the item-by-item breakdown behind each row.
+
+This data can't be scraped — it comes from actually watching the videos — so it
+lives in its own file and is imported from the spreadsheet:
+
+```bash
+python3 scripts/import_ratings.py ~/Downloads/jvalid_food_reviews.xlsx
+```
+
+That writes `data/ratings.js`. **The daily job never touches it**, which is
+exactly why it isn't part of `data/site.js` — that file gets rewritten every
+morning and would wipe anything hand-researched. Re-run the import whenever you
+add rows to the sheet.
+
+A few decisions baked in:
+
+- **Off-scale scores are kept as stated.** Little Caesars at `0.0` and Little
+  Blue Menu at `−5.0` are flagged `OFF SCALE` rather than clamped into 1–5,
+  because the joke is the point. Bars bottom out at zero so a negative can't
+  invert them.
+- **Ties share a rank** and the next rank skips, so three places at 4.5 are all
+  `#7` and the next is `#10`.
+- **Videos with no number are excluded and explained**, not silently dropped —
+  LongHorn Steakhouse is missing because he only rated the bathroom.
+- Every caveat from the spreadsheet's `Method & Gaps` sheet is surfaced in the
+  expanded row, so unresolved item names and branches stay visible instead of
+  looking like facts.
 
 ## Adding Instagram
 
