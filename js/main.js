@@ -121,6 +121,142 @@ grid.innerHTML = VIDEOS.map((v, i) => `
   </article>
 `).join('');
 
+/* ─── Ranking ──────────────────────────────────── */
+/* Scores come from data/ratings.js, imported from the ratings spreadsheet by
+   scripts/import_ratings.py. Kept separate from SITE_DATA because the daily
+   scraper rewrites that file and would wipe anything hand-researched. */
+const RANK = window.RATINGS_DATA || null;
+
+if (RANK && RANK.ranked?.length) {
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  // Bar length reads off a plain 0–5 scale; the joke scores below 0 simply
+  // bottom out rather than inverting the bar.
+  const barPct = s => `${Math.max(0, Math.min(5, s)) / 5 * 100}%`;
+  const tierVar = t => `var(--t-${t})`;
+  const fmtScore = s => Number.isInteger(s) ? `${s}.0` : String(+s.toFixed(2));
+
+  const ttUrl = e => e.videoId
+    ? `https://www.tiktok.com/@${HANDLE}/video/${e.videoId}` : null;
+
+  /* summary strip */
+  const stats = $('#rankStats');
+  if (stats) {
+    stats.innerHTML = [
+      { n: RANK.ratedVideos,   l: 'Places ranked',   c: 'var(--cream)' },
+      { n: RANK.ratingEvents,  l: 'Individual scores', c: 'var(--cream)' },
+      { n: fmtScore(RANK.best),  l: 'Best score',    c: 'var(--mustard)' },
+      { n: fmtScore(RANK.worst), l: 'Worst score',   c: 'var(--ketchup)' },
+      { n: RANK.average,       l: 'Average',         c: 'var(--mint)' },
+    ].map(s => `<div class="rank-stat"><b style="--cs:${s.c}">${esc(s.n)}</b><span>${esc(s.l)}</span></div>`).join('');
+  }
+
+  /* best + worst hero pair */
+  const podium = $('#podium');
+  if (podium) {
+    const best = RANK.ranked[0];
+    const worst = RANK.ranked[RANK.ranked.length - 1];
+    const card = (e, kind, tag, blurb) => {
+      const url = ttUrl(e);
+      return `
+      <article class="pod pod--${kind}" data-cursor="tap">
+        <span class="pod__tag">${tag}</span>
+        <div class="pod__score">${fmtScore(e.score)}</div>
+        <h3 class="pod__name">${esc(e.name)}</h3>
+        <p class="pod__where">${esc(e.place || 'Location not stated')}</p>
+        <p class="pod__quote">${blurb}</p>
+        ${url ? `<p class="pod__quote" style="margin-top:.6rem"><a href="${url}" target="_blank" rel="noopener" style="color:var(--pc);border-bottom:1px solid currentColor">Watch it →</a></p>` : ''}
+      </article>`;
+    };
+    podium.innerHTML =
+      card(best, 'best', '👑 Highest rated',
+        `${best.items.length > 1
+          ? `<b>${best.items.length} items</b> tasted, nothing below <b>${fmtScore(Math.min(...best.items.map(i => i.score)))}</b>.`
+          : `<b>${esc(best.items[0]?.item || 'The food')}</b> — a flat <b>${fmtScore(best.score)}</b>.`}`) +
+      card(worst, 'worst', '💩 Lowest rated',
+        `${worst.score < 1
+          ? `He went <b>off the scale</b> for this one. A stated <b>${fmtScore(worst.score)}</b> out of five.`
+          : `<b>${esc(worst.items[0]?.item || 'The food')}</b> — <b>${fmtScore(worst.score)}</b> out of five.`}`);
+  }
+
+  /* the ranked list */
+  const list = $('#rankList');
+
+  function renderRows(order) {
+    const rows = RANK.ranked.slice();
+    if (order === 'worst') rows.reverse();
+
+    list.innerHTML = rows.map(e => {
+      const c = tierVar(e.tier);
+      const url = ttUrl(e);
+      const off = (e.score > 5 || e.score < 1);
+      const items = e.items.length
+        ? `<ul class="rr__items">${e.items.map(i => `
+            <li><span class="it">${esc(i.item)}</span><span class="dots"></span><span class="sc">${fmtScore(i.score)}</span></li>
+          `).join('')}</ul>`
+        : '';
+      const notes = [];
+      if (e.overall != null) notes.push(`He also gave the place an overall ${fmtScore(e.overall)}.`);
+      if (e.address) notes.push(esc(e.address));
+      (e.caveats || []).forEach(cv => notes.push(esc(cv)));
+      if (url) notes.push(`<a href="${url}" target="_blank" rel="noopener">Watch the review →</a>`);
+
+      return `
+      <li>
+        <details class="rank-row" style="--rc:${c};--w:${barPct(e.score)}">
+          <summary data-cursor="tap">
+            <span class="rr__pos">${e.rank}</span>
+            <span class="rr__main">
+              <span class="rr__name">${esc(e.name)}${off ? '<span class="rr__flag">OFF SCALE</span>' : ''}</span>
+              <span class="rr__where">${esc(e.place || 'Location not stated')}</span>
+            </span>
+            <span class="rr__bar"><i></i></span>
+            <span class="rr__score">${fmtScore(e.score)}<small>${e.items.length} item${e.items.length === 1 ? '' : 's'}</small></span>
+            <span class="rr__caret" aria-hidden="true">▼</span>
+          </summary>
+          <div class="rr__body">
+            ${items}
+            ${notes.length ? `<p class="rr__note">${notes.join('<br>')}</p>` : ''}
+          </div>
+        </details>
+      </li>`;
+    }).join('');
+
+    $$('.rank-row', list).forEach((r, i) => {
+      r.style.transitionDelay = `${Math.min(i, 12) * 35}ms`;
+      rankIO.observe(r);
+    });
+  }
+
+  const rankIO = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); rankIO.unobserve(e.target); }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -4% 0px' });
+
+  renderRows('best');
+
+  $$('.rt').forEach(btn => {
+    btn.addEventListener('click', () => {
+      $$('.rt').forEach(b => b.classList.remove('is-on'));
+      btn.classList.add('is-on');
+      renderRows(btn.dataset.order);
+    });
+  });
+
+  /* the ones he never scored */
+  const un = $('#rankUnrated');
+  if (un && RANK.unrated?.length) {
+    un.innerHTML = `
+      <b>${RANK.unrated.length} reviews aren't in the ranking</b>
+      <ul>${RANK.unrated.map(e => {
+        const why = (e.caveats[0] || '').replace(/^Food score:\s*/, '');
+        return `<li><em>${esc(e.name)}</em>${e.place ? ` (${esc(e.place)})` : ''} — ${esc(why || 'no numerical score stated')}</li>`;
+      }).join('')}</ul>`;
+  }
+}
+
 /* ─── Scroll reveal ────────────────────────────── */
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {

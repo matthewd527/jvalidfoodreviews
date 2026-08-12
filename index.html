@@ -41,6 +41,7 @@
   </a>
   <div class="nav__links">
     <a href="#reviews" data-cursor="tap">Reviews</a>
+    <a href="#ranking" data-cursor="tap">Ranking</a>
     <a href="#menu" data-cursor="tap">The Menu</a>
     <a href="#turf" data-cursor="tap">The Turf</a>
   </div>
@@ -166,6 +167,39 @@
   <p class="grid__note reveal">Showing <span data-fill="shown">10</span> of <span data-fill="videoCount">31</span> reviews. <a href="https://www.tiktok.com/@jvalidfoodreviews" target="_blank" rel="noopener">See the full archive on TikTok →</a></p>
 </section>
 
+<!-- ══ RANKING ══ -->
+<section class="section ranking" id="ranking">
+  <div class="sec-head">
+    <h2 class="sec-title reveal" data-d="0">THE <em>RANKING</em></h2>
+    <p class="sec-sub reveal" data-d="1">
+      Every score he has said out loud, counted up and put in order. Best plate at the top,
+      the crime scene at the bottom. Tap a row for the item-by-item breakdown.
+    </p>
+  </div>
+
+  <div class="rank-stats reveal" data-d="2" id="rankStats"><!-- injected --></div>
+
+  <div class="podium" id="podium"><!-- injected --></div>
+
+  <div class="rank-bar reveal" data-d="1">
+    <div class="rank-toggle" role="group" aria-label="Sort order">
+      <button class="rt is-on" data-order="best" data-cursor="tap">Best first</button>
+      <button class="rt" data-order="worst" data-cursor="tap">Worst first</button>
+    </div>
+    <p class="rank-legend">
+      <span><i style="--c:var(--t-elite)"></i>4.7+</span>
+      <span><i style="--c:var(--t-great)"></i>4.0–4.6</span>
+      <span><i style="--c:var(--t-fine)"></i>3.0–3.9</span>
+      <span><i style="--c:var(--t-rough)"></i>under 3</span>
+      <span><i style="--c:var(--t-offscale)"></i>off the scale</span>
+    </p>
+  </div>
+
+  <ol class="rank-list" id="rankList"><!-- injected --></ol>
+
+  <div class="rank-unrated reveal" id="rankUnrated"><!-- injected --></div>
+</section>
+
 <!-- ══ MENU ══ -->
 <section class="section menu" id="menu">
   <div class="sec-head">
@@ -264,6 +298,7 @@
 </div>
 
 <script src="data/site.js"></script>
+<script src="data/ratings.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
