@@ -112,7 +112,15 @@ const counties = [...new Set(VIDEOS.flatMap(v => v.counties || []))];
 const IG = DATA.instagram || null;
 const followersTotal = (PROFILE.followers ?? 0) + (IG?.followers ?? 0);
 
+// "NY & NJ" derives from the states of the counties he has actually reviewed
+// in, so a first Connecticut video would update the hero line by itself.
+const states = [...new Set(counties.map(k => countyMeta(k).state).filter(Boolean))];
+const statesLabel = states.length > 1
+  ? states.slice(0, -1).join(', ') + ' & ' + states[states.length - 1]
+  : (states[0] || 'NY & NJ');
+
 const FILL = {
+  states:              statesLabel,
   followers:           PROFILE.followers  ?? 0,
   followersPlus1:      (PROFILE.followers ?? 0) + 1,
   igFollowers:         IG?.followers ?? 0,
@@ -137,7 +145,7 @@ if (statsWrap) {
 
 $$('[data-fill]').forEach(el => {
   const v = FILL[el.dataset.fill];
-  if (v !== undefined) el.textContent = v.toLocaleString();
+  if (v !== undefined) el.textContent = typeof v === 'number' ? v.toLocaleString() : v;
 });
 
 // counters read their target from the same source
