@@ -43,10 +43,11 @@
     <a href="#reviews" data-cursor="tap">Reviews</a>
     <a href="#ranking" data-cursor="tap">Ranking</a>
     <a href="#turf" data-cursor="tap">The Turf</a>
+    <a href="#book" data-cursor="tap">Book</a>
   </div>
-  <a class="nav__cta" href="https://www.tiktok.com/@jvalidfoodreviews" target="_blank" rel="noopener" data-cursor="tap" data-magnet>
+  <button class="nav__cta" data-follow data-cursor="tap" data-magnet aria-haspopup="dialog">
     Follow <em>@jvalidfoodreviews</em>
-  </a>
+  </button>
 </nav>
 
 <!-- ══ HERO ══ -->
@@ -83,8 +84,8 @@
           <span>Watch the reviews</span>
           <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h13M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a class="btn btn--ghost" href="https://www.tiktok.com/@jvalidfoodreviews" target="_blank" rel="noopener" data-cursor="tap" data-magnet>
-          Open TikTok
+        <a class="btn btn--ghost" href="#book" data-cursor="tap" data-magnet>
+          Book Jvalid
         </a>
       </div>
     </div>
@@ -229,9 +230,58 @@
 <section class="section turf" id="turf">
   <div class="sec-head">
     <h2 class="sec-title reveal" data-d="0">THE <em>TURF</em></h2>
-    <p class="sec-sub reveal" data-d="1">Two states, <span data-fill="counties">four</span> counties, one Jvalid Honda.</p>
+    <p class="sec-sub reveal" data-d="1">So far. Two states, <span data-fill="counties">four</span> counties, one Jvalid Honda.</p>
   </div>
   <div class="turf__list" id="turfList"><!-- injected from data/site.js --></div>
+</section>
+
+<!-- ══ BOOK ══ -->
+<section class="section book" id="book">
+  <div class="sec-head">
+    <h2 class="sec-title reveal" data-d="0">BOOK <em>JVALID</em></h2>
+    <p class="sec-sub reveal" data-d="1">
+      Got a spot that needs reviewing? Send it over. Every message goes straight
+      to his inbox.
+    </p>
+  </div>
+
+  <form class="bk reveal" data-d="2" id="bookForm" novalidate>
+    <!-- Web3Forms: this key is public by design, it only permits submissions. -->
+    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+    <input type="hidden" name="subject" value="New booking request from the Jvalid site">
+    <input type="hidden" name="from_name" value="Jvalid Food Reviews site">
+    <!-- honeypot: real people never see it, bots fill it in -->
+    <input type="checkbox" name="botcheck" class="bk__hp" tabindex="-1" autocomplete="off">
+
+    <div class="bk__row">
+      <label class="bk__field">
+        <span>Your name</span>
+        <input type="text" name="name" required autocomplete="name" placeholder="Who's asking?">
+      </label>
+      <label class="bk__field">
+        <span>Email</span>
+        <input type="email" name="email" required autocomplete="email" placeholder="you@email.com">
+      </label>
+    </div>
+
+    <label class="bk__field">
+      <span>The spot</span>
+      <input type="text" name="place" required placeholder="Restaurant and town">
+    </label>
+
+    <label class="bk__field">
+      <span>Details <i>optional</i></span>
+      <textarea name="message" rows="3" placeholder="What should he try? Anything he should know?"></textarea>
+    </label>
+
+    <div class="bk__foot">
+      <button type="submit" class="btn btn--primary" id="bookSubmit" data-cursor="tap" data-magnet>
+        <span>Send it</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="bk__note" id="bookNote" role="status" aria-live="polite"></p>
+    </div>
+  </form>
 </section>
 
 <!-- ══ CTA / FOOTER ══ -->
@@ -248,12 +298,9 @@
     <h2 class="foot__h">GO HIT<br>THE FOLLOW</h2>
     <p class="foot__p"><span data-fill="followersTotal">398</span> people already follow. Be <span data-fill="followersTotalPlus1">399</span>.</p>
     <div class="foot__ctas">
-      <a class="btn btn--primary btn--lg" href="https://www.tiktok.com/@jvalidfoodreviews" target="_blank" rel="noopener" data-cursor="tap" data-magnet>
-        TikTok
-      </a>
-      <a class="btn btn--ghost btn--lg" id="igCta" href="https://www.instagram.com/jvalidfoodreviews/" target="_blank" rel="noopener" data-cursor="tap" data-magnet hidden>
-        Instagram
-      </a>
+      <button class="btn btn--primary btn--lg" data-follow data-cursor="tap" data-magnet aria-haspopup="dialog">
+        Follow @jvalidfoodreviews
+      </button>
     </div>
     <p class="foot__fine">
       All videos, thumbnails and stats belong to
@@ -273,6 +320,46 @@
     <div class="lb__meta">
       <p class="lb__cap" id="lbCap"></p>
       <a class="lb__link" id="lbLink" href="#" target="_blank" rel="noopener" data-cursor="tap">Open on TikTok →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOLLOW PICKER ══ -->
+<div class="fp" id="fp" role="dialog" aria-modal="true" aria-labelledby="fpTitle" hidden>
+  <div class="fp__card" role="document">
+    <button class="fp__x" id="fpClose" aria-label="Close" data-cursor="tap">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+    </button>
+
+    <p class="fp__eyebrow">Pick your poison</p>
+    <h2 class="fp__title" id="fpTitle">FOLLOW <em>JVALID</em></h2>
+
+    <div class="fp__options">
+      <a class="fp__opt fp__opt--tt" href="https://www.tiktok.com/@jvalidfoodreviews"
+         target="_blank" rel="noopener" data-cursor="tap">
+        <span class="fp__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5 2.59 2.59 0 1 1 .77-5.06V9.7a5.68 5.68 0 0 0-.77-.05 5.65 5.65 0 1 0 5.65 5.65V8.94a7.32 7.32 0 0 0 4.28 1.38V7.23a4.29 4.29 0 0 1-3.19-1.41Z"/></svg>
+        </span>
+        <span class="fp__meta">
+          <span class="fp__name">TikTok</span>
+          <span class="fp__sub" data-fp="tt">@jvalidfoodreviews</span>
+        </span>
+        <span class="fp__go" aria-hidden="true">→</span>
+      </a>
+
+      <a class="fp__opt fp__opt--ig" id="fpIg" href="https://www.instagram.com/jvalidfoodreviews/"
+         target="_blank" rel="noopener" data-cursor="tap" hidden>
+        <span class="fp__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
+        <span class="fp__meta">
+          <span class="fp__name">Instagram</span>
+          <span class="fp__sub" data-fp="ig">@jvalidfoodreviews</span>
+        </span>
+        <span class="fp__go" aria-hidden="true">→</span>
+      </a>
     </div>
   </div>
 </div>

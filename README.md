@@ -133,6 +133,36 @@ A few decisions baked in:
   expanded row, so unresolved item names and branches stay visible instead of
   looking like facts.
 
+## The booking form
+
+The **Book Jvalid** section posts to [Web3Forms](https://web3forms.com), chosen
+because it needs no account, no dashboard and no server: submissions arrive as
+plain emails, and the access key never expires. Free tier is 250/month, which is
+far more than this will see.
+
+**One-time setup — takes about a minute:**
+
+1. Go to <https://web3forms.com> and put his email in the "Create your Access
+   Key" box.
+2. He gets an email with an access key (a UUID). Confirm it if prompted.
+3. Open `index.html`, find `YOUR_WEB3FORMS_ACCESS_KEY`, and paste the key in
+   its place.
+4. Submit the form once yourself to confirm it lands in his inbox.
+
+That's the whole setup. There's no account to maintain and nothing to renew.
+
+Until the key is in place, the form refuses to send and says so on screen
+rather than failing silently.
+
+Notes:
+
+- **The key is public on purpose.** It only permits submissions to the address
+  it was issued to and can't read anything back, so it belongs in the HTML.
+- A hidden honeypot field catches the bots that will inevitably find a public
+  form; anything that fills it is dropped without a word.
+- To change where mail goes, generate a new key against a different address and
+  swap it — nothing else changes.
+
 ## Adding Instagram
 
 Instagram support is written and off by default. Set `IG_HANDLE` to switch it on:

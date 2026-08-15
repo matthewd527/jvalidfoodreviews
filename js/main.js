@@ -135,7 +135,7 @@ const FILL = {
 
 if (IG?.followers) {
   $('#igStat')?.removeAttribute('hidden');
-  $('#igCta')?.removeAttribute('hidden');
+  $('#fpIg')?.removeAttribute('hidden');   // Instagram row in the follow picker
 }
 // the strip's column count follows how many tiles are actually visible
 const statsWrap = $('.stats__wrap');
@@ -508,6 +508,116 @@ $$('.chip').forEach(chip => {
   });
 });
 
+/* ─── Booking form ─────────────────────────────────
+   Web3Forms: a plain POST, no account and no dashboard. The access key is
+   public by design - it only permits submissions to the address it was issued
+   to, and cannot read anything back. Submitting over fetch rather than a normal
+   form post keeps the visitor on the page. */
+const bookForm = $('#bookForm');
+if (bookForm) {
+  const note = $('#bookNote');
+  const submitBtn = $('#bookSubmit');
+  const submitLabel = submitBtn.querySelector('span');
+  const KEY_PLACEHOLDER = 'YOUR_WEB3FORMS_ACCESS_KEY';
+
+  const say = (msg, kind = '') => {
+    note.textContent = msg;
+    note.className = 'bk__note' + (kind ? ` is-${kind}` : '');
+  };
+
+  bookForm.addEventListener('submit', async e => {
+    e.preventDefault();
+
+    if (!bookForm.reportValidity()) return;
+
+    const data = Object.fromEntries(new FormData(bookForm));
+    if (data.botcheck) return;                 // honeypot tripped: silently drop
+
+    if (data.access_key === KEY_PLACEHOLDER) {
+      say('This form still needs its Web3Forms key — see the README.', 'bad');
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitLabel.textContent = 'Sending…';
+    say('');
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const out = await res.json().catch(() => ({}));
+      if (res.ok && out.success) {
+        bookForm.reset();
+        submitLabel.textContent = 'Sent';
+        say('Got it — he’ll see this in his inbox. Thanks!', 'ok');
+        return;                                // leave the button spent
+      }
+      throw new Error(out.message || `HTTP ${res.status}`);
+    } catch (err) {
+      say(`Didn’t send (${err.message}). Try again, or DM him on TikTok.`, 'bad');
+      submitBtn.disabled = false;
+      submitLabel.textContent = 'Send it';
+    }
+  });
+}
+
+/* ─── Follow picker ────────────────────────────────
+   Every "follow" affordance opens this instead of going straight to TikTok, so
+   the choice of platform lives in exactly one place. Watch-oriented links (the
+   hero's Open TikTok, the video lightbox) are deliberately untouched - those
+   are about the videos, which only exist on TikTok. */
+const fp = $('#fp');
+const fpClose = $('#fpClose');
+let fpLastFocus = null;
+
+// each row shows its own live follower count
+const fpSub = (sel, n) => {
+  const el = $(sel);
+  if (el) el.textContent = n ? `${n.toLocaleString()} followers` : `@${HANDLE}`;
+};
+fpSub('[data-fp="tt"]', PROFILE.followers);
+fpSub('[data-fp="ig"]', IG?.followers);
+
+const FP_FOCUSABLE = 'a[href], button:not([disabled])';
+const fpItems = () => $$(FP_FOCUSABLE, fp)
+  .filter(el => !el.hidden && el.getClientRects().length > 0);
+
+function openFollow() {
+  fpLastFocus = document.activeElement;
+  fp.hidden = false;
+  requestAnimationFrame(() => fp.classList.add('is-on'));
+  document.body.style.overflow = 'hidden';
+  // land on the first platform, not the close button
+  (fpItems().find(el => el.classList.contains('fp__opt')) || fpClose).focus();
+}
+
+function closeFollow() {
+  fp.classList.remove('is-on');
+  document.body.style.overflow = '';
+  setTimeout(() => {
+    fp.hidden = true;
+    fpLastFocus?.focus();
+  }, reduced ? 0 : 300);
+}
+
+$$('[data-follow]').forEach(btn => btn.addEventListener('click', openFollow));
+fpClose.addEventListener('click', closeFollow);
+fp.addEventListener('click', e => { if (e.target === fp) closeFollow(); });
+// picking a platform closes it, so returning from the new tab isn't a modal
+$$('.fp__opt', fp).forEach(a => a.addEventListener('click', closeFollow));
+
+fp.addEventListener('keydown', e => {
+  if (e.key !== 'Tab') return;
+  const items = fpItems();
+  if (!items.length) return;
+  const first = items[0], last = items[items.length - 1];
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+});
+
 /* ─── Lightbox ─────────────────────────────────── */
 const lb      = $('#lb');
 const lbFrame = $('#lbFrame');
@@ -557,7 +667,9 @@ grid.addEventListener('keydown', e => {
 $('#lbClose').addEventListener('click', closeVideo);
 lb.addEventListener('click', e => { if (e.target === lb) closeVideo(); });
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && !lb.hidden) closeVideo();
+  if (e.key !== 'Escape') return;
+  if (!lb.hidden) closeVideo();
+  else if (!fp.hidden) closeFollow();
 });
 
 /* ─── Scroll progress + nav behaviour ──────────── */
