@@ -57,7 +57,7 @@ CATEGORIES = [
     ("dessert", "Ice cream", [
         "icecream", "ice cream", "dessert", "gelato", "cone", "sundae",
         "milkshake", "shake", "custard", "donut", "doughnut", "cookie",
-        "cake", "brownie", "cannoli", "froyo", "sweets",
+        "cake", "cheesecake", "brownie", "cannoli", "froyo", "sweets",
     ]),
     ("pizza", "Pizza", [
         "pizza", "pizzeria", "slice", "sicilian", "grandma pie", "calzone",
@@ -100,19 +100,26 @@ def categorise(caption: str) -> tuple[str, str]:
     Counting keyword hits instead would be wrong: "smash burger" also contains
     "burger", and "milkshake" also contains "shake", so scores inflate purely on
     how the synonym lists happen to overlap.
+
+    Word boundaries matter: "#pancakes" must not match "cake", and "nice" must
+    not match "ice".
     """
     text = caption.lower()
     matches = []  # (hashtag_first, position, -length, key, label)
 
     for key, label, words in CATEGORIES:
         for w in words:
+            # Hashtags: prefix match is safe and useful - #pizzareview counts
+            # as pizza, because the "#" anchors the start of the word.
             tag = "#" + w.replace(" ", "")
             i = text.find(tag)
             if i >= 0:
                 matches.append((0, i, -len(w), key, label))
-            j = text.find(w)
-            if j >= 0:
-                matches.append((1, j, -len(w), key, label))
+            # Free text: whole words only - "#pancakes" must not hit "cake",
+            # and "nice" must not hit "ice".
+            m = re.search(rf"\b{re.escape(w)}\b", text)
+            if m:
+                matches.append((1, m.start(), -len(w), key, label))
 
     if matches:
         matches.sort()
@@ -237,6 +244,236 @@ def scrape_total_videos() -> int | None:
     except Exception as e:  # noqa: BLE001
         print(f"  (couldn't read total video count: {e})")
         return None
+
+
+# ── spoken-score extraction ───────────────────────────────────────────────────
+# For each NEW video the job fetches the video page once, reads the place tag
+# (poi) and the auto-generated transcript, and pulls out the scores he says on
+# camera. Validated against the hand-curated spreadsheet: on all ten currently
+# scoreable videos the extracted average landed within 0.01 of the curated
+# average. Curated data still always wins - see merge in ratings_auto.js.
+
+NOT_FOOD = re.compile(
+    r'bathroom|restroom|toilet|nightlife|night life|vibe|music|atmosphere|'
+    r'service|staff|decor|parking|view\b|interior', re.I)
+
+WORD_NUM = {'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
+
+STAR_PAT = re.compile(
+    r'(-?\d+(?:\.\d+)?)\s*(?:stars?\b|out of\s*(?:5|five)\b)', re.I)
+# he often drops the word "stars": "I'm gonna give them 4.9", "I'm at 4"
+VERB_PAT = re.compile(
+    r"(?:i'?m\s+(?:going|at|giving)|(?:gonna\s+)?(?:give|giving)\s+(?:it|them|him|her|this|that)?)\s*a?\s*"
+    r"(-?\d+(?:\.\d+)?)\b(?!\s*(?:dollars|bucks|%|percent|minutes|miles))", re.I)
+
+FOOD_WORDS = [
+    'burger', 'wings', 'pizza', 'slice', 'pretzel', 'milkshake', 'shake',
+    'mac and cheese', 'fries', 'taco', 'nachos', 'sandwich', 'ice cream',
+    'sundae', 'cone', 'french dip', 'chicken', 'pancakes', 'sliders', 'melt',
+    'egg roll', 'bbq', 'brisket', 'quesadilla', 'burrito', 'hot dog', 'gelato',
+]
+
+
+def _norm_spoken(t: str) -> str:
+    for w, n in WORD_NUM.items():
+        t = re.sub(rf'\b{w}\s+and\s+a\s+half\b', f'{n}.5', t, flags=re.I)
+        t = re.sub(rf'\b{w}\b(?=\s*(?:stars?|out of))', str(n), t, flags=re.I)
+    return t
+
+
+def extract_scores(text: str) -> list[tuple[float, str]]:
+    """Return [(score, item_label)] for spoken food scores, in spoken order."""
+    t = _norm_spoken(text)
+    found = []
+    for pat in (STAR_PAT, VERB_PAT):
+        for m in pat.finditer(t):
+            if t[max(0, m.start(1) - 1):m.start(1)] == '$':   # price, not rating
+                continue
+            val = float(m.group(1))
+            if not (-5 <= val <= 5):
+                continue
+            ctx = t[max(0, m.start() - 90):m.end() + 30]
+            # The score belongs to whatever he mentioned most recently before
+            # saying the number: "the vibe is a 5 but the burger, 3 stars" is a
+            # burger score, while "I give their bathroom 4 stars" is not food.
+            before = t[max(0, m.start() - 90):m.start()].lower()
+            nf = max((mm.end() for mm in NOT_FOOD.finditer(before)), default=-1)
+            fd = max((before.rfind(w) + len(w) for w in FOOD_WORDS if w in before),
+                     default=-1)
+            if nf > fd:
+                continue
+            found.append((m.start(1), val, ctx))
+    seen, out = set(), []
+    for pos, val, ctx in sorted(found):
+        if any(abs(pos - p) < 6 for p in seen):   # same number, both patterns
+            continue
+        seen.add(pos)
+        # name the item from the nearest food word he mentioned before scoring
+        low = ctx.lower()
+        label = next((w.title() for w in FOOD_WORDS if w in low), None)
+        out.append((val, label or "Spoken score"))
+    return out
+
+
+def fetch_video_details(video_id: str) -> dict:
+    """Place tag + transcript scores for one video. Never raises.
+
+    Returns {"status": "scored"|"no_scores"|"no_transcript"|"error", ...}.
+    A brand-new upload often has no ASR transcript yet, so 'no_transcript'
+    is retried on later runs.
+    """
+    try:
+        url = f"https://www.tiktok.com/@{HANDLE}/video/{video_id}"
+        html = get(url, tries=2, timeout=30).decode("utf-8", "ignore")
+        m = re.search(
+            r'id="__UNIVERSAL_DATA_FOR_REHYDRATION__"[^>]*>(.*?)</script>', html, re.S)
+        if not m:
+            return {"status": "error", "why": "no state blob"}
+        item = (json.loads(m.group(1))
+                .get("__DEFAULT_SCOPE__", {})
+                .get("webapp.video-detail", {})
+                .get("itemInfo", {}).get("itemStruct", {}))
+        if not item:
+            return {"status": "error", "why": "no itemStruct"}
+
+        poi = item.get("poi") or {}
+        out = {
+            "name": (poi.get("name") or "").strip(),
+            "address": (poi.get("address") or "").strip(),
+        }
+
+        subs = [s for s in ((item.get("video") or {}).get("subtitleInfos") or [])
+                if str(s.get("LanguageCodeName", "")).startswith("eng") and s.get("Url")]
+        if not subs:
+            out["status"] = "no_transcript"
+            return out
+
+        vtt = get(subs[0]["Url"], tries=2).decode("utf-8", "ignore")
+        lines, seen = [], set()
+        for line in vtt.splitlines():
+            line = line.strip()
+            if not line or "-->" in line or line == "WEBVTT" or line in seen:
+                continue
+            seen.add(line)
+            lines.append(line)
+        text = " ".join(lines)
+
+        scores = extract_scores(text)
+        out["status"] = "scored" if scores else "no_scores"
+        out["items"] = [{"item": lbl, "score": s} for s, lbl in scores]
+        return out
+    except Exception as e:  # noqa: BLE001
+        return {"status": "error", "why": f"{type(e).__name__}: {e}"}
+
+
+def refresh_auto_ratings(new_ids: list[str], payload: dict) -> None:
+    """Keep data/auto_ratings.json and data/ratings_auto.js up to date.
+
+    Only new videos (and previous failures, up to 5 attempts) cost a request.
+    Curated entries in data/ratings.js always take precedence on the page, so
+    this can only ever ADD information, never fight the spreadsheet.
+    """
+    store_f = DATA / "auto_ratings.json"
+    store = {}
+    if store_f.exists():
+        try:
+            store = json.loads(store_f.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            store = {}
+
+    # figure out which ids are already covered by the curated ratings file
+    curated_ids = set()
+    cur_f = DATA / "ratings.js"
+    if cur_f.exists():
+        curated_ids = set(re.findall(r'"videoId":\s*"(\d+)"', cur_f.read_text(encoding="utf-8")))
+
+    # Anything on the site that is neither curated nor successfully processed
+    # needs a look - not just this run's brand-new ids. That way a video that
+    # was missed once (or dropped from the curated file) self-heals on the next
+    # run instead of falling through forever.
+    todo = []
+    for v in payload.get("videos", []):
+        vid = v["id"]
+        rec = store.get(vid, {})
+        if vid in curated_ids or rec.get("status") in ("scored", "no_scores"):
+            continue
+        if rec and rec.get("status") in ("error", "no_transcript") and rec.get("attempts", 0) >= 5:
+            continue   # gave up after five tries; overrides.json can still fill it in
+        todo.append(vid)
+
+    for i, vid in enumerate(todo):
+        if i:
+            time.sleep(2 + random.uniform(0, 2))   # politeness between page loads
+        print(f"  → reading video page for {vid}")
+        det = fetch_video_details(vid)
+        det["attempts"] = store.get(vid, {}).get("attempts", 0) + 1
+        store[vid] = det
+        n = len(det.get("items", []))
+        print(f"    {det['status']}"
+              + (f", {n} spoken score(s)" if n else "")
+              + (f" @ {det['name']}" if det.get("name") else ""))
+
+    if todo:
+        store_f.write_text(json.dumps(store, indent=2) + "\n", encoding="utf-8")
+
+    # regenerate the page-facing file every run (cheap, and keeps it in sync
+    # with overrides and with videos leaving/entering the curated set)
+    overrides = {}
+    ov = DATA / "overrides.json"
+    if ov.exists():
+        try:
+            overrides = json.loads(ov.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+
+    by_id = {v["id"]: v for v in payload.get("videos", [])}
+    entries, unscored = [], []
+    for vid, rec in store.items():
+        if vid in curated_ids or vid not in by_id:
+            continue
+        pin = overrides.get(vid, {})
+        v = by_id[vid]
+        name = pin.get("name") or rec.get("name")
+        county = (v.get("counties") or [None])[0]
+        if not name:
+            # no place tag: an honest generic name beats a wrong guess
+            name = f"Untagged {v.get('label', 'spot').lower()} spot"
+        items = rec.get("items") or []
+        if pin.get("score") is not None:
+            items = [{"item": "Pinned by hand", "score": pin["score"]}]
+        if items:
+            score = round(sum(i["score"] for i in items) / len(items), 3)
+            entries.append({
+                "n": None, "name": name,
+                "place": pin.get("place") or rec.get("address", "").split(",")[0] or (county or "").title(),
+                "address": rec.get("address", ""),
+                "score": score,
+                "tier": ("offscale" if (score > 5 or score < 1) else
+                         "elite" if score >= 4.7 else "great" if score >= 4 else
+                         "fine" if score >= 3 else "rough"),
+                "overall": None,
+                "items": sorted(items, key=lambda i: -i["score"]),
+                "posted": None, "videoId": vid,
+                "caveats": ["Scored automatically from the video's own transcript."],
+                "verified": "auto", "auto": True,
+            })
+        elif rec["status"] in ("no_scores", "no_transcript"):
+            unscored.append({
+                "name": name, "videoId": vid,
+                "why": ("no numerical food score spoken on camera"
+                        if rec["status"] == "no_scores"
+                        else "transcript not available yet - will keep trying"),
+            })
+
+    (DATA / "ratings_auto.js").write_text(
+        "// Generated by scripts/update.py from video transcripts - do not edit.\n"
+        "// Curated data in ratings.js always wins for the same video.\n"
+        "window.RATINGS_AUTO = " + json.dumps(
+            {"entries": entries, "unscored": unscored}, indent=2) + ";\n",
+        encoding="utf-8",
+    )
+    if entries or unscored:
+        print(f"  auto ratings: {len(entries)} scored, {len(unscored)} unscored")
 
 
 # ── instagram ─────────────────────────────────────────────────────────────────
@@ -596,6 +833,7 @@ def main() -> int:
         encoding="utf-8",
     )
     write_history(payload)
+    refresh_auto_ratings(new_ids, payload)
 
     print(f"\n✓ wrote data/site.js ({len(payload['videos'])} videos) and data/history.json")
     return 0

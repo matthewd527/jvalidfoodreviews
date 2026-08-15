@@ -235,10 +235,54 @@ moreBtn.addEventListener('click', () => {
 renderGrid();
 
 /* ─── Ranking ──────────────────────────────────── */
-/* Scores come from data/ratings.js, imported from the ratings spreadsheet by
-   scripts/import_ratings.py. Kept separate from SITE_DATA because the daily
-   scraper rewrites that file and would wipe anything hand-researched. */
-const RANK = window.RATINGS_DATA || null;
+/* Two sources, merged here:
+   - data/ratings.js       hand-curated from the spreadsheet (wins on conflict)
+   - data/ratings_auto.js  written by the updater, which reads each new video's
+                           place tag and transcript and extracts the scores he
+                           says on camera. So new uploads rank themselves.
+   Both are keyed by videoId; an auto entry is dropped the moment a curated one
+   covers the same video. Rank numbers and the stat strip are recomputed from
+   the combined list. */
+const RANK = (() => {
+  const curated = window.RATINGS_DATA || null;
+  const auto = window.RATINGS_AUTO || { entries: [], unscored: [] };
+  if (!curated && !auto.entries.length) return null;
+
+  const covered = new Set([
+    ...(curated?.ranked || []).map(e => e.videoId),
+    ...(curated?.unrated || []).map(e => e.videoId),
+  ].filter(Boolean));
+
+  const ranked = [
+    ...(curated?.ranked || []),
+    ...auto.entries.filter(e => !covered.has(e.videoId)),
+  ].sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+
+  // competition ranking: ties share a rank, the next rank skips
+  let last = null, lastRank = 0;
+  ranked.forEach((e, i) => {
+    if (e.score !== last) { last = e.score; lastRank = i + 1; }
+    e.rank = lastRank;
+  });
+
+  const unrated = [
+    ...(curated?.unrated || []),
+    ...auto.unscored
+      .filter(u => !covered.has(u.videoId))
+      .map(u => ({ name: u.name, place: '', caveats: [u.why] })),
+  ];
+
+  const scores = ranked.map(e => e.score);
+  const events = ranked.reduce((n, e) => n + (e.items?.length || 0), 0);
+  return {
+    ranked, unrated,
+    ratedVideos: ranked.length,
+    ratingEvents: events,
+    best: scores[0] ?? null,
+    worst: scores[scores.length - 1] ?? null,
+    average: scores.length ? +(scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(2) : null,
+  };
+})();
 
 if (RANK && RANK.ranked?.length) {
   const esc = s => String(s ?? '').replace(/[&<>"]/g, c =>
@@ -321,7 +365,7 @@ if (RANK && RANK.ranked?.length) {
           <summary data-cursor="tap">
             <span class="rr__pos">${e.rank}</span>
             <span class="rr__main">
-              <span class="rr__name">${esc(e.name)}${off ? '<span class="rr__flag">OFF SCALE</span>' : ''}</span>
+              <span class="rr__name">${esc(e.name)}${off ? '<span class="rr__flag">OFF SCALE</span>' : ''}${e.auto ? '<span class="rr__flag rr__flag--auto" title="Scored automatically from the video transcript">AUTO</span>' : ''}</span>
               <span class="rr__where">${esc(e.place || 'Location not stated')}</span>
             </span>
             <span class="rr__bar"><i></i></span>

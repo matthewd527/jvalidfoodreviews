@@ -1,0 +1,101 @@
+{
+  "7674005237262224670": {
+    "name": "",
+    "address": "",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pancakes",
+        "score": 4.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      },
+      {
+        "item": "Ice Cream",
+        "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7673829157733666079": {
+    "name": "Zio's Pizzeria",
+    "address": "80 S Main St, New City, NY 10956, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Slice",
+        "score": 4.9
+      },
+      {
+        "item": "Pizza",
+        "score": 4.7
+      },
+      {
+        "item": "Slice",
+        "score": 4.7
+      },
+      {
+        "item": "Slice",
+        "score": 4.8
+      }
+    ],
+    "attempts": 1
+  },
+  "7673718532579806495": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7673372532317228319": {
+    "name": "Pita Greek",
+    "address": "149 S Middletown Rd, Nanuet, NY 10954, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Chicken",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.7
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.7
+      }
+    ],
+    "attempts": 1
+  },
+  "7673101535743577375": {
+    "name": "The BURGER Loft",
+    "address": "395 S Main St, New City, NY 10956, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Burger",
+        "score": 4.8
+      },
+      {
+        "item": "Mac And Cheese",
+        "score": 4.7
+      },
+      {
+        "item": "Wings",
+        "score": 4.9
+      },
+      {
+        "item": "Wings",
+        "score": 4.7
+      },
+      {
+        "item": "Burger",
+        "score": 4.8
+      }
+    ],
+    "attempts": 1
+  }
+}
