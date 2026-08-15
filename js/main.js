@@ -95,14 +95,33 @@ setTimeout(() => document.body.classList.add('is-loaded'), 3200);
 /* ─── Fill everything that is driven by the data ─ */
 const counties = [...new Set(VIDEOS.flatMap(v => v.counties || []))];
 
+// Instagram is stats-only: videos come exclusively from TikTok. The block is
+// null until the first successful fetch, and keeps its last good numbers
+// (flagged stale) when Instagram won't answer - so the tile never shows a zero.
+const IG = DATA.instagram || null;
+const followersTotal = (PROFILE.followers ?? 0) + (IG?.followers ?? 0);
+
 const FILL = {
-  followers:      PROFILE.followers  ?? 0,
-  followersPlus1: (PROFILE.followers ?? 0) + 1,
-  likes:          PROFILE.likes      ?? 0,
-  videoCount:     PROFILE.videoCount ?? VIDEOS.length,
-  counties:       counties.length,
-  shown:          VIDEOS.length,
+  followers:           PROFILE.followers  ?? 0,
+  followersPlus1:      (PROFILE.followers ?? 0) + 1,
+  igFollowers:         IG?.followers ?? 0,
+  followersTotal,
+  followersTotalPlus1: followersTotal + 1,
+  likes:               PROFILE.likes      ?? 0,
+  videoCount:          PROFILE.videoCount ?? VIDEOS.length,
+  counties:            counties.length,
+  shown:               VIDEOS.length,
 };
+
+if (IG?.followers) {
+  $('#igStat')?.removeAttribute('hidden');
+  $('#igCta')?.removeAttribute('hidden');
+}
+// the strip's column count follows how many tiles are actually visible
+const statsWrap = $('.stats__wrap');
+if (statsWrap) {
+  statsWrap.style.setProperty('--tiles', $$('.stat:not([hidden])', statsWrap).length);
+}
 
 $$('[data-fill]').forEach(el => {
   const v = FILL[el.dataset.fill];

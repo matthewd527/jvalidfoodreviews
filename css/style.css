@@ -423,11 +423,19 @@ body:not(.is-loaded) .word{animation-play-state:paused}
 .stats{padding:clamp(1.4rem,3vw,2.4rem) var(--pad)}
 .stats__wrap{
   max-width:1320px;margin-inline:auto;
-  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  display:grid;grid-template-columns:repeat(var(--tiles,4),1fr);gap:1px;
   background:rgba(255,244,223,.16);
   border:2.5px solid rgba(255,244,223,.16);border-radius:22px;overflow:hidden;
 }
-@media (max-width:760px){.stats__wrap{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){
+  .stats__wrap{grid-template-columns:repeat(2,1fr)}
+  /* five tiles two-up would leave a hole; the last one spans */
+  .stat:last-child:nth-child(odd){grid-column:1/-1}
+}
+.stat[hidden]{display:none}
+
+.foot__ctas{display:flex;justify-content:center;gap:.9rem;flex-wrap:wrap}
+.foot__ctas .btn[hidden]{display:none}
 .stat{
   background:var(--ink-2);padding:clamp(1.3rem,3.4vw,2.3rem) 1rem;
   text-align:center;position:relative;transition:background .35s;

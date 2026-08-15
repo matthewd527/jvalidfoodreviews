@@ -477,11 +477,13 @@ def refresh_auto_ratings(new_ids: list[str], payload: dict) -> None:
 
 
 # ── instagram ─────────────────────────────────────────────────────────────────
-# Set IG_HANDLE to switch this on; leave it unset and Instagram is skipped
-# entirely. Uses the same anonymous web endpoint the instagram.com profile page
-# calls. No token, no app, no login, so there is nothing to expire - but see the
-# README: this is an undocumented endpoint and it is rate-limited per IP.
-IG_HANDLE = os.environ.get("IG_HANDLE", "").lstrip("@").strip()
+# Stats only - videos come exclusively from TikTok, so nothing here ever adds
+# to the video grid. Uses the same anonymous web endpoint the instagram.com
+# profile page calls: no token, no app, no login, nothing to expire. It IS
+# rate-limited per IP and fails on some days; the merge below keeps the last
+# good numbers and flags them stale rather than ever losing them.
+# Set IG_HANDLE="" to disable.
+IG_HANDLE = os.environ.get("IG_HANDLE", "jvalidfoodreviews").lstrip("@").strip()
 IG_APP_ID = "936619743392459"
 
 

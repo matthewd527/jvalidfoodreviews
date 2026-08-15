@@ -36,8 +36,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Refresh data from TikTok
+      - name: Refresh data from TikTok and Instagram
         id: refresh
+        env:
+          IG_HANDLE: jvalidfoodreviews   # set to "" to disable Instagram
         run: python3 scripts/update.py
 
       - name: Commit any changes

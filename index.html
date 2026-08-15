@@ -127,11 +127,15 @@
   <div class="stats__wrap">
     <div class="stat reveal" data-d="0">
       <span class="stat__num" data-count="0" data-from="likes">0</span>
-      <span class="stat__lbl">Likes earned</span>
+      <span class="stat__lbl">TikTok likes</span>
     </div>
     <div class="stat reveal" data-d="1">
       <span class="stat__num" data-count="0" data-from="followers">0</span>
-      <span class="stat__lbl">Followers</span>
+      <span class="stat__lbl">TikTok followers</span>
+    </div>
+    <div class="stat reveal" data-d="1" id="igStat" hidden>
+      <span class="stat__num" data-count="0" data-from="igFollowers">0</span>
+      <span class="stat__lbl">Instagram followers</span>
     </div>
     <div class="stat reveal" data-d="2">
       <span class="stat__num" data-count="0" data-from="videoCount">0</span>
@@ -238,10 +242,15 @@
   <div class="foot__body">
     <img class="foot__pic" src="assets/avatar.jpg" alt="">
     <h2 class="foot__h">GO HIT<br>THE FOLLOW</h2>
-    <p class="foot__p"><span data-fill="followers">398</span> people already know. Be <span data-fill="followersPlus1">399</span>.</p>
-    <a class="btn btn--primary btn--lg" href="https://www.tiktok.com/@jvalidfoodreviews" target="_blank" rel="noopener" data-cursor="tap" data-magnet>
-      @jvalidfoodreviews
-    </a>
+    <p class="foot__p"><span data-fill="followersTotal">398</span> people already know. Be <span data-fill="followersTotalPlus1">399</span>.</p>
+    <div class="foot__ctas">
+      <a class="btn btn--primary btn--lg" href="https://www.tiktok.com/@jvalidfoodreviews" target="_blank" rel="noopener" data-cursor="tap" data-magnet>
+        TikTok
+      </a>
+      <a class="btn btn--ghost btn--lg" id="igCta" href="https://www.instagram.com/jvalidfoodreviews/" target="_blank" rel="noopener" data-cursor="tap" data-magnet hidden>
+        Instagram
+      </a>
+    </div>
     <p class="foot__fine">
       All videos, thumbnails and stats belong to
       <a href="https://www.tiktok.com/@jvalidfoodreviews" target="_blank" rel="noopener">@jvalidfoodreviews</a> on TikTok.<br>
