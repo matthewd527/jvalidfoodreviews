@@ -94,17 +94,30 @@ so your pins survive every future run:
 `THE RANKING` orders every place he has given a number to, best to worst, with
 the item-by-item breakdown behind each row.
 
-This data can't be scraped — it comes from actually watching the videos — so it
-lives in its own file and is imported from the spreadsheet:
+It has two sources, merged on the page:
 
-```bash
-python3 scripts/import_ratings.py ~/Downloads/jvalid_food_reviews.xlsx
+- **Curated** (`data/ratings.js`) — imported from the research spreadsheet with
+  `python3 scripts/import_ratings.py <sheet.xlsx>`. The job never touches it,
+  and it always wins for a video it covers.
+- **Automatic** (`data/ratings_auto.js`) — for every video the spreadsheet
+  doesn't cover, the job fetches the video page once, reads TikTok's place tag
+  (restaurant name + address) and the auto-generated transcript, and extracts
+  the scores he says out loud ("4.8 stars", "I'm gonna give them 4.9"). A score
+  aimed at the bathroom or the nightlife is ignored — the LongHorn video rates
+  a toilet, not the food. These rows wear an **AUTO** badge.
+
+So new uploads rank themselves within a few hours of being posted, with no
+human involved. Accuracy, measured against the hand-curated spreadsheet: all
+ten scoreable videos land within 0.01 of the curated average. When ASR fails
+or he never says a number, the video is listed under "not in the ranking"
+rather than guessed at. A transcript that isn't ready yet (common right after
+posting) is retried on later runs, up to five times.
+
+To correct an auto entry, add its video id to `data/overrides.json`:
+
+```json
+{ "7673829157733666079": { "name": "Zio's Pizzeria", "score": 4.8 } }
 ```
-
-That writes `data/ratings.js`. **The daily job never touches it**, which is
-exactly why it isn't part of `data/site.js` — that file gets rewritten every
-morning and would wipe anything hand-researched. Re-run the import whenever you
-add rows to the sheet.
 
 A few decisions baked in:
 
