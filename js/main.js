@@ -10,12 +10,23 @@ const PROFILE = DATA.profile || {};
 const HANDLE = PROFILE.handle || 'jvalidfoodreviews';
 const VIDEOS = (DATA.videos || []).slice();
 
+/* Known counties get a proper name and state; anything else the updater
+   detects (any "#somethingcounty" tag) is labelled from its key so brand-new
+   turf shows up without a code change. */
 const COUNTY_META = {
   bergen:      { name: 'Bergen County',   state: 'NJ' },
   rockland:    { name: 'Rockland County', state: 'NY' },
   westchester: { name: 'Westchester',     state: 'NY' },
   orange:      { name: 'Orange County',   state: 'NY' },
+  passaic:     { name: 'Passaic County',  state: 'NJ' },
+  putnam:      { name: 'Putnam County',   state: 'NY' },
+  dutchess:    { name: 'Dutchess County', state: 'NY' },
+  essex:       { name: 'Essex County',    state: 'NJ' },
+  hudson:      { name: 'Hudson County',   state: 'NJ' },
+  morris:      { name: 'Morris County',   state: 'NJ' },
 };
+const countyMeta = key => COUNTY_META[key] ||
+  { name: key.charAt(0).toUpperCase() + key.slice(1) + ' County', state: '' };
 
 const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -107,7 +118,8 @@ const FILL = {
   igFollowers:         IG?.followers ?? 0,
   followersTotal,
   followersTotalPlus1: followersTotal + 1,
-  likes:               PROFILE.likes      ?? 0,
+  // TikTok hearts + every Instagram post like we've archived, combined
+  likes:               (PROFILE.likes ?? 0) + (IG?.likesTracked ?? 0),
   videoCount:          PROFILE.videoCount ?? VIDEOS.length,
   counties:            counties.length,
   shown:               VIDEOS.length,
@@ -148,9 +160,10 @@ if (stamp && DATA.updated && DATA.updated !== 'seed') {
 // turf table, ranked by how many reviews came out of each county
 const turfList = $('#turfList');
 if (turfList) {
-  const rows = Object.entries(COUNTY_META)
-    .map(([key, meta]) => ({
-      key, ...meta,
+  const keys = [...new Set(VIDEOS.flatMap(v => v.counties || []))];
+  const rows = keys
+    .map(key => ({
+      key, ...countyMeta(key),
       n: VIDEOS.filter(v => (v.counties || []).includes(key)).length,
     }))
     .filter(r => r.n > 0)
@@ -160,7 +173,7 @@ if (turfList) {
   turfList.innerHTML = rows.map((r, i) => `
     <div class="turf__row reveal" data-d="${Math.min(i, 3)}" style="--p:${Math.round((r.n / top) * 100)}%">
       <span class="turf__rank">${String(i + 1).padStart(2, '0')}</span>
-      <span class="turf__name">${r.name} <i>${r.state}</i></span>
+      <span class="turf__name">${r.name}${r.state ? ` <i>${r.state}</i>` : ''}</span>
       <span class="turf__bar"><i></i></span>
       <span class="turf__n">${r.n}</span>
     </div>
@@ -359,12 +372,27 @@ if (RANK && RANK.ranked?.length) {
           : `<b>${esc(worst.items[0]?.item || 'The food')}</b> — <b>${fmtScore(worst.score)}</b> out of five.`}`);
   }
 
-  /* the ranked list */
+  /* the ranked list, paged like the video grid so 30+ rows don't wall-of-text
+     the page. Same look, same button style - just fewer rows at a time. */
   const list = $('#rankList');
+  const rankMoreBtn = $('#rankMore');
+  const rankMoreLabel = $('#rankMoreLabel');
+  const RANK_STEP = matchMedia('(max-width: 640px)').matches ? 5 : 10;
+  let rankShown = RANK_STEP;
+  let rankOrder = 'best';
 
   function renderRows(order) {
-    const rows = RANK.ranked.slice();
-    if (order === 'worst') rows.reverse();
+    rankOrder = order;
+    const all = RANK.ranked.slice();
+    if (order === 'worst') all.reverse();
+    const rows = all.slice(0, rankShown);
+
+    const remaining = all.length - rows.length;
+    rankMoreBtn.hidden = remaining <= 0;
+    if (remaining > 0) {
+      rankMoreLabel.textContent = `Show ${Math.min(RANK_STEP, remaining)} more`;
+      rankMoreBtn.setAttribute('aria-label', `Show more ranked places, ${remaining} remaining`);
+    }
 
     list.innerHTML = rows.map(e => {
       const c = tierVar(e.tier);
@@ -412,10 +440,16 @@ if (RANK && RANK.ranked?.length) {
 
   renderRows('best');
 
+  rankMoreBtn.addEventListener('click', () => {
+    rankShown += RANK_STEP;
+    renderRows(rankOrder);
+  });
+
   $$('.rt').forEach(btn => {
     btn.addEventListener('click', () => {
       $$('.rt').forEach(b => b.classList.remove('is-on'));
       btn.classList.add('is-on');
+      rankShown = RANK_STEP;   // flipping the order starts from the top again
       renderRows(btn.dataset.order);
     });
   });

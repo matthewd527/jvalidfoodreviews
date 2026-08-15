@@ -128,8 +128,19 @@ def categorise(caption: str) -> tuple[str, str]:
 
 
 def counties_for(caption: str) -> list[str]:
+    """County keys for a caption.
+
+    The seed list catches his usual bare tags (#rockland, #westchester). On top
+    of that, any "#somethingcounty" hashtag becomes a county automatically, so
+    the turf section grows by itself when he starts reviewing somewhere new -
+    no code change needed for #putnamcounty or #passaiccounty.
+    """
     text = caption.lower()
-    return [key for key, _, _, words in COUNTIES if any(w in text for w in words)]
+    keys = [key for key, _, _, words in COUNTIES if any(w in text for w in words)]
+    for m in re.finditer(r'#([a-z]+?)county\b', text):
+        if m.group(1) not in keys:
+            keys.append(m.group(1))
+    return keys
 
 
 # ── fetching ──────────────────────────────────────────────────────────────────
@@ -560,7 +571,14 @@ def scrape_instagram() -> dict | None:
 
 
 def merge_instagram(fresh_ig: dict | None, prev_ig: dict | None) -> dict | None:
-    """Keep the last good Instagram block if today's fetch was skipped."""
+    """Keep the last good Instagram block if today's fetch was skipped, and
+    archive every post ever seen.
+
+    The endpoint only exposes the ~12 newest posts, so like TikTok videos,
+    posts are accumulated: once seen, a post and its like count stay forever
+    (likes only ever move up). likesTracked is the sum over that whole archive,
+    which is what feeds the site's combined Total Likes counter.
+    """
     if fresh_ig is None:
         if prev_ig:
             print("  instagram: keeping yesterday's numbers")
@@ -579,6 +597,17 @@ def merge_instagram(fresh_ig: dict | None, prev_ig: dict | None) -> dict | None:
             out["stale"] = True
             return out
 
+    archive = {p["id"]: p for p in (prev_ig or {}).get("posts", []) if p.get("id")}
+    for p in fresh_ig["posts"]:
+        old = archive.get(p["id"], {})
+        p["likes"] = max(p["likes"], old.get("likes", 0))
+        p["views"] = max(p["views"], old.get("views", 0))
+        archive[p["id"]] = p
+
+    posts = sorted(archive.values(), key=lambda p: p.get("created") or 0, reverse=True)
+    fresh_ig["posts"] = posts
+    fresh_ig["likesTracked"] = sum(p["likes"] for p in posts)
+    fresh_ig["postsTracked"] = len(posts)
     fresh_ig["stale"] = False
     return fresh_ig
 
