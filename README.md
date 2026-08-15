@@ -1,4 +1,4 @@
-# JVALID FOOD REVIEWS — fan site
+# JVALID FOOD REVIEWS
 
 A one-page, heavily animated site for [@jvalidfoodreviews](https://www.tiktok.com/@jvalidfoodreviews),
 which **refreshes its own numbers once a day** with no human involvement.
