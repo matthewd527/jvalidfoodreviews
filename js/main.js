@@ -300,17 +300,10 @@ const RANK = (() => {
     e.rank = lastRank;
   });
 
-  const unrated = [
-    ...(curated?.unrated || []),
-    ...auto.unscored
-      .filter(u => !covered.has(u.videoId))
-      .map(u => ({ name: u.name, place: '', caveats: [u.why] })),
-  ];
-
   const scores = ranked.map(e => e.score);
   const events = ranked.reduce((n, e) => n + (e.items?.length || 0), 0);
   return {
-    ranked, unrated,
+    ranked,
     ratedVideos: ranked.length,
     ratingEvents: events,
     best: scores[0] ?? null,
@@ -453,17 +446,6 @@ if (RANK && RANK.ranked?.length) {
       renderRows(btn.dataset.order);
     });
   });
-
-  /* the ones he never scored */
-  const un = $('#rankUnrated');
-  if (un && RANK.unrated?.length) {
-    un.innerHTML = `
-      <b>${RANK.unrated.length} reviews aren't in the ranking</b>
-      <ul>${RANK.unrated.map(e => {
-        const why = (e.caveats[0] || '').replace(/^Food score:\s*/, '');
-        return `<li><em>${esc(e.name)}</em>${e.place ? ` (${esc(e.place)})` : ''} — ${esc(why || 'no numerical score stated')}</li>`;
-      }).join('')}</ul>`;
-  }
 }
 
 /* ─── Scroll reveal ────────────────────────────── */
