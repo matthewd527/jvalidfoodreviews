@@ -175,9 +175,12 @@ const moreBtn = $('#showMore');
 const moreLabel = $('#showMoreLabel');
 const gridNote = $('#gridNote');
 
-const PAGE_SIZE = 10;
+// First paint shows a taste, not the whole archive: 8 cards on desktop,
+// 3 on a phone. Every press of the button adds 5 more, on both.
+const PAGE_STEP = 5;
+const PAGE_INIT = matchMedia('(max-width: 640px)').matches ? 3 : 8;
 let activeFilter = 'all';
-let shownCount = PAGE_SIZE;
+let shownCount = PAGE_INIT;
 
 // Cards are added after this observer is built, so they get their own rather
 // than relying on the one-shot query the page-load reveal uses.
@@ -230,7 +233,7 @@ function renderGrid({ appended = 0 } = {}) {
   const remaining = all.length - slice.length;
   moreBtn.hidden = remaining <= 0;
   if (remaining > 0) {
-    moreLabel.textContent = `Show ${Math.min(PAGE_SIZE, remaining)} more`;
+    moreLabel.textContent = `Show ${Math.min(PAGE_STEP, remaining)} more`;
     moreBtn.setAttribute('aria-label', `Show more reviews, ${remaining} remaining`);
   }
 
@@ -244,7 +247,7 @@ function renderGrid({ appended = 0 } = {}) {
 
 moreBtn.addEventListener('click', () => {
   const before = Math.min(shownCount, pool().length);
-  shownCount += PAGE_SIZE;
+  shownCount += PAGE_STEP;
   const after = Math.min(shownCount, pool().length);
   renderGrid({ appended: after - before });
   // keep focus somewhere sensible when the button disappears
@@ -476,7 +479,7 @@ $$('.chip').forEach(chip => {
       c.setAttribute('aria-pressed', String(c === chip));
     });
     activeFilter = chip.dataset.filter;
-    shownCount = PAGE_SIZE;   // a new category starts from the first page
+    shownCount = PAGE_INIT;   // a new category starts from the first page
     renderGrid();
   });
 });
