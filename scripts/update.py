@@ -557,8 +557,16 @@ def scrape_instagram() -> dict | None:
         print("  instagram: follower count came back 0 - ignoring this run")
         return None
 
+    # His Instagram picture is the site's avatar. Keep it current on its own:
+    # the signed URL churns constantly, but the filename in the path only
+    # changes when he actually swaps the photo, so that is what we compare.
+    pic = user.get("profile_pic_url_hd") or user.get("profile_pic_url") or ""
+    pic_id = pic.split("?")[0].rsplit("/", 1)[-1] if pic else ""
+
     return {
         "handle": IG_HANDLE,
+        "avatarId": pic_id,
+        "avatarUrl": pic,
         "followers": followers,
         "following": int((user.get("edge_follow") or {}).get("count") or 0),
         "postCount": int(media.get("count") or 0),
@@ -603,6 +611,24 @@ def merge_instagram(fresh_ig: dict | None, prev_ig: dict | None) -> dict | None:
         p["likes"] = max(p["likes"], old.get("likes", 0))
         p["views"] = max(p["views"], old.get("views", 0))
         archive[p["id"]] = p
+
+    # refresh the avatar only when he has actually changed the photo
+    new_id = fresh_ig.get("avatarId")
+    if new_id and new_id != (prev_ig or {}).get("avatarId"):
+        dest = ASSETS / "avatar.jpg"
+        try:
+            blob = get(fresh_ig["avatarUrl"], tries=2)
+            if len(blob) > 2000:
+                dest.write_bytes(blob)
+                print(f"  instagram: new profile picture saved ({len(blob) // 1024}KB)")
+            else:
+                fresh_ig["avatarId"] = (prev_ig or {}).get("avatarId")   # try again next run
+        except Exception as e:  # noqa: BLE001 - never fail a run over the avatar
+            print(f"  instagram: couldn't fetch the profile picture ({type(e).__name__})")
+            fresh_ig["avatarId"] = (prev_ig or {}).get("avatarId")
+
+    # the signed URL is useless once it expires, so don't persist it
+    fresh_ig.pop("avatarUrl", None)
 
     posts = sorted(archive.values(), key=lambda p: p.get("created") or 0, reverse=True)
     fresh_ig["posts"] = posts
