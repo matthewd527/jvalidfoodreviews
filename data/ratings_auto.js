@@ -95,6 +95,54 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Paul & Sons Pizza",
+      "place": "67 1/2 Leroy St",
+      "address": "67 1/2 Leroy St, Binghamton, NY 13905, USA",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Slice",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7674376706492304671",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "MaryAms MartHalal Foods & Gyro",
+      "place": "69 Court St",
+      "address": "69 Court St, Binghamton, United States",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7674263143853346078",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -102,6 +150,16 @@ window.RATINGS_AUTO = {
       "name": "Untagged off-menu spot",
       "videoId": "7673718532579806495",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged ice cream spot",
+      "videoId": "7674318796861082911",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Cosimo's",
+      "videoId": "7674312651958160671",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

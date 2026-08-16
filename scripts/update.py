@@ -137,7 +137,10 @@ def counties_for(caption: str) -> list[str]:
     """
     text = caption.lower()
     keys = [key for key, _, _, words in COUNTIES if any(w in text for w in words)]
-    for m in re.finditer(r'#([a-z]+?)county\b', text):
+    # He often suffixes the state onto the tag (#orangecountyny), so allow one.
+    # Without this, a county not already in the seed list above would be dropped
+    # purely because of how he happened to write it.
+    for m in re.finditer(r'#([a-z]+?)county(?:ny|nj|ct|pa)?\b', text):
         if m.group(1) not in keys:
             keys.append(m.group(1))
     return keys

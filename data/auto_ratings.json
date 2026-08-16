@@ -97,5 +97,46 @@
       }
     ],
     "attempts": 1
+  },
+  "7674376706492304671": {
+    "name": "Paul & Sons Pizza",
+    "address": "67 1/2 Leroy St, Binghamton, NY 13905, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Slice",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7674318796861082911": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7674312651958160671": {
+    "name": "Cosimo's",
+    "address": "100 NY-32, Central Valley, NY 10917, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7674263143853346078": {
+    "name": "MaryAms MartHalal Foods & Gyro",
+    "address": "69 Court St, Binghamton, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      }
+    ],
+    "attempts": 1
   }
 }
