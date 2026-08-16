@@ -188,6 +188,33 @@ if (turfList) {
   `).join('');
 }
 
+/* Towns sit below the counties rather than mixed in: a town is inside a county,
+   so one list would double-count. Only videos with a tagged place have a town,
+   which is why this is a quieter chip row and not a ranked table. */
+const turfTowns = $('#turfTowns');
+if (turfTowns) {
+  const tally = new Map();
+  VIDEOS.forEach(v => {
+    if (!v.city) return;
+    const key = `${v.city}|${v.cityState || ''}`;
+    tally.set(key, (tally.get(key) || 0) + 1);
+  });
+
+  const towns = [...tally.entries()]
+    .map(([key, n]) => { const [city, st] = key.split('|'); return { city, st, n }; })
+    .sort((a, b) => b.n - a.n || a.city.localeCompare(b.city));
+
+  if (towns.length) {
+    turfTowns.removeAttribute('hidden');
+    $('#turfChips').innerHTML = towns.map(t => `
+      <span class="turf__chip">
+        ${t.city}${t.st ? ` <i>${t.st}</i>` : ''}
+        ${t.n > 1 ? `<b>${t.n}</b>` : ''}
+      </span>
+    `).join('');
+  }
+}
+
 /* ─── Video grid, ten at a time ─────────────────── */
 /* The archive only grows - the updater keeps every video it has ever seen - so
    the grid pages instead of dumping hundreds of cards on the first paint. */

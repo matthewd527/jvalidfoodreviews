@@ -887,6 +887,31 @@ body:not(.is-loaded) .word{animation-play-state:paused}
 }
 .lb__x:hover{transform:rotate(90deg) scale(1.1);background:var(--ketchup);color:var(--cream)}
 
+/* towns, under the county table */
+.turf__towns{margin-top:clamp(1.6rem,4vw,2.4rem)}
+.turf__towns[hidden]{display:none}
+.turf__sub{
+  font-family:var(--f-mono);font-size:.68rem;letter-spacing:.2em;
+  text-transform:uppercase;color:rgba(255,244,223,.45);
+  margin-bottom:.9rem;font-weight:400;
+}
+.turf__chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.turf__chip{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-family:var(--f-sign);font-size:.74rem;
+  padding:.42rem .8rem;border-radius:999px;
+  border:2px solid rgba(255,244,223,.16);
+  color:rgba(255,244,223,.82);background:var(--ink-2);
+  transition:border-color .25s,color .25s,transform .25s var(--ease-bounce);
+}
+.turf__chip:hover{border-color:var(--mustard);color:var(--cream);transform:translateY(-2px)}
+.turf__chip i{font-style:normal;font-size:.62rem;color:var(--ketchup)}
+.turf__chip b{
+  font-family:var(--f-mono);font-size:.62rem;font-weight:500;
+  color:var(--ink);background:var(--mustard);
+  padding:.05rem .35rem;border-radius:99px;
+}
+
 /* ─── Booking form ─────────────────────────────── */
 
 .bk{max-width:640px}
