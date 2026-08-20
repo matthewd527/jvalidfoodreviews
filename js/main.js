@@ -24,6 +24,12 @@ const COUNTY_META = {
   essex:       { name: 'Essex County',    state: 'NJ' },
   hudson:      { name: 'Hudson County',   state: 'NJ' },
   morris:      { name: 'Morris County',   state: 'NJ' },
+  // he is at SUNY Binghamton now, so the upstate cluster gets proper labels too
+  broome:      { name: 'Broome County',   state: 'NY' },
+  tioga:       { name: 'Tioga County',    state: 'NY' },
+  chenango:    { name: 'Chenango County', state: 'NY' },
+  delaware:    { name: 'Delaware County', state: 'NY' },
+  cortland:    { name: 'Cortland County', state: 'NY' },
 };
 const countyMeta = key => COUNTY_META[key] ||
   { name: key.charAt(0).toUpperCase() + key.slice(1) + ' County', state: '' };

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Just Want To Eat — Jean-Philippe Gerbi · New York & New Jersey</title>
+<meta name="description" content="Fifteen years of restaurant reviews, recipes and one very used camera. Jean-Philippe Gerbi eats his way through New York and New Jersey — Michelin rooms, Hoboken bakeries, and everything between.">
+<meta name="author" content="Jean-Philippe Gerbi">
+<meta property="og:type" content="website">
+<meta property="og:title" content="I Just Want To Eat — Jean-Philippe Gerbi">
+<meta property="og:description" content="Fifteen years of restaurant reviews, recipes and one very used camera. New York & New Jersey.">
+<meta property="og:image" content="assets/logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.squarespace-cdn.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,700;1,9..144,900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<a class="skip" href="#reviews">Skip to the reviews</a>
+
+<!-- ══════════════ RAIL ══════════════ -->
+<nav class="rail" id="rail" aria-label="Sections">
+  <a href="#top" class="rail__mark" aria-label="Back to top"><span>IJWTE</span></a>
+  <ol class="rail__list">
+    <li><a href="#reviews"><em>01</em> The Reviews</a></li>
+    <li><a href="#stars"><em>02</em> The Starred Rooms</a></li>
+    <li><a href="#picks"><em>03</em> Pick of the Month</a></li>
+    <li><a href="#kitchen"><em>04</em> From the Kitchen</a></li>
+    <li><a href="#beat"><em>05</em> The Beat</a></li>
+    <li><a href="#studio"><em>06</em> At the Table</a></li>
+    <li><a href="#about"><em>07</em> The Blogger</a></li>
+    <li><a href="#write"><em>08</em> Write In</a></li>
+  </ol>
+  <button class="rail__toggle" id="railToggle" aria-expanded="false" aria-controls="rail">
+    <span class="rail__bars" aria-hidden="true"><i></i><i></i></span>
+    <span class="rail__word">Menu</span>
+  </button>
+</nav>
+
+<!-- ══════════════ MASTHEAD ══════════════ -->
+<header class="mast" id="top">
+
+  <div class="mast__rule mast__rule--top">
+    <span class="mast__meta" id="editionLeft">New York &amp; New Jersey</span>
+    <span class="mast__meta mast__meta--c">Est. MMXI</span>
+    <span class="mast__meta mast__meta--r" id="editionRight">—</span>
+  </div>
+
+  <div class="mast__title">
+    <h1 class="wordmark" aria-label="I Just Want To Eat">
+      <span class="wordmark__l" style="--i:0">I</span>
+      <span class="wordmark__l" style="--i:1">JUST</span>
+      <span class="wordmark__l wordmark__l--it" style="--i:2">Want</span>
+      <i class="wordmark__brk" aria-hidden="true"></i>
+      <span class="wordmark__l" style="--i:3">TO</span>
+      <span class="wordmark__l" style="--i:4">EAT</span>
+    </h1>
+    <p class="wordmark__by">
+      <span class="hair"></span>
+      Written, shot and eaten by <b>Jean&#8209;Philippe Gerbi</b>
+      <span class="hair"></span>
+    </p>
+  </div>
+
+  <div class="mast__rule mast__rule--bot" aria-hidden="true"></div>
+
+  <div class="lede">
+    <div class="lede__col">
+      <p class="dropcap">
+        A Frenchman with a camera, a standing table reservation somewhere between
+        Hoboken and Tribeca, and fifteen years of receipts. He started the blog in
+        July 2011 for the simplest possible reason, and has not stopped since:
+        every plate photographed by him, every room paid for and walked into
+        unannounced.
+      </p>
+      <p class="lede__p">
+        No guest posts. No press releases. No place he has not actually eaten at.
+      </p>
+      <div class="lede__acts">
+        <a class="btn btn--ink" href="#reviews">
+          Read the reviews
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--wire" href="#stars">The starred rooms</a>
+      </div>
+    </div>
+
+    <figure class="lede__plate" id="ledePlate">
+      <div class="plate__frame">
+        <img id="ledeImg" alt="" loading="eager" decoding="async">
+        <span class="plate__stamp" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="arc" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <text><textPath href="#arc">· LATEST · ON THE BLOG · LATEST · ON THE BLOG </textPath></text></svg>
+        </span>
+      </div>
+      <figcaption class="plate__cap">
+        <span class="plate__kick" id="ledeKick">—</span>
+        <a class="plate__t" id="ledeTitle" href="#" target="_blank" rel="noopener">—</a>
+        <span class="plate__date" id="ledeDate"></span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- ── ledger ── -->
+  <div class="ledger" id="ledger">
+    <div class="ledger__cell">
+      <b class="ledger__n" data-count data-from="archive">0</b>
+      <span class="ledger__l">Posts published</span>
+    </div>
+    <div class="ledger__cell">
+      <b class="ledger__n" data-count data-from="years">0</b>
+      <span class="ledger__l">Years running</span>
+    </div>
+    <div class="ledger__cell">
+      <b class="ledger__n" data-count data-from="michelin">0</b>
+      <span class="ledger__l">Starred rooms</span>
+    </div>
+    <div class="ledger__cell">
+      <b class="ledger__n" data-count data-from="recipes">0</b>
+      <span class="ledger__l">Recipes</span>
+    </div>
+    <div class="ledger__cell">
+      <b class="ledger__n" data-count data-from="podcasts">0</b>
+      <span class="ledger__l">Podcast episodes</span>
+    </div>
+    <div class="ledger__cell" id="igCell" hidden>
+      <b class="ledger__n" data-count data-from="igFollowers">0</b>
+      <span class="ledger__l">On Instagram</span>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════ 01 · THE REVIEWS ══════════════ -->
+<section class="sec" id="reviews">
+  <div class="sec__head">
+    <span class="kick reveal">01 — The Reviews</span>
+    <h2 class="sec__t reveal">Where he <em>has been</em></h2>
+    <p class="sec__sub reveal">
+      The most recent <b id="renderCount">—</b> write-ups, newest first, pulled straight
+      off the blog. Every headline opens the full review over there.
+    </p>
+  </div>
+
+  <div class="desk reveal">
+    <div class="desk__row">
+      <div class="tabs" id="areaTabs" role="tablist" aria-label="Filter by place"></div>
+    </div>
+    <div class="desk__row desk__row--split">
+      <div class="tabs tabs--sm" id="cuisineTabs" role="tablist" aria-label="Filter by kind of food"></div>
+      <label class="find">
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.8 15.8 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="search" id="find" placeholder="Find a restaurant…" autocomplete="off" spellcheck="false" aria-label="Search the reviews">
+        <button type="button" class="find__x" id="findClear" hidden aria-label="Clear search">&times;</button>
+      </label>
+    </div>
+  </div>
+
+  <p class="tally" id="tally" role="status" aria-live="polite"></p>
+
+  <div class="cards" id="cards"><!-- injected --></div>
+
+  <div class="more">
+    <button class="btn btn--wire" id="moreBtn" hidden><span id="moreLabel">More</span></button>
+  </div>
+
+  <p class="note reveal">
+    Older than this? The archive runs back to 2011 —
+    <a id="archiveLink" href="https://www.ijustwanttoeat.com/post" target="_blank" rel="noopener">all of it lives on the blog</a>.
+  </p>
+</section>
+
+<!-- ══════════════ 02 · THE STARRED ROOMS ══════════════ -->
+<section class="sec sec--dark" id="stars">
+  <div class="stars__glow" aria-hidden="true"></div>
+  <div class="sec__head">
+    <span class="kick reveal">02 — The Starred Rooms</span>
+    <h2 class="sec__t reveal">The <em>Michelin</em> list</h2>
+    <p class="sec__sub reveal">
+      The starred dining rooms he has sat down in and written up — Madison Square Park
+      to Greenpoint. His own list, kept by hand.
+    </p>
+  </div>
+
+  <ol class="stars" id="stars-list"><!-- injected --></ol>
+
+  <div class="more">
+    <button class="btn btn--wire" id="starMore" hidden><span id="starMoreLabel">More</span></button>
+  </div>
+
+  <p class="stars__foot reveal">
+    <span aria-hidden="true">★</span>
+    Stars belong to the Michelin Guide; the opinions are entirely his.
+  </p>
+</section>
+
+<!-- ══════════════ 03 · PICK OF THE MONTH ══════════════ -->
+<section class="sec" id="picks">
+  <div class="sec__head sec__head--row">
+    <div>
+      <span class="kick reveal">03 — Pick of the Month</span>
+      <h2 class="sec__t reveal">The ones he <em>keeps</em></h2>
+    </div>
+    <p class="sec__sub sec__sub--side reveal">
+      A slower, older tradition on the blog: one place singled out and remembered.
+      Drag or scroll the rail.
+    </p>
+  </div>
+  <div class="rail-scroll" id="picks-rail"><!-- injected --></div>
+</section>
+
+<!-- ══════════════ PULL QUOTE ══════════════ -->
+<section class="quote">
+  <div class="quote__in">
+    <p class="quote__t">
+      <span class="w">&ldquo;No,</span> <span class="w">I</span> <span class="w">just</span>
+      <span class="w">want</span> <span class="w">to</span> <span class="w hl">eat.&rdquo;</span>
+    </p>
+    <p class="quote__by">
+      His answer, in 2011, when his wife suggested he might end up on a Food Network
+      show one day. It became the name.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════ 04 · FROM THE KITCHEN ══════════════ -->
+<section class="sec sec--warm" id="kitchen">
+  <div class="sec__head">
+    <span class="kick reveal">04 — From the Kitchen</span>
+    <h2 class="sec__t reveal">He also <em>cooks</em></h2>
+    <p class="sec__sub reveal">
+      Recipes written down over the years, mostly French, mostly bread. Card fronts
+      only — the method is on the blog.
+    </p>
+  </div>
+  <div class="recipes" id="recipes"><!-- injected --></div>
+
+  <div class="more">
+    <button class="btn btn--wire" id="rcpMore" hidden><span id="rcpMoreLabel">More</span></button>
+  </div>
+</section>
+
+<!-- ══════════════ 05 · THE BEAT ══════════════ -->
+<section class="sec" id="beat">
+  <div class="sec__head">
+    <span class="kick reveal">05 — The Beat</span>
+    <h2 class="sec__t reveal">His <em>territory</em></h2>
+    <p class="sec__sub reveal">
+      Two states, one river, and a very short commute to dinner. Counted across the
+      <b id="beatN">—</b> reviews on this page.
+    </p>
+  </div>
+
+  <div class="beat">
+    <div class="beat__col">
+      <ol class="beat__bars" id="beatBars"><!-- injected --></ol>
+      <div class="more">
+        <button class="btn btn--wire" id="beatMore" hidden><span id="beatMoreLabel">More</span></button>
+      </div>
+    </div>
+
+    <aside class="beat__side reveal">
+      <h3 class="beat__h">Neighbourhoods on the record</h3>
+      <div class="chips" id="hoodChips"><!-- injected --></div>
+      <a class="btn btn--wire btn--full" id="mapLink" href="https://goo.gl/maps/1RotT1V7z1w" target="_blank" rel="noopener">
+        Open his restaurant map
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </aside>
+  </div>
+</section>
+
+<!-- ══════════════ 06 · AT THE TABLE (PODCAST) ══════════════ -->
+<section class="sec sec--warm" id="studio">
+  <div class="sec__head sec__head--row">
+    <div>
+      <span class="kick reveal">06 — At the Table</span>
+      <h2 class="sec__t reveal">The <em>podcast</em></h2>
+    </div>
+    <p class="sec__sub sec__sub--side reveal">
+      Long conversations with the people who actually make the food: chefs, bakers,
+      brewers, and one carnivore connoisseur.
+    </p>
+  </div>
+  <ol class="pods" id="pods"><!-- injected --></ol>
+
+  <div class="more">
+    <button class="btn btn--wire" id="podMore" hidden><span id="podMoreLabel">More</span></button>
+  </div>
+</section>
+
+<!-- ══════════════ 07 · THE BLOGGER ══════════════ -->
+<section class="sec" id="about">
+  <div class="about">
+    <div class="about__col">
+      <span class="kick reveal">07 — The Blogger</span>
+      <h2 class="sec__t reveal">Fifteen years, <em>one appetite</em></h2>
+      <div class="about__body">
+        <p class="reveal">
+          Jean-Philippe Gerbi is French, lives in the New York area, and started
+          <i>I Just Want To Eat</i> in July 2011 because he liked eating and liked
+          talking about eating rather more. Years of travel had already done the
+          hard part: there is no cuisine he will not sit down to.
+        </p>
+        <p class="reveal">
+          Nearly every photograph on the blog is his own, shot without flash so the
+          colours survive, on a camera he carries everywhere. The logo was painted
+          by his wife Jodi.
+        </p>
+        <p class="reveal">
+          What he will not do is as much of the point as what he will. No sponsored
+          guest posts. No advertorial. No review of a room he has not eaten in.
+        </p>
+        <ul class="about__facts reveal">
+          <li><em>Home</em><b>New York &amp; New Jersey</b></li>
+          <li><em>Since</em><b>July 2011</b></li>
+          <li><em>Beat</em><b>Restaurants, recipes, one podcast</b></li>
+          <li><em>Camera</em><b>His own, always, no flash</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about__side reveal">
+      <div class="crest">
+        <img src="assets/logo.jpg" alt="The I Just Want To Eat logo, painted by Jodi Gerbi">
+      </div>
+      <p class="crest__cap">The mark, painted by Jodi Gerbi.</p>
+      <div class="follow" id="follow"><!-- injected --></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 08 · WRITE IN ══════════════ -->
+<section class="sec sec--warm" id="write">
+  <div class="sec__head">
+    <span class="kick reveal">08 — Write In</span>
+    <h2 class="sec__t reveal">Somewhere he <em>should eat</em></h2>
+    <p class="sec__sub reveal">
+      A tip, a table, an invitation. Not advertising — he has been clear about that
+      for fifteen years.
+    </p>
+  </div>
+
+  <form class="letter reveal" id="letterForm" novalidate>
+    <!-- Web3Forms: this key is public by design — it only permits submissions. -->
+    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+    <input type="hidden" name="subject" value="A tip from the I Just Want To Eat site">
+    <input type="hidden" name="from_name" value="I Just Want To Eat — website">
+    <!-- honeypot: people never see it, bots fill it in -->
+    <input type="checkbox" name="botcheck" class="letter__hp" tabindex="-1" autocomplete="off">
+
+    <div class="letter__row">
+      <label class="fld">
+        <span>Your name</span>
+        <input type="text" name="name" required autocomplete="name" placeholder="Who's writing?">
+      </label>
+      <label class="fld">
+        <span>Email</span>
+        <input type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      </label>
+    </div>
+
+    <div class="letter__row">
+      <label class="fld">
+        <span>The restaurant</span>
+        <input type="text" name="place" required placeholder="Name of the place">
+      </label>
+      <label class="fld">
+        <span>Where</span>
+        <input type="text" name="where" placeholder="Town or neighbourhood">
+      </label>
+    </div>
+
+    <label class="fld">
+      <span>What should he order? <i>optional</i></span>
+      <textarea name="message" rows="4" placeholder="The dish worth the trip, and anything he should know before he walks in."></textarea>
+    </label>
+
+    <div class="letter__foot">
+      <button type="submit" class="btn btn--ink" id="letterSend">
+        Send the tip
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="letter__note" id="letterNote" role="status" aria-live="polite"></p>
+    </div>
+  </form>
+</section>
+
+<!-- ══════════════ COLOPHON ══════════════ -->
+<footer class="colophon">
+  <div class="colophon__marq" aria-hidden="true">
+    <div class="colophon__track">
+      <span>I JUST WANT TO EAT <b>·</b> NEW YORK <b>·</b> NEW JERSEY <b>·</b> SINCE 2011 <b>·</b> </span>
+      <span>I JUST WANT TO EAT <b>·</b> NEW YORK <b>·</b> NEW JERSEY <b>·</b> SINCE 2011 <b>·</b> </span>
+    </div>
+  </div>
+
+  <div class="colophon__body">
+    <p class="colophon__word">I Just Want To Eat<sup>®</sup></p>
+    <div class="colophon__links" id="footLinks"><!-- injected --></div>
+    <p class="colophon__fine">
+      Every review, photograph and recipe here is the work of Jean-Philippe Gerbi
+      and lives in full at
+      <a href="https://www.ijustwanttoeat.com" target="_blank" rel="noopener">ijustwanttoeat.com</a>,
+      where each headline on this page will take you.
+      <br>
+      <span class="colophon__stamp">This page refreshes itself &middot; last read <span id="stamp">—</span></span>
+    </p>
+  </div>
+</footer>
+
+<script src="data/site.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

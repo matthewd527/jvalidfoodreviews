@@ -124,8 +124,26 @@
   "7674312651958160671": {
     "name": "Cosimo's",
     "address": "100 NY-32, Central Valley, NY 10917, USA",
-    "status": "no_transcript",
-    "attempts": 4
+    "status": "scored",
+    "items": [
+      {
+        "item": "Chicken",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      },
+      {
+        "item": "Chicken",
+        "score": 4.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      }
+    ],
+    "attempts": 5
   },
   "7674263143853346078": {
     "name": "MaryAms MartHalal Foods & Gyro",
@@ -135,6 +153,121 @@
       {
         "item": "Spoken score",
         "score": 4.8
+      }
+    ],
+    "attempts": 1
+  },
+  "7675824499153046815": {
+    "name": "Binghamton University - Student Union",
+    "address": "Binghamton University, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7675765945238883614": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7675730627605318942": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7675548994025671966": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7675544021946600734": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7675148026201017631": {
+    "name": "",
+    "address": "",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Burger",
+        "score": 4.9
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.92
+      },
+      {
+        "item": "Sandwich",
+        "score": 5.0
+      },
+      {
+        "item": "Pretzel",
+        "score": 4.93
+      },
+      {
+        "item": "Pretzel",
+        "score": 4.9
+      },
+      {
+        "item": "Ice Cream",
+        "score": 5.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7675076150741224735": {
+    "name": "",
+    "address": "",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      }
+    ],
+    "attempts": 1
+  },
+  "7674728127423139102": {
+    "name": "Light Years Fermentation",
+    "address": "8784 NY-17C, Endicott, NY 13760, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 4.9
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7674650181270310175": {
+    "name": "",
+    "address": "",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.7
       }
     ],
     "attempts": 1

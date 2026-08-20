@@ -124,6 +124,40 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Cosimo's",
+      "place": "100 NY-32",
+      "address": "100 NY-32, Central Valley, NY 10917, USA",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Chicken",
+          "score": 4.8
+        },
+        {
+          "item": "Chicken",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7674312651958160671",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "MaryAms MartHalal Foods & Gyro",
       "place": "69 Court St",
       "address": "69 Court St, Binghamton, United States",
@@ -143,6 +177,126 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged burger spot",
+      "place": "Broome",
+      "address": "",
+      "score": 4.942,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Sandwich",
+          "score": 5.0
+        },
+        {
+          "item": "Ice Cream",
+          "score": 5.0
+        },
+        {
+          "item": "Pretzel",
+          "score": 4.93
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.92
+        },
+        {
+          "item": "Burger",
+          "score": 4.9
+        },
+        {
+          "item": "Pretzel",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7675148026201017631",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged off-menu spot",
+      "place": "",
+      "address": "",
+      "score": 4.55,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7675076150741224735",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Light Years Fermentation",
+      "place": "8784 NY-17C",
+      "address": "8784 NY-17C, Endicott, NY 13760, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7674728127423139102",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged off-menu spot",
+      "place": "",
+      "address": "",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.7
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7674650181270310175",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -157,9 +311,29 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Cosimo's",
-      "videoId": "7674312651958160671",
-      "why": "transcript not available yet - will keep trying"
+      "name": "Binghamton University - Student Union",
+      "videoId": "7675824499153046815",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7675765945238883614",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7675730627605318942",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7675548994025671966",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7675544021946600734",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

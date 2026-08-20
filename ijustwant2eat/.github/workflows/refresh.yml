@@ -1,0 +1,74 @@
+name: Refresh from the blog
+
+# NOTE: GitHub only runs workflows found in .github/workflows at the REPOSITORY
+# root. This copy lives beside the site so it travels with it; to switch it on,
+# move or symlink it to <repo>/.github/workflows/ijwte-refresh.yml and adjust
+# the `cd` below if the site is not at the repo root.
+
+on:
+  schedule:
+    # Once a day. Unlike a video feed, a blog archive cannot overflow: his posts
+    # stay at their URLs, and the walk goes 30 pages deep, so a missed day costs
+    # nothing. 06:17 UTC is early morning in New York, and the odd minute keeps
+    # the job out of the on-the-hour queue where runs are dropped first.
+    - cron: "17 6 * * *"
+  workflow_dispatch: {} # lets you run it by hand from the Actions tab
+
+concurrency:
+  group: ijwte-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read the blog
+        working-directory: ijustwant2eat
+        env:
+          IJWTE_PAGES: "30"
+          IG_HANDLE: "" # set to ijustwant2eat to switch Instagram on; see README
+        run: python3 scripts/update.py
+
+      - name: Commit any changes
+        id: commit
+        run: |
+          git config user.name  "ijwte-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ijustwant2eat/data
+          if git diff --staged --quiet; then
+            echo "nothing changed"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: refresh I Just Want To Eat $(date -u +'%Y-%m-%d')"
+            # Another run may have landed while this one was working, so rebase
+            # onto the remote rather than failing the push.
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "push attempt $attempt failed, retrying"
+              sleep 5
+            done
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # A scheduled workflow is disabled automatically after 60 days with no
+      # repository activity, and bot pushes made with GITHUB_TOKEN do not reset
+      # that clock. On quiet stretches, touch a heartbeat so the schedule lives.
+      - name: Keep the schedule alive
+        if: steps.commit.outputs.changed == 'false'
+        run: |
+          mkdir -p .github
+          date -u +%Y-%m-%dT%H:%M:%SZ > .github/ijwte-last-run.txt
+          git add .github/ijwte-last-run.txt
+          git commit -m "chore: heartbeat $(date -u +%Y-%m-%d)" || exit 0
+          git push
