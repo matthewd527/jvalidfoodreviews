@@ -241,7 +241,21 @@ body.is-loaded .preload{animation:killIt 0s 1.05s forwards}
   0%,100%{transform:translateY(0) rotate(-8deg)}
   50%{transform:translateY(-24px) rotate(10deg)}
 }
-@media (max-width:760px){.fl--5,.fl--6{display:none}}
+/* Once the hero grid collapses to one column (<=980px) the desktop positions
+   are wrong: they were tuned for an empty right-hand column that no longer
+   exists, so they land on the title, the bio and the portrait.
+
+   These four sit in measured gaps instead, and each is separated from content
+   HORIZONTALLY rather than vertically - the bob animation drifts +/-24px up and
+   down, so a vertical gap can be crossed but a horizontal one cannot. Two more
+   would only crowd a phone, so 5 and 6 stay desktop-only. */
+@media (max-width:980px){
+  .fl--1{top:14%;right:5%;left:auto}    /* right of the title, which is short here */
+  .fl--3{top:68%;right:3%;left:auto}    /* outside the portrait ring, right */
+  .fl--2{top:72%;left:3%;right:auto}    /* outside the portrait ring, left */
+  .fl--4{top:93%;left:8%;right:auto}    /* in the clear band under the badge */
+  .fl--5,.fl--6{display:none}
+}
 
 .hero__grid{
   position:relative;z-index:2;
@@ -252,14 +266,6 @@ body.is-loaded .preload{animation:killIt 0s 1.05s forwards}
 @media (max-width:980px){
   .hero__grid{grid-template-columns:1fr;gap:2.4rem}
   .hero__type{max-width:none}
-}
-@media (max-width:640px){
-  /* short phones: never centre-clip the top of the hero */
-  .hero{justify-content:flex-start;padding-top:6.5rem;padding-bottom:5.5rem}
-  .hero__face{width:min(200px,52vw)}
-  .hero__actions{width:100%}
-  .hero__actions .btn{flex:1 1 100%;justify-content:center}
-  .scrollcue{display:none}
 }
 
 .eyebrow{
@@ -378,6 +384,20 @@ body:not(.is-loaded) .word{animation-play-state:paused}
 }
 .scrollcue i{display:block;width:1.5px;height:38px;background:linear-gradient(var(--mustard),transparent);animation:cue 1.9s ease-in-out infinite}
 @keyframes cue{0%,100%{transform:scaleY(.35);opacity:.45}50%{transform:scaleY(1);opacity:1}}
+
+/* Phone refinements for the hero.
+   This block MUST stay below the base rules it overrides: the media query adds
+   no specificity, so at equal specificity source order decides. It previously
+   sat above .hero__face, .hero__actions and .scrollcue, which silently killed
+   three of these five rules. */
+@media (max-width:640px){
+  /* short phones: never centre-clip the top of the hero */
+  .hero{justify-content:flex-start;padding-top:6.5rem;padding-bottom:5.5rem}
+  .hero__face{width:min(200px,52vw)}
+  .hero__actions{width:100%}
+  .hero__actions .btn{flex:1 1 100%;justify-content:center}
+  .scrollcue{display:none}
+}
 
 /* ─── Tickers ──────────────────────────────────── */
 
