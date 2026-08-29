@@ -1,0 +1,28 @@
+# Cloudflare Pages header rules.
+#
+# The default here is public, max-age=14400 - four hours. That is wrong for
+# this site in two ways: a CSS or JS fix stays invisible to anyone who loaded
+# the page recently, and, worse, data/site.js is the whole point of the daily
+# job, so a four-hour browser cache means returning visitors read stale
+# follower counts and miss new videos.
+#
+# max-age=0 with must-revalidate does not mean "never cache". The browser keeps
+# the file and asks "changed?" on each load, getting a tiny 304 when it has
+# not. These files are a few KB, so that costs almost nothing and guarantees
+# nobody is ever looking at yesterday's numbers.
+
+/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/js/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# the auto-updating payload - freshness matters most here
+/data/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Thumbnails are written once per video and never rewritten, so they can sit in
+# the cache for a day. avatar.jpg is the exception - it re-syncs from Instagram
+# when he changes his picture - and a day's delay on that is fine.
+/assets/*
+  Cache-Control: public, max-age=86400
