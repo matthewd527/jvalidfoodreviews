@@ -271,5 +271,150 @@
       }
     ],
     "attempts": 1
+  },
+  "7679229262305496351": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7679226978356006175": {
+    "name": "Endwell",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7679208819406146846": {
+    "name": "De Island Hut",
+    "address": "136 Washington St, Binghamton, NY 13901, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Wings",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7679204686481673502": {
+    "name": "De Island Hut",
+    "address": "136 Washington St, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7679185760095980830": {
+    "name": "Binghamton",
+    "address": "New York, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.2
+      }
+    ],
+    "attempts": 1
+  },
+  "7679172402118397215": {
+    "name": "McDonald's",
+    "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7679171322320047391": {
+    "name": "McDonald's",
+    "address": "7331 N Figueroa St, Eagle Rock, CA 90041, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7679168487863979294": {
+    "name": "Shelley's Deli",
+    "address": "1003.5 Union Center Maine Hwy, Endicott, NY 13760, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7679110730712435999": {
+    "name": "Langland's",
+    "address": "1771 Union Center Maine Hwy, Endicott, NY 13760, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 2.9
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      }
+    ],
+    "attempts": 1
+  },
+  "7679075089173843230": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7677583280132099358": {
+    "name": "Binghamton University - Student Union",
+    "address": "Binghamton University, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 1.2
+      },
+      {
+        "item": "Spoken score",
+        "score": 1.1
+      }
+    ],
+    "attempts": 1
   }
 }

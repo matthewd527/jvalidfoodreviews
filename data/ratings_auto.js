@@ -297,6 +297,196 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "De Island Hut",
+      "place": "136 Washington St",
+      "address": "136 Washington St, Binghamton, NY 13901, USA",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Wings",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7679208819406146846",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 3.2,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7679185760095980830",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "McDonald's",
+      "place": "3136 Vestal Pkwy E",
+      "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.667,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7679172402118397215",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "McDonald's",
+      "place": "7331 N Figueroa St",
+      "address": "7331 N Figueroa St, Eagle Rock, CA 90041, USA",
+      "score": 4.55,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7679171322320047391",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Shelley's Deli",
+      "place": "1003.5 Union Center Maine Hwy",
+      "address": "1003.5 Union Center Maine Hwy, Endicott, NY 13760, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7679168487863979294",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Langland's",
+      "place": "1771 Union Center Maine Hwy",
+      "address": "1771 Union Center Maine Hwy, Endicott, NY 13760, USA",
+      "score": 3.85,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Pizza",
+          "score": 2.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7679110730712435999",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University - Student Union",
+      "place": "Binghamton University",
+      "address": "Binghamton University, United States",
+      "score": 1.15,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.2
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7677583280132099358",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -334,6 +524,26 @@ window.RATINGS_AUTO = {
       "name": "Untagged off-menu spot",
       "videoId": "7675544021946600734",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7679229262305496351",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Endwell",
+      "videoId": "7679226978356006175",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "De Island Hut",
+      "videoId": "7679204686481673502",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged pizza spot",
+      "videoId": "7679075089173843230",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
