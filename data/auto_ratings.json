@@ -283,7 +283,7 @@
     "name": "Endwell",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7679208819406146846": {
     "name": "De Island Hut",
@@ -309,7 +309,7 @@
     "name": "De Island Hut",
     "address": "136 Washington St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7679185760095980830": {
     "name": "Binghamton",
@@ -399,7 +399,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7677583280132099358": {
     "name": "Binghamton University - Student Union",
@@ -415,6 +415,12 @@
         "score": 1.1
       }
     ],
+    "attempts": 1
+  },
+  "7679462865773890846": {
+    "name": "Paula\u2019s Coffee House",
+    "address": "108 N Page Ave, Endicott, NY 13760, USA",
+    "status": "no_transcript",
     "attempts": 1
   }
 }

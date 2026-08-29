@@ -544,6 +544,11 @@ window.RATINGS_AUTO = {
       "name": "Untagged pizza spot",
       "videoId": "7679075089173843230",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Paula\u2019s Coffee House",
+      "videoId": "7679462865773890846",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
