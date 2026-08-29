@@ -1,5 +1,9 @@
 # JVALID FOOD REVIEWS
 
+**Live at [jvalidfoodreviews.com](https://jvalidfoodreviews.com)** — hosted on
+Cloudflare Pages, which redeploys automatically on every push to this repo,
+including the five-times-daily data refreshes GitHub Actions commits.
+
 A one-page, heavily animated site for [@jvalidfoodreviews](https://www.tiktok.com/@jvalidfoodreviews),
 which **refreshes its own numbers once a day** with no human involvement.
 
