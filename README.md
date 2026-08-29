@@ -7,6 +7,25 @@ including the five-times-daily data refreshes GitHub Actions commits.
 A one-page, heavily animated site for [@jvalidfoodreviews](https://www.tiktok.com/@jvalidfoodreviews),
 which **refreshes its own numbers once a day** with no human involvement.
 
+## Caching (two settings, one in the repo and one not)
+
+The site's whole promise is that it updates itself, so nothing may be cached
+long enough to hide fresh data. Two things control that:
+
+1. **`_headers`** (in this repo) tells Cloudflare Pages to serve `css/`, `js/`
+   and `data/` with `max-age=0, must-revalidate` — the browser keeps the file
+   and revalidates on each load, getting a small 304 when nothing changed.
+   `assets/` keeps a one-day cache since thumbnails are written once per video.
+2. **Browser Cache TTL** in the Cloudflare *zone*
+   (Caching → Configuration) must be **"Respect Existing Headers"**.
+
+The second one is not in this repo and is easy to miss. Cloudflare defaults it
+to **4 hours**, and the zone setting *overrides* whatever `_headers` says — so
+with the default, `data/site.js` sat in visitors' browsers for four hours and
+they read stale follower counts no matter how often the job ran. The giveaway
+is `cache-control: max-age=14400` on the custom domain while
+`jvalidfoodreviews.pages.dev` correctly reports `max-age=0`.
+
 ## Run it locally
 
 Double-click `index.html`, or serve it:
