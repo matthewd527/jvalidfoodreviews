@@ -76,25 +76,5 @@ jobs:
           git commit -m "chore: heartbeat $(date -u +%Y-%m-%d)" || exit 0
           git push
 
-  deploy:
-    needs: refresh
-    runs-on: ubuntu-latest
-    # Job-level permissions REPLACE the workflow-level block rather than adding
-    # to it, so contents: read has to be repeated here for checkout to work.
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main # pick up the commit the refresh job just pushed
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - id: deploy
-        uses: actions/deploy-pages@v4
+# Deployment is Cloudflare Pages' job: it watches this repo and publishes on
+# every push, including the ones this workflow makes. Nothing to do here.
