@@ -487,6 +487,40 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Paula\u2019s Coffee House",
+      "place": "108 N Page Ave",
+      "address": "108 N Page Ave, Endicott, NY 13760, USA",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7679462865773890846",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -546,8 +580,18 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Paula\u2019s Coffee House",
-      "videoId": "7679462865773890846",
+      "name": "Binghamton",
+      "videoId": "7679534000087534878",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Nick's",
+      "videoId": "7679523460409789726",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Joey's",
+      "videoId": "7679504197045488926",
       "why": "transcript not available yet - will keep trying"
     }
   ]
