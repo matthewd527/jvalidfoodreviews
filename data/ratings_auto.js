@@ -546,6 +546,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Nick's",
+      "place": "117 E Main St",
+      "address": "117 E Main St, Endicott, NY 13760, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7679523460409789726",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Joey's",
       "place": "200 Oak Hill Ave",
       "address": "200 Oak Hill Ave, Endicott, NY 13760, USA",
@@ -560,6 +582,58 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7679504197045488926",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Olive Garden Italian Restaurant",
+      "place": "777 NJ-18",
+      "address": "777 NJ-18, East Brunswick, NJ 08816, USA",
+      "score": 4.733,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Chicken",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7679576634927664414",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Olive Garden Italian Restaurant",
+      "place": "2 Times Sq",
+      "address": "2 Times Sq, New York, NY 10036, USA",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7679616007631162654",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -624,18 +698,13 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Nick's",
-      "videoId": "7679523460409789726",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7679607654670470431",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Olive Garden Italian Restaurant",
-      "videoId": "7679576634927664414",
+      "name": "Untagged off-menu spot",
+      "videoId": "7679612581916527902",
       "why": "transcript not available yet - will keep trying"
     }
   ]
