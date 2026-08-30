@@ -705,6 +705,21 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7679612581916527902",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7679858010881068319",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Owego Originals Italian",
+      "videoId": "7679850913317604638",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Owego Donut & Beer Co.",
+      "videoId": "7679837873306193183",
       "why": "transcript not available yet - will keep trying"
     }
   ]

@@ -481,7 +481,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7679576634927664414": {
     "name": "Olive Garden Italian Restaurant",
@@ -518,6 +518,25 @@
   "7679612581916527902": {
     "name": "",
     "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
+  },
+  "7679858010881068319": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7679850913317604638": {
+    "name": "Owego Originals Italian",
+    "address": "23 Lake St, Owego, NY 13827, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7679837873306193183": {
+    "name": "Owego Donut & Beer Co.",
+    "address": "229 North Ave, Owego, NY 13827, USA",
     "status": "no_transcript",
     "attempts": 1
   }
