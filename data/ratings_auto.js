@@ -639,6 +639,62 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Owego Donut & Beer Co.",
+      "place": "229 North Ave",
+      "address": "229 North Ave, Owego, NY 13827, USA",
+      "score": 4.075,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7679837873306193183",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Oakdale Commons",
+      "place": "601-635 Harry L Dr",
+      "address": "601-635 Harry L Dr, Johnson City, NY 13790, USA",
+      "score": 1.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7679868817727687967",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -718,8 +774,18 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Owego Donut & Beer Co.",
-      "videoId": "7679837873306193183",
+      "name": "Binghamton University",
+      "videoId": "7679911914910076190",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Dave & Buster's Johnson City, NY",
+      "videoId": "7679902728373652766",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Dave & Buster's",
+      "videoId": "7679894775851470110",
       "why": "transcript not available yet - will keep trying"
     }
   ]
