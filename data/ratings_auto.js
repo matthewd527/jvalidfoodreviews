@@ -521,6 +521,50 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7679534000087534878",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Joey's",
+      "place": "200 Oak Hill Ave",
+      "address": "200 Oak Hill Ave, Endicott, NY 13760, USA",
+      "score": 3.9,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7679504197045488926",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -580,18 +624,18 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Binghamton",
-      "videoId": "7679534000087534878",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Nick's",
       "videoId": "7679523460409789726",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Joey's",
-      "videoId": "7679504197045488926",
+      "name": "Untagged off-menu spot",
+      "videoId": "7679607654670470431",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Olive Garden Italian Restaurant",
+      "videoId": "7679576634927664414",
       "why": "transcript not available yet - will keep trying"
     }
   ]

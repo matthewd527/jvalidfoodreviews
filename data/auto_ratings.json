@@ -283,7 +283,7 @@
     "name": "Endwell",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7679208819406146846": {
     "name": "De Island Hut",
@@ -309,7 +309,7 @@
     "name": "De Island Hut",
     "address": "136 Washington St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7679185760095980830": {
     "name": "Binghamton",
@@ -399,7 +399,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7677583280132099358": {
     "name": "Binghamton University - Student Union",
@@ -444,18 +444,42 @@
   "7679534000087534878": {
     "name": "Binghamton",
     "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Chicken",
+        "score": 5.0
+      }
+    ],
+    "attempts": 2
   },
   "7679523460409789726": {
     "name": "Nick's",
     "address": "117 E Main St, Endicott, NY 13760, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7679504197045488926": {
     "name": "Joey's",
     "address": "200 Oak Hill Ave, Endicott, NY 13760, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.9
+      }
+    ],
+    "attempts": 2
+  },
+  "7679607654670470431": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7679576634927664414": {
+    "name": "Olive Garden Italian Restaurant",
+    "address": "777 NJ-18, East Brunswick, NJ 08816, USA",
     "status": "no_transcript",
     "attempts": 1
   }
