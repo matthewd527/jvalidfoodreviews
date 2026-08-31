@@ -698,6 +698,88 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 2.05,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.2
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7679911914910076190",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Dave & Buster's Johnson City, NY",
+      "place": "405 Reynolds Rd",
+      "address": "405 Reynolds Rd, Johnson City, NY 13790, USA",
+      "score": 4.85,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Ice Cream",
+          "score": 4.9
+        },
+        {
+          "item": "Burger",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7679902728373652766",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Dave & Buster's",
+      "place": "10727 Composite Dr",
+      "address": "10727 Composite Dr, Dallas, United States",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7679894775851470110",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Oakdale Commons",
       "place": "601-635 Harry L Dr",
       "address": "601-635 Harry L Dr, Johnson City, NY 13790, USA",
@@ -712,6 +794,86 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7679868817727687967",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Bud's Place",
+      "place": "4740 NY-434",
+      "address": "4740 NY-434, Apalachin, NY 13732, USA",
+      "score": 4.76,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7679982020147301663",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Fuddy Duddy's Confectionery",
+      "place": "27 Lake St",
+      "address": "27 Lake St, Owego, NY 13827, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7679922382554844446",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -813,28 +975,13 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Binghamton University",
-      "videoId": "7679911914910076190",
-      "why": "transcript not available yet - will keep trying"
+      "name": "Untagged off-menu spot",
+      "videoId": "7680003788308090143",
+      "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Dave & Buster's Johnson City, NY",
-      "videoId": "7679902728373652766",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Dave & Buster's",
-      "videoId": "7679894775851470110",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Bud's Place",
-      "videoId": "7679982020147301663",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Fuddy Duddy's Confectionery",
-      "videoId": "7679922382554844446",
+      "name": "Binghamton",
+      "videoId": "7679993002848275743",
       "why": "transcript not available yet - will keep trying"
     }
   ]
