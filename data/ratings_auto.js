@@ -901,6 +901,92 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "The Upper Crust",
+      "place": "15 Hawley St",
+      "address": "15 Hawley St, Binghamton, NY 13901, USA",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Burger",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7680238264439065887",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 1.5,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 2.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7680182425892261150",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Little Venice Restaurant",
+      "place": "111 Chenango St",
+      "address": "111 Chenango St, Binghamton, NY 13901, USA",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7680178606370327839",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -982,6 +1068,26 @@ window.RATINGS_AUTO = {
     {
       "name": "Binghamton",
       "videoId": "7679993002848275743",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7680268526908640542",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Pudgie's Pizza, Pasta & Subs - Vestal",
+      "videoId": "7680260546423229727",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Best Bagels in Town",
+      "videoId": "7680229582250839326",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Target",
+      "videoId": "7680219637157596447",
       "why": "transcript not available yet - will keep trying"
     }
   ]

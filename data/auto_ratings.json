@@ -712,6 +712,86 @@
     "name": "Binghamton",
     "address": "New York, United States",
     "status": "no_transcript",
+    "attempts": 2
+  },
+  "7680268526908640542": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7680260546423229727": {
+    "name": "Pudgie's Pizza, Pasta & Subs - Vestal",
+    "address": "228 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7680238264439065887": {
+    "name": "The Upper Crust",
+    "address": "15 Hawley St, Binghamton, NY 13901, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Burger",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7680229582250839326": {
+    "name": "Best Bagels in Town",
+    "address": "526 Hooper Rd, Endwell, NY 13760, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7680219637157596447": {
+    "name": "Target",
+    "address": "3112 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7680182425892261150": {
+    "name": "Binghamton University Nature Preserve",
+    "address": "South Rd, Broome, New York 13850, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 1.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 2.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7680178606370327839": {
+    "name": "Little Venice Restaurant",
+    "address": "111 Chenango St, Binghamton, NY 13901, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
     "attempts": 1
   }
 }
