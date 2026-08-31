@@ -481,7 +481,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7679576634927664414": {
     "name": "Olive Garden Italian Restaurant",
@@ -525,14 +525,21 @@
   "7679858010881068319": {
     "name": "",
     "address": "",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "no_scores",
+    "items": [],
+    "attempts": 3
   },
   "7679850913317604638": {
     "name": "Owego Originals Italian",
     "address": "23 Lake St, Owego, NY 13827, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 4.2
+      }
+    ],
+    "attempts": 3
   },
   "7679837873306193183": {
     "name": "Owego Donut & Beer Co.",
@@ -562,19 +569,19 @@
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7679902728373652766": {
     "name": "Dave & Buster's Johnson City, NY",
     "address": "405 Reynolds Rd, Johnson City, NY 13790, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7679894775851470110": {
     "name": "Dave & Buster's",
     "address": "10727 Composite Dr, Dallas, United States",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7679868817727687967": {
     "name": "Oakdale Commons",
@@ -584,6 +591,30 @@
       {
         "item": "Spoken score",
         "score": 1.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7679982020147301663": {
+    "name": "Bud's Place",
+    "address": "4740 NY-434, Apalachin, NY 13732, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7679922382554844446": {
+    "name": "Fuddy Duddy's Confectionery",
+    "address": "27 Lake St, Owego, NY 13827, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7679915664995339551": {
+    "name": "Oakdale Pizza",
+    "address": "601-635 Harry L Dr, Johnson City, NY 13790, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.8
       }
     ],
     "attempts": 1

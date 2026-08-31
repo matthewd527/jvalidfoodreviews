@@ -642,6 +642,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Owego Originals Italian",
+      "place": "23 Lake St",
+      "address": "23 Lake St, Owego, NY 13827, USA",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7679850913317604638",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Owego Donut & Beer Co.",
       "place": "229 North Ave",
       "address": "229 North Ave, Owego, NY 13827, USA",
@@ -690,6 +712,28 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7679868817727687967",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Oakdale Pizza",
+      "place": "601-635 Harry L Dr",
+      "address": "601-635 Harry L Dr, Johnson City, NY 13790, USA",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7679915664995339551",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -766,12 +810,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7679858010881068319",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Owego Originals Italian",
-      "videoId": "7679850913317604638",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Binghamton University",
@@ -786,6 +825,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Dave & Buster's",
       "videoId": "7679894775851470110",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Bud's Place",
+      "videoId": "7679982020147301663",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Fuddy Duddy's Confectionery",
+      "videoId": "7679922382554844446",
       "why": "transcript not available yet - will keep trying"
     }
   ]
