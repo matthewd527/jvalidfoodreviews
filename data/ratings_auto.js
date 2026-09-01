@@ -1169,6 +1169,40 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Panera Bread",
+      "place": "225 West Dr Bldg 1",
+      "address": "225 West Dr Bldg 1, Vestal, NY 13850, USA",
+      "score": 4.75,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7680560478057221406",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
