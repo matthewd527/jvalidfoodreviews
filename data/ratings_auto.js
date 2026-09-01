@@ -1203,6 +1203,32 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Taylors Neighborhood Pizza and Sandwich Shoppe",
+      "place": "3017 Watson Blvd",
+      "address": "3017 Watson Blvd, Endicott, United States",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7680611455212834079",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -1284,6 +1310,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Binghamton",
       "videoId": "7679993002848275743",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Courtside Bar & Grill",
+      "videoId": "7680632019449171231",
       "why": "transcript not available yet - will keep trying"
     }
   ]

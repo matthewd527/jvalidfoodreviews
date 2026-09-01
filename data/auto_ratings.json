@@ -905,5 +905,27 @@
       }
     ],
     "attempts": 1
+  },
+  "7680632019449171231": {
+    "name": "Courtside Bar & Grill",
+    "address": "56 Court St, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7680611455212834079": {
+    "name": "Taylors Neighborhood Pizza and Sandwich Shoppe",
+    "address": "3017 Watson Blvd, Endicott, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 1
   }
 }
