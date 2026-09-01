@@ -986,6 +986,36 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Best Bagels in Town",
+      "place": "526 Hooper Rd",
+      "address": "526 Hooper Rd, Endwell, NY 13760, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7680229582250839326",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Target",
       "place": "3112 Vestal Pkwy E",
       "address": "3112 Vestal Pkwy E, Vestal, NY 13850, USA",
@@ -1056,6 +1086,36 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "K-BBQ & Hot Pot Vestal",
+      "place": "2445 Vestal Pkwy E",
+      "address": "2445 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 3.867,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Brisket",
+          "score": 4.6
+        },
+        {
+          "item": "Chicken",
+          "score": 4.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7680364974102940959",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "New York Pizzeria",
       "place": "71 Robinson St",
       "address": "71 Robinson St, Binghamton, NY 13901, USA",
@@ -1070,6 +1130,40 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7680282695569607966",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Crumbl Cookies",
+      "place": "7100 Santa Monica Blvd Unit 117",
+      "address": "7100 Santa Monica Blvd Unit 117, West Hollywood, CA 90046, USA",
+      "score": 4.4,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.3
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7680375670555299102",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -1152,6 +1246,11 @@ window.RATINGS_AUTO = {
       "name": "Untagged off-menu spot",
       "videoId": "7680003788308090143",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7679993002848275743",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

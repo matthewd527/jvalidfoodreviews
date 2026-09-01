@@ -709,9 +709,10 @@
     "attempts": 1
   },
   "7679993002848275743": {
-    "status": "error",
-    "why": "no state blob",
-    "attempts": 3
+    "name": "Binghamton",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 4
   },
   "7680268526908640542": {
     "name": "",
@@ -766,9 +767,24 @@
     "attempts": 1
   },
   "7680229582250839326": {
-    "status": "error",
-    "why": "no state blob",
-    "attempts": 2
+    "name": "Best Bagels in Town",
+    "address": "526 Hooper Rd, Endwell, NY 13760, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.7
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 3
   },
   "7680219637157596447": {
     "name": "Target",
@@ -811,9 +827,24 @@
     "attempts": 1
   },
   "7680364974102940959": {
-    "status": "error",
-    "why": "no state blob",
-    "attempts": 1
+    "name": "K-BBQ & Hot Pot Vestal",
+    "address": "2445 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.0
+      },
+      {
+        "item": "Chicken",
+        "score": 4.0
+      },
+      {
+        "item": "Brisket",
+        "score": 4.6
+      }
+    ],
+    "attempts": 2
   },
   "7680282695569607966": {
     "name": "New York Pizzeria",
@@ -823,6 +854,30 @@
       {
         "item": "Pizza",
         "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7680375670555299102": {
+    "name": "Crumbl Cookies",
+    "address": "7100 Santa Monica Blvd Unit 117, West Hollywood, CA 90046, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.3
       }
     ],
     "attempts": 1
