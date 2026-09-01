@@ -904,6 +904,50 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Untagged off-menu spot",
+      "place": "",
+      "address": "",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7680268526908640542",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Pudgie's Pizza, Pasta & Subs - Vestal",
+      "place": "228 Vestal Pkwy E",
+      "address": "228 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7680260546423229727",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "The Upper Crust",
       "place": "15 Hawley St",
       "address": "15 Hawley St, Binghamton, NY 13901, USA",
@@ -934,6 +978,28 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7680238264439065887",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Target",
+      "place": "3112 Vestal Pkwy E",
+      "address": "3112 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Ice Cream",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7680219637157596447",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -982,6 +1048,28 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7680178606370327839",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "New York Pizzeria",
+      "place": "71 Robinson St",
+      "address": "71 Robinson St, Binghamton, NY 13901, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7680282695569607966",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -1064,31 +1152,6 @@ window.RATINGS_AUTO = {
       "name": "Untagged off-menu spot",
       "videoId": "7680003788308090143",
       "why": "no numerical food score spoken on camera"
-    },
-    {
-      "name": "Binghamton",
-      "videoId": "7679993002848275743",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Untagged off-menu spot",
-      "videoId": "7680268526908640542",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Pudgie's Pizza, Pasta & Subs - Vestal",
-      "videoId": "7680260546423229727",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Best Bagels in Town",
-      "videoId": "7680229582250839326",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Target",
-      "videoId": "7680219637157596447",
-      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
