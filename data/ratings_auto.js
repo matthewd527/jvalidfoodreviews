@@ -1316,6 +1316,36 @@ window.RATINGS_AUTO = {
       "name": "Courtside Bar & Grill",
       "videoId": "7680632019449171231",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "videoId": "7680718588294090015",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7680690133347192094",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Wegmans",
+      "videoId": "7680684598665202974",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "DICK'S House of Sport",
+      "videoId": "7680680704174198046",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Grande Pizza",
+      "videoId": "7680671854041779486",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "The Kitchen Counter",
+      "videoId": "7680659647660969246",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
