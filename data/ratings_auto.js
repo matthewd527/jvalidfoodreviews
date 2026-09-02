@@ -1229,6 +1229,80 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Chipotle Mexican Grill",
+      "place": "4698 Vestal Pkwy E",
+      "address": "4698 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7680718588294090015",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Grande Pizza",
+      "place": "1250 Front St",
+      "address": "1250 Front St, Binghamton, NY 13901, USA",
+      "score": 3.35,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.5
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7680671854041779486",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "The Kitchen Counter",
+      "place": "501 W Main St in",
+      "address": "501 W Main St in, Endicott, NY 13760, USA",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7680659647660969246",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -1318,11 +1392,6 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Chipotle Mexican Grill",
-      "videoId": "7680718588294090015",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7680690133347192094",
       "why": "transcript not available yet - will keep trying"
@@ -1335,16 +1404,11 @@ window.RATINGS_AUTO = {
     {
       "name": "DICK'S House of Sport",
       "videoId": "7680680704174198046",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Grande Pizza",
-      "videoId": "7680671854041779486",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "The Kitchen Counter",
-      "videoId": "7680659647660969246",
+      "name": "Cold Stone Creamery",
+      "videoId": "7680727075099020574",
       "why": "transcript not available yet - will keep trying"
     }
   ]

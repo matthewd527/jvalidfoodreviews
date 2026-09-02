@@ -910,7 +910,7 @@
     "name": "Courtside Bar & Grill",
     "address": "56 Court St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7680611455212834079": {
     "name": "Taylors Neighborhood Pizza and Sandwich Shoppe",
@@ -931,36 +931,69 @@
   "7680718588294090015": {
     "name": "Chipotle Mexican Grill",
     "address": "4698 Vestal Pkwy E, Vestal, NY 13850, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 2
   },
   "7680690133347192094": {
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7680684598665202974": {
     "name": "Wegmans",
     "address": "650 Harry L Dr, Johnson City, NY 13790, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7680680704174198046": {
     "name": "DICK'S House of Sport",
     "address": "629 Harry L Dr, Johnson City, NY 13790, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7680671854041779486": {
     "name": "Grande Pizza",
     "address": "1250 Front St, Binghamton, NY 13901, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.5
+      },
+      {
+        "item": "Spoken score",
+        "score": 3.2
+      }
+    ],
+    "attempts": 2
   },
   "7680659647660969246": {
     "name": "The Kitchen Counter",
     "address": "501 W Main St in, Endicott, NY 13760, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      }
+    ],
+    "attempts": 2
+  },
+  "7680727075099020574": {
+    "name": "Cold Stone Creamery",
+    "address": "4700 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
     "attempts": 1
   }
