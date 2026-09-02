@@ -909,8 +909,14 @@
   "7680632019449171231": {
     "name": "Courtside Bar & Grill",
     "address": "56 Court St, Binghamton, NY 13901, USA",
-    "status": "no_transcript",
-    "attempts": 4
+    "status": "scored",
+    "items": [
+      {
+        "item": "Burger",
+        "score": 4.8
+      }
+    ],
+    "attempts": 5
   },
   "7680611455212834079": {
     "name": "Taylors Neighborhood Pizza and Sandwich Shoppe",
@@ -943,14 +949,21 @@
   "7680690133347192094": {
     "name": "",
     "address": "",
-    "status": "no_transcript",
-    "attempts": 3
+    "status": "no_scores",
+    "items": [],
+    "attempts": 4
   },
   "7680684598665202974": {
     "name": "Wegmans",
     "address": "650 Harry L Dr, Johnson City, NY 13790, USA",
-    "status": "no_transcript",
-    "attempts": 3
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 4
   },
   "7680680704174198046": {
     "name": "DICK'S House of Sport",
@@ -995,6 +1008,48 @@
     "name": "Cold Stone Creamery",
     "address": "4700 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
+  },
+  "7680963631189626143": {
+    "name": "Tony's Italian Grill",
+    "address": "2315 E Main St, Endwell, NY 13760, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7680958949901749535": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7680955490532068638": {
+    "name": "Bella's Deli Subs & Pizza",
+    "address": "132-138 W Main St, Endicott, NY 13760, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7680945377939393823": {
+    "name": "Cup O\u2019 Jo Caf\u00e9",
+    "address": "114 Odell Ave, Endicott, NY 13760, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7680931978874539295": {
+    "name": "Skylark Diner",
+    "address": "248 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7680926542553206046": {
+    "name": "Skylark Diner",
+    "address": "248 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }

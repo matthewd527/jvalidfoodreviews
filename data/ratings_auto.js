@@ -1206,6 +1206,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Courtside Bar & Grill",
+      "place": "56 Court St",
+      "address": "56 Court St, Binghamton, NY 13901, USA",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Burger",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7680632019449171231",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Taylors Neighborhood Pizza and Sandwich Shoppe",
       "place": "3017 Watson Blvd",
       "address": "3017 Watson Blvd, Endicott, United States",
@@ -1246,6 +1268,28 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7680718588294090015",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Wegmans",
+      "place": "650 Harry L Dr",
+      "address": "650 Harry L Dr, Johnson City, NY 13790, USA",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7680684598665202974",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -1298,6 +1342,28 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7680659647660969246",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Skylark Diner",
+      "place": "248 Vestal Pkwy E",
+      "address": "248 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7680931978874539295",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -1387,19 +1453,9 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Courtside Bar & Grill",
-      "videoId": "7680632019449171231",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7680690133347192094",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Wegmans",
-      "videoId": "7680684598665202974",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "DICK'S House of Sport",
@@ -1409,6 +1465,31 @@ window.RATINGS_AUTO = {
     {
       "name": "Cold Stone Creamery",
       "videoId": "7680727075099020574",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Tony's Italian Grill",
+      "videoId": "7680963631189626143",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged pizza spot",
+      "videoId": "7680958949901749535",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Bella's Deli Subs & Pizza",
+      "videoId": "7680955490532068638",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Cup O\u2019 Jo Caf\u00e9",
+      "videoId": "7680945377939393823",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Skylark Diner",
+      "videoId": "7680926542553206046",
       "why": "transcript not available yet - will keep trying"
     }
   ]
