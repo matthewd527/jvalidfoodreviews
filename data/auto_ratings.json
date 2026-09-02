@@ -910,7 +910,7 @@
     "name": "Courtside Bar & Grill",
     "address": "56 Court St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7680611455212834079": {
     "name": "Taylors Neighborhood Pizza and Sandwich Shoppe",
@@ -944,13 +944,13 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7680684598665202974": {
     "name": "Wegmans",
     "address": "650 Harry L Dr, Johnson City, NY 13790, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7680680704174198046": {
     "name": "DICK'S House of Sport",
@@ -995,6 +995,6 @@
     "name": "Cold Stone Creamery",
     "address": "4700 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   }
 }
