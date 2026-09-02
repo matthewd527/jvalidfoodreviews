@@ -1350,6 +1350,50 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Cold Stone Creamery",
+      "place": "4700 Vestal Pkwy E",
+      "address": "4700 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7680727075099020574",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Tony's Italian Grill",
+      "place": "2315 E Main St",
+      "address": "2315 E Main St, Endwell, NY 13760, USA",
+      "score": 3.9,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7680963631189626143",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Skylark Diner",
       "place": "248 Vestal Pkwy E",
       "address": "248 Vestal Pkwy E, Vestal, NY 13850, USA",
@@ -1461,16 +1505,6 @@ window.RATINGS_AUTO = {
       "name": "DICK'S House of Sport",
       "videoId": "7680680704174198046",
       "why": "no numerical food score spoken on camera"
-    },
-    {
-      "name": "Cold Stone Creamery",
-      "videoId": "7680727075099020574",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Tony's Italian Grill",
-      "videoId": "7680963631189626143",
-      "why": "transcript not available yet - will keep trying"
     },
     {
       "name": "Untagged pizza spot",

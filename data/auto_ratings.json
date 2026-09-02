@@ -1007,32 +1007,44 @@
   "7680727075099020574": {
     "name": "Cold Stone Creamery",
     "address": "4700 Vestal Pkwy E, Vestal, NY 13850, USA",
-    "status": "no_transcript",
-    "attempts": 3
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      }
+    ],
+    "attempts": 4
   },
   "7680963631189626143": {
     "name": "Tony's Italian Grill",
     "address": "2315 E Main St, Endwell, NY 13760, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.9
+      }
+    ],
+    "attempts": 2
   },
   "7680958949901749535": {
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7680955490532068638": {
     "name": "Bella's Deli Subs & Pizza",
     "address": "132-138 W Main St, Endicott, NY 13760, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7680945377939393823": {
     "name": "Cup O\u2019 Jo Caf\u00e9",
     "address": "114 Odell Ave, Endicott, NY 13760, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7680931978874539295": {
     "name": "Skylark Diner",
@@ -1050,6 +1062,6 @@
     "name": "Skylark Diner",
     "address": "248 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   }
 }
