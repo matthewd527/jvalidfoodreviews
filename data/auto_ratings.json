@@ -1032,19 +1032,39 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7680955490532068638": {
     "name": "Bella's Deli Subs & Pizza",
     "address": "132-138 W Main St, Endicott, NY 13760, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 3.2
+      }
+    ],
+    "attempts": 3
   },
   "7680945377939393823": {
     "name": "Cup O\u2019 Jo Caf\u00e9",
     "address": "114 Odell Ave, Endicott, NY 13760, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Chicken",
+        "score": 4.1
+      },
+      {
+        "item": "Spoken score",
+        "score": 3.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 3
   },
   "7680931978874539295": {
     "name": "Skylark Diner",
@@ -1062,6 +1082,28 @@
     "name": "Skylark Diner",
     "address": "248 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
+  },
+  "7681039505226288415": {
+    "name": "Paul & Sons Pizza",
+    "address": "67 1/2 Leroy St, Binghamton, NY 13905, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7681032163348712734": {
+    "name": "The Old Union Hotel",
+    "address": "246 Clinton St, Binghamton, NY 13905, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      },
+      {
+        "item": "Wings",
+        "score": 5.0
+      }
+    ],
+    "attempts": 1
   }
 }
