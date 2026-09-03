@@ -1032,7 +1032,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7680955490532068638": {
     "name": "Bella's Deli Subs & Pizza",
@@ -1082,13 +1082,13 @@
     "name": "Skylark Diner",
     "address": "248 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7681039505226288415": {
     "name": "Paul & Sons Pizza",
     "address": "67 1/2 Leroy St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7681032163348712734": {
     "name": "The Old Union Hotel",
@@ -1102,6 +1102,58 @@
       {
         "item": "Wings",
         "score": 5.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7681116454837570847": {
+    "name": "Binghamton",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7681113432464051486": {
+    "name": "Paul & Sons Pizza",
+    "address": "67 1/2 Leroy St, Binghamton, NY 13905, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7681104392795196703": {
+    "name": "sweetFrog",
+    "address": "2702 N Roberts Ave, Lumberton, NC 28358, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      }
+    ],
+    "attempts": 1
+  },
+  "7681097392590048542": {
+    "name": "Vestal Bakery & Deli",
+    "address": "176 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Slice",
+        "score": 4.5
+      },
+      {
+        "item": "Pizza",
+        "score": 3.9
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      },
+      {
+        "item": "Slice",
+        "score": 4.1
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
       }
     ],
     "attempts": 1

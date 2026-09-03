@@ -1491,6 +1491,66 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "sweetFrog",
+      "place": "2702 N Roberts Ave",
+      "address": "2702 N Roberts Ave, Lumberton, NC 28358, United States",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7681104392795196703",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Vestal Bakery & Deli",
+      "place": "176 Vestal Pkwy E",
+      "address": "176 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.4,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Slice",
+          "score": 4.5
+        },
+        {
+          "item": "Slice",
+          "score": 4.1
+        },
+        {
+          "item": "Pizza",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7681097392590048542",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -1597,6 +1657,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Paul & Sons Pizza",
       "videoId": "7681039505226288415",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7681116454837570847",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Paul & Sons Pizza",
+      "videoId": "7681113432464051486",
       "why": "transcript not available yet - will keep trying"
     }
   ]
