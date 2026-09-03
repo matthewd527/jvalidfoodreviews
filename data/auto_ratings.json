@@ -1088,7 +1088,7 @@
     "name": "Paul & Sons Pizza",
     "address": "67 1/2 Leroy St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7681032163348712734": {
     "name": "The Old Union Hotel",
@@ -1107,10 +1107,9 @@
     "attempts": 1
   },
   "7681116454837570847": {
-    "name": "Binghamton",
-    "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 3
+    "status": "error",
+    "why": "no itemStruct",
+    "attempts": 4
   },
   "7681113432464051486": {
     "name": "Paul & Sons Pizza",
@@ -1167,12 +1166,36 @@
   "7681340891692354847": {
     "name": "Rossi's Pizza (Endicott)",
     "address": "332 Oak Hill Ave, Endicott, NY 13760, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.9
+      }
+    ],
+    "attempts": 2
   },
   "7681299415302196511": {
     "name": "Dunkin'",
     "address": "Binghamton University, 4400 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7681379243607018782": {
+    "name": "Enzo\u2019s Pizza Co.",
+    "address": "269 Main St, Johnson City, NY 13790, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7681373364946029854": {
+    "name": "McDonald's",
+    "address": "7331 N Figueroa St, Eagle Rock, CA 90041, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7681351082567765278": {
+    "name": "Broadway Diner",
+    "address": "3140 Watson Blvd, Endwell, NY 13760, USA",
     "status": "no_transcript",
     "attempts": 1
   }

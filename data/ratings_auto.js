@@ -1573,6 +1573,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Rossi's Pizza (Endicott)",
+      "place": "332 Oak Hill Ave",
+      "address": "332 Oak Hill Ave, Endicott, NY 13760, USA",
+      "score": 3.9,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7681340891692354847",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -1682,18 +1704,23 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Binghamton",
-      "videoId": "7681116454837570847",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Rossi's Pizza (Endicott)",
-      "videoId": "7681340891692354847",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Dunkin'",
       "videoId": "7681299415302196511",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Enzo\u2019s Pizza Co.",
+      "videoId": "7681379243607018782",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7681373364946029854",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Broadway Diner",
+      "videoId": "7681351082567765278",
       "why": "transcript not available yet - will keep trying"
     }
   ]
