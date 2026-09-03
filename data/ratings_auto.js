@@ -1494,6 +1494,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Paul & Sons Pizza",
+      "place": "67 1/2 Leroy St",
+      "address": "67 1/2 Leroy St, Binghamton, NY 13905, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7681113432464051486",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "sweetFrog",
       "place": "2702 N Roberts Ave",
       "address": "2702 N Roberts Ave, Lumberton, NC 28358, United States",
@@ -1665,8 +1687,13 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Paul & Sons Pizza",
-      "videoId": "7681113432464051486",
+      "name": "Rossi's Pizza (Endicott)",
+      "videoId": "7681340891692354847",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Dunkin'",
+      "videoId": "7681299415302196511",
       "why": "transcript not available yet - will keep trying"
     }
   ]
