@@ -1252,22 +1252,26 @@
     "attempts": 2
   },
   "7681418718861200671": {
-    "name": "",
-    "address": "",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "error",
+    "why": "no itemStruct",
+    "attempts": 3
   },
   "7681416515530394910": {
-    "name": "Pizza",
-    "address": "Pisa, Italia",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "error",
+    "why": "no itemStruct",
+    "attempts": 3
   },
   "7681506321409117471": {
     "name": "Texas Roadhouse",
     "address": "4399 Vestal Pkwy E, Vestal, NY 13850, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7681479672273603871": {
     "name": "The Black Sheep Tavern",
@@ -1277,6 +1281,30 @@
       {
         "item": "Sandwich",
         "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7681692189310635294": {
+    "name": "The Black Sheep Tavern",
+    "address": "142 Washington St, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7681672093854911775": {
+    "name": "Binghamton University Nature Preserve",
+    "address": "South Rd, Broome, New York 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7681662128633220382": {
+    "name": "Binghamton University Nature Preserve",
+    "address": "South Rd, Broome, New York 13850, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.2
       }
     ],
     "attempts": 1

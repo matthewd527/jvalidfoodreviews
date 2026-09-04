@@ -1724,6 +1724,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Texas Roadhouse",
+      "place": "4399 Vestal Pkwy E",
+      "address": "4399 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7681506321409117471",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "The Black Sheep Tavern",
       "place": "142 Washington St",
       "address": "142 Washington St, Binghamton, NY 13901, USA",
@@ -1738,6 +1760,28 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7681479672273603871",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 3.2,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7681662128633220382",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -1852,18 +1896,13 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Untagged burger spot",
-      "videoId": "7681418718861200671",
+      "name": "The Black Sheep Tavern",
+      "videoId": "7681692189310635294",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Pizza",
-      "videoId": "7681416515530394910",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Texas Roadhouse",
-      "videoId": "7681506321409117471",
+      "name": "Binghamton University Nature Preserve",
+      "videoId": "7681672093854911775",
       "why": "transcript not available yet - will keep trying"
     }
   ]
