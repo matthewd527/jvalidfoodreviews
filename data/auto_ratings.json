@@ -1254,12 +1254,12 @@
   "7681418718861200671": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 3
+    "attempts": 4
   },
   "7681416515530394910": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 3
+    "attempts": 4
   },
   "7681506321409117471": {
     "name": "Texas Roadhouse",
@@ -1289,13 +1289,19 @@
     "name": "The Black Sheep Tavern",
     "address": "142 Washington St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7681672093854911775": {
     "name": "Binghamton University Nature Preserve",
     "address": "South Rd, Broome, New York 13850, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.3
+      }
+    ],
+    "attempts": 2
   },
   "7681662128633220382": {
     "name": "Binghamton University Nature Preserve",

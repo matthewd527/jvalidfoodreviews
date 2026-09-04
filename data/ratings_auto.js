@@ -1771,6 +1771,28 @@ window.RATINGS_AUTO = {
       "name": "Binghamton University Nature Preserve",
       "place": "South Rd",
       "address": "South Rd, Broome, New York 13850, USA",
+      "score": 4.3,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.3
+        }
+      ],
+      "posted": null,
+      "videoId": "7681672093854911775",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
       "score": 3.2,
       "tier": "fine",
       "overall": null,
@@ -1898,11 +1920,6 @@ window.RATINGS_AUTO = {
     {
       "name": "The Black Sheep Tavern",
       "videoId": "7681692189310635294",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Binghamton University Nature Preserve",
-      "videoId": "7681672093854911775",
       "why": "transcript not available yet - will keep trying"
     }
   ]
