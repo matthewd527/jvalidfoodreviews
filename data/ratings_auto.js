@@ -1595,6 +1595,72 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Enzo\u2019s Pizza Co.",
+      "place": "269 Main St",
+      "address": "269 Main St, Johnson City, NY 13790, USA",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Slice",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7681379243607018782",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "McDonald's",
+      "place": "7331 N Figueroa St",
+      "address": "7331 N Figueroa St, Eagle Rock, CA 90041, USA",
+      "score": 4.3,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Burger",
+          "score": 4.3
+        }
+      ],
+      "posted": null,
+      "videoId": "7681373364946029854",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Broadway Diner",
+      "place": "3140 Watson Blvd",
+      "address": "3140 Watson Blvd, Endwell, NY 13760, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7681351082567765278",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -1709,18 +1775,18 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Enzo\u2019s Pizza Co.",
-      "videoId": "7681379243607018782",
+      "name": "Binghamton University",
+      "videoId": "7681427122837146911",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "McDonald's",
-      "videoId": "7681373364946029854",
+      "name": "Untagged burger spot",
+      "videoId": "7681418718861200671",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Broadway Diner",
-      "videoId": "7681351082567765278",
+      "name": "Pizza",
+      "videoId": "7681416515530394910",
       "why": "transcript not available yet - will keep trying"
     }
   ]
