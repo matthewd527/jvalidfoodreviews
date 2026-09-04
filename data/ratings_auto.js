@@ -1598,6 +1598,44 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Dunkin'",
+      "place": "Binghamton University",
+      "address": "Binghamton University, 4400 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 3.72,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.2
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7681299415302196511",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Enzo\u2019s Pizza Co.",
       "place": "269 Main St",
       "address": "269 Main St, Johnson City, NY 13790, USA",
@@ -1656,6 +1694,50 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7681351082567765278",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7681427122837146911",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "The Black Sheep Tavern",
+      "place": "142 Washington St",
+      "address": "142 Washington St, Binghamton, NY 13901, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Sandwich",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7681479672273603871",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -1770,16 +1852,6 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Dunkin'",
-      "videoId": "7681299415302196511",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Binghamton University",
-      "videoId": "7681427122837146911",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged burger spot",
       "videoId": "7681418718861200671",
       "why": "transcript not available yet - will keep trying"
@@ -1787,6 +1859,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Pizza",
       "videoId": "7681416515530394910",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Texas Roadhouse",
+      "videoId": "7681506321409117471",
       "why": "transcript not available yet - will keep trying"
     }
   ]
