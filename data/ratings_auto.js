@@ -1809,6 +1809,36 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Cortese Restaurant",
+      "place": "117 Robinson St",
+      "address": "117 Robinson St, Binghamton, NY 13904, USA",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Chicken",
+          "score": 4.6
+        },
+        {
+          "item": "Chicken",
+          "score": 3.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7681769328659729694",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -1918,8 +1948,13 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "The Black Sheep Tavern",
-      "videoId": "7681692189310635294",
+      "name": "Spirit Halloween",
+      "videoId": "7681796966375853342",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Pizz 'A Detroit Co",
+      "videoId": "7681789889951665438",
       "why": "transcript not available yet - will keep trying"
     }
   ]

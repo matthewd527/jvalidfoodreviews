@@ -1254,12 +1254,12 @@
   "7681418718861200671": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 4
+    "attempts": 5
   },
   "7681416515530394910": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 4
+    "attempts": 5
   },
   "7681506321409117471": {
     "name": "Texas Roadhouse",
@@ -1286,10 +1286,9 @@
     "attempts": 1
   },
   "7681692189310635294": {
-    "name": "The Black Sheep Tavern",
-    "address": "142 Washington St, Binghamton, NY 13901, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "error",
+    "why": "no itemStruct",
+    "attempts": 3
   },
   "7681672093854911775": {
     "name": "Binghamton University Nature Preserve",
@@ -1311,6 +1310,38 @@
       {
         "item": "Spoken score",
         "score": 3.2
+      }
+    ],
+    "attempts": 1
+  },
+  "7681796966375853342": {
+    "name": "Spirit Halloween",
+    "address": "420 Harry L Dr, Johnson City, NY 13790, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7681789889951665438": {
+    "name": "Pizz 'A Detroit Co",
+    "address": "65 Rotary Ave, Binghamton, NY 13905, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7681769328659729694": {
+    "name": "Cortese Restaurant",
+    "address": "117 Robinson St, Binghamton, NY 13904, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Chicken",
+        "score": 3.1
+      },
+      {
+        "item": "Chicken",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
       }
     ],
     "attempts": 1
