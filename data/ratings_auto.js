@@ -1812,6 +1812,58 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Spirit Halloween",
+      "place": "420 Harry L Dr",
+      "address": "420 Harry L Dr, Johnson City, NY 13790, USA",
+      "score": 4.0,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7681796966375853342",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Pizz 'A Detroit Co",
+      "place": "65 Rotary Ave",
+      "address": "65 Rotary Ave, Binghamton, NY 13905, USA",
+      "score": 4.433,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Pizza",
+          "score": 4.5
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7681789889951665438",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Cortese Restaurant",
       "place": "117 Robinson St",
       "address": "117 Robinson St, Binghamton, NY 13904, USA",
@@ -1834,6 +1886,54 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7681769328659729694",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Funky Beez",
+      "place": "1344 State Rte 26",
+      "address": "1344 State Rte 26, Vestal, New York 13850, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7681859181581815071",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Blue Dolphin",
+      "place": "7670 NY-434",
+      "address": "7670 NY-434, Apalachin, NY 13732, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7681842912098897182",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -1948,14 +2048,9 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Spirit Halloween",
-      "videoId": "7681796966375853342",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Pizz 'A Detroit Co",
-      "videoId": "7681789889951665438",
-      "why": "transcript not available yet - will keep trying"
+      "name": "Binghamton University",
+      "videoId": "7681907713839746335",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

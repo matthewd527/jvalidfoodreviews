@@ -1288,7 +1288,7 @@
   "7681692189310635294": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 3
+    "attempts": 4
   },
   "7681672093854911775": {
     "name": "Binghamton University Nature Preserve",
@@ -1317,14 +1317,34 @@
   "7681796966375853342": {
     "name": "Spirit Halloween",
     "address": "420 Harry L Dr, Johnson City, NY 13790, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.0
+      }
+    ],
+    "attempts": 2
   },
   "7681789889951665438": {
     "name": "Pizz 'A Detroit Co",
     "address": "65 Rotary Ave, Binghamton, NY 13905, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 4.5
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      }
+    ],
+    "attempts": 2
   },
   "7681769328659729694": {
     "name": "Cortese Restaurant",
@@ -1338,6 +1358,41 @@
       {
         "item": "Chicken",
         "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7681907713839746335": {
+    "name": "Binghamton University",
+    "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7681859181581815071": {
+    "name": "Funky Beez",
+    "address": "1344 State Rte 26, Vestal, New York 13850, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7681842912098897182": {
+    "name": "Blue Dolphin",
+    "address": "7670 NY-434, Apalachin, NY 13732, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.9
       },
       {
         "item": "Spoken score",
