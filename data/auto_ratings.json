@@ -1404,13 +1404,19 @@
   "7682062706202955039": {
     "name": "Whitney Point Country Kitchen",
     "address": "2884 US-11, Whitney Point, NY 13862, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      }
+    ],
+    "attempts": 3
   },
   "7682057364547079454": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 2
+    "attempts": 3
   },
   "7682031557305044255": {
     "name": "",
@@ -1422,20 +1428,32 @@
   "7682123408238316831": {
     "name": "Cornell",
     "address": "Ithaca, NY 14850, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Ice Cream",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7682123003848625439": {
     "name": "Franco's Pizzeria",
     "address": "527 W State St, Ithaca, NY 14850, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7682118211504016670": {
     "name": "Cornell",
     "address": "Ithaca, NY 14850, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Ice Cream",
+        "score": 4.1
+      }
+    ],
+    "attempts": 2
   },
   "7682102007225781534": {
     "name": "Sicilian Delight",
@@ -1452,18 +1470,42 @@
   "7682099161465933087": {
     "name": "",
     "address": "",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      }
+    ],
+    "attempts": 2
   },
   "7682091820087610654": {
     "name": "Regal Ithaca Mall",
     "address": "40 Catherwood Rd, Ithaca, NY 14850, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 1.0
+      }
+    ],
+    "attempts": 2
   },
   "7682068992072207646": {
     "name": "Dominic's pizza place in Whitney point",
     "address": "7335 Collins St, Whitney Point, NY 13862, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.7
+      }
+    ],
+    "attempts": 2
+  },
+  "7682172433666673951": {
+    "name": "Michelangelo's",
+    "address": "465 Court St, Binghamton, NY 13904, USA",
     "status": "no_transcript",
     "attempts": 1
   }

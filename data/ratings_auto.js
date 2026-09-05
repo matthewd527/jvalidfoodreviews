@@ -1942,6 +1942,72 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Whitney Point Country Kitchen",
+      "place": "2884 US-11",
+      "address": "2884 US-11, Whitney Point, NY 13862, USA",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7682062706202955039",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Cornell",
+      "place": "Ithaca",
+      "address": "Ithaca, NY 14850, United States",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Ice Cream",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7682123408238316831",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Cornell",
+      "place": "Ithaca",
+      "address": "Ithaca, NY 14850, United States",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Ice Cream",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7682118211504016670",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Sicilian Delight",
       "place": "40 Catherwood Rd",
       "address": "40 Catherwood Rd, Ithaca, NY 14850, USA",
@@ -1956,6 +2022,72 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7682102007225781534",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged off-menu spot",
+      "place": "",
+      "address": "",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7682099161465933087",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Regal Ithaca Mall",
+      "place": "40 Catherwood Rd",
+      "address": "40 Catherwood Rd, Ithaca, NY 14850, USA",
+      "score": 1.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7682091820087610654",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Dominic's pizza place in Whitney point",
+      "place": "7335 Collins St",
+      "address": "7335 Collins St, Whitney Point, NY 13862, USA",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7682068992072207646",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -2075,19 +2207,9 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Whitney Point Country Kitchen",
-      "videoId": "7682062706202955039",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7682031557305044255",
       "why": "no numerical food score spoken on camera"
-    },
-    {
-      "name": "Cornell",
-      "videoId": "7682123408238316831",
-      "why": "transcript not available yet - will keep trying"
     },
     {
       "name": "Franco's Pizzeria",
@@ -2095,23 +2217,8 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Cornell",
-      "videoId": "7682118211504016670",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Untagged off-menu spot",
-      "videoId": "7682099161465933087",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Regal Ithaca Mall",
-      "videoId": "7682091820087610654",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Dominic's pizza place in Whitney point",
-      "videoId": "7682068992072207646",
+      "name": "Michelangelo's",
+      "videoId": "7682172433666673951",
       "why": "transcript not available yet - will keep trying"
     }
   ]
