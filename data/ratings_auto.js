@@ -1939,6 +1939,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Sicilian Delight",
+      "place": "40 Catherwood Rd",
+      "address": "40 Catherwood Rd, Ithaca, NY 14850, USA",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7682102007225781534",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -2058,13 +2080,38 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Whitney Point Country Kitchen",
-      "videoId": "7682057364547079454",
+      "name": "Untagged off-menu spot",
+      "videoId": "7682031557305044255",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Cornell",
+      "videoId": "7682123408238316831",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Franco's Pizzeria",
+      "videoId": "7682123003848625439",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Cornell",
+      "videoId": "7682118211504016670",
       "why": "transcript not available yet - will keep trying"
     },
     {
       "name": "Untagged off-menu spot",
-      "videoId": "7682031557305044255",
+      "videoId": "7682099161465933087",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Regal Ithaca Mall",
+      "videoId": "7682091820087610654",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Dominic's pizza place in Whitney point",
+      "videoId": "7682068992072207646",
       "why": "transcript not available yet - will keep trying"
     }
   ]
