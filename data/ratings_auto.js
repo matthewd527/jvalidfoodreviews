@@ -2051,6 +2051,21 @@ window.RATINGS_AUTO = {
       "name": "Binghamton University",
       "videoId": "7681907713839746335",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Whitney Point Country Kitchen",
+      "videoId": "7682062706202955039",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Whitney Point Country Kitchen",
+      "videoId": "7682057364547079454",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7682031557305044255",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

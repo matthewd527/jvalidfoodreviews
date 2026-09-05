@@ -1400,5 +1400,23 @@
       }
     ],
     "attempts": 1
+  },
+  "7682062706202955039": {
+    "name": "Whitney Point Country Kitchen",
+    "address": "2884 US-11, Whitney Point, NY 13862, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7682057364547079454": {
+    "name": "Whitney Point Country Kitchen",
+    "address": "2884 US-11, Whitney Point, NY 13862, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7682031557305044255": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }
