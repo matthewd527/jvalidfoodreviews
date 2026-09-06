@@ -2152,6 +2152,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "IHOP",
+      "place": "3720 Vestal Pkwy E",
+      "address": "3720 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pancakes",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7682253410422263071",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Binghamton University Nature Preserve",
       "place": "South Rd",
       "address": "South Rd, Broome, New York 13850, USA",
@@ -2290,13 +2312,13 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "IHOP",
-      "videoId": "7682253410422263071",
+      "name": "Untagged off-menu spot",
+      "videoId": "7682214330573655327",
       "why": "transcript not available yet - will keep trying"
     },
     {
       "name": "Untagged off-menu spot",
-      "videoId": "7682214330573655327",
+      "videoId": "7682426671785463070",
       "why": "transcript not available yet - will keep trying"
     }
   ]
