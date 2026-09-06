@@ -1416,7 +1416,7 @@
   "7682057364547079454": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 4
+    "attempts": 5
   },
   "7682031557305044255": {
     "name": "",
@@ -1537,13 +1537,13 @@
     "name": "IHOP",
     "address": "3720 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7682214330573655327": {
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7682206848405015839": {
     "name": "Binghamton University Nature Preserve",
