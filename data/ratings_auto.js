@@ -2341,16 +2341,41 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7682426671785463070",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "New York State Fairgrounds",
-      "videoId": "7682500998207687966",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Pontillo's Pizzeria Cortland",
       "videoId": "7682485571100396830",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Frosty Caboose",
+      "videoId": "7682571408886648095",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Brickyard Barbecue",
+      "videoId": "7682555344966487326",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Sweet N' Salty",
+      "videoId": "7682548500218891551",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "New York State Fairgrounds",
+      "videoId": "7682539101282716958",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Destiny USA",
+      "videoId": "7682535156871122206",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "New York State Fairgrounds",
+      "videoId": "7682523430029184287",
       "why": "transcript not available yet - will keep trying"
     }
   ]
