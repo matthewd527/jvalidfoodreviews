@@ -1549,7 +1549,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7682206848405015839": {
     "name": "Binghamton University Nature Preserve",
@@ -1567,6 +1567,30 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
+    "attempts": 2
+  },
+  "7682500998207687966": {
+    "name": "New York State Fairgrounds",
+    "address": "State Fair Blvd, Syracuse, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7682485571100396830": {
+    "name": "Pontillo's Pizzeria Cortland",
+    "address": "124 Groton Ave, Cortland, NY 13045, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7682450864744779039": {
+    "name": "Frosty Joe's",
+    "address": "1 Track Dr, Binghamton, NY 13904, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Ice Cream",
+        "score": 4.6
+      }
+    ],
     "attempts": 1
   }
 }

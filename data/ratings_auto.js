@@ -2193,6 +2193,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Frosty Joe's",
+      "place": "1 Track Dr",
+      "address": "1 Track Dr, Binghamton, NY 13904, USA",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Ice Cream",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7682450864744779039",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -2319,6 +2341,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7682426671785463070",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "New York State Fairgrounds",
+      "videoId": "7682500998207687966",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Pontillo's Pizzeria Cortland",
+      "videoId": "7682485571100396830",
       "why": "transcript not available yet - will keep trying"
     }
   ]
