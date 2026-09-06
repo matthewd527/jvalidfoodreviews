@@ -1986,6 +1986,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Franco's Pizzeria",
+      "place": "527 W State St",
+      "address": "527 W State St, Ithaca, NY 14850, USA",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7682123003848625439",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Cornell",
       "place": "Ithaca",
       "address": "Ithaca, NY 14850, United States",
@@ -2088,6 +2110,62 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7682068992072207646",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Michelangelo's",
+      "place": "465 Court St",
+      "address": "465 Court St, Binghamton, NY 13904, USA",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7682172433666673951",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 4.0,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7682206848405015839",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -2212,13 +2290,13 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Franco's Pizzeria",
-      "videoId": "7682123003848625439",
+      "name": "IHOP",
+      "videoId": "7682253410422263071",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Michelangelo's",
-      "videoId": "7682172433666673951",
+      "name": "Untagged off-menu spot",
+      "videoId": "7682214330573655327",
       "why": "transcript not available yet - will keep trying"
     }
   ]
