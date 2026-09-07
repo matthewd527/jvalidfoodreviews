@@ -1573,13 +1573,19 @@
   "7682500998207687966": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 2
+    "attempts": 3
   },
   "7682485571100396830": {
     "name": "Pontillo's Pizzeria Cortland",
     "address": "124 Groton Ave, Cortland, NY 13045, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 4.7
+      }
+    ],
+    "attempts": 3
   },
   "7682450864744779039": {
     "name": "Frosty Joe's",
@@ -1596,37 +1602,96 @@
   "7682571408886648095": {
     "name": "Frosty Caboose",
     "address": "107 Homer Ave, Cortland, NY 13045, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      }
+    ],
+    "attempts": 2
   },
   "7682555344966487326": {
     "name": "Brickyard Barbecue",
     "address": "2614 US-11, Lafayette, NY 13084, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Wings",
+        "score": 4.9
+      }
+    ],
+    "attempts": 2
   },
   "7682548500218891551": {
     "name": "Sweet N' Salty",
     "address": "1 Destiny USA Dr, Syracuse, NY 13290, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Milkshake",
+        "score": 3.9
+      }
+    ],
+    "attempts": 2
   },
   "7682539101282716958": {
     "name": "New York State Fairgrounds",
     "address": "State Fair Blvd, Syracuse, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Sandwich",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7682535156871122206": {
     "name": "Destiny USA",
     "address": "1 Destiny USA Dr, Syracuse, NY 13204, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.9
+      }
+    ],
+    "attempts": 2
   },
   "7682523430029184287": {
     "name": "New York State Fairgrounds",
     "address": "581 State Fair Blvd, Syracuse, NY 13209, USA",
-    "status": "no_transcript",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.5
+      }
+    ],
+    "attempts": 2
+  },
+  "7682611411268177183": {
+    "name": "Pizza",
+    "address": "735 10th Ave, New York, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 1.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 0.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7682600903714589983": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }

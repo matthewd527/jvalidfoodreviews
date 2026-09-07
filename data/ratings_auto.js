@@ -2196,6 +2196,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Pontillo's Pizzeria Cortland",
+      "place": "124 Groton Ave",
+      "address": "124 Groton Ave, Cortland, NY 13045, USA",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7682485571100396830",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Frosty Joe's",
       "place": "1 Track Dr",
       "address": "1 Track Dr, Binghamton, NY 13904, USA",
@@ -2210,6 +2232,164 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7682450864744779039",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Frosty Caboose",
+      "place": "107 Homer Ave",
+      "address": "107 Homer Ave, Cortland, NY 13045, USA",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7682571408886648095",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Brickyard Barbecue",
+      "place": "2614 US-11",
+      "address": "2614 US-11, Lafayette, NY 13084, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Wings",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7682555344966487326",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Sweet N' Salty",
+      "place": "1 Destiny USA Dr",
+      "address": "1 Destiny USA Dr, Syracuse, NY 13290, USA",
+      "score": 3.9,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Milkshake",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7682548500218891551",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "New York State Fairgrounds",
+      "place": "State Fair Blvd",
+      "address": "State Fair Blvd, Syracuse, United States",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Sandwich",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7682539101282716958",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Destiny USA",
+      "place": "1 Destiny USA Dr",
+      "address": "1 Destiny USA Dr, Syracuse, NY 13204, USA",
+      "score": 3.9,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7682535156871122206",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "New York State Fairgrounds",
+      "place": "581 State Fair Blvd",
+      "address": "581 State Fair Blvd, Syracuse, NY 13209, USA",
+      "score": 3.5,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7682523430029184287",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Pizza",
+      "place": "735 10th Ave",
+      "address": "735 10th Ave, New York, United States",
+      "score": 0.5,
+      "tier": "offscale",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 0.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7682611411268177183",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -2344,39 +2524,9 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Pontillo's Pizzeria Cortland",
-      "videoId": "7682485571100396830",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Frosty Caboose",
-      "videoId": "7682571408886648095",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Brickyard Barbecue",
-      "videoId": "7682555344966487326",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Sweet N' Salty",
-      "videoId": "7682548500218891551",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "New York State Fairgrounds",
-      "videoId": "7682539101282716958",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Destiny USA",
-      "videoId": "7682535156871122206",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "New York State Fairgrounds",
-      "videoId": "7682523430029184287",
-      "why": "transcript not available yet - will keep trying"
+      "name": "Untagged off-menu spot",
+      "videoId": "7682600903714589983",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
