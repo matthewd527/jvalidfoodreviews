@@ -2395,6 +2395,44 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "The Cider Mill",
+      "place": "2 Nanticoke Ave",
+      "address": "2 Nanticoke Ave, Endicott, NY 13760, USA",
+      "score": 4.54,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7682807476927941918",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -2527,6 +2565,21 @@ window.RATINGS_AUTO = {
       "name": "Untagged off-menu spot",
       "videoId": "7682600903714589983",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Byrne Dairy & Deli",
+      "videoId": "7682840091424787743",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7682829635163360542",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "The Rustic Griddle at Bostwicks Antique Mall",
+      "videoId": "7682826824132381982",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

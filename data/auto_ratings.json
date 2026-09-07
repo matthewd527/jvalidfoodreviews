@@ -1573,7 +1573,7 @@
   "7682500998207687966": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 3
+    "attempts": 4
   },
   "7682485571100396830": {
     "name": "Pontillo's Pizzeria Cortland",
@@ -1692,6 +1692,52 @@
     "address": "",
     "status": "no_scores",
     "items": [],
+    "attempts": 1
+  },
+  "7682840091424787743": {
+    "name": "Byrne Dairy & Deli",
+    "address": "301 E Main St, Endicott, NY 13760, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7682829635163360542": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7682826824132381982": {
+    "name": "The Rustic Griddle at Bostwicks Antique Mall",
+    "address": "1/2, 1121 Owego Rd, Candor, NY 13743, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7682807476927941918": {
+    "name": "The Cider Mill",
+    "address": "2 Nanticoke Ave, Endicott, NY 13760, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      }
+    ],
     "attempts": 1
   }
 }
