@@ -1573,7 +1573,7 @@
   "7682500998207687966": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 4
+    "attempts": 5
   },
   "7682485571100396830": {
     "name": "Pontillo's Pizzeria Cortland",
@@ -1697,20 +1697,49 @@
   "7682840091424787743": {
     "name": "Byrne Dairy & Deli",
     "address": "301 E Main St, Endicott, NY 13760, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 2.5
+      }
+    ],
+    "attempts": 2
   },
   "7682829635163360542": {
     "name": "",
     "address": "",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7682826824132381982": {
     "name": "The Rustic Griddle at Bostwicks Antique Mall",
     "address": "1/2, 1121 Owego Rd, Candor, NY 13743, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Burger",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      }
+    ],
+    "attempts": 2
   },
   "7682807476927941918": {
     "name": "The Cider Mill",
@@ -1738,6 +1767,66 @@
         "score": 4.6
       }
     ],
+    "attempts": 1
+  },
+  "7682907848073940255": {
+    "name": "Seven Brew drive thru coffee",
+    "address": "1275 Concord Pkwy N, Concord, NC 28025, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Milkshake",
+        "score": 4.7
+      }
+    ],
+    "attempts": 1
+  },
+  "7682899467070098719": {
+    "name": "Texas Roadhouse",
+    "address": "4399 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7682876112480816415": {
+    "name": "Subs Hub",
+    "address": "Oakdale Mall Unit 9, Johnson City, NY 13790, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7682873315630861599": {
+    "name": "Oakdale Mall",
+    "address": "601-635 Harry L Dr, Johnson City, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 1
+  },
+  "7682864620058479903": {
+    "name": "Suzy-Q's",
+    "address": "1110 Chenango St Ste 1, Binghamton, NY 13901, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      }
+    ],
+    "attempts": 1
+  },
+  "7682854307280063774": {
+    "name": "Courtside Bar & Grill",
+    "address": "56 Court St, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
     "attempts": 1
   }
 }

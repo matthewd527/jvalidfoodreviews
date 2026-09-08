@@ -2398,6 +2398,66 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Byrne Dairy & Deli",
+      "place": "301 E Main St",
+      "address": "301 E Main St, Endicott, NY 13760, USA",
+      "score": 2.5,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 2.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7682840091424787743",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "The Rustic Griddle at Bostwicks Antique Mall",
+      "place": "1/2",
+      "address": "1/2, 1121 Owego Rd, Candor, NY 13743, USA",
+      "score": 4.82,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Burger",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7682826824132381982",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "The Cider Mill",
       "place": "2 Nanticoke Ave",
       "address": "2 Nanticoke Ave, Endicott, NY 13760, USA",
@@ -2428,6 +2488,94 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7682807476927941918",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Seven Brew drive thru coffee",
+      "place": "1275 Concord Pkwy N",
+      "address": "1275 Concord Pkwy N, Concord, NC 28025, USA",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Milkshake",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7682907848073940255",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Subs Hub",
+      "place": "Oakdale Mall Unit 9",
+      "address": "Oakdale Mall Unit 9, Johnson City, NY 13790, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7682876112480816415",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Oakdale Mall",
+      "place": "601-635 Harry L Dr",
+      "address": "601-635 Harry L Dr, Johnson City, United States",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7682873315630861599",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Suzy-Q's",
+      "place": "1110 Chenango St Ste 1",
+      "address": "1110 Chenango St Ste 1, Binghamton, NY 13901, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7682864620058479903",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -2567,18 +2715,18 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Byrne Dairy & Deli",
-      "videoId": "7682840091424787743",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7682829635163360542",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Texas Roadhouse",
+      "videoId": "7682899467070098719",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "The Rustic Griddle at Bostwicks Antique Mall",
-      "videoId": "7682826824132381982",
+      "name": "Courtside Bar & Grill",
+      "videoId": "7682854307280063774",
       "why": "transcript not available yet - will keep trying"
     }
   ]
