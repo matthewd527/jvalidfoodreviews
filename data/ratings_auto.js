@@ -2779,6 +2779,21 @@ window.RATINGS_AUTO = {
       "name": "Untagged pizza spot",
       "videoId": "7682957273873861919",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Family Dollar",
+      "videoId": "7683201678887210271",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Blue Stone Pizzeria",
+      "videoId": "7683197365473381663",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "7 Brew Coffee",
+      "videoId": "7683149156935863582",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

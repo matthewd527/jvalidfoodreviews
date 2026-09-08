@@ -1859,5 +1859,23 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7683201678887210271": {
+    "name": "Family Dollar",
+    "address": "1030 Mountain View Plaza, Hallstead, PA 18822, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683197365473381663": {
+    "name": "Blue Stone Pizzeria",
+    "address": "25059 US-11, Hallstead, PA 18822, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683149156935863582": {
+    "name": "7 Brew Coffee",
+    "address": "100 Plaza Dr, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }
