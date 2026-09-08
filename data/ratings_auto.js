@@ -2794,6 +2794,21 @@ window.RATINGS_AUTO = {
       "name": "7 Brew Coffee",
       "videoId": "7683149156935863582",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683235483882655007",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Randalls' Ice Cream",
+      "videoId": "7683217760658263326",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Tedeschi's Italian Eatery",
+      "videoId": "7683204975123500318",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
