@@ -1784,8 +1784,26 @@
   "7682899467070098719": {
     "name": "Texas Roadhouse",
     "address": "4399 Vestal Pkwy E, Vestal, NY 13850, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      },
+      {
+        "item": "Chicken",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.4
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7682876112480816415": {
     "name": "Subs Hub",
@@ -1826,7 +1844,20 @@
   "7682854307280063774": {
     "name": "Courtside Bar & Grill",
     "address": "56 Court St, Binghamton, NY 13901, USA",
-    "status": "no_transcript",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
+  },
+  "7682957273873861919": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }

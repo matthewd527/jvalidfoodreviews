@@ -2518,6 +2518,40 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Texas Roadhouse",
+      "place": "4399 Vestal Pkwy E",
+      "address": "4399 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.4
+        }
+      ],
+      "posted": null,
+      "videoId": "7682899467070098719",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Subs Hub",
       "place": "Oakdale Mall Unit 9",
       "address": "Oakdale Mall Unit 9, Johnson City, NY 13790, USA",
@@ -2576,6 +2610,28 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7682864620058479903",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Courtside Bar & Grill",
+      "place": "56 Court St",
+      "address": "56 Court St, Binghamton, NY 13901, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7682854307280063774",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -2720,14 +2776,9 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Texas Roadhouse",
-      "videoId": "7682899467070098719",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Courtside Bar & Grill",
-      "videoId": "7682854307280063774",
-      "why": "transcript not available yet - will keep trying"
+      "name": "Untagged pizza spot",
+      "videoId": "7682957273873861919",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
