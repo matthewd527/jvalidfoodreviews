@@ -1864,36 +1864,94 @@
     "name": "Family Dollar",
     "address": "1030 Mountain View Plaza, Hallstead, PA 18822, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7683197365473381663": {
     "name": "Blue Stone Pizzeria",
     "address": "25059 US-11, Hallstead, PA 18822, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 4.8
+      }
+    ],
+    "attempts": 3
   },
   "7683149156935863582": {
     "name": "7 Brew Coffee",
     "address": "100 Plaza Dr, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7683235483882655007": {
     "name": "",
     "address": "",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      }
+    ],
+    "attempts": 2
   },
   "7683217760658263326": {
     "name": "Randalls' Ice Cream",
     "address": "17336 US-11, New Milford, PA 18834, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Ice Cream",
+        "score": 4.8
+      }
+    ],
+    "attempts": 2
   },
   "7683204975123500318": {
     "name": "Tedeschi's Italian Eatery",
     "address": "25066 US-11, Hallstead, PA 18822, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
+  },
+  "7683319687794429214": {
+    "name": "Palisades Center",
+    "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
     "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683258277899095327": {
+    "name": "Jones Humdinger",
+    "address": "1441 Front St, Binghamton, NY 13901, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Sundae",
+        "score": 4.5
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      },
+      {
+        "item": "Cone",
+        "score": 4.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      }
+    ],
     "attempts": 1
   }
 }

@@ -2637,6 +2637,132 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Blue Stone Pizzeria",
+      "place": "25059 US-11",
+      "address": "25059 US-11, Hallstead, PA 18822, USA",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7683197365473381663",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged off-menu spot",
+      "place": "Broome",
+      "address": "",
+      "score": 4.85,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7683235483882655007",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Randalls' Ice Cream",
+      "place": "17336 US-11",
+      "address": "17336 US-11, New Milford, PA 18834, USA",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Ice Cream",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7683217760658263326",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Tedeschi's Italian Eatery",
+      "place": "25066 US-11",
+      "address": "25066 US-11, Hallstead, PA 18822, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7683204975123500318",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Jones Humdinger",
+      "place": "1441 Front St",
+      "address": "1441 Front St, Binghamton, NY 13901, USA",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Cone",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Sundae",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7683258277899095327",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -2786,28 +2912,13 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Blue Stone Pizzeria",
-      "videoId": "7683197365473381663",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "7 Brew Coffee",
       "videoId": "7683149156935863582",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Untagged off-menu spot",
-      "videoId": "7683235483882655007",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Randalls' Ice Cream",
-      "videoId": "7683217760658263326",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Tedeschi's Italian Eatery",
-      "videoId": "7683204975123500318",
+      "name": "Palisades Center",
+      "videoId": "7683319687794429214",
       "why": "transcript not available yet - will keep trying"
     }
   ]
