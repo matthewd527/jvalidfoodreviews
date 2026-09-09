@@ -2763,6 +2763,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Aiello's Ristorante",
+      "place": "26-77 Main St",
+      "address": "26-77 Main St, Whitney Point, NY 13862, USA",
+      "score": 3.8,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7683347798447705375",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -2919,6 +2941,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Palisades Center",
       "videoId": "7683319687794429214",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683354738368302367",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Arby's",
+      "videoId": "7683338595410644255",
       "why": "transcript not available yet - will keep trying"
     }
   ]
