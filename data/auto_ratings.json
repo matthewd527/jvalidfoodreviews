@@ -1864,7 +1864,7 @@
     "name": "Family Dollar",
     "address": "1030 Mountain View Plaza, Hallstead, PA 18822, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7683197365473381663": {
     "name": "Blue Stone Pizzeria",
@@ -1882,7 +1882,7 @@
     "name": "7 Brew Coffee",
     "address": "100 Plaza Dr, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7683235483882655007": {
     "name": "",
@@ -1977,6 +1977,42 @@
   "7683338595410644255": {
     "name": "Arby's",
     "address": "2946 US-11, Whitney Point, NY 13862, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Mac And Cheese",
+        "score": 4.1
+      }
+    ],
+    "attempts": 2
+  },
+  "7683569451429563678": {
+    "name": "Confection Connection",
+    "address": "59 North Ave, Tioga, New York 13827, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683555275369975070": {
+    "name": "University of Maryland",
+    "address": "College Park, MD 20742, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683546665684405535": {
+    "name": "Roasted Coffee Bar",
+    "address": "17 Lake St, Owego, NY 13827, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683539725155716382": {
+    "name": "Owego",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683537484034149662": {
+    "name": "Carol's Coffee And Art Bar",
+    "address": "177 Front St, Owego, NY 13827, USA",
     "status": "no_transcript",
     "attempts": 1
   }

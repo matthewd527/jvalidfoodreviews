@@ -2785,6 +2785,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Arby's",
+      "place": "2946 US-11",
+      "address": "2946 US-11, Whitney Point, NY 13862, USA",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Mac And Cheese",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7683338595410644255",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -2949,8 +2971,28 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Arby's",
-      "videoId": "7683338595410644255",
+      "name": "Confection Connection",
+      "videoId": "7683569451429563678",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "University of Maryland",
+      "videoId": "7683555275369975070",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Roasted Coffee Bar",
+      "videoId": "7683546665684405535",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Owego",
+      "videoId": "7683539725155716382",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Carol's Coffee And Art Bar",
+      "videoId": "7683537484034149662",
       "why": "transcript not available yet - will keep trying"
     }
   ]
