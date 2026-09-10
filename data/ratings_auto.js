@@ -3162,7 +3162,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7683679752170884383",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Untagged off-menu spot",
@@ -3177,11 +3177,31 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7683626310668668190",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Untagged off-menu spot",
       "videoId": "7683703927761587487",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683936476677082398",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683932676776103198",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Westfield Garden State Plaza",
+      "videoId": "7683901463956851998",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Oswego",
+      "videoId": "7683888057996643615",
       "why": "transcript not available yet - will keep trying"
     }
   ]
