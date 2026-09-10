@@ -3197,11 +3197,31 @@ window.RATINGS_AUTO = {
     {
       "name": "Westfield Garden State Plaza",
       "videoId": "7683901463956851998",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Oswego",
       "videoId": "7683888057996643615",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Deposit",
+      "videoId": "7683980334962085150",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Seymour Scoops",
+      "videoId": "7683980049296411934",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Honey's 50s Cafe, Specialty coffee and tea, Ice Cream Shop,Bakery & Hotdogs",
+      "videoId": "7683975931853065502",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged pizza spot",
+      "videoId": "7683953085294611742",
       "why": "transcript not available yet - will keep trying"
     }
   ]

@@ -2098,7 +2098,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7683634227098733854": {
     "name": "",
@@ -2130,7 +2130,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7683694072300686623": {
     "name": "Tully's Good Times Vestal",
@@ -2148,23 +2148,48 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7683932676776103198": {
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7683901463956851998": {
     "name": "Westfield Garden State Plaza",
     "address": "One Garden State Plaza Pkwy, Paramus, NJ 07652, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7683888057996643615": {
     "name": "Oswego",
     "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7683980334962085150": {
+    "name": "Deposit",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683980049296411934": {
+    "name": "Seymour Scoops",
+    "address": "150 Big Hollow Rd, Deposit, NY 13754, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683975931853065502": {
+    "name": "Honey's 50s Cafe, Specialty coffee and tea, Ice Cream Shop,Bakery & Hotdogs",
+    "address": "34 Oak St, Deposit, NY 13754, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683953085294611742": {
+    "name": "",
+    "address": "",
     "status": "no_transcript",
     "attempts": 1
   }
