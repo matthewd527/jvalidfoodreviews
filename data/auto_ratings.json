@@ -1989,8 +1989,22 @@
   "7683569451429563678": {
     "name": "Confection Connection",
     "address": "59 North Ave, Tioga, New York 13827, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      },
+      {
+        "item": "Pizza",
+        "score": 4.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.1
+      }
+    ],
+    "attempts": 3
   },
   "7683555275369975070": {
     "name": "University of Maryland",
@@ -2051,9 +2065,40 @@
     "name": "Fortunato's | Pizza \u00b7 Italian",
     "address": "28 N Main St, Newark Valley, NY 13811, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7683617730896923935": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7683691592493927711": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683679752170884383": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683646013453667614": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7683634227098733854": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7683626310668668190": {
     "name": "",
     "address": "",
     "status": "no_transcript",

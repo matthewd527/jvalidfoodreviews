@@ -2810,6 +2810,36 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Confection Connection",
+      "place": "59 North Ave",
+      "address": "59 North Ave, Tioga, New York 13827, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7683569451429563678",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Roasted Coffee Bar",
       "place": "17 Lake St",
       "address": "17 Lake St, Owego, NY 13827, USA",
@@ -3049,11 +3079,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Confection Connection",
-      "videoId": "7683569451429563678",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "University of Maryland",
       "videoId": "7683555275369975070",
       "why": "no numerical food score spoken on camera"
@@ -3066,6 +3091,31 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7683617730896923935",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683691592493927711",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683679752170884383",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683646013453667614",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683634227098733854",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683626310668668190",
       "why": "transcript not available yet - will keep trying"
     }
   ]
