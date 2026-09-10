@@ -2915,6 +2915,72 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Fortunato's | Pizza \u00b7 Italian",
+      "place": "28 N Main St",
+      "address": "28 N Main St, Newark Valley, NY 13811, USA",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7683622523061226783",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged ice cream spot",
+      "place": "",
+      "address": "",
+      "score": 3.9,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7683706366778805534",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Tully's Good Times Vestal",
+      "place": "4700 Vestal Pkwy E",
+      "address": "4700 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 3.8,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7683694072300686623",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -3084,19 +3150,14 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Fortunato's | Pizza \u00b7 Italian",
-      "videoId": "7683622523061226783",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7683617730896923935",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Untagged off-menu spot",
       "videoId": "7683691592493927711",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Untagged off-menu spot",
@@ -3116,6 +3177,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7683626310668668190",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7683703927761587487",
       "why": "transcript not available yet - will keep trying"
     }
   ]
