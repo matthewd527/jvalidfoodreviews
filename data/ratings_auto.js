@@ -2984,6 +2984,80 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Deposit",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 1.8,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7683980334962085150",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Seymour Scoops",
+      "place": "150 Big Hollow Rd",
+      "address": "150 Big Hollow Rd, Deposit, NY 13754, USA",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Ice Cream",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7683980049296411934",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Honey's 50s Cafe, Specialty coffee and tea, Ice Cream Shop,Bakery & Hotdogs",
+      "place": "34 Oak St",
+      "address": "34 Oak St, Deposit, NY 13754, USA",
+      "score": 4.667,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 4.8
+        },
+        {
+          "item": "Fries",
+          "score": 4.7
+        },
+        {
+          "item": "Burger",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7683975931853065502",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Untagged pizza spot",
       "place": "Deleware",
       "address": "",
@@ -2998,6 +3072,28 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7683953085294611742",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "BC Pizza And More LLC",
+      "place": "25 Oak St",
+      "address": "25 Oak St, Deposit, NY 13754, USA",
+      "score": 2.9,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 2.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7683997781513489694",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -3214,7 +3310,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7683932676776103198",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Westfield Garden State Plaza",
@@ -3227,21 +3323,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Deposit",
-      "videoId": "7683980334962085150",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Seymour Scoops",
-      "videoId": "7683980049296411934",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Honey's 50s Cafe, Specialty coffee and tea, Ice Cream Shop,Bakery & Hotdogs",
-      "videoId": "7683975931853065502",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged pizza spot",
       "videoId": "7684061608452050207",
       "why": "transcript not available yet - will keep trying"
@@ -3249,17 +3330,17 @@ window.RATINGS_AUTO = {
     {
       "name": "Wayne",
       "videoId": "7684025351831407902",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Ridgewood",
       "videoId": "7684021223352798495",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Fairfield University",
       "videoId": "7684006108360527134",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Palisades Center",
@@ -3267,8 +3348,18 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "BC Pizza And More LLC",
-      "videoId": "7683997781513489694",
+      "name": "Binghamton",
+      "videoId": "7684140990818569503",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Tom & Marty's Town House",
+      "videoId": "7684138549435698463",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Dane County Courthouse",
+      "videoId": "7684117931713744158",
       "why": "transcript not available yet - will keep trying"
     }
   ]
