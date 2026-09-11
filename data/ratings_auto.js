@@ -2981,6 +2981,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged pizza spot",
+      "place": "Deleware",
+      "address": "",
+      "score": 3.6,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 3.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7683953085294611742",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -3182,12 +3204,12 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7683703927761587487",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Untagged off-menu spot",
       "videoId": "7683936476677082398",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Untagged off-menu spot",
@@ -3202,7 +3224,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Oswego",
       "videoId": "7683888057996643615",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Deposit",
@@ -3221,7 +3243,32 @@ window.RATINGS_AUTO = {
     },
     {
       "name": "Untagged pizza spot",
-      "videoId": "7683953085294611742",
+      "videoId": "7684061608452050207",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Wayne",
+      "videoId": "7684025351831407902",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Ridgewood",
+      "videoId": "7684021223352798495",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Fairfield University",
+      "videoId": "7684006108360527134",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Palisades Center",
+      "videoId": "7684002606867303711",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "BC Pizza And More LLC",
+      "videoId": "7683997781513489694",
       "why": "transcript not available yet - will keep trying"
     }
   ]
