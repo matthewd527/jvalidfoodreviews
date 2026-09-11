@@ -3099,6 +3099,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Tom & Marty's Town House",
+      "place": "89 State St",
+      "address": "89 State St, Binghamton, NY 13901, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7684138549435698463",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -3350,16 +3372,36 @@ window.RATINGS_AUTO = {
     {
       "name": "Binghamton",
       "videoId": "7684140990818569503",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Tom & Marty's Town House",
-      "videoId": "7684138549435698463",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Dane County Courthouse",
       "videoId": "7684117931713744158",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Paesanos Pizzeria",
+      "videoId": "7684297068692655390",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Roscoe",
+      "videoId": "7684284554655370526",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Roscoe Diner",
+      "videoId": "7684280414118087966",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Windsor",
+      "videoId": "7684254636936842526",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "New Paltz",
+      "videoId": "7684241944310074655",
       "why": "transcript not available yet - will keep trying"
     }
   ]

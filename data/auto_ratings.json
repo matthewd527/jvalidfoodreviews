@@ -2233,7 +2233,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7684025351831407902": {
     "name": "Wayne",
@@ -2278,18 +2278,55 @@
   "7684140990818569503": {
     "name": "Binghamton",
     "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7684138549435698463": {
     "name": "Tom & Marty's Town House",
     "address": "89 State St, Binghamton, NY 13901, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7684117931713744158": {
     "name": "Dane County Courthouse",
     "address": "215 S Hamilton St, Madison, WI 53703, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7684297068692655390": {
+    "name": "Paesanos Pizzeria",
+    "address": "10 S Main St #1813, Liberty, NY 12754, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684284554655370526": {
+    "name": "Roscoe",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684280414118087966": {
+    "name": "Roscoe Diner",
+    "address": "1908 Old Rte 17, Roscoe, NY 12776, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684254636936842526": {
+    "name": "Windsor",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684241944310074655": {
+    "name": "New Paltz",
+    "address": "New York, United States",
     "status": "no_transcript",
     "attempts": 1
   }
