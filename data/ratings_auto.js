@@ -3121,6 +3121,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Windsor",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 1.5,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7684254636936842526",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -3395,13 +3417,23 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Windsor",
-      "videoId": "7684254636936842526",
+      "name": "New Paltz",
+      "videoId": "7684241944310074655",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Poughkeepsie Galleria",
+      "videoId": "7684358146181123359",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "New Paltz",
-      "videoId": "7684241944310074655",
+      "name": "Liberty",
+      "videoId": "7684348936361970974",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "State University of New York at New Paltz",
+      "videoId": "7684331406960495903",
       "why": "transcript not available yet - will keep trying"
     }
   ]
