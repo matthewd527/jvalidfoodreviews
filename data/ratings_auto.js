@@ -3168,6 +3168,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Roscoe Diner",
+      "place": "1908 Old Rte 17",
+      "address": "1908 Old Rte 17, Roscoe, NY 12776, USA",
+      "score": 3.8,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7684280414118087966",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Windsor",
       "place": "New York",
       "address": "New York, United States",
@@ -3252,6 +3274,116 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7684331406960495903",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Apizza!",
+      "place": "121 Main St",
+      "address": "121 Main St, New Paltz, NY 12561, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7684425682587241758",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Pipinelli's Pizza Parlor",
+      "place": "256 Hooker Ave",
+      "address": "256 Hooker Ave, Poughkeepsie, NY 12603, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Slice",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7684366135768255775",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Gourmet Pizza",
+      "place": "68 Main St Apt 1",
+      "address": "68 Main St Apt 1, New Paltz, NY 12561, USA",
+      "score": 2.1,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 2.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7684495022095420703",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "State University of New York at New Paltz",
+      "place": "1 Hawk Dr",
+      "address": "1 Hawk Dr, New Paltz, NY 12561, USA",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7684479943920618782",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "State University of New York at New Paltz",
+      "place": "1 Hawk Dr",
+      "address": "1 Hawk Dr, New Paltz, NY 12561, USA",
+      "score": 2.9,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 2.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7684447765543308574",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -3516,24 +3648,19 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Roscoe Diner",
-      "videoId": "7684280414118087966",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "New Paltz",
       "videoId": "7684241944310074655",
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Apizza!",
-      "videoId": "7684425682587241758",
+      "name": "Binghamton University",
+      "videoId": "7684471529119272222",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Pipinelli's Pizza Parlor",
-      "videoId": "7684366135768255775",
-      "why": "transcript not available yet - will keep trying"
+      "name": "Palisades Center",
+      "videoId": "7684442778545179934",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
