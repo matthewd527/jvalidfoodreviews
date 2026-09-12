@@ -2233,7 +2233,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7684025351831407902": {
     "name": "Wayne",
@@ -2297,26 +2297,39 @@
   "7684117931713744158": {
     "name": "Dane County Courthouse",
     "address": "215 S Hamilton St, Madison, WI 53703, USA",
-    "status": "no_transcript",
-    "attempts": 3
+    "status": "no_scores",
+    "items": [],
+    "attempts": 4
   },
   "7684297068692655390": {
     "name": "Paesanos Pizzeria",
     "address": "10 S Main St #1813, Liberty, NY 12754, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 3.9
+      }
+    ],
+    "attempts": 3
   },
   "7684284554655370526": {
     "name": "Roscoe",
     "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.1
+      }
+    ],
+    "attempts": 3
   },
   "7684280414118087966": {
     "name": "Roscoe Diner",
     "address": "1908 Old Rte 17, Roscoe, NY 12776, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7684254636936842526": {
     "name": "Windsor",
@@ -2340,18 +2353,52 @@
   "7684358146181123359": {
     "name": "Poughkeepsie Galleria",
     "address": "2001 South Rd, Poughkeepsie, NY 12601, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.1
+      }
+    ],
+    "attempts": 2
   },
   "7684348936361970974": {
     "name": "Liberty",
     "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 2
   },
   "7684331406960495903": {
     "name": "State University of New York at New Paltz",
     "address": "1 Hawk Dr, New Paltz, NY 12561, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Sandwich",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 2.0
+      }
+    ],
+    "attempts": 2
+  },
+  "7684425682587241758": {
+    "name": "Apizza!",
+    "address": "121 Main St, New Paltz, NY 12561, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684366135768255775": {
+    "name": "Pipinelli's Pizza Parlor",
+    "address": "256 Hooker Ave, Poughkeepsie, NY 12603, USA",
     "status": "no_transcript",
     "attempts": 1
   }

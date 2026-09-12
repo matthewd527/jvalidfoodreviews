@@ -3124,6 +3124,50 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Paesanos Pizzeria",
+      "place": "10 S Main St #1813",
+      "address": "10 S Main St #1813, Liberty, NY 12754, USA",
+      "score": 3.9,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7684297068692655390",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Roscoe",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7684284554655370526",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Windsor",
       "place": "New York",
       "address": "New York, United States",
@@ -3138,6 +3182,76 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7684254636936842526",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Poughkeepsie Galleria",
+      "place": "2001 South Rd",
+      "address": "2001 South Rd, Poughkeepsie, NY 12601, USA",
+      "score": 3.1,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7684358146181123359",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Liberty",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7684348936361970974",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "State University of New York at New Paltz",
+      "place": "1 Hawk Dr",
+      "address": "1 Hawk Dr, New Paltz, NY 12561, USA",
+      "score": 3.5,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Sandwich",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 2.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7684331406960495903",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -3399,17 +3513,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Dane County Courthouse",
       "videoId": "7684117931713744158",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Paesanos Pizzeria",
-      "videoId": "7684297068692655390",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Roscoe",
-      "videoId": "7684284554655370526",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Roscoe Diner",
@@ -3422,18 +3526,13 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Poughkeepsie Galleria",
-      "videoId": "7684358146181123359",
+      "name": "Apizza!",
+      "videoId": "7684425682587241758",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Liberty",
-      "videoId": "7684348936361970974",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "State University of New York at New Paltz",
-      "videoId": "7684331406960495903",
+      "name": "Pipinelli's Pizza Parlor",
+      "videoId": "7684366135768255775",
       "why": "transcript not available yet - will keep trying"
     }
   ]
