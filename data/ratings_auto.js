@@ -3661,6 +3661,21 @@ window.RATINGS_AUTO = {
       "name": "Palisades Center",
       "videoId": "7684442778545179934",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Marist College",
+      "videoId": "7684671138252868895",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Newburgh Mall",
+      "videoId": "7684652298420620574",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "University of Maryland",
+      "videoId": "7684639601771695391",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

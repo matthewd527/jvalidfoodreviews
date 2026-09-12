@@ -2448,7 +2448,7 @@
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7684447765543308574": {
     "name": "State University of New York at New Paltz",
@@ -2465,6 +2465,25 @@
   "7684442778545179934": {
     "name": "Palisades Center",
     "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7684671138252868895": {
+    "name": "Marist College",
+    "address": "3399 North Rd, Poughkeepsie, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684652298420620574": {
+    "name": "Newburgh Mall",
+    "address": "1401 NY-300, Newburgh, NY 12550, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684639601771695391": {
+    "name": "University of Maryland",
+    "address": "College Park, MD 20742, United States",
     "status": "no_scores",
     "items": [],
     "attempts": 1
