@@ -2448,7 +2448,7 @@
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7684447765543308574": {
     "name": "State University of New York at New Paltz",
@@ -2472,18 +2472,49 @@
   "7684671138252868895": {
     "name": "Marist College",
     "address": "3399 North Rd, Poughkeepsie, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7684652298420620574": {
     "name": "Newburgh Mall",
     "address": "1401 NY-300, Newburgh, NY 12550, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 1.0
+      }
+    ],
+    "attempts": 2
   },
   "7684639601771695391": {
     "name": "University of Maryland",
     "address": "College Park, MD 20742, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7684720157767306526": {
+    "name": "Hudson Valley Mall",
+    "address": "1300 Ulster Ave, Kingston, NY 12401, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684711631531740446": {
+    "name": "Broadway Lights Diner & Cafe",
+    "address": "713 Broadway, Kingston, NY 12401, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684684109217549598": {
+    "name": "Westfield Garden State Plaza",
+    "address": "One Garden State Plaza Pkwy, Paramus, NJ 07652, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1

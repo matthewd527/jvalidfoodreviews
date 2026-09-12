@@ -3389,6 +3389,50 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Marist College",
+      "place": "3399 North Rd",
+      "address": "3399 North Rd, Poughkeepsie, United States",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7684671138252868895",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Newburgh Mall",
+      "place": "1401 NY-300",
+      "address": "1401 NY-300, Newburgh, NY 12550, USA",
+      "score": 1.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7684652298420620574",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -3663,18 +3707,23 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Marist College",
-      "videoId": "7684671138252868895",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Newburgh Mall",
-      "videoId": "7684652298420620574",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "University of Maryland",
       "videoId": "7684639601771695391",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Hudson Valley Mall",
+      "videoId": "7684720157767306526",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Broadway Lights Diner & Cafe",
+      "videoId": "7684711631531740446",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Westfield Garden State Plaza",
+      "videoId": "7684684109217549598",
       "why": "no numerical food score spoken on camera"
     }
   ]
