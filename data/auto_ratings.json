@@ -2448,7 +2448,7 @@
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7684447765543308574": {
     "name": "State University of New York at New Paltz",
@@ -2503,20 +2503,66 @@
   "7684720157767306526": {
     "name": "Hudson Valley Mall",
     "address": "1300 Ulster Ave, Kingston, NY 12401, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 1.0
+      }
+    ],
+    "attempts": 2
   },
   "7684711631531740446": {
     "name": "Broadway Lights Diner & Cafe",
     "address": "713 Broadway, Kingston, NY 12401, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Chicken",
+        "score": 3.9
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7684684109217549598": {
     "name": "Westfield Garden State Plaza",
     "address": "One Garden State Plaza Pkwy, Paramus, NJ 07652, USA",
     "status": "no_scores",
     "items": [],
+    "attempts": 1
+  },
+  "7684788646569872670": {
+    "name": "The Kaatskeller",
+    "address": "39 Main St, Livingston Manor, NY 12758, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684781803462249759": {
+    "name": "Barthel's Creamery",
+    "address": "8065 US-209, Ellenville, NY 12428, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684755873973013791": {
+    "name": "New Paltz",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7684740675178482974": {
+    "name": "Kingston",
+    "address": "New York, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.8
+      }
+    ],
     "attempts": 1
   }
 }

@@ -3433,6 +3433,76 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Hudson Valley Mall",
+      "place": "1300 Ulster Ave",
+      "address": "1300 Ulster Ave, Kingston, NY 12401, USA",
+      "score": 1.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7684720157767306526",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Broadway Lights Diner & Cafe",
+      "place": "713 Broadway",
+      "address": "713 Broadway, Kingston, NY 12401, USA",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        },
+        {
+          "item": "Chicken",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7684711631531740446",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Kingston",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 3.8,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7684740675178482974",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -3712,19 +3782,24 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Hudson Valley Mall",
-      "videoId": "7684720157767306526",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Broadway Lights Diner & Cafe",
-      "videoId": "7684711631531740446",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Westfield Garden State Plaza",
       "videoId": "7684684109217549598",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Kaatskeller",
+      "videoId": "7684788646569872670",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Barthel's Creamery",
+      "videoId": "7684781803462249759",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "New Paltz",
+      "videoId": "7684755873973013791",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
