@@ -3594,6 +3594,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Becky's Diner",
+      "place": "310 Broad St",
+      "address": "310 Broad St, Waverly, NY 14892, USA",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pancakes",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7685053731758476574",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Livingston Manor",
       "place": "New York",
       "address": "New York, United States",
@@ -3902,11 +3924,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Becky's Diner",
-      "videoId": "7685053731758476574",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Westfield Garden State Plaza",
       "videoId": "7685025169877814559",
       "why": "no numerical food score spoken on camera"
@@ -3915,6 +3932,21 @@ window.RATINGS_AUTO = {
       "name": "Livingston Manor",
       "videoId": "7685015373460065566",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Elmira College",
+      "videoId": "7685084664091987231",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Arnot Mall",
+      "videoId": "7685071642174803230",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Soprano\u2019s Market",
+      "videoId": "7685067618352418079",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
