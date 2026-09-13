@@ -3484,6 +3484,72 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "The Kaatskeller",
+      "place": "39 Main St",
+      "address": "39 Main St, Livingston Manor, NY 12758, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7684788646569872670",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Barthel's Creamery",
+      "place": "8065 US-209",
+      "address": "8065 US-209, Ellenville, NY 12428, USA",
+      "score": 3.2,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7684781803462249759",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "New Paltz",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7684755873973013791",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Kingston",
       "place": "New York",
       "address": "New York, United States",
@@ -3787,19 +3853,14 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "The Kaatskeller",
-      "videoId": "7684788646569872670",
+      "name": "Binghamton",
+      "videoId": "7684890116300573983",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Barthel's Creamery",
-      "videoId": "7684781803462249759",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "New Paltz",
-      "videoId": "7684755873973013791",
-      "why": "transcript not available yet - will keep trying"
+      "name": "Untagged off-menu spot",
+      "videoId": "7684831474926882078",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
