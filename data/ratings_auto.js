@@ -3569,6 +3569,50 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7684890116300573983",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Livingston Manor",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7685012273584196894",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -3853,13 +3897,23 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Binghamton",
-      "videoId": "7684890116300573983",
+      "name": "Untagged off-menu spot",
+      "videoId": "7684831474926882078",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Becky's Diner",
+      "videoId": "7685053731758476574",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Untagged off-menu spot",
-      "videoId": "7684831474926882078",
+      "name": "Westfield Garden State Plaza",
+      "videoId": "7685025169877814559",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Livingston Manor",
+      "videoId": "7685015373460065566",
       "why": "no numerical food score spoken on camera"
     }
   ]
