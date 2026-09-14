@@ -2683,14 +2683,16 @@
   "7685172551760284958": {
     "name": "Westfield Garden State Plaza",
     "address": "One Garden State Plaza Pkwy, Paramus, NJ 07652, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7685161341396487454": {
     "name": "Woodbury Common Premium Outlets",
     "address": "498 Red Apple Ct, Central Valley, NY 10917, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7685150655819910430": {
     "name": "Binghamton University",
@@ -2737,6 +2739,30 @@
     "address": "",
     "status": "no_scores",
     "items": [],
+    "attempts": 1
+  },
+  "7685187392633834782": {
+    "name": "Waverly",
+    "address": "New York, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 1
+  },
+  "7685177181198208287": {
+    "name": "Elmira",
+    "address": "New York, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      }
+    ],
     "attempts": 1
   }
 }
