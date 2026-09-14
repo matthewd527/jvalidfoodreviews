@@ -3635,6 +3635,146 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Elmira College",
+      "place": "1 Park Pl",
+      "address": "1 Park Pl, Elmira, NY 14901, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7685084664091987231",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Arnot Mall",
+      "place": "3300 Chambers Rd",
+      "address": "3300 Chambers Rd, Horseheads, NY 14845, USA",
+      "score": 1.2,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7685071642174803230",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Soprano\u2019s Market",
+      "place": "607 Cayuta Ave",
+      "address": "607 Cayuta Ave, Waverly, NY 14892, USA",
+      "score": 3.95,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.2
+        },
+        {
+          "item": "Pizza",
+          "score": 3.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7685067618352418079",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 3.0,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 5.0
+        },
+        {
+          "item": "Chicken",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7685150655819910430",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Ice Cream",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7685138500944989470",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Arnot Mall",
+      "place": "3300 Chambers Rd",
+      "address": "3300 Chambers Rd, Horseheads, NY 14845, USA",
+      "score": 3.1,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 3.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7685118058272148766",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -3934,19 +4074,19 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Elmira College",
-      "videoId": "7685084664091987231",
+      "name": "Westfield Garden State Plaza",
+      "videoId": "7685172551760284958",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Arnot Mall",
-      "videoId": "7685071642174803230",
+      "name": "Woodbury Common Premium Outlets",
+      "videoId": "7685161341396487454",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Soprano\u2019s Market",
-      "videoId": "7685067618352418079",
-      "why": "transcript not available yet - will keep trying"
+      "name": "Untagged off-menu spot",
+      "videoId": "7685105126016617758",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
