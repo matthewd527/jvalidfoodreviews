@@ -2764,5 +2764,66 @@
       }
     ],
     "attempts": 1
+  },
+  "7685451175302286622": {
+    "name": "Greene",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7685440884783025439": {
+    "name": "Tony T's",
+    "address": "2 N Canal St, Greene, NY 13778, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7685422880095620383": {
+    "name": "Palisades Center",
+    "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7685405892308716830": {
+    "name": "Syracuse University",
+    "address": "900 South Crouse Ave., Syracuse, NY 13244, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7685374268347075870": {
+    "name": "Westchester Center",
+    "address": "311 North St, White Plains, NY 10605, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7685367840005688606": {
+    "name": "Arnot Mall",
+    "address": "3300 Chambers Rd, Horseheads, NY 14845, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Taco",
+        "score": 4.5
+      }
+    ],
+    "attempts": 1
+  },
+  "7685365981270641951": {
+    "name": "Binghamton",
+    "address": "New York, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 1.0
+      }
+    ],
+    "attempts": 1
   }
 }

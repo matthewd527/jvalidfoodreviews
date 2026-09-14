@@ -3819,6 +3819,54 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Arnot Mall",
+      "place": "3300 Chambers Rd",
+      "address": "3300 Chambers Rd, Horseheads, NY 14845, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Taco",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7685367840005688606",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 3.0,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7685365981270641951",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4130,6 +4178,31 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7685105126016617758",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Greene",
+      "videoId": "7685451175302286622",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Tony T's",
+      "videoId": "7685440884783025439",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Palisades Center",
+      "videoId": "7685422880095620383",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Syracuse University",
+      "videoId": "7685405892308716830",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Westchester Center",
+      "videoId": "7685374268347075870",
       "why": "no numerical food score spoken on camera"
     }
   ]
