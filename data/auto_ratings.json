@@ -2845,8 +2845,9 @@
   "7685548089289100574": {
     "name": "Westfield Garden State Plaza",
     "address": "One Garden State Plaza Pkwy, Paramus, NJ 07652, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7685498772276792606": {
     "name": "",
@@ -2874,6 +2875,25 @@
       {
         "item": "Spoken score",
         "score": 4.7
+      }
+    ],
+    "attempts": 1
+  },
+  "7685570006054194463": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7685561420708121887": {
+    "name": "The Original Italian Pizza",
+    "address": "25 Washington Ave, Endicott, NY 13760, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.4
       }
     ],
     "attempts": 1

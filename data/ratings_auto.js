@@ -3941,6 +3941,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "The Original Italian Pizza",
+      "place": "25 Washington Ave",
+      "address": "25 Washington Ave, Endicott, NY 13760, USA",
+      "score": 3.4,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.4
+        }
+      ],
+      "posted": null,
+      "videoId": "7685561420708121887",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4272,7 +4294,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Westfield Garden State Plaza",
       "videoId": "7685548089289100574",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Untagged off-menu spot",
@@ -4282,6 +4304,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Roosevelt Field",
       "videoId": "7685485447430130975",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7685570006054194463",
       "why": "no numerical food score spoken on camera"
     }
   ]
