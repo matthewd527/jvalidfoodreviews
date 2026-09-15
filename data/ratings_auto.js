@@ -4310,6 +4310,26 @@ window.RATINGS_AUTO = {
       "name": "Untagged off-menu spot",
       "videoId": "7685570006054194463",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Subs Hub",
+      "videoId": "7685802961586425119",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Manhattan",
+      "videoId": "7685790614482423070",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Endicott",
+      "videoId": "7685750086348901662",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Woodbury Common Premium Outlets",
+      "videoId": "7685741704749567263",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

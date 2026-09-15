@@ -2897,5 +2897,29 @@
       }
     ],
     "attempts": 1
+  },
+  "7685802961586425119": {
+    "name": "Subs Hub",
+    "address": "Oakdale Mall Unit 9, Johnson City, NY 13790, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7685790614482423070": {
+    "name": "Manhattan",
+    "address": "New York, NY, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7685750086348901662": {
+    "name": "Endicott",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7685741704749567263": {
+    "name": "Woodbury Common Premium Outlets",
+    "address": "498 Red Apple Ct, Central Valley, NY 10917, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }
