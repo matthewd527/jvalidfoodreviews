@@ -3963,6 +3963,50 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Subs Hub",
+      "place": "Oakdale Mall Unit 9",
+      "address": "Oakdale Mall Unit 9, Johnson City, NY 13790, USA",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7685802961586425119",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "SUNY Cortland",
+      "place": "22 Graham Ave",
+      "address": "22 Graham Ave, Cortland, NY 13045, USA",
+      "score": 1.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7685828202106850591",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4312,11 +4356,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Subs Hub",
-      "videoId": "7685802961586425119",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Manhattan",
       "videoId": "7685790614482423070",
       "why": "transcript not available yet - will keep trying"
@@ -4329,6 +4368,26 @@ window.RATINGS_AUTO = {
     {
       "name": "Woodbury Common Premium Outlets",
       "videoId": "7685741704749567263",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Super Cream Dairy Bar",
+      "videoId": "7685856239015709983",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "SUNY Cortland",
+      "videoId": "7685850385931717919",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Nicky C's Hometown Pizzeria and Meatball Shop",
+      "videoId": "7685842489420352799",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "A Round Pizza",
+      "videoId": "7685831638948842782",
       "why": "transcript not available yet - will keep trying"
     }
   ]
