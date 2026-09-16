@@ -2914,43 +2914,43 @@
     "name": "Manhattan",
     "address": "New York, NY, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7685750086348901662": {
     "name": "Endicott",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7685741704749567263": {
     "name": "Woodbury Common Premium Outlets",
     "address": "498 Red Apple Ct, Central Valley, NY 10917, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7685856239015709983": {
     "name": "Super Cream Dairy Bar",
     "address": "75 N West St, Homer, NY 13077, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7685850385931717919": {
     "name": "SUNY Cortland",
     "address": "22 Graham Ave, Cortland, NY 13045, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7685842489420352799": {
     "name": "Nicky C's Hometown Pizzeria and Meatball Shop",
     "address": "12 S West St, Homer, NY 13077, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7685831638948842782": {
     "name": "A Round Pizza",
     "address": "4943 NY-281, Cortland, NY 13045, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7685828202106850591": {
     "name": "SUNY Cortland",
@@ -2968,17 +2968,41 @@
     "name": "Cortland Diner",
     "address": "117 Main St, Cortland, NY 13045, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7685883128451321118": {
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7685862218524658975": {
     "name": "Westfield Garden State Plaza",
     "address": "One Garden State Plaza Pkwy, Paramus, NJ 07652, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7685968606248668446": {
+    "name": "Binghamton University Nature Preserve",
+    "address": "South Rd, Broome, New York 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7685946173210873118": {
+    "name": "Cortland",
+    "address": "Cortland County, New York, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.1
+      }
+    ],
+    "attempts": 1
+  },
+  "7685933368831266079": {
+    "name": "Arizona State University Tempe Campus",
+    "address": "401 E Apache Blvd, Maricopa, Arizona 85281-6799, USA",
     "status": "no_transcript",
     "attempts": 1
   }

@@ -4007,6 +4007,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Cortland",
+      "place": "Cortland County",
+      "address": "Cortland County, New York, United States",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7685946173210873118",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4403,6 +4425,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Westfield Garden State Plaza",
       "videoId": "7685862218524658975",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton University Nature Preserve",
+      "videoId": "7685968606248668446",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Arizona State University Tempe Campus",
+      "videoId": "7685933368831266079",
       "why": "transcript not available yet - will keep trying"
     }
   ]
