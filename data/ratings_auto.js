@@ -4436,6 +4436,31 @@ window.RATINGS_AUTO = {
       "name": "Arizona State University Tempe Campus",
       "videoId": "7685933368831266079",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Vinny\u2019s Pizza",
+      "videoId": "7686172938805988638",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Coaches Pizza",
+      "videoId": "7686167347257806110",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Crafted Cup & Kitchen",
+      "videoId": "7686160290378960158",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Westchester County Center",
+      "videoId": "7686132261938269471",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Palisades Center",
+      "videoId": "7686121053889826079",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
