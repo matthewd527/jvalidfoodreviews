@@ -4389,6 +4389,21 @@ window.RATINGS_AUTO = {
       "name": "A Round Pizza",
       "videoId": "7685831638948842782",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Cortland Diner",
+      "videoId": "7685904130199571743",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7685883128451321118",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Westfield Garden State Plaza",
+      "videoId": "7685862218524658975",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
