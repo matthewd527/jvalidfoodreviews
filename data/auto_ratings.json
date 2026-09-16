@@ -2932,25 +2932,25 @@
     "name": "Super Cream Dairy Bar",
     "address": "75 N West St, Homer, NY 13077, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7685850385931717919": {
     "name": "SUNY Cortland",
     "address": "22 Graham Ave, Cortland, NY 13045, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7685842489420352799": {
     "name": "Nicky C's Hometown Pizzeria and Meatball Shop",
     "address": "12 S West St, Homer, NY 13077, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7685831638948842782": {
     "name": "A Round Pizza",
     "address": "4943 NY-281, Cortland, NY 13045, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7685828202106850591": {
     "name": "SUNY Cortland",
@@ -2968,25 +2968,25 @@
     "name": "Cortland Diner",
     "address": "117 Main St, Cortland, NY 13045, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7685883128451321118": {
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7685862218524658975": {
     "name": "Westfield Garden State Plaza",
     "address": "One Garden State Plaza Pkwy, Paramus, NJ 07652, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7685968606248668446": {
     "name": "Binghamton University Nature Preserve",
     "address": "South Rd, Broome, New York 13850, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7685946173210873118": {
     "name": "Cortland",
@@ -3004,35 +3004,41 @@
     "name": "Arizona State University Tempe Campus",
     "address": "401 E Apache Blvd, Maricopa, Arizona 85281-6799, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686172938805988638": {
     "name": "Vinny\u2019s Pizza",
     "address": "150 Broad St, Waverly, NY 14892, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686167347257806110": {
     "name": "Coaches Pizza",
     "address": "227 Broad St Apt 2, Waverly, NY 14892, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686160290378960158": {
     "name": "Crafted Cup & Kitchen",
     "address": "441 Fulton St, Waverly, NY 14892, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686132261938269471": {
     "name": "Westchester County Center",
     "address": "198 N Central Ave, White Plains, NY 10606, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686121053889826079": {
     "name": "Palisades Center",
     "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7686225602294172959": {
+    "name": "Gabriella's Cakes & Co",
+    "address": "265 Main St, Johnson City, NY 13790, USA",
     "status": "no_transcript",
     "attempts": 1
   }

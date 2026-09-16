@@ -4461,6 +4461,11 @@ window.RATINGS_AUTO = {
       "name": "Palisades Center",
       "videoId": "7686121053889826079",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Gabriella's Cakes & Co",
+      "videoId": "7686225602294172959",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
