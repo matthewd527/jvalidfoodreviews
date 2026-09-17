@@ -4490,6 +4490,11 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
+      "name": "Walmart Supercenter",
+      "videoId": "7686281729748798751",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
       "name": "Untagged off-menu spot",
       "videoId": "7686276627508022558",
       "why": "no numerical food score spoken on camera"
@@ -4517,6 +4522,26 @@ window.RATINGS_AUTO = {
     {
       "name": "Nip's Park Avenue Saloon",
       "videoId": "7686301291676568863",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Massimo's Original Italian Pizzeria & Restaurant",
+      "videoId": "7686545233462545695",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Ocean County Mall",
+      "videoId": "7686531472181693727",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Palisades Center",
+      "videoId": "7686484989478751518",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Palisades Center",
+      "videoId": "7686481938491657503",
       "why": "transcript not available yet - will keep trying"
     }
   ]
