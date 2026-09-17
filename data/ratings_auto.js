@@ -4532,16 +4532,46 @@ window.RATINGS_AUTO = {
     {
       "name": "Ocean County Mall",
       "videoId": "7686531472181693727",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Palisades Center",
       "videoId": "7686484989478751518",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Palisades Center",
       "videoId": "7686481938491657503",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Hudson Valley",
+      "videoId": "7686598609437003039",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Anthony's Restaurant & Pizzeria",
+      "videoId": "7686572985540480286",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Lydia's Bake Shop",
+      "videoId": "7686564252387118367",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Montrose",
+      "videoId": "7686562398618045727",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7686553615288306974",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Amato's Burgers & Scoops",
+      "videoId": "7686550774217837855",
       "why": "transcript not available yet - will keep trying"
     }
   ]
