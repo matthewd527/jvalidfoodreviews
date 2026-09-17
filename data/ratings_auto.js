@@ -4029,6 +4029,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Johnson City",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7686299149557353758",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4433,6 +4455,11 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
+      "name": "Arizona State University Tempe Campus",
+      "videoId": "7685933368831266079",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
       "name": "Vinny\u2019s Pizza",
       "videoId": "7686172938805988638",
       "why": "transcript not available yet - will keep trying"
@@ -4463,14 +4490,9 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Walmart Supercenter",
-      "videoId": "7686281729748798751",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7686276627508022558",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "McDonald's",
@@ -4485,6 +4507,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged ice cream spot",
       "videoId": "7686231209545927967",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Sugar Lips Ice Cream Shop",
+      "videoId": "7686311409520512287",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Nip's Park Avenue Saloon",
+      "videoId": "7686301291676568863",
       "why": "transcript not available yet - will keep trying"
     }
   ]

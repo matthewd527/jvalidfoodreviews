@@ -2986,7 +2986,7 @@
     "name": "Binghamton University Nature Preserve",
     "address": "South Rd, Broome, New York 13850, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7685946173210873118": {
     "name": "Cortland",
@@ -3001,74 +3001,99 @@
     "attempts": 1
   },
   "7685933368831266079": {
-    "status": "error",
-    "why": "no state blob",
-    "attempts": 4
+    "name": "Arizona State University Tempe Campus",
+    "address": "401 E Apache Blvd, Maricopa, Arizona 85281-6799, USA",
+    "status": "no_transcript",
+    "attempts": 5
   },
   "7686172938805988638": {
     "name": "Vinny\u2019s Pizza",
     "address": "150 Broad St, Waverly, NY 14892, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686167347257806110": {
     "name": "Coaches Pizza",
     "address": "227 Broad St Apt 2, Waverly, NY 14892, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686160290378960158": {
     "name": "Crafted Cup & Kitchen",
     "address": "441 Fulton St, Waverly, NY 14892, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686132261938269471": {
     "name": "Westchester County Center",
     "address": "198 N Central Ave, White Plains, NY 10606, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686121053889826079": {
     "name": "Palisades Center",
     "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686225602294172959": {
     "name": "Gabriella's Cakes & Co",
     "address": "265 Main St, Johnson City, NY 13790, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686281729748798751": {
-    "name": "Walmart Supercenter",
-    "address": "288 Larkin Dr, Monroe, NY 10950, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "error",
+    "why": "no state blob",
+    "attempts": 2
   },
   "7686276627508022558": {
     "name": "",
     "address": "",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7686239589614308639": {
     "name": "McDonald's",
     "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686235994542083358": {
     "name": "Golden Star",
     "address": "217 Harry L Dr Apt 1, Johnson City, NY 13790, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686231209545927967": {
     "name": "",
     "address": "",
     "status": "no_transcript",
+    "attempts": 2
+  },
+  "7686311409520512287": {
+    "name": "Sugar Lips Ice Cream Shop",
+    "address": "103 Riverside Dr, Johnson City, NY 13790, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686301291676568863": {
+    "name": "Nip's Park Avenue Saloon",
+    "address": "135 Park Ave, Binghamton, NY 13903, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686299149557353758": {
+    "name": "Johnson City",
+    "address": "New York, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      }
+    ],
     "attempts": 1
   }
 }
