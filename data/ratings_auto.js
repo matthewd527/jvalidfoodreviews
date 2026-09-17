@@ -4433,11 +4433,6 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Arizona State University Tempe Campus",
-      "videoId": "7685933368831266079",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Vinny\u2019s Pizza",
       "videoId": "7686172938805988638",
       "why": "transcript not available yet - will keep trying"
@@ -4465,6 +4460,31 @@ window.RATINGS_AUTO = {
     {
       "name": "Gabriella's Cakes & Co",
       "videoId": "7686225602294172959",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Walmart Supercenter",
+      "videoId": "7686281729748798751",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7686276627508022558",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7686239589614308639",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Golden Star",
+      "videoId": "7686235994542083358",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged ice cream spot",
+      "videoId": "7686231209545927967",
       "why": "transcript not available yet - will keep trying"
     }
   ]
