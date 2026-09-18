@@ -3077,13 +3077,13 @@
     "name": "Sugar Lips Ice Cream Shop",
     "address": "103 Riverside Dr, Johnson City, NY 13790, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686301291676568863": {
     "name": "Nip's Park Avenue Saloon",
     "address": "135 Park Ave, Binghamton, NY 13903, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686299149557353758": {
     "name": "Johnson City",
@@ -3127,31 +3127,32 @@
     "name": "Palisades Center",
     "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686598609437003039": {
     "name": "Hudson Valley",
     "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "no_scores",
+    "items": [],
+    "attempts": 3
   },
   "7686572985540480286": {
     "name": "Anthony's Restaurant & Pizzeria",
     "address": "South Montrose Comm Church, 10811 PA-29, Montrose, PA 18801, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686564252387118367": {
     "name": "Lydia's Bake Shop",
     "address": "202 Church St, Montrose, PA 18801, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686562398618045727": {
     "name": "Montrose",
     "address": "Pennsylvania, United States",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686553615288306974": {
     "name": "McDonald's",
@@ -3169,23 +3170,53 @@
     "name": "Amato's Burgers & Scoops",
     "address": "401 Grow Ave, Montrose, PA 18801, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686638341999070494": {
     "name": "TURKISH GRILL DONER KEBAP HOUSE (HALAL)",
     "address": "187 Main St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686613535761222943": {
     "name": "McDonald's",
     "address": "167 Main St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686608972513578270": {
     "name": "SUNY Broome Community College",
     "address": "907 Front St, Binghamton, NY 13905, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7686691754401074463": {
+    "name": "The Black Sheep Tavern",
+    "address": "142 Washington St, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686688255676321054": {
+    "name": "The Black Sheep Tavern",
+    "address": "142 Washington St, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686670985277230367": {
+    "name": "Sammy's Ice Cream and Italian Ice",
+    "address": "3208 E Main St, Endwell, NY 13760, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Ice Cream",
+        "score": 4.5
+      }
+    ],
+    "attempts": 1
+  },
+  "7686663682792672542": {
+    "name": "Gustaferro\u2019s",
+    "address": "126 1/2 Henry St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
     "attempts": 1
   }

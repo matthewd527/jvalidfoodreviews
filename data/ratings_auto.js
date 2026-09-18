@@ -4095,6 +4095,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Sammy's Ice Cream and Italian Ice",
+      "place": "3208 E Main St",
+      "address": "3208 E Main St, Endwell, NY 13760, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Ice Cream",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7686670985277230367",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4586,7 +4608,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Hudson Valley",
       "videoId": "7686598609437003039",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Anthony's Restaurant & Pizzeria",
@@ -4621,6 +4643,21 @@ window.RATINGS_AUTO = {
     {
       "name": "SUNY Broome Community College",
       "videoId": "7686608972513578270",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "The Black Sheep Tavern",
+      "videoId": "7686691754401074463",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "The Black Sheep Tavern",
+      "videoId": "7686688255676321054",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Gustaferro\u2019s",
+      "videoId": "7686663682792672542",
       "why": "transcript not available yet - will keep trying"
     }
   ]
