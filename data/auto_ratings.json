@@ -3046,7 +3046,7 @@
     "name": "Walmart Supercenter",
     "address": "288 Larkin Dr, Monroe, NY 10950, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686276627508022558": {
     "name": "",
@@ -3059,31 +3059,31 @@
     "name": "McDonald's",
     "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686235994542083358": {
     "name": "Golden Star",
     "address": "217 Harry L Dr Apt 1, Johnson City, NY 13790, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686231209545927967": {
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686311409520512287": {
     "name": "Sugar Lips Ice Cream Shop",
     "address": "103 Riverside Dr, Johnson City, NY 13790, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686301291676568863": {
     "name": "Nip's Park Avenue Saloon",
     "address": "135 Park Ave, Binghamton, NY 13903, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686299149557353758": {
     "name": "Johnson City",
@@ -3100,8 +3100,14 @@
   "7686545233462545695": {
     "name": "Massimo's Original Italian Pizzeria & Restaurant",
     "address": "401 Grow Ave, Montrose, PA, United States",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Slice",
+        "score": 4.4
+      }
+    ],
+    "attempts": 3
   },
   "7686531472181693727": {
     "name": "Ocean County Mall",
@@ -3121,41 +3127,65 @@
     "name": "Palisades Center",
     "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686598609437003039": {
     "name": "Hudson Valley",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686572985540480286": {
     "name": "Anthony's Restaurant & Pizzeria",
     "address": "South Montrose Comm Church, 10811 PA-29, Montrose, PA 18801, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686564252387118367": {
     "name": "Lydia's Bake Shop",
     "address": "202 Church St, Montrose, PA 18801, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686562398618045727": {
     "name": "Montrose",
     "address": "Pennsylvania, United States",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686553615288306974": {
     "name": "McDonald's",
     "address": "494 Grow Ave, Montrose, PA 18801, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7686550774217837855": {
     "name": "Amato's Burgers & Scoops",
     "address": "401 Grow Ave, Montrose, PA 18801, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7686638341999070494": {
+    "name": "TURKISH GRILL DONER KEBAP HOUSE (HALAL)",
+    "address": "187 Main St, Binghamton, NY 13905, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686613535761222943": {
+    "name": "McDonald's",
+    "address": "167 Main St, Binghamton, NY 13905, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686608972513578270": {
+    "name": "SUNY Broome Community College",
+    "address": "907 Front St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
     "attempts": 1
   }

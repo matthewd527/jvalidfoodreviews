@@ -4051,6 +4051,50 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Massimo's Original Italian Pizzeria & Restaurant",
+      "place": "401 Grow Ave",
+      "address": "401 Grow Ave, Montrose, PA, United States",
+      "score": 4.4,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Slice",
+          "score": 4.4
+        }
+      ],
+      "posted": null,
+      "videoId": "7686545233462545695",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "McDonald's",
+      "place": "494 Grow Ave",
+      "address": "494 Grow Ave, Montrose, PA 18801, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7686553615288306974",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4525,11 +4569,6 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Massimo's Original Italian Pizzeria & Restaurant",
-      "videoId": "7686545233462545695",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Ocean County Mall",
       "videoId": "7686531472181693727",
       "why": "no numerical food score spoken on camera"
@@ -4565,13 +4604,23 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "McDonald's",
-      "videoId": "7686553615288306974",
+      "name": "Amato's Burgers & Scoops",
+      "videoId": "7686550774217837855",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Amato's Burgers & Scoops",
-      "videoId": "7686550774217837855",
+      "name": "TURKISH GRILL DONER KEBAP HOUSE (HALAL)",
+      "videoId": "7686638341999070494",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7686613535761222943",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "SUNY Broome Community College",
+      "videoId": "7686608972513578270",
       "why": "transcript not available yet - will keep trying"
     }
   ]
