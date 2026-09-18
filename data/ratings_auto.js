@@ -4117,6 +4117,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Brozzetti's Pizza",
+      "place": "72 Baldwin St",
+      "address": "72 Baldwin St, Johnson City, NY 13790, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7686896554350988574",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4671,11 +4693,6 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Brozzetti's Pizza",
-      "videoId": "7686896554350988574",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7686861934112689438",
       "why": "no numerical food score spoken on camera"
@@ -4683,6 +4700,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Hudson Valley",
       "videoId": "7686855964573633822",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "New Paltz",
+      "videoId": "7686918381773049118",
       "why": "transcript not available yet - will keep trying"
     }
   ]
