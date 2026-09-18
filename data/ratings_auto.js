@@ -4659,6 +4659,31 @@ window.RATINGS_AUTO = {
       "name": "Gustaferro\u2019s",
       "videoId": "7686663682792672542",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7686910961344711966",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "The Bagel Factory",
+      "videoId": "7686909526750137631",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Brozzetti's Pizza",
+      "videoId": "7686896554350988574",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7686861934112689438",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Hudson Valley",
+      "videoId": "7686855964573633822",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

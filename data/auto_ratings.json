@@ -3127,7 +3127,7 @@
     "name": "Palisades Center",
     "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686598609437003039": {
     "name": "Hudson Valley",
@@ -3140,19 +3140,19 @@
     "name": "Anthony's Restaurant & Pizzeria",
     "address": "South Montrose Comm Church, 10811 PA-29, Montrose, PA 18801, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686564252387118367": {
     "name": "Lydia's Bake Shop",
     "address": "202 Church St, Montrose, PA 18801, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686562398618045727": {
     "name": "Montrose",
     "address": "Pennsylvania, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686553615288306974": {
     "name": "McDonald's",
@@ -3170,37 +3170,37 @@
     "name": "Amato's Burgers & Scoops",
     "address": "401 Grow Ave, Montrose, PA 18801, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686638341999070494": {
     "name": "TURKISH GRILL DONER KEBAP HOUSE (HALAL)",
     "address": "187 Main St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686613535761222943": {
     "name": "McDonald's",
     "address": "167 Main St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686608972513578270": {
     "name": "SUNY Broome Community College",
     "address": "907 Front St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686691754401074463": {
     "name": "The Black Sheep Tavern",
     "address": "142 Washington St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686688255676321054": {
     "name": "The Black Sheep Tavern",
     "address": "142 Washington St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7686670985277230367": {
     "name": "Sammy's Ice Cream and Italian Ice",
@@ -3217,6 +3217,37 @@
   "7686663682792672542": {
     "name": "Gustaferro\u2019s",
     "address": "126 1/2 Henry St, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7686910961344711966": {
+    "name": "McDonald's",
+    "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686909526750137631": {
+    "name": "The Bagel Factory",
+    "address": "9 Glenwood Ave, Binghamton, NY 13905, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686896554350988574": {
+    "name": "Brozzetti's Pizza",
+    "address": "72 Baldwin St, Johnson City, NY 13790, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686861934112689438": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7686855964573633822": {
+    "name": "Hudson Valley",
+    "address": "New York, United States",
     "status": "no_transcript",
     "attempts": 1
   }
