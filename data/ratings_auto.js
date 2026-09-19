@@ -4187,6 +4187,36 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Nina's Pizzeria & Restaurant",
+      "place": "32 S Broad St",
+      "address": "32 S Broad St, Norwich, NY 13815, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        },
+        {
+          "item": "Chicken",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7687306392314678559",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4778,6 +4808,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Captain's Table",
       "videoId": "7687243036333526302",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7687312794160516382",
       "why": "transcript not available yet - will keep trying"
     }
   ]
