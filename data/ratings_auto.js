@@ -4120,6 +4120,54 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "McDonald's",
+      "place": "3136 Vestal Pkwy E",
+      "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 3.9,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7686910961344711966",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "The Bagel Factory",
+      "place": "9 Glenwood Ave",
+      "address": "9 Glenwood Ave, Binghamton, NY 13905, USA",
+      "score": 3.85,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.9
+        },
+        {
+          "item": "Sandwich",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7686909526750137631",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Brozzetti's Pizza",
       "place": "72 Baldwin St",
       "address": "72 Baldwin St, Johnson City, NY 13790, USA",
@@ -4683,16 +4731,6 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "McDonald's",
-      "videoId": "7686910961344711966",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "The Bagel Factory",
-      "videoId": "7686909526750137631",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7686861934112689438",
       "why": "no numerical food score spoken on camera"
@@ -4705,6 +4743,26 @@ window.RATINGS_AUTO = {
     {
       "name": "New Paltz",
       "videoId": "7686918381773049118",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Buffet Star",
+      "videoId": "7687033609567358238",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Hacienda Mexican Restaurant",
+      "videoId": "7687012224501599519",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7686995767705242910",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7686980418255457567",
       "why": "transcript not available yet - will keep trying"
     }
   ]

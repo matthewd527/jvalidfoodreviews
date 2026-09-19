@@ -3176,31 +3176,31 @@
     "name": "TURKISH GRILL DONER KEBAP HOUSE (HALAL)",
     "address": "187 Main St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686613535761222943": {
     "name": "McDonald's",
     "address": "167 Main St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686608972513578270": {
     "name": "SUNY Broome Community College",
     "address": "907 Front St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686691754401074463": {
     "name": "The Black Sheep Tavern",
     "address": "142 Washington St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686688255676321054": {
     "name": "The Black Sheep Tavern",
     "address": "142 Washington St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686670985277230367": {
     "name": "Sammy's Ice Cream and Italian Ice",
@@ -3218,19 +3218,35 @@
     "name": "Gustaferro\u2019s",
     "address": "126 1/2 Henry St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7686910961344711966": {
     "name": "McDonald's",
     "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.9
+      }
+    ],
+    "attempts": 3
   },
   "7686909526750137631": {
     "name": "The Bagel Factory",
     "address": "9 Glenwood Ave, Binghamton, NY 13905, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Sandwich",
+        "score": 3.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 3.9
+      }
+    ],
+    "attempts": 3
   },
   "7686896554350988574": {
     "name": "Brozzetti's Pizza",
@@ -3255,10 +3271,35 @@
     "name": "Hudson Valley",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686918381773049118": {
     "name": "New Paltz",
+    "address": "New York, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
+  },
+  "7687033609567358238": {
+    "name": "Buffet Star",
+    "address": "4089 Vestal Rd, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7687012224501599519": {
+    "name": "Hacienda Mexican Restaurant",
+    "address": "1171 Vestal Ave suite b, Binghamton, NY 13903, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686995767705242910": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7686980418255457567": {
+    "name": "Binghamton",
     "address": "New York, United States",
     "status": "no_transcript",
     "attempts": 1
