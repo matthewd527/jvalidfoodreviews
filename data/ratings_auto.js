@@ -4758,11 +4758,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7686995767705242910",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Binghamton",
       "videoId": "7686980418255457567",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Five Guys",
+      "videoId": "7687075948029644062",
       "why": "transcript not available yet - will keep trying"
     }
   ]
