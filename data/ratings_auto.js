@@ -4769,6 +4769,16 @@ window.RATINGS_AUTO = {
       "name": "Five Guys",
       "videoId": "7687075948029644062",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Birtchy\u2019s Caf\u00e9 Home of Manni\u2019s Donuts",
+      "videoId": "7687261173518978335",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Captain's Table",
+      "videoId": "7687243036333526302",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

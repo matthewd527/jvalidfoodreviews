@@ -3271,7 +3271,7 @@
     "name": "Hudson Valley",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686918381773049118": {
     "name": "New Paltz",
@@ -3284,13 +3284,13 @@
     "name": "Buffet Star",
     "address": "4089 Vestal Rd, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7687012224501599519": {
     "name": "Hacienda Mexican Restaurant",
     "address": "1171 Vestal Ave suite b, Binghamton, NY 13903, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7686995767705242910": {
     "name": "",
@@ -3303,11 +3303,23 @@
     "name": "Binghamton",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7687075948029644062": {
     "name": "Five Guys",
     "address": "4700 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7687261173518978335": {
+    "name": "Birtchy\u2019s Caf\u00e9 Home of Manni\u2019s Donuts",
+    "address": "1185 Vestal Ave, Binghamton, NY 13903, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7687243036333526302": {
+    "name": "Captain's Table",
+    "address": "547 NY-17M, Monroe, NY 10950, USA",
     "status": "no_transcript",
     "attempts": 1
   }
