@@ -3284,13 +3284,13 @@
     "name": "Buffet Star",
     "address": "4089 Vestal Rd, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7687012224501599519": {
     "name": "Hacienda Mexican Restaurant",
     "address": "1171 Vestal Ave suite b, Binghamton, NY 13903, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7686995767705242910": {
     "name": "",
@@ -3303,31 +3303,30 @@
     "name": "Binghamton",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7687075948029644062": {
     "name": "Five Guys",
     "address": "4700 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687261173518978335": {
     "name": "Birtchy\u2019s Caf\u00e9 Home of Manni\u2019s Donuts",
     "address": "1185 Vestal Ave, Binghamton, NY 13903, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7687243036333526302": {
-    "name": "Captain's Table",
-    "address": "547 NY-17M, Monroe, NY 10950, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "error",
+    "why": "no itemStruct",
+    "attempts": 3
   },
   "7687312794160516382": {
     "name": "McDonald's",
     "address": "165 S Broad St, Norwich, NY 13815, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7687306392314678559": {
     "name": "Nina's Pizzeria & Restaurant",
@@ -3347,6 +3346,42 @@
         "score": 4.5
       }
     ],
+    "attempts": 1
+  },
+  "7687383916554095902": {
+    "name": "SUNY Oneonta",
+    "address": "108 Ravine Pkwy, Oneonta, NY 13820, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7687377860419423518": {
+    "name": "Oneonta",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7687359476600491295": {
+    "name": "Tino's Pizza",
+    "address": "180 Main St, Oneonta, NY 13820, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7687356610104118559": {
+    "name": "Southside Mall Cinemas",
+    "address": "5006 NY-23, Oneonta, NY 13820, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7687342541934529823": {
+    "name": "7-Eleven",
+    "address": "570 7th Ave, New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7687331135549984031": {
+    "name": "SUNY Oneonta",
+    "address": "108 Ravine Pkwy, Oneonta, NY 13820, USA",
+    "status": "no_transcript",
     "attempts": 1
   }
 }

@@ -4806,13 +4806,38 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Captain's Table",
-      "videoId": "7687243036333526302",
+      "name": "McDonald's",
+      "videoId": "7687312794160516382",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "McDonald's",
-      "videoId": "7687312794160516382",
+      "name": "SUNY Oneonta",
+      "videoId": "7687383916554095902",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Oneonta",
+      "videoId": "7687377860419423518",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Tino's Pizza",
+      "videoId": "7687359476600491295",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Southside Mall Cinemas",
+      "videoId": "7687356610104118559",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "7-Eleven",
+      "videoId": "7687342541934529823",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "SUNY Oneonta",
+      "videoId": "7687331135549984031",
       "why": "transcript not available yet - will keep trying"
     }
   ]
