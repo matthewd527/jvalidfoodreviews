@@ -4844,6 +4844,11 @@ window.RATINGS_AUTO = {
       "name": "Molly\u2019s Pizza",
       "videoId": "7687425879965732126",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "IHOP",
+      "videoId": "7687638441277836575",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
