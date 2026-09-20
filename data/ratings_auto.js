@@ -4849,6 +4849,16 @@ window.RATINGS_AUTO = {
       "name": "IHOP",
       "videoId": "7687638441277836575",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "KFC",
+      "videoId": "7687687478622391582",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Nirchi's Pizza",
+      "videoId": "7687670232541875487",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

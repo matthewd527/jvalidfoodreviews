@@ -3326,7 +3326,7 @@
     "name": "McDonald's",
     "address": "165 S Broad St, Norwich, NY 13815, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7687306392314678559": {
     "name": "Nina's Pizzeria & Restaurant",
@@ -3352,47 +3352,59 @@
     "name": "SUNY Oneonta",
     "address": "108 Ravine Pkwy, Oneonta, NY 13820, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687377860419423518": {
     "name": "Oneonta",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687359476600491295": {
     "name": "Tino's Pizza",
     "address": "180 Main St, Oneonta, NY 13820, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687356610104118559": {
     "name": "Southside Mall Cinemas",
     "address": "5006 NY-23, Oneonta, NY 13820, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687342541934529823": {
     "name": "7-Eleven",
     "address": "570 7th Ave, New York, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687331135549984031": {
     "name": "SUNY Oneonta",
     "address": "108 Ravine Pkwy, Oneonta, NY 13820, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687425879965732126": {
     "name": "Molly\u2019s Pizza",
     "address": "5006 NY-23, Oneonta, NY 13820, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7687638441277836575": {
     "name": "IHOP",
     "address": "3720 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7687687478622391582": {
+    "name": "KFC",
+    "address": "803 NY-17C, Owego, NY 13827, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7687670232541875487": {
+    "name": "Nirchi's Pizza",
+    "address": "1023 Conklin Rd, Conklin, NY 13748, USA",
     "status": "no_transcript",
     "attempts": 1
   }
