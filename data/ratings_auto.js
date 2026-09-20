@@ -4839,6 +4839,11 @@ window.RATINGS_AUTO = {
       "name": "SUNY Oneonta",
       "videoId": "7687331135549984031",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Molly\u2019s Pizza",
+      "videoId": "7687425879965732126",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
