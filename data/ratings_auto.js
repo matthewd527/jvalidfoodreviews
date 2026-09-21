@@ -4859,6 +4859,16 @@ window.RATINGS_AUTO = {
       "name": "Nirchi's Pizza",
       "videoId": "7687670232541875487",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7687713348464479518",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Brickhouse Pizza",
+      "videoId": "7687706408309099807",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
