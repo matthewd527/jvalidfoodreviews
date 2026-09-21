@@ -4869,6 +4869,26 @@ window.RATINGS_AUTO = {
       "name": "Brickhouse Pizza",
       "videoId": "7687706408309099807",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Sonic Drive-In",
+      "videoId": "7687827972115402014",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7687793987729526046",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Big Dipper BBQ 2",
+      "videoId": "7687791242532441375",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Windsor",
+      "videoId": "7687784739561917727",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
