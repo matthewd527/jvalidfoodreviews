@@ -3394,53 +3394,71 @@
     "name": "IHOP",
     "address": "3720 Vestal Pkwy E, Vestal, NY 13850, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7687687478622391582": {
     "name": "KFC",
     "address": "803 NY-17C, Owego, NY 13827, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687670232541875487": {
     "name": "Nirchi's Pizza",
     "address": "1023 Conklin Rd, Conklin, NY 13748, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687713348464479518": {
     "name": "McDonald's",
     "address": "29 Hickories Park Rd, Owego, NY 13827, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7687706408309099807": {
     "name": "Brickhouse Pizza",
     "address": "711 NY-17C, Owego, NY 13827, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7687827972115402014": {
     "name": "Sonic Drive-In",
     "address": "1103 Front St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7687793987729526046": {
     "name": "McDonald's",
     "address": "30 N Rd, Windsor, NY 13865, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7687791242532441375": {
     "name": "Big Dipper BBQ 2",
     "address": "1167 Conklin Rd, Conklin, NY 13748, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7687784739561917727": {
     "name": "Windsor",
     "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7688044776737869087": {
+    "name": "McDonald's",
+    "address": "141 Delaware Ave, Sidney, NY 13838, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7688037127354928415": {
+    "name": "Backdoor Bar & Grille",
+    "address": "11 W Main St, Bainbridge, NY 13733, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7688001591047114014": {
+    "name": "The Union Diner",
+    "address": "3000 E Main St, Endicott, NY 13760, USA",
     "status": "no_transcript",
     "attempts": 1
   }

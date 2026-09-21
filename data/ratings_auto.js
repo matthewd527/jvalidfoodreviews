@@ -4889,6 +4889,21 @@ window.RATINGS_AUTO = {
       "name": "Windsor",
       "videoId": "7687784739561917727",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7688044776737869087",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Backdoor Bar & Grille",
+      "videoId": "7688037127354928415",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "The Union Diner",
+      "videoId": "7688001591047114014",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
