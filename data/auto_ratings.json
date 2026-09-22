@@ -3412,42 +3412,49 @@
     "name": "McDonald's",
     "address": "29 Hickories Park Rd, Owego, NY 13827, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7687706408309099807": {
     "name": "Brickhouse Pizza",
     "address": "711 NY-17C, Owego, NY 13827, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7687827972115402014": {
     "name": "Sonic Drive-In",
     "address": "1103 Front St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687793987729526046": {
     "name": "McDonald's",
     "address": "30 N Rd, Windsor, NY 13865, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687791242532441375": {
     "name": "Big Dipper BBQ 2",
     "address": "1167 Conklin Rd, Conklin, NY 13748, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7687784739561917727": {
     "name": "Windsor",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7688044776737869087": {
-    "status": "error",
-    "why": "no itemStruct",
-    "attempts": 2
+    "name": "McDonald's",
+    "address": "141 Delaware Ave, Sidney, NY 13838, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      }
+    ],
+    "attempts": 3
   },
   "7688037127354928415": {
     "name": "Backdoor Bar & Grille",
@@ -3465,7 +3472,7 @@
     "name": "The Union Diner",
     "address": "3000 E Main St, Endicott, NY 13760, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7688112425177992478": {
     "name": "Walton",
@@ -3494,31 +3501,65 @@
   "7688110465574063391": {
     "name": "Bainbridge",
     "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 2.5
+      }
+    ],
+    "attempts": 2
   },
   "7688108704817745183": {
     "name": "Walton Diner",
     "address": "209 Delaware St, Walton, NY 13856, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.9
+      },
+      {
+        "item": "Pancakes",
+        "score": 4.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7688099221248986398": {
     "name": "McDonald's",
     "address": "205 Delaware St, Walton, NY 13856, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7688094421711146270": {
     "name": "Gramma D's",
     "address": "192 Delaware St, Walton, NY 13856, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Chicken",
+        "score": 4.8
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7688073279894015262": {
     "name": "Country Classics",
     "address": "2447 NY-7, Bainbridge, NY 13733, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   }
 }

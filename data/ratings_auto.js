@@ -4220,6 +4220,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "McDonald's",
+      "place": "141 Delaware Ave",
+      "address": "141 Delaware Ave, Sidney, NY 13838, USA",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7688044776737869087",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Backdoor Bar & Grille",
       "place": "11 W Main St",
       "address": "11 W Main St, Bainbridge, NY 13733, USA",
@@ -4278,6 +4300,88 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7688111329864944926",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Bainbridge",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 2.5,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 2.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7688110465574063391",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Walton Diner",
+      "place": "209 Delaware St",
+      "address": "209 Delaware St, Walton, NY 13856, USA",
+      "score": 4.733,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Pancakes",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7688108704817745183",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Gramma D's",
+      "place": "192 Delaware St",
+      "address": "192 Delaware St, Walton, NY 13856, USA",
+      "score": 4.633,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7688094421711146270",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -4962,23 +5066,8 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Bainbridge",
-      "videoId": "7688110465574063391",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Walton Diner",
-      "videoId": "7688108704817745183",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "McDonald's",
       "videoId": "7688099221248986398",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Gramma D's",
-      "videoId": "7688094421711146270",
       "why": "transcript not available yet - will keep trying"
     },
     {
