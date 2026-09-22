@@ -5074,6 +5074,11 @@ window.RATINGS_AUTO = {
       "name": "Country Classics",
       "videoId": "7688073279894015262",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Subs Hub",
+      "videoId": "7688403432687947039",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

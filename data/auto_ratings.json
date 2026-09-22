@@ -3424,25 +3424,25 @@
     "name": "Sonic Drive-In",
     "address": "1103 Front St, Binghamton, NY 13905, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7687793987729526046": {
     "name": "McDonald's",
     "address": "30 N Rd, Windsor, NY 13865, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7687791242532441375": {
     "name": "Big Dipper BBQ 2",
     "address": "1167 Conklin Rd, Conklin, NY 13748, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7687784739561917727": {
     "name": "Windsor",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7688044776737869087": {
     "name": "McDonald's",
@@ -3472,7 +3472,7 @@
     "name": "The Union Diner",
     "address": "3000 E Main St, Endicott, NY 13760, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7688112425177992478": {
     "name": "Walton",
@@ -3534,7 +3534,7 @@
     "name": "McDonald's",
     "address": "205 Delaware St, Walton, NY 13856, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7688094421711146270": {
     "name": "Gramma D's",
@@ -3560,6 +3560,12 @@
     "name": "Country Classics",
     "address": "2447 NY-7, Bainbridge, NY 13733, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
+  },
+  "7688403432687947039": {
+    "name": "Subs Hub",
+    "address": "Oakdale Mall Unit 9, Johnson City, NY 13790, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }
