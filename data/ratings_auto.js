@@ -5079,6 +5079,21 @@ window.RATINGS_AUTO = {
       "name": "Subs Hub",
       "videoId": "7688403432687947039",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Country Cottage Ice Cream Parlor",
+      "videoId": "7688444804480519454",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Shores Sisters Farm Market",
+      "videoId": "7688432710922079519",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7688421974791507230",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
