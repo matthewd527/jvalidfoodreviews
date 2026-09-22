@@ -4217,6 +4217,72 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Backdoor Bar & Grille",
+      "place": "11 W Main St",
+      "address": "11 W Main St, Bainbridge, NY 13733, USA",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Burger",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7688037127354928415",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Walton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7688112425177992478",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Sidney",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 3.1,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7688111329864944926",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -4891,18 +4957,33 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "McDonald's",
-      "videoId": "7688044776737869087",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Backdoor Bar & Grille",
-      "videoId": "7688037127354928415",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "The Union Diner",
       "videoId": "7688001591047114014",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Bainbridge",
+      "videoId": "7688110465574063391",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Walton Diner",
+      "videoId": "7688108704817745183",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7688099221248986398",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Gramma D's",
+      "videoId": "7688094421711146270",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Country Classics",
+      "videoId": "7688073279894015262",
       "why": "transcript not available yet - will keep trying"
     }
   ]
