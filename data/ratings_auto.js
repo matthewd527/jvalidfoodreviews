@@ -4456,6 +4456,50 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "McDonald's",
+      "place": "624 Golden Mile Rd",
+      "address": "624 Golden Mile Rd, Towanda, PA 18848, USA",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7688421974791507230",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Towanda",
+      "place": "Pennsylvania",
+      "address": "Pennsylvania, United States",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7688512783884815646",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Papa V | Italian",
       "place": "18 Main St",
       "address": "18 Main St, Towanda, PA 18848, USA",
@@ -4492,6 +4536,76 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7688459793740156191",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "McDonald's",
+      "place": "488 490th Court St",
+      "address": "488 490th Court St, Binghamton, NY 13904, USA",
+      "score": 1.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7688546741934722335",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Burger King",
+      "place": "464 Court St",
+      "address": "464 Court St, Binghamton, NY 13904, USA",
+      "score": 2.5,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Burger",
+          "score": 2.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7688544919618719007",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Frank's Italian Restaurant",
+      "place": "2633 State Rte 26",
+      "address": "2633 State Rte 26, Maine, NY 13802, USA",
+      "score": 4.95,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7688522025077460254",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -5186,18 +5300,13 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "McDonald's",
-      "videoId": "7688421974791507230",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Towanda",
-      "videoId": "7688512783884815646",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Binghamton University Nature Preserve",
       "videoId": "7688495848082115871",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Black Sheep Tavern",
+      "videoId": "7688541457149463839",
       "why": "no numerical food score spoken on camera"
     }
   ]

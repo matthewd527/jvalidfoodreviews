@@ -3601,14 +3601,26 @@
   "7688421974791507230": {
     "name": "McDonald's",
     "address": "624 Golden Mile Rd, Towanda, PA 18848, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      }
+    ],
+    "attempts": 3
   },
   "7688512783884815646": {
     "name": "Towanda",
     "address": "Pennsylvania, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7688495848082115871": {
     "name": "Binghamton University Nature Preserve",
@@ -3637,6 +3649,53 @@
       {
         "item": "Pizza",
         "score": 4.1
+      }
+    ],
+    "attempts": 1
+  },
+  "7688546741934722335": {
+    "name": "McDonald's",
+    "address": "488 490th Court St, Binghamton, NY 13904, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 1.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7688544919618719007": {
+    "name": "Burger King",
+    "address": "464 Court St, Binghamton, NY 13904, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Burger",
+        "score": 2.5
+      }
+    ],
+    "attempts": 1
+  },
+  "7688541457149463839": {
+    "name": "The Black Sheep Tavern",
+    "address": "142 Washington St, Binghamton, NY 13901, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7688522025077460254": {
+    "name": "Frank's Italian Restaurant",
+    "address": "2633 State Rte 26, Maine, NY 13802, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.9
       }
     ],
     "attempts": 1
