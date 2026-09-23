@@ -3534,7 +3534,7 @@
     "name": "McDonald's",
     "address": "205 Delaware St, Walton, NY 13856, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7688094421711146270": {
     "name": "Gramma D's",
@@ -3560,30 +3560,85 @@
     "name": "Country Classics",
     "address": "2447 NY-7, Bainbridge, NY 13733, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7688403432687947039": {
     "name": "Subs Hub",
     "address": "Oakdale Mall Unit 9, Johnson City, NY 13790, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 3
   },
   "7688444804480519454": {
     "name": "Country Cottage Ice Cream Parlor",
     "address": "1964 Golden Mile Rd, Wysox, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      }
+    ],
+    "attempts": 2
   },
   "7688432710922079519": {
     "name": "Shores Sisters Farm Market",
     "address": "1003 Golden Mile Rd, Towanda, PA 18848, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.2
+      }
+    ],
+    "attempts": 2
   },
   "7688421974791507230": {
     "name": "McDonald's",
     "address": "624 Golden Mile Rd, Towanda, PA 18848, USA",
     "status": "no_transcript",
+    "attempts": 2
+  },
+  "7688512783884815646": {
+    "name": "Towanda",
+    "address": "Pennsylvania, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7688495848082115871": {
+    "name": "Binghamton University Nature Preserve",
+    "address": "South Rd, Broome, New York 13850, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7688468613249895711": {
+    "name": "Papa V | Italian",
+    "address": "18 Main St, Towanda, PA 18848, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Slice",
+        "score": 4.6
+      }
+    ],
+    "attempts": 1
+  },
+  "7688459793740156191": {
+    "name": "Vincent\u2019s Pizza",
+    "address": "505 Main St, Towanda, PA 18848, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 4.1
+      }
+    ],
     "attempts": 1
   }
 }

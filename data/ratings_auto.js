@@ -4387,6 +4387,116 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Subs Hub",
+      "place": "Oakdale Mall Unit 9",
+      "address": "Oakdale Mall Unit 9, Johnson City, NY 13790, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7688403432687947039",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Country Cottage Ice Cream Parlor",
+      "place": "1964 Golden Mile Rd",
+      "address": "1964 Golden Mile Rd, Wysox, United States",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7688444804480519454",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Shores Sisters Farm Market",
+      "place": "1003 Golden Mile Rd",
+      "address": "1003 Golden Mile Rd, Towanda, PA 18848, USA",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7688432710922079519",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Papa V | Italian",
+      "place": "18 Main St",
+      "address": "18 Main St, Towanda, PA 18848, USA",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Slice",
+          "score": 4.6
+        }
+      ],
+      "posted": null,
+      "videoId": "7688468613249895711",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Vincent\u2019s Pizza",
+      "place": "505 Main St",
+      "address": "505 Main St, Towanda, PA 18848, USA",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7688459793740156191",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5076,24 +5186,19 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Subs Hub",
-      "videoId": "7688403432687947039",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Country Cottage Ice Cream Parlor",
-      "videoId": "7688444804480519454",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Shores Sisters Farm Market",
-      "videoId": "7688432710922079519",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "McDonald's",
       "videoId": "7688421974791507230",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Towanda",
+      "videoId": "7688512783884815646",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton University Nature Preserve",
+      "videoId": "7688495848082115871",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
