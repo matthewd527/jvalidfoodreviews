@@ -4611,6 +4611,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Halal dreams",
+      "place": "2505 Vestal Pkwy E",
+      "address": "2505 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 3.8,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7688766902667185439",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5310,11 +5332,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Halal dreams",
-      "videoId": "7688766902667185439",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Vestal",
       "videoId": "7688763235037629726",
       "why": "transcript not available yet - will keep trying"
@@ -5322,17 +5339,17 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7688740111625833759",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Untagged off-menu spot",
       "videoId": "7688734155726720286",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "University of Maryland",
       "videoId": "7688730315346414879",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

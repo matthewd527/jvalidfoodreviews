@@ -3703,31 +3703,40 @@
   "7688766902667185439": {
     "name": "Halal dreams",
     "address": "2505 Vestal Pkwy E, Vestal, NY 13850, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.8
+      }
+    ],
+    "attempts": 2
   },
   "7688763235037629726": {
     "name": "Vestal",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7688740111625833759": {
     "name": "",
     "address": "",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7688734155726720286": {
     "name": "",
     "address": "",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7688730315346414879": {
     "name": "University of Maryland",
     "address": "College Park, MD 20742, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   }
 }
