@@ -5308,6 +5308,31 @@ window.RATINGS_AUTO = {
       "name": "The Black Sheep Tavern",
       "videoId": "7688541457149463839",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Halal dreams",
+      "videoId": "7688766902667185439",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Vestal",
+      "videoId": "7688763235037629726",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7688740111625833759",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7688734155726720286",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "University of Maryland",
+      "videoId": "7688730315346414879",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
