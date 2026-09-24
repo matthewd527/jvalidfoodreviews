@@ -4743,6 +4743,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Subway",
+      "place": "3801 Vestal Pkwy E Upper Floor",
+      "address": "3801 Vestal Pkwy E Upper Floor, Vestal, NY 13850, USA",
+      "score": 3.8,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Sandwich",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7689155253295418655",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5459,7 +5481,7 @@ window.RATINGS_AUTO = {
     {
       "name": "BC Bagels",
       "videoId": "7689138803482791198",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
