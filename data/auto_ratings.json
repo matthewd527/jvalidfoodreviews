@@ -3716,7 +3716,7 @@
     "name": "Vestal",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7688740111625833759": {
     "name": "",
@@ -3742,6 +3742,30 @@
   "7688885960683097374": {
     "name": "McDonald's",
     "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 2
+  },
+  "7688911293725609246": {
+    "name": "Walmart Supercenter",
+    "address": "2405 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.1
+      }
+    ],
+    "attempts": 1
+  },
+  "7688908090829262110": {
+    "name": "Royal Fried Chicken",
+    "address": "52 Main St, Binghamton, NY 13905, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7688902711277866271": {
+    "name": "Nanu's Hot Chicken",
+    "address": "7 Court St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
     "attempts": 1
   }

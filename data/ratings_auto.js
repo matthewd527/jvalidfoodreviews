@@ -4633,6 +4633,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Walmart Supercenter",
+      "place": "2405 Vestal Pkwy E",
+      "address": "2405 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7688911293725609246",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5354,6 +5376,16 @@ window.RATINGS_AUTO = {
     {
       "name": "McDonald's",
       "videoId": "7688885960683097374",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Royal Fried Chicken",
+      "videoId": "7688908090829262110",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Nanu's Hot Chicken",
+      "videoId": "7688902711277866271",
       "why": "transcript not available yet - will keep trying"
     }
   ]
