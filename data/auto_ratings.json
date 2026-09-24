@@ -3715,8 +3715,14 @@
   "7688763235037629726": {
     "name": "Vestal",
     "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 4
+    "status": "scored",
+    "items": [
+      {
+        "item": "Slice",
+        "score": 4.2
+      }
+    ],
+    "attempts": 5
   },
   "7688740111625833759": {
     "name": "",
@@ -3740,10 +3746,9 @@
     "attempts": 2
   },
   "7688885960683097374": {
-    "name": "McDonald's",
-    "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "error",
+    "why": "no itemStruct",
+    "attempts": 3
   },
   "7688911293725609246": {
     "name": "Walmart Supercenter",
@@ -3760,12 +3765,42 @@
   "7688908090829262110": {
     "name": "Royal Fried Chicken",
     "address": "52 Main St, Binghamton, NY 13905, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Chicken",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7688902711277866271": {
     "name": "Nanu's Hot Chicken",
     "address": "7 Court St, Binghamton, NY 13901, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Chicken",
+        "score": 4.8
+      }
+    ],
+    "attempts": 2
+  },
+  "7689143017705458974": {
+    "name": "Cracker Barrel Old Country Store",
+    "address": "876 Front St, Binghamton, NY 13905, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7689138803482791198": {
+    "name": "BC Bagels",
+    "address": "1435 Front St #1, Binghamton, NY 13901, USA",
     "status": "no_transcript",
     "attempts": 1
   }

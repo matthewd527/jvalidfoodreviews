@@ -4636,6 +4636,28 @@ window.RATINGS_AUTO = {
     },
     {
       "n": null,
+      "name": "Vestal",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Slice",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7688763235037629726",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
       "name": "Walmart Supercenter",
       "place": "2405 Vestal Pkwy E",
       "address": "2405 Vestal Pkwy E, Vestal, NY 13850, USA",
@@ -4650,6 +4672,72 @@ window.RATINGS_AUTO = {
       ],
       "posted": null,
       "videoId": "7688911293725609246",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Royal Fried Chicken",
+      "place": "52 Main St",
+      "address": "52 Main St, Binghamton, NY 13905, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7688908090829262110",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Nanu's Hot Chicken",
+      "place": "7 Court St",
+      "address": "7 Court St, Binghamton, NY 13901, USA",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7688902711277866271",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Cracker Barrel Old Country Store",
+      "place": "876 Front St",
+      "address": "876 Front St, Binghamton, NY 13905, USA",
+      "score": 3.0,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7689143017705458974",
       "caveats": [
         "Scored automatically from the video's own transcript."
       ],
@@ -5354,11 +5442,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Vestal",
-      "videoId": "7688763235037629726",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7688740111625833759",
       "why": "no numerical food score spoken on camera"
@@ -5374,18 +5457,8 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "McDonald's",
-      "videoId": "7688885960683097374",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Royal Fried Chicken",
-      "videoId": "7688908090829262110",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Nanu's Hot Chicken",
-      "videoId": "7688902711277866271",
+      "name": "BC Bagels",
+      "videoId": "7689138803482791198",
       "why": "transcript not available yet - will keep trying"
     }
   ]
