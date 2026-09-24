@@ -3716,7 +3716,7 @@
     "name": "Vestal",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7688740111625833759": {
     "name": "",
@@ -3738,5 +3738,11 @@
     "status": "no_scores",
     "items": [],
     "attempts": 2
+  },
+  "7688885960683097374": {
+    "name": "McDonald's",
+    "address": "3136 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }

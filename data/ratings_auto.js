@@ -5350,6 +5350,11 @@ window.RATINGS_AUTO = {
       "name": "University of Maryland",
       "videoId": "7688730315346414879",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7688885960683097374",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
