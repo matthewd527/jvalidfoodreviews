@@ -4787,6 +4787,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Starbucks Coffee Company",
+      "place": "4706 Vestal Pkwy E",
+      "address": "4706 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 3.8,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7689496977221881118",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5506,8 +5528,13 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Starbucks Coffee Company",
-      "videoId": "7689496977221881118",
+      "name": "Binghamton University",
+      "videoId": "7689565624028138782",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7689559542224424223",
       "why": "transcript not available yet - will keep trying"
     }
   ]
