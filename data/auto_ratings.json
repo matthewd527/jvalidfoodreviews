@@ -3828,5 +3828,11 @@
       }
     ],
     "attempts": 1
+  },
+  "7689496977221881118": {
+    "name": "Starbucks Coffee Company",
+    "address": "4706 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }

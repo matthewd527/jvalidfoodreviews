@@ -5504,6 +5504,11 @@ window.RATINGS_AUTO = {
       "name": "BC Bagels",
       "videoId": "7689138803482791198",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Starbucks Coffee Company",
+      "videoId": "7689496977221881118",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
