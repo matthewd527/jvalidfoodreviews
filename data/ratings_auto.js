@@ -4809,6 +4809,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 4.1,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7689565624028138782",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5529,12 +5551,17 @@ window.RATINGS_AUTO = {
     },
     {
       "name": "Binghamton University",
-      "videoId": "7689565624028138782",
+      "videoId": "7689559542224424223",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Binghamton University",
-      "videoId": "7689559542224424223",
+      "name": "Binghamton Hots",
+      "videoId": "7689635859540233502",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Walmart Supercenter",
+      "videoId": "7689607232140430623",
       "why": "transcript not available yet - will keep trying"
     }
   ]
