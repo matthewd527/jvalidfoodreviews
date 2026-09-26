@@ -5625,6 +5625,11 @@ window.RATINGS_AUTO = {
       "name": "Walmart Supercenter",
       "videoId": "7689637472950570270",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7689845399858842911",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
