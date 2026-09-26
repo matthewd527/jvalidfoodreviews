@@ -3857,18 +3857,64 @@
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7689635859540233502": {
     "name": "Binghamton Hots",
     "address": "128 Washington St, Binghamton, NY 13901, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      },
+      {
+        "item": "Quesadilla",
+        "score": 4.1
+      },
+      {
+        "item": "Spoken score",
+        "score": 4.6
+      }
+    ],
+    "attempts": 2
   },
   "7689607232140430623": {
     "name": "Walmart Supercenter",
     "address": "2405 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
+  },
+  "7689698586879200543": {
+    "name": "Binghamton",
+    "address": "New York, United States",
     "status": "no_transcript",
+    "attempts": 1
+  },
+  "7689687451803208991": {
+    "name": "Binghamton",
+    "address": "New York, United States",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7689670766371048735": {
+    "name": "Binghamton University",
+    "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 1
+  },
+  "7689637472950570270": {
+    "name": "Walmart Supercenter",
+    "address": "2405 Vestal Pkwy E, Vestal, NY 13850, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }

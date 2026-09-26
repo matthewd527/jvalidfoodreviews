@@ -4831,6 +4831,58 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton Hots",
+      "place": "128 Washington St",
+      "address": "128 Washington St, Binghamton, NY 13901, USA",
+      "score": 4.4,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        },
+        {
+          "item": "Quesadilla",
+          "score": 4.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7689635859540233502",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7689670766371048735",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5555,14 +5607,24 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Binghamton Hots",
-      "videoId": "7689635859540233502",
+      "name": "Walmart Supercenter",
+      "videoId": "7689607232140430623",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7689698586879200543",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7689687451803208991",
       "why": "transcript not available yet - will keep trying"
     },
     {
       "name": "Walmart Supercenter",
-      "videoId": "7689607232140430623",
-      "why": "transcript not available yet - will keep trying"
+      "videoId": "7689637472950570270",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
