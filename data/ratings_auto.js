@@ -5629,7 +5629,47 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7689845399858842911",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University Nature Preserve",
+      "videoId": "7689926656517016863",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7689924284306738463",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7689921344653331742",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7689919212688657694",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7689917143046999326",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7689914504896892191",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7689911109435886878",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Red Oak",
+      "videoId": "7689880292584066335",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
