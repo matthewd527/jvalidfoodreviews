@@ -5696,7 +5696,22 @@ window.RATINGS_AUTO = {
     {
       "name": "Stu's Place",
       "videoId": "7690005308734770463",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University Nature Preserve",
+      "videoId": "7690040454850678046",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7690030224016248094",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7690026838764113183",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
