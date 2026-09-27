@@ -4021,10 +4021,9 @@
     "attempts": 1
   },
   "7690237232057257247": {
-    "name": "Binghamton",
-    "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "error",
+    "why": "no itemStruct",
+    "attempts": 2
   },
   "7690222649116478750": {
     "name": "Binghamton University",
@@ -4051,6 +4050,19 @@
         "score": 4.2
       }
     ],
+    "attempts": 1
+  },
+  "7690307660998102303": {
+    "name": "The Maine Scoop",
+    "address": "2666 Union Center Maine Hwy, Maine, NY 13802, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7690273845730708767": {
+    "name": "East Side Deli",
+    "address": "218 Robinson St, Binghamton, NY 13904, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }

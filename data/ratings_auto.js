@@ -5744,13 +5744,18 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Binghamton",
-      "videoId": "7690237232057257247",
+      "name": "Binghamton University",
+      "videoId": "7690222649116478750",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Maine Scoop",
+      "videoId": "7690307660998102303",
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Binghamton University",
-      "videoId": "7690222649116478750",
+      "name": "East Side Deli",
+      "videoId": "7690273845730708767",
       "why": "no numerical food score spoken on camera"
     }
   ]
