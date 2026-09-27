@@ -4905,6 +4905,36 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.483,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.25
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7690219206029135134",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5711,6 +5741,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Binghamton University",
       "videoId": "7690026838764113183",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7690237232057257247",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7690222649116478750",
       "why": "no numerical food score spoken on camera"
     }
   ]
