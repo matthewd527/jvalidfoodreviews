@@ -3890,13 +3890,13 @@
     "name": "Binghamton",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7689687451803208991": {
     "name": "Binghamton",
     "address": "New York, United States",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7689670766371048735": {
     "name": "Binghamton University",
@@ -3927,32 +3927,37 @@
   "7689926656517016863": {
     "name": "Binghamton University Nature Preserve",
     "address": "South Rd, Broome, New York 13850, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7689924284306738463": {
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7689921344653331742": {
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7689919212688657694": {
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7689917143046999326": {
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7689914504896892191": {
     "name": "Binghamton University",
@@ -3964,14 +3969,33 @@
   "7689911109435886878": {
     "name": "Binghamton",
     "address": "New York, United States",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7689880292584066335": {
     "name": "Red Oak",
     "address": "305 Front St, Binghamton, NY 13905, USA",
     "status": "no_scores",
     "items": [],
+    "attempts": 1
+  },
+  "7690005308734770463": {
+    "name": "Stu's Place",
+    "address": "114 N Page Ave, Endicott, NY 13760, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7689959860716293407": {
+    "name": "Binghamton University",
+    "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.8
+      }
+    ],
     "attempts": 1
   }
 }

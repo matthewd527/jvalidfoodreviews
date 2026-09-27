@@ -4883,6 +4883,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7689959860716293407",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5634,27 +5656,27 @@ window.RATINGS_AUTO = {
     {
       "name": "Binghamton University Nature Preserve",
       "videoId": "7689926656517016863",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Binghamton University",
       "videoId": "7689924284306738463",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Binghamton University",
       "videoId": "7689921344653331742",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Binghamton University",
       "videoId": "7689919212688657694",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Binghamton University",
       "videoId": "7689917143046999326",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Binghamton University",
@@ -5664,12 +5686,17 @@ window.RATINGS_AUTO = {
     {
       "name": "Binghamton",
       "videoId": "7689911109435886878",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Red Oak",
       "videoId": "7689880292584066335",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Stu's Place",
+      "videoId": "7690005308734770463",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
