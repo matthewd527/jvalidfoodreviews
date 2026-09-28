@@ -5759,14 +5759,9 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Untagged off-menu spot",
-      "videoId": "7690375755292888351",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Scoopy Dooby's Ice Cream",
       "videoId": "7690367135603789087",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Hunan Hut",
