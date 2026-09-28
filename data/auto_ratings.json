@@ -4023,7 +4023,7 @@
   "7690237232057257247": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 4
+    "attempts": 5
   },
   "7690222649116478750": {
     "name": "Binghamton University",
@@ -4069,7 +4069,7 @@
   "7690375755292888351": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 2
+    "attempts": 3
   },
   "7690367135603789087": {
     "name": "Scoopy Dooby's Ice Cream",
@@ -4081,6 +4081,19 @@
   "7690331759946370334": {
     "name": "Hunan Hut",
     "address": "200 Main St, Binghamton, NY 13905, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7690627803082919198": {
+    "name": "J\u2019s Tavern",
+    "address": "299 Conklin Ave, Binghamton, NY 13903, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7690585735405096222": {
+    "name": "Binghamton",
+    "address": "New York, United States",
     "status": "no_scores",
     "items": [],
     "attempts": 1

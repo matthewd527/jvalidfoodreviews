@@ -5767,6 +5767,16 @@ window.RATINGS_AUTO = {
       "name": "Hunan Hut",
       "videoId": "7690331759946370334",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "J\u2019s Tavern",
+      "videoId": "7690627803082919198",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7690585735405096222",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
