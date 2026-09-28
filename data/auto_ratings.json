@@ -4023,7 +4023,7 @@
   "7690237232057257247": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 2
+    "attempts": 3
   },
   "7690222649116478750": {
     "name": "Binghamton University",
@@ -4055,12 +4055,32 @@
   "7690307660998102303": {
     "name": "The Maine Scoop",
     "address": "2666 Union Center Maine Hwy, Maine, NY 13802, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7690273845730708767": {
     "name": "East Side Deli",
     "address": "218 Robinson St, Binghamton, NY 13904, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7690375755292888351": {
+    "name": "",
+    "address": "",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7690367135603789087": {
+    "name": "Scoopy Dooby's Ice Cream",
+    "address": "45 Lewis St, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7690331759946370334": {
+    "name": "Hunan Hut",
+    "address": "200 Main St, Binghamton, NY 13905, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1
