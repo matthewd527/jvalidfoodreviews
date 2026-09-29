@@ -4069,7 +4069,7 @@
   "7690375755292888351": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 3
+    "attempts": 4
   },
   "7690367135603789087": {
     "name": "Scoopy Dooby's Ice Cream",
@@ -4088,12 +4088,34 @@
   "7690627803082919198": {
     "name": "J\u2019s Tavern",
     "address": "299 Conklin Ave, Binghamton, NY 13903, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7690585735405096222": {
     "name": "Binghamton",
     "address": "New York, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7690758197895892254": {
+    "name": "Subway",
+    "address": "519 Hooper Rd, Endwell, NY 13760, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7690693590992817439": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7690687484530871582": {
+    "name": "The Cheesesteak Boss",
+    "address": "1250 Front St, Binghamton, NY 13901, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1

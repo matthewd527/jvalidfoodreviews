@@ -5771,11 +5771,26 @@ window.RATINGS_AUTO = {
     {
       "name": "J\u2019s Tavern",
       "videoId": "7690627803082919198",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Binghamton",
       "videoId": "7690585735405096222",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Subway",
+      "videoId": "7690758197895892254",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged pizza spot",
+      "videoId": "7690693590992817439",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Cheesesteak Boss",
+      "videoId": "7690687484530871582",
       "why": "no numerical food score spoken on camera"
     }
   ]
