@@ -5824,6 +5824,11 @@ window.RATINGS_AUTO = {
       "name": "Kristofor's",
       "videoId": "7690776087592242462",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Magro's - Greene",
+      "videoId": "7691008173217516830",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
