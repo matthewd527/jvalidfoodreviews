@@ -4935,6 +4935,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 4.5,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7690777445548559646",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5791,6 +5813,16 @@ window.RATINGS_AUTO = {
     {
       "name": "The Cheesesteak Boss",
       "videoId": "7690687484530871582",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University - Student Union",
+      "videoId": "7690790338306313502",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Kristofor's",
+      "videoId": "7690776087592242462",
       "why": "no numerical food score spoken on camera"
     }
   ]

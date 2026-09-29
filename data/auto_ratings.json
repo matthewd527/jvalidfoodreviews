@@ -4069,7 +4069,7 @@
   "7690375755292888351": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 4
+    "attempts": 5
   },
   "7690367135603789087": {
     "name": "Scoopy Dooby's Ice Cream",
@@ -4116,6 +4116,32 @@
   "7690687484530871582": {
     "name": "The Cheesesteak Boss",
     "address": "1250 Front St, Binghamton, NY 13901, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7690790338306313502": {
+    "name": "Binghamton University - Student Union",
+    "address": "Binghamton University, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7690777445548559646": {
+    "name": "Binghamton University",
+    "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.5
+      }
+    ],
+    "attempts": 1
+  },
+  "7690776087592242462": {
+    "name": "Kristofor's",
+    "address": "1224 Campville Rd, Endicott, NY 13760, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1
