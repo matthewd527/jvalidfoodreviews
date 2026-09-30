@@ -4156,14 +4156,15 @@
   "7691127613082979615": {
     "name": "McDonald's",
     "address": "488 490th Court St, Binghamton, NY 13904, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7691117430759836958": {
     "name": "The Spiedie & Rib Pit",
     "address": "1274 Upper, Front St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 1
+    "attempts": 2
   },
   "7691068265753316639": {
     "name": "McDonald's",
@@ -4180,14 +4181,25 @@
   "7691056301278874911": {
     "name": "Palisades Center",
     "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7691054911248813342": {
     "name": "Joe & Vinny's - Oxford",
     "address": "34 S Canal St, Oxford, NY 13830, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "scored",
+    "items": [
+      {
+        "item": "Slice",
+        "score": 3.5
+      },
+      {
+        "item": "Slice",
+        "score": 4.5
+      }
+    ],
+    "attempts": 2
   },
   "7691041234982292766": {
     "name": "The Stadium",

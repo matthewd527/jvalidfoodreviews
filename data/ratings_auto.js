@@ -4979,6 +4979,32 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Joe & Vinny's - Oxford",
+      "place": "34 S Canal St",
+      "address": "34 S Canal St, Oxford, NY 13830, USA",
+      "score": 4.0,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Slice",
+          "score": 4.5
+        },
+        {
+          "item": "Slice",
+          "score": 3.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7691054911248813342",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5855,7 +5881,7 @@ window.RATINGS_AUTO = {
     {
       "name": "McDonald's",
       "videoId": "7691127613082979615",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "The Spiedie & Rib Pit",
@@ -5865,12 +5891,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Palisades Center",
       "videoId": "7691056301278874911",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
-      "name": "Joe & Vinny's - Oxford",
-      "videoId": "7691054911248813342",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "The Stadium",
