@@ -4163,8 +4163,9 @@
   "7691117430759836958": {
     "name": "The Spiedie & Rib Pit",
     "address": "1274 Upper, Front St, Binghamton, NY 13901, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "no_scores",
+    "items": [],
+    "attempts": 3
   },
   "7691068265753316639": {
     "name": "McDonald's",
@@ -4204,6 +4205,13 @@
   "7691041234982292766": {
     "name": "The Stadium",
     "address": "1 Main St, Oxford, NY 13830, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7691331740283063582": {
+    "name": "Park Diner",
+    "address": "119 Conklin Ave, Binghamton, NY 13903, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1

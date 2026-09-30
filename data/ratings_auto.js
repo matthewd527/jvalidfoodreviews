@@ -5886,7 +5886,7 @@ window.RATINGS_AUTO = {
     {
       "name": "The Spiedie & Rib Pit",
       "videoId": "7691117430759836958",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Palisades Center",
@@ -5896,6 +5896,11 @@ window.RATINGS_AUTO = {
     {
       "name": "The Stadium",
       "videoId": "7691041234982292766",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Park Diner",
+      "videoId": "7691331740283063582",
       "why": "no numerical food score spoken on camera"
     }
   ]
