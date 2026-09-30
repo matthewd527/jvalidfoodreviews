@@ -4957,6 +4957,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "McDonald's",
+      "place": "2972 US-11",
+      "address": "2972 US-11, Whitney Point, NY 13862, USA",
+      "score": 4.3,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.3
+        }
+      ],
+      "posted": null,
+      "videoId": "7691068265753316639",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5828,7 +5850,32 @@ window.RATINGS_AUTO = {
     {
       "name": "Magro's - Greene",
       "videoId": "7691008173217516830",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "McDonald's",
+      "videoId": "7691127613082979615",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "The Spiedie & Rib Pit",
+      "videoId": "7691117430759836958",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Palisades Center",
+      "videoId": "7691056301278874911",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Joe & Vinny's - Oxford",
+      "videoId": "7691054911248813342",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "The Stadium",
+      "videoId": "7691041234982292766",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

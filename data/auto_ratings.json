@@ -4149,7 +4149,51 @@
   "7691008173217516830": {
     "name": "Magro's - Greene",
     "address": "30 Genesee St, Greene, NY 13778, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
+  },
+  "7691127613082979615": {
+    "name": "McDonald's",
+    "address": "488 490th Court St, Binghamton, NY 13904, USA",
     "status": "no_transcript",
+    "attempts": 1
+  },
+  "7691117430759836958": {
+    "name": "The Spiedie & Rib Pit",
+    "address": "1274 Upper, Front St, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7691068265753316639": {
+    "name": "McDonald's",
+    "address": "2972 US-11, Whitney Point, NY 13862, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 4.3
+      }
+    ],
+    "attempts": 1
+  },
+  "7691056301278874911": {
+    "name": "Palisades Center",
+    "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7691054911248813342": {
+    "name": "Joe & Vinny's - Oxford",
+    "address": "34 S Canal St, Oxford, NY 13830, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7691041234982292766": {
+    "name": "The Stadium",
+    "address": "1 Main St, Oxford, NY 13830, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }
