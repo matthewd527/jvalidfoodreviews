@@ -5005,6 +5005,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Cacciatore's Restaurant",
+      "place": "119 Harry L Dr",
+      "address": "119 Harry L Dr, Johnson City, NY 13790, United States",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7691504777217281311",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [

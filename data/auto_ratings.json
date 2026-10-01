@@ -4222,5 +4222,17 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7691504777217281311": {
+    "name": "Cacciatore's Restaurant",
+    "address": "119 Harry L Dr, Johnson City, NY 13790, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 5.0
+      }
+    ],
+    "attempts": 1
   }
 }
