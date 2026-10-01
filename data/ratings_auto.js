@@ -5929,6 +5929,11 @@ window.RATINGS_AUTO = {
       "name": "Los Tapat\u00edos",
       "videoId": "7691431974635883807",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Hyde's Diner",
+      "videoId": "7691760145604398367",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

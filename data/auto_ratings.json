@@ -4234,5 +4234,11 @@
       }
     ],
     "attempts": 1
+  },
+  "7691760145604398367": {
+    "name": "Hyde's Diner",
+    "address": "259 Tompkins St, Cortland, NY 13045, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }
