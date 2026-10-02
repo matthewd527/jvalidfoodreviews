@@ -5027,6 +5027,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Little Italy Pizzeria | Italian",
+      "place": "125 S Main St",
+      "address": "125 S Main St, Homer, NY 13077, USA",
+      "score": 3.2,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7691894806393392415",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -5936,11 +5958,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Lori Ashley Salon",
-      "videoId": "7691877036549213471",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Friendly's",
       "videoId": "7691797467561561374",
       "why": "no numerical food score spoken on camera"
@@ -5948,6 +5965,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Hobo's",
       "videoId": "7691781995541712159",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Lori Ashley Salon",
+      "videoId": "7691906747119734046",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Dillingers Celtic Pub & Eatery",
+      "videoId": "7691888862968237343",
       "why": "no numerical food score spoken on camera"
     }
   ]
