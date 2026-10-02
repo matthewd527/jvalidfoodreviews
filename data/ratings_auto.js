@@ -5933,7 +5933,22 @@ window.RATINGS_AUTO = {
     {
       "name": "Hyde's Diner",
       "videoId": "7691760145604398367",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Lori Ashley Salon",
+      "videoId": "7691877036549213471",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Friendly's",
+      "videoId": "7691797467561561374",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Hobo's",
+      "videoId": "7691781995541712159",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
