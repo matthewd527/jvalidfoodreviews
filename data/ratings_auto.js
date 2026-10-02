@@ -5976,6 +5976,16 @@ window.RATINGS_AUTO = {
       "name": "Dillingers Celtic Pub & Eatery",
       "videoId": "7691888862968237343",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Gabriella's Cakes & Co",
+      "videoId": "7692121609460665631",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "BC Bagels",
+      "videoId": "7692104410402458911",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

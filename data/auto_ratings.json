@@ -4245,7 +4245,7 @@
   "7691877036549213471": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 2
+    "attempts": 3
   },
   "7691797467561561374": {
     "name": "Friendly's",
@@ -4285,6 +4285,18 @@
     "address": "77 State St, Binghamton, NY 13901, USA",
     "status": "no_scores",
     "items": [],
+    "attempts": 1
+  },
+  "7692121609460665631": {
+    "name": "Gabriella's Cakes & Co",
+    "address": "265 Main St, Johnson City, NY 13790, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7692104410402458911": {
+    "name": "BC Bagels",
+    "address": "1435 Front St #1, Binghamton, NY 13901, USA",
+    "status": "no_transcript",
     "attempts": 1
   }
 }
