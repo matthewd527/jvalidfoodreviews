@@ -4245,7 +4245,7 @@
   "7691877036549213471": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 3
+    "attempts": 4
   },
   "7691797467561561374": {
     "name": "Friendly's",
@@ -4290,13 +4290,36 @@
   "7692121609460665631": {
     "name": "Gabriella's Cakes & Co",
     "address": "265 Main St, Johnson City, NY 13790, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7692104410402458911": {
     "name": "BC Bagels",
     "address": "1435 Front St #1, Binghamton, NY 13901, USA",
-    "status": "no_transcript",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
+  },
+  "7692201732700441887": {
+    "name": "Stewart's Shops",
+    "address": "11 Steiner Rd, Sidney, NY 13838, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7692187120043085087": {
+    "name": "Sidney Joe's",
+    "address": "59 Main St, Sidney, NY 13838, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7692148995690384671": {
+    "name": "Fat Patties Burger Bar",
+    "address": "1123 Upper, Front St, Binghamton, NY 13905, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }

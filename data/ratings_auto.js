@@ -5980,12 +5980,27 @@ window.RATINGS_AUTO = {
     {
       "name": "Gabriella's Cakes & Co",
       "videoId": "7692121609460665631",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "BC Bagels",
       "videoId": "7692104410402458911",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Stewart's Shops",
+      "videoId": "7692201732700441887",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Sidney Joe's",
+      "videoId": "7692187120043085087",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Fat Patties Burger Bar",
+      "videoId": "7692148995690384671",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
