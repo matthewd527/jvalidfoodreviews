@@ -6001,6 +6001,11 @@ window.RATINGS_AUTO = {
       "name": "Fat Patties Burger Bar",
       "videoId": "7692148995690384671",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Choconut Inn",
+      "videoId": "7692245524879002910",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

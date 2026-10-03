@@ -4245,7 +4245,7 @@
   "7691877036549213471": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 4
+    "attempts": 5
   },
   "7691797467561561374": {
     "name": "Friendly's",
@@ -4318,6 +4318,13 @@
   "7692148995690384671": {
     "name": "Fat Patties Burger Bar",
     "address": "1123 Upper, Front St, Binghamton, NY 13905, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7692245524879002910": {
+    "name": "Choconut Inn",
+    "address": "10 Quaker Lake Rd, Friendsville, PA 18818, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1
