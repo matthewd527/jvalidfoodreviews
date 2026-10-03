@@ -6006,6 +6006,11 @@ window.RATINGS_AUTO = {
       "name": "Choconut Inn",
       "videoId": "7692245524879002910",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Little Oak - Neighborhood Bistro & Bakery",
+      "videoId": "7692481943912336670",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
