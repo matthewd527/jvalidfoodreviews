@@ -6021,6 +6021,16 @@ window.RATINGS_AUTO = {
       "name": "Frank's Pizza & Italian Restaurant",
       "videoId": "7692548786593336606",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Blueberry Mahwah Frozen Yogurt, A\u00e7a\u00ed Bowl, Bubble Tea, Smoothie",
+      "videoId": "7692635117914819871",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "State Line Diner",
+      "videoId": "7692620485703552287",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
