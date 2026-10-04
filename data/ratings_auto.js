@@ -6031,6 +6031,11 @@ window.RATINGS_AUTO = {
       "name": "State Line Diner",
       "videoId": "7692620485703552287",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Nino's Pizza & Restaurant",
+      "videoId": "7692902277400595743",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
