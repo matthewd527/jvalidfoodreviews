@@ -4335,5 +4335,19 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7692587186129997087": {
+    "name": "Good Samaritan Hospital",
+    "address": "255 Lafayette Ave, Suffern, NY 10901, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7692548786593336606": {
+    "name": "Frank's Pizza & Italian Restaurant",
+    "address": "470 NY-211, Middletown, NY 10940, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }

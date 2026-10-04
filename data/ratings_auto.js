@@ -6011,6 +6011,16 @@ window.RATINGS_AUTO = {
       "name": "The Little Oak - Neighborhood Bistro & Bakery",
       "videoId": "7692481943912336670",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Good Samaritan Hospital",
+      "videoId": "7692587186129997087",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Frank's Pizza & Italian Restaurant",
+      "videoId": "7692548786593336606",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
