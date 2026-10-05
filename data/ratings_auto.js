@@ -6040,7 +6040,12 @@ window.RATINGS_AUTO = {
     {
       "name": "Spinachio Pizza",
       "videoId": "7692964639461641503",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "BJ's Restaurant & Brewhouse",
+      "videoId": "7693007159432432927",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

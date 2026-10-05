@@ -4354,7 +4354,7 @@
     "name": "Blueberry Mahwah Frozen Yogurt, A\u00e7a\u00ed Bowl, Bubble Tea, Smoothie",
     "address": "135 Franklin Turnpike, Mahwah, NJ 07430, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7692620485703552287": {
     "name": "State Line Diner",
@@ -4373,7 +4373,15 @@
   "7692964639461641503": {
     "name": "Spinachio Pizza",
     "address": "5 Sicomac Rd #10, North Haledon, NJ 07508, USA",
-    "status": "no_transcript",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
+  },
+  "7693007159432432927": {
+    "name": "BJ's Restaurant & Brewhouse",
+    "address": "1119 Fashion Dr, Nanuet, NY 10954, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }
