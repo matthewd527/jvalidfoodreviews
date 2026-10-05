@@ -6046,6 +6046,11 @@ window.RATINGS_AUTO = {
       "name": "BJ's Restaurant & Brewhouse",
       "videoId": "7693007159432432927",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Carlos' Pizzeria and Bar",
+      "videoId": "7693246935905455391",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
