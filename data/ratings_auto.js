@@ -6035,6 +6035,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Nino's Pizza & Restaurant",
       "videoId": "7692902277400595743",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Spinachio Pizza",
+      "videoId": "7692964639461641503",
       "why": "transcript not available yet - will keep trying"
     }
   ]
