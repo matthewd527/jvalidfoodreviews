@@ -4399,14 +4399,27 @@
     "attempts": 1
   },
   "7693298090077343007": {
-    "name": "",
-    "address": "",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "error",
+    "why": "no itemStruct",
+    "attempts": 3
   },
   "7693287857854680350": {
     "name": "",
     "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7693643113482538270": {
+    "name": "Nineveh Country Store",
+    "address": "3017 NY-7, Nineveh, NY 13813, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7693619190338456862": {
+    "name": "Jerry's Inn",
+    "address": "18 W Main St, Bainbridge, NY 13733, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1

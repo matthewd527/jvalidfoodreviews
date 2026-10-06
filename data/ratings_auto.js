@@ -6059,12 +6059,17 @@ window.RATINGS_AUTO = {
     },
     {
       "name": "Untagged off-menu spot",
-      "videoId": "7693298090077343007",
-      "why": "transcript not available yet - will keep trying"
+      "videoId": "7693287857854680350",
+      "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Untagged off-menu spot",
-      "videoId": "7693287857854680350",
+      "name": "Nineveh Country Store",
+      "videoId": "7693643113482538270",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Jerry's Inn",
+      "videoId": "7693619190338456862",
       "why": "no numerical food score spoken on camera"
     }
   ]
