@@ -6051,6 +6051,21 @@ window.RATINGS_AUTO = {
       "name": "Carlos' Pizzeria and Bar",
       "videoId": "7693246935905455391",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Crumbl",
+      "videoId": "7693352558487670046",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7693298090077343007",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7693287857854680350",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
