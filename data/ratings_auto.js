@@ -6076,6 +6076,11 @@ window.RATINGS_AUTO = {
       "name": "Angela\u2019s",
       "videoId": "7693691603520671007",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Riverview Diner",
+      "videoId": "7693957631416749342",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
