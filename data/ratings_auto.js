@@ -6071,6 +6071,11 @@ window.RATINGS_AUTO = {
       "name": "Jerry's Inn",
       "videoId": "7693619190338456862",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Angela\u2019s",
+      "videoId": "7693691603520671007",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

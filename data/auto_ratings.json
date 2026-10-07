@@ -4401,7 +4401,7 @@
   "7693298090077343007": {
     "status": "error",
     "why": "no itemStruct",
-    "attempts": 3
+    "attempts": 4
   },
   "7693287857854680350": {
     "name": "",
@@ -4420,6 +4420,13 @@
   "7693619190338456862": {
     "name": "Jerry's Inn",
     "address": "18 W Main St, Bainbridge, NY 13733, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7693691603520671007": {
+    "name": "Angela\u2019s",
+    "address": "6142 NY-12, Norwich, NY 13815, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1
