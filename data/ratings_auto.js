@@ -6085,11 +6085,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Caribbean Patty World & Caribbean Bar & Grill",
       "videoId": "7694091994733333791",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Subs Hub",
       "videoId": "7694021481558297887",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Cold Stone Creamery",
+      "videoId": "7694111294810557726",
       "why": "no numerical food score spoken on camera"
     }
   ]
