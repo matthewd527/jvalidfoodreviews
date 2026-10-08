@@ -6081,6 +6081,16 @@ window.RATINGS_AUTO = {
       "name": "Riverview Diner",
       "videoId": "7693957631416749342",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Caribbean Patty World & Caribbean Bar & Grill",
+      "videoId": "7694091994733333791",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Subs Hub",
+      "videoId": "7694021481558297887",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
