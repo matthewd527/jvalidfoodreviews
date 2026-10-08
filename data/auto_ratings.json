@@ -4458,5 +4458,11 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7694363318282095902": {
+    "name": "Sal's pizzeria of Bainbridge",
+    "address": "21 W Main St, Bainbridge, NY 13733, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }

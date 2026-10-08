@@ -6096,6 +6096,11 @@ window.RATINGS_AUTO = {
       "name": "Cold Stone Creamery",
       "videoId": "7694111294810557726",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Sal's pizzeria of Bainbridge",
+      "videoId": "7694363318282095902",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
