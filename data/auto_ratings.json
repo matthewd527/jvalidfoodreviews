@@ -4462,7 +4462,22 @@
   "7694363318282095902": {
     "name": "Sal's pizzeria of Bainbridge",
     "address": "21 W Main St, Bainbridge, NY 13733, USA",
-    "status": "no_transcript",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
+  },
+  "7694455604693257503": {
+    "name": "205 Dry",
+    "address": "205 State St, Binghamton, NY 13901, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7694398594773732639": {
+    "name": "CAFF\u00c8 del CORSO",
+    "address": "3701 Vestal Pkwy E Ste 10 & 11, Vestal, NY 13850, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }

@@ -6100,7 +6100,17 @@ window.RATINGS_AUTO = {
     {
       "name": "Sal's pizzeria of Bainbridge",
       "videoId": "7694363318282095902",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "205 Dry",
+      "videoId": "7694455604693257503",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "CAFF\u00c8 del CORSO",
+      "videoId": "7694398594773732639",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
