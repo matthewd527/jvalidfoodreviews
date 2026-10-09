@@ -6111,6 +6111,11 @@ window.RATINGS_AUTO = {
       "name": "CAFF\u00c8 del CORSO",
       "videoId": "7694398594773732639",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Donuts & Ammo",
+      "videoId": "7694722811209764127",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
