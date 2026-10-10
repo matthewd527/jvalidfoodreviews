@@ -4483,7 +4483,15 @@
   "7694722811209764127": {
     "name": "Donuts & Ammo",
     "address": "21508 PA-29, Montrose, PA 18801, USA",
-    "status": "no_transcript",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
+  },
+  "7694789996636671263": {
+    "name": "Colosseo",
+    "address": "11 Raceway Rd, Monticello, NY 12701, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }

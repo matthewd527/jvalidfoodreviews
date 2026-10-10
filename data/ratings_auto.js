@@ -6115,7 +6115,12 @@ window.RATINGS_AUTO = {
     {
       "name": "Donuts & Ammo",
       "videoId": "7694722811209764127",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Colosseo",
+      "videoId": "7694789996636671263",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
