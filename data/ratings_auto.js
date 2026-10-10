@@ -6121,6 +6121,11 @@ window.RATINGS_AUTO = {
       "name": "Colosseo",
       "videoId": "7694789996636671263",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Bella's Kitchen",
+      "videoId": "7694858857251605791",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
