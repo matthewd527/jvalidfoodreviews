@@ -6126,6 +6126,16 @@ window.RATINGS_AUTO = {
       "name": "Bella's Kitchen",
       "videoId": "7694858857251605791",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Mami",
+      "videoId": "7695139013690248478",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "TOP BAGELS & DELI",
+      "videoId": "7695122724087172382",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
