@@ -6136,6 +6136,16 @@ window.RATINGS_AUTO = {
       "name": "TOP BAGELS & DELI",
       "videoId": "7695122724087172382",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "daNina Italian Restaurant",
+      "videoId": "7695227053246860574",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7695213519452523807",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
