@@ -6171,6 +6171,11 @@ window.RATINGS_AUTO = {
       "name": "Uncle Louie's Pizza",
       "videoId": "7695610631839403295",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Orangetown Classic Diner",
+      "videoId": "7695859956305939743",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
