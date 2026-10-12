@@ -6155,11 +6155,21 @@ window.RATINGS_AUTO = {
     {
       "name": "Burger King",
       "videoId": "7695564592872770846",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Characters",
       "videoId": "7695505228124146974",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Burger King",
+      "videoId": "7695619128635215135",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Uncle Louie's Pizza",
+      "videoId": "7695610631839403295",
       "why": "no numerical food score spoken on camera"
     }
   ]

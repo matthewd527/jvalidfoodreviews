@@ -4539,12 +4539,27 @@
   "7695564592872770846": {
     "name": "Burger King",
     "address": "381 US-22, Hillside, NJ 07205, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   },
   "7695505228124146974": {
     "name": "Characters",
     "address": "94 Orange Turnpike, Sloatsburg, NY 10974, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7695619128635215135": {
+    "name": "Burger King",
+    "address": "381 US-22, Hillside, NJ 07205, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7695610631839403295": {
+    "name": "Uncle Louie's Pizza",
+    "address": "754 Franklin Ave, Franklin Lakes, NJ 07417, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1
