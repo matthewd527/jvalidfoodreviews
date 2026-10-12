@@ -6151,6 +6151,16 @@ window.RATINGS_AUTO = {
       "name": "Untagged off-menu spot",
       "videoId": "7695403378167401759",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Burger King",
+      "videoId": "7695564592872770846",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Characters",
+      "videoId": "7695505228124146974",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
