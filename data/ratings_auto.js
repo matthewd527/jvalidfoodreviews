@@ -6191,6 +6191,11 @@ window.RATINGS_AUTO = {
       "name": "River Edge Diner",
       "videoId": "7695995377341697311",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Joe and Joe",
+      "videoId": "7696233309591964958",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
