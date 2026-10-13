@@ -6176,6 +6176,11 @@ window.RATINGS_AUTO = {
       "name": "Orangetown Classic Diner",
       "videoId": "7695859956305939743",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Novino Ristorante",
+      "videoId": "7695936174015204638",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
