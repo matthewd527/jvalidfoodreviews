@@ -4577,5 +4577,18 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7696011737342037279": {
+    "name": "Rockland Bakery",
+    "address": "94 Demarest Mill Rd, Nanuet, NY 10954, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7695995377341697311": {
+    "name": "River Edge Diner",
+    "address": "516 Kinderkamack Rd, River Edge, NJ 07661, EUA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }

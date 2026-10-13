@@ -6181,6 +6181,16 @@ window.RATINGS_AUTO = {
       "name": "Novino Ristorante",
       "videoId": "7695936174015204638",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Rockland Bakery",
+      "videoId": "7696011737342037279",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "River Edge Diner",
+      "videoId": "7695995377341697311",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
