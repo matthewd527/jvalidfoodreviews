@@ -6195,7 +6195,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Joe and Joe",
       "videoId": "7696233309591964958",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

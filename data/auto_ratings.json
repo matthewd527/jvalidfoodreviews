@@ -4589,12 +4589,13 @@
     "name": "River Edge Diner",
     "address": "516 Kinderkamack Rd, River Edge, NJ 07661, EUA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7696233309591964958": {
     "name": "Joe and Joe",
     "address": "65 E Central Ave, Pearl River, NY 10965, USA",
-    "status": "no_transcript",
-    "attempts": 1
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
   }
 }
