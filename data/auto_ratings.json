@@ -4589,7 +4589,7 @@
     "name": "River Edge Diner",
     "address": "516 Kinderkamack Rd, River Edge, NJ 07661, EUA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7696233309591964958": {
     "name": "Joe and Joe",
@@ -4597,5 +4597,17 @@
     "status": "no_scores",
     "items": [],
     "attempts": 2
+  },
+  "7696378475078339870": {
+    "name": "Francesca Brick Oven Pizza & Pasta",
+    "address": "234 Rock Rd, Glen Rock, NJ 07452, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7696357363107908895": {
+    "name": "Sakura Bana Restaurant",
+    "address": "43 Franklin Ave, Ridgewood, NJ 07450, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }

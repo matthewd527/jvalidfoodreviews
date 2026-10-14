@@ -6196,6 +6196,16 @@ window.RATINGS_AUTO = {
       "name": "Joe and Joe",
       "videoId": "7696233309591964958",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Francesca Brick Oven Pizza & Pasta",
+      "videoId": "7696378475078339870",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Sakura Bana Restaurant",
+      "videoId": "7696357363107908895",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
