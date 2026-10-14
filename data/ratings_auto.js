@@ -6200,12 +6200,17 @@ window.RATINGS_AUTO = {
     {
       "name": "Francesca Brick Oven Pizza & Pasta",
       "videoId": "7696378475078339870",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Sakura Bana Restaurant",
       "videoId": "7696357363107908895",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Blueberry Mahwah Frozen Yogurt, A\u00e7a\u00ed Bowl, Bubble Tea, Smoothie",
+      "videoId": "7696526512002141470",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
