@@ -6226,6 +6226,11 @@ window.RATINGS_AUTO = {
       "name": "Nellies Place",
       "videoId": "7696699284485410079",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Mountain View Deli",
+      "videoId": "7696971216824945950",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
