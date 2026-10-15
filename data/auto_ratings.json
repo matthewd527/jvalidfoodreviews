@@ -4622,7 +4622,22 @@
   "7696638597226679582": {
     "name": "Gianna's Pizza & Catering",
     "address": "41 Mountain Blvd, Warren, NJ 07059, USA",
-    "status": "no_transcript",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 2
+  },
+  "7696715651792129310": {
+    "name": "Wawa",
+    "address": "966 NJ-17, Ramsey, NJ 07446, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7696699284485410079": {
+    "name": "Nellies Place",
+    "address": "9 Franklin Tpke, Bergen, New Jersey 07463-1774, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }

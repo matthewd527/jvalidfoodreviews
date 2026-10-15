@@ -6215,7 +6215,17 @@ window.RATINGS_AUTO = {
     {
       "name": "Gianna's Pizza & Catering",
       "videoId": "7696638597226679582",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Wawa",
+      "videoId": "7696715651792129310",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Nellies Place",
+      "videoId": "7696699284485410079",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
