@@ -6211,6 +6211,11 @@ window.RATINGS_AUTO = {
       "name": "Blueberry Mahwah Frozen Yogurt, A\u00e7a\u00ed Bowl, Bubble Tea, Smoothie",
       "videoId": "7696526512002141470",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Gianna's Pizza & Catering",
+      "videoId": "7696638597226679582",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
