@@ -6246,6 +6246,11 @@ window.RATINGS_AUTO = {
       "name": "Westfield Garden State Plaza",
       "videoId": "7697095341602098463",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Ice Factory",
+      "videoId": "7697336803619048734",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

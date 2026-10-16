@@ -4667,5 +4667,11 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7697336803619048734": {
+    "name": "The Ice Factory",
+    "address": "28 Ramapo Valley Rd, Mahwah, NJ 07430, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }
