@@ -6240,7 +6240,7 @@ window.RATINGS_AUTO = {
     {
       "name": "Chick-fil-A",
       "videoId": "7697103527964839199",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Westfield Garden State Plaza",
