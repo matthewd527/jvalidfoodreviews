@@ -6231,6 +6231,11 @@ window.RATINGS_AUTO = {
       "name": "Mountain View Deli",
       "videoId": "7696971216824945950",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Stefano's Pizza",
+      "videoId": "7697041858026851615",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
