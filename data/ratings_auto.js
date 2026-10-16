@@ -6236,6 +6236,16 @@ window.RATINGS_AUTO = {
       "name": "Stefano's Pizza",
       "videoId": "7697041858026851615",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Chick-fil-A",
+      "videoId": "7697103527964839199",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Westfield Garden State Plaza",
+      "videoId": "7697095341602098463",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

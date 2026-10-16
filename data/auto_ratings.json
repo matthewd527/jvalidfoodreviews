@@ -4653,5 +4653,18 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7697103527964839199": {
+    "name": "Chick-fil-A",
+    "address": "726 NJ-17, Ramsey, NJ 07446, USA",
+    "status": "no_transcript",
+    "attempts": 1
+  },
+  "7697095341602098463": {
+    "name": "Westfield Garden State Plaza",
+    "address": "One Garden State Plaza Pkwy, Paramus, NJ 07652, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }
