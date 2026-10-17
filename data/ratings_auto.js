@@ -6250,7 +6250,7 @@ window.RATINGS_AUTO = {
     {
       "name": "The Ice Factory",
       "videoId": "7697336803619048734",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
