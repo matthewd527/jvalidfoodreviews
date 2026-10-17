@@ -6276,6 +6276,11 @@ window.RATINGS_AUTO = {
       "name": "Palisades Center",
       "videoId": "7697461246840343838",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Seconda Vita",
+      "videoId": "7697664171625811231",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
