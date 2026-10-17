@@ -6251,6 +6251,31 @@ window.RATINGS_AUTO = {
       "name": "The Ice Factory",
       "videoId": "7697336803619048734",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Seconda Vita",
+      "videoId": "7697502139874069790",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "videoId": "7697492838879169822",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Carlitos Tequileria",
+      "videoId": "7697487186886675743",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Palisades Center",
+      "videoId": "7697478028275748127",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Palisades Center",
+      "videoId": "7697461246840343838",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
