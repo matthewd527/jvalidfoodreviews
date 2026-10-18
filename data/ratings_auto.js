@@ -6281,6 +6281,21 @@ window.RATINGS_AUTO = {
       "name": "Seconda Vita",
       "videoId": "7697664171625811231",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Latour",
+      "videoId": "7697869284923510047",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Diddy\u2019s Mexican Restaurant & Bar",
+      "videoId": "7697847696232647966",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Cannoli Shop",
+      "videoId": "7697822153994947871",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
