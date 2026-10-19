@@ -6311,6 +6311,11 @@ window.RATINGS_AUTO = {
       "name": "Chit Chat Diner",
       "videoId": "7698199025396370719",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Johnson City",
+      "videoId": "7698432288815713567",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
