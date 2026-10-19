@@ -4744,5 +4744,19 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7698207983976615198": {
+    "name": "Popeyes Louisiana Kitchen",
+    "address": "164 Main St, Binghamton, NY 13905, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7698199025396370719": {
+    "name": "Chit Chat Diner",
+    "address": "515 Essex St, Hackensack, NJ 07601, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }

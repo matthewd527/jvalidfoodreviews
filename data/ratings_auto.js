@@ -6301,6 +6301,16 @@ window.RATINGS_AUTO = {
       "name": "White Manna",
       "videoId": "7698133416356646175",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Popeyes Louisiana Kitchen",
+      "videoId": "7698207983976615198",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Chit Chat Diner",
+      "videoId": "7698199025396370719",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
