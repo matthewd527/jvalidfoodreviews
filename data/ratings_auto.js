@@ -6296,6 +6296,11 @@ window.RATINGS_AUTO = {
       "name": "The Cannoli Shop",
       "videoId": "7697822153994947871",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "White Manna",
+      "videoId": "7698133416356646175",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
