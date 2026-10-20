@@ -6316,6 +6316,16 @@ window.RATINGS_AUTO = {
       "name": "Johnson City",
       "videoId": "7698432288815713567",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Chat-A-Wyle",
+      "videoId": "7698489975410625823",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Chat-A-Wyle",
+      "videoId": "7698487869098282271",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
