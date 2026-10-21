@@ -6351,6 +6351,11 @@ window.RATINGS_AUTO = {
       "name": "Joe & Vinny's Pizzeria",
       "videoId": "7698916079057390879",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Cup-A-Jo",
+      "videoId": "7699198610591763743",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
