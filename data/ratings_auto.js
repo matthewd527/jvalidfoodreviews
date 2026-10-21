@@ -6326,6 +6326,11 @@ window.RATINGS_AUTO = {
       "name": "Chat-A-Wyle",
       "videoId": "7698487869098282271",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Five Kids Bakehouse",
+      "videoId": "7698904139270524191",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
