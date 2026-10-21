@@ -6331,6 +6331,26 @@ window.RATINGS_AUTO = {
       "name": "Five Kids Bakehouse",
       "videoId": "7698904139270524191",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Gilligan's Island",
+      "videoId": "7698945564934753566",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "New York Pizzeria",
+      "videoId": "7698939575871294750",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7698919503022869791",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Joe & Vinny's Pizzeria",
+      "videoId": "7698916079057390879",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

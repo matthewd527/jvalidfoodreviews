@@ -4786,5 +4786,33 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7698945564934753566": {
+    "name": "Gilligan's Island",
+    "address": "64 N Main St, Sherburne, NY 13460, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7698939575871294750": {
+    "name": "New York Pizzeria",
+    "address": "7 S Main St, New Berlin, NY 13411, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7698919503022869791": {
+    "name": "Binghamton University",
+    "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7698916079057390879": {
+    "name": "Joe & Vinny's Pizzeria",
+    "address": "10 N Main St, Sherburne, NY 13460, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }
