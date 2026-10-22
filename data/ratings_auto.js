@@ -6356,6 +6356,11 @@ window.RATINGS_AUTO = {
       "name": "Cup-A-Jo",
       "videoId": "7699198610591763743",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Olive Garden Italian Restaurant",
+      "videoId": "7699566488281320734",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
