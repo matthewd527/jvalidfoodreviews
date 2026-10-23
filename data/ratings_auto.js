@@ -6381,6 +6381,11 @@ window.RATINGS_AUTO = {
       "name": "The Deacon's Bench",
       "videoId": "7699659909637344543",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "10-10 BBQ & Catering",
+      "videoId": "7699946189252201758",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
