@@ -4835,5 +4835,26 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7699678292370050334": {
+    "name": "Binghamton",
+    "address": "New York, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7699676400911011102": {
+    "name": "Binghamton University Nature Preserve",
+    "address": "South Rd, Broome, New York 13850, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7699659909637344543": {
+    "name": "The Deacon's Bench",
+    "address": "227 Oakdale Rd, Johnson City, NY 13790, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }

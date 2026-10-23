@@ -6366,6 +6366,21 @@ window.RATINGS_AUTO = {
       "name": "El gustitos del sabor caribeno",
       "videoId": "7699627586267155743",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7699678292370050334",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University Nature Preserve",
+      "videoId": "7699676400911011102",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Deacon's Bench",
+      "videoId": "7699659909637344543",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
