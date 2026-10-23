@@ -6361,6 +6361,11 @@ window.RATINGS_AUTO = {
       "name": "Olive Garden Italian Restaurant",
       "videoId": "7699566488281320734",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "El gustitos del sabor caribeno",
+      "videoId": "7699627586267155743",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
