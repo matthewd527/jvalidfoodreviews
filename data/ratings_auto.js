@@ -6391,6 +6391,16 @@ window.RATINGS_AUTO = {
       "name": "Giuseppe's Pizzeria",
       "videoId": "7699971649369656606",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Kampai Japanese Steakhouse",
+      "videoId": "7700062798910344478",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7700053350334614814",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
