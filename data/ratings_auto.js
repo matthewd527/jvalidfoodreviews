@@ -6386,6 +6386,11 @@ window.RATINGS_AUTO = {
       "name": "10-10 BBQ & Catering",
       "videoId": "7699946189252201758",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Giuseppe's Pizzeria",
+      "videoId": "7699971649369656606",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
