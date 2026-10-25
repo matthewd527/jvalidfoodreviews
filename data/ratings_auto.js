@@ -6401,6 +6401,16 @@ window.RATINGS_AUTO = {
       "name": "Binghamton University",
       "videoId": "7700053350334614814",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Benji & Jakes",
+      "videoId": "7700428437583858974",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Apple Hills Farm",
+      "videoId": "7700408364186062110",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
