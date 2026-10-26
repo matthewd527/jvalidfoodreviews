@@ -6411,6 +6411,11 @@ window.RATINGS_AUTO = {
       "name": "Apple Hills Farm",
       "videoId": "7700408364186062110",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Wingstop",
+      "videoId": "7700691332536339743",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
