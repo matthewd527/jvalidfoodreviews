@@ -6431,6 +6431,11 @@ window.RATINGS_AUTO = {
       "name": "Shake Shack 479 Route 17 South - Paramus",
       "videoId": "7701078084560178463",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7701173931570384158",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
