@@ -6416,6 +6416,21 @@ window.RATINGS_AUTO = {
       "name": "Wingstop",
       "videoId": "7700691332536339743",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Pakula's Pizza",
+      "videoId": "7701122220449434911",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Paramus State Route 17",
+      "videoId": "7701082193057139999",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Shake Shack 479 Route 17 South - Paramus",
+      "videoId": "7701078084560178463",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

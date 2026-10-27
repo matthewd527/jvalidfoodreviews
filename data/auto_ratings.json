@@ -4905,5 +4905,26 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7701122220449434911": {
+    "name": "Pakula's Pizza",
+    "address": "257 S Little Tor Rd, New City, NY 10956, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7701082193057139999": {
+    "name": "Paramus State Route 17",
+    "address": "50 State Route 17, Paramus, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7701078084560178463": {
+    "name": "Shake Shack 479 Route 17 South - Paramus",
+    "address": "479 NJ-17, Paramus, NJ 07652, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }
