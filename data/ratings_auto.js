@@ -5049,6 +5049,44 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Vault 168",
+      "place": "168 Water St",
+      "address": "168 Water St, Binghamton, NY 13901, USA",
+      "score": 4.88,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Wings",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7678147944205372702",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -6435,6 +6473,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7701173931570384158",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Walmart Supercenter",
+      "videoId": "7701377246195469599",
       "why": "no numerical food score spoken on camera"
     }
   ]
