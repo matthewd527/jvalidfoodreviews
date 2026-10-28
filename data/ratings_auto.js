@@ -6479,6 +6479,21 @@ window.RATINGS_AUTO = {
       "name": "Walmart Supercenter",
       "videoId": "7701377246195469599",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Three Boys From Italy",
+      "videoId": "7701578619658816798",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Jumbo King Burger",
+      "videoId": "7701565080227548446",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Pier at 192",
+      "videoId": "7701543723288579358",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
