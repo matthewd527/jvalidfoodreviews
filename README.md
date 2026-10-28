@@ -151,9 +151,9 @@ Towns come from the venue's address in the TikTok place tag (or the curated
 spreadsheet), never from guessing at hashtags. But he sometimes tags a chain's
 generic page, which files the venue wherever that page says — a Sweet Frog in
 Vestal came back as Lumberton, NC. So a town outside NY/NJ is only shown when
-the video backs it up: the town named in the caption, a county tag in the same
-state, or another video that does. Unbacked ones are listed in the run log as
-"left off as unbacked".
+the video backs it up: the town or its state named in the caption (`#florida`),
+a county tag in the same state, or another video that does. Unbacked ones are
+listed in the run log as "left off as unbacked".
 
 Scores 13/13 on a spot-check set including tricky overlaps.
 
@@ -299,6 +299,18 @@ You shouldn't need to, but:
 python3 scripts/update.py --dry-run   # show what would change
 python3 scripts/update.py             # do it
 ```
+
+If videos ever go missing — say the job was off for days and they scrolled out
+of the embed's window — `scripts/backfill.py` fetches them by id. Open his
+profile in a browser (it lists video links even logged out), collect the ids
+from the `/video/<id>` links, and pass the ones the site lacks:
+
+```bash
+python3 scripts/backfill.py 7675927453059108127 7675928047912029470
+```
+
+That is how the 48 videos from Aug 19–23, which predate the updater, were
+recovered on 2026-10-28.
 
 ## Maintenance, honestly
 
