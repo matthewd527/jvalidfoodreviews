@@ -314,8 +314,13 @@ recovered on 2026-10-28.
 
 ## Maintenance, honestly
 
-Nothing here expires — no token, no card, no annual renewal. But TikTok changes
-the shape of that embed payload a few times a year without warning. When it does,
+Nothing in the pipeline expires — no token, no API key. The one renewal is the
+**domain**: jvalidfoodreviews.com is registered at Porkbun until 2027-08-29 and
+needs auto-renew on there (or a manual renewal) to keep the address. If it ever
+lapses, the site itself stays up at <https://jvalidfoodreviews.pages.dev>.
+
+TikTok changes the shape of that embed payload a few times a year without
+warning. When it does,
 the job keeps the old data rather than writing garbage, and once that has lasted
 18 hours it fails loudly (red X, failure email). The fix is usually a small path
 correction in `scrape_tiktok()`.
