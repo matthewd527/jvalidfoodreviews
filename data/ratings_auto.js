@@ -5087,6 +5087,886 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged off-menu spot",
+      "place": "",
+      "address": "",
+      "score": 4.8,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7679071988903595295",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 0.667,
+      "tier": "offscale",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 1.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        },
+        {
+          "item": "Burger",
+          "score": 0.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7679062869081689375",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "More Than Pizza Ithaca",
+      "place": "215 E State St",
+      "address": "215 E State St, Ithaca, NY 14850, USA",
+      "score": 3.1,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 3.1
+        }
+      ],
+      "posted": null,
+      "videoId": "7678949104658992415",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Ithaca",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.675,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7678899138179763486",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Jim Roma's Bakery",
+      "place": "202 N Nanticoke Ave",
+      "address": "202 N Nanticoke Ave, Endicott, NY 13760, USA",
+      "score": 4.625,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Slice",
+          "score": 5.0
+        },
+        {
+          "item": "Chicken",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Chicken",
+          "score": 3.5
+        }
+      ],
+      "posted": null,
+      "videoId": "7678759658055535902",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 3.0,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 2.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 2.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7678698073605852447",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 3.8,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7678525246936206623",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Chuck E. Cheese",
+      "place": "3901 Vestal Pkwy E",
+      "address": "3901 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 3.3,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.3
+        }
+      ],
+      "posted": null,
+      "videoId": "7678524054013283615",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Mario's Pizza | Italian",
+      "place": "51 Fox St",
+      "address": "51 Fox St, Owego, NY 13827, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Wings",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Pizza",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7678435201453706527",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Pizza",
+      "place": "Pisa",
+      "address": "Pisa, Italia",
+      "score": 3.0,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7678432330150677790",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 2.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 2.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7678329925325081887",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7678326342315822367",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 4.2,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        }
+      ],
+      "posted": null,
+      "videoId": "7678091702313192734",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged off-menu spot",
+      "place": "",
+      "address": "",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7678035523830631711",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Nirchi's Pizza",
+      "place": "1023 Conklin Rd",
+      "address": "1023 Conklin Rd, Conklin, NY 13748, USA",
+      "score": 3.8,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7678002898998988062",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 3.5,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Cone",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 2.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7677958318236634399",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Courtside Bar & Grill",
+      "place": "56 Court St",
+      "address": "56 Court St, Binghamton, NY 13901, USA",
+      "score": 4.937,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.92
+        },
+        {
+          "item": "Pretzel",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Nachos",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7677799030658764062",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 0.0,
+      "tier": "offscale",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 0.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7677708870503910686",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged off-menu spot",
+      "place": "",
+      "address": "",
+      "score": 1.367,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 2.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.1
+        },
+        {
+          "item": "Spoken score",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7677679217663806751",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Untagged off-menu spot",
+      "place": "Broome",
+      "address": "",
+      "score": 4.3,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Cone",
+          "score": 4.6
+        },
+        {
+          "item": "Cone",
+          "score": 4.5
+        },
+        {
+          "item": "Mac And Cheese",
+          "score": 4.3
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7677642084253240607",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 1.8,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 1.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7677334964962217246",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton Rumble Ponies Baseball Club",
+      "place": "211 Henry St",
+      "address": "211 Henry St, Binghamton, United States",
+      "score": 4.6,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Chicken",
+          "score": 5.0
+        },
+        {
+          "item": "Nachos",
+          "score": 4.9
+        },
+        {
+          "item": "Nachos",
+          "score": 4.7
+        },
+        {
+          "item": "Pizza",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7677305035054648606",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University",
+      "place": "4400 Vestal Pkwy E",
+      "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7677227139116092702",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Chipotle Mexican Grill",
+      "place": "4698 Vestal Pkwy E",
+      "address": "4698 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7677003440152694046",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Gabriella's Cakes & Co",
+      "place": "265 Main St",
+      "address": "265 Main St, Johnson City, NY 13790, USA",
+      "score": 4.85,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.8
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7676958207100685598",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Cold Stone Creamery",
+      "place": "4700 Vestal Pkwy E",
+      "address": "4700 Vestal Pkwy E, Vestal, NY 13850, USA",
+      "score": 3.0,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7676911417009704222",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "North Street Smokehouse",
+      "place": "208 North St",
+      "address": "208 North St, Endicott, NY 13760, USA",
+      "score": 4.275,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pretzel",
+          "score": 4.7
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.6
+        },
+        {
+          "item": "Wings",
+          "score": 4.0
+        },
+        {
+          "item": "Burger",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7676650787124088095",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton University Nature Preserve",
+      "place": "South Rd",
+      "address": "South Rd, Broome, New York 13850, USA",
+      "score": 0.0,
+      "tier": "offscale",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 0.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7676606051084422430",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 4.0,
+      "tier": "great",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.2
+        },
+        {
+          "item": "Spoken score",
+          "score": 3.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7676533350143626526",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Binghamton",
+      "place": "New York",
+      "address": "New York, United States",
+      "score": 3.45,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        },
+        {
+          "item": "Spoken score",
+          "score": 4.0
+        },
+        {
+          "item": "Chicken",
+          "score": 3.8
+        },
+        {
+          "item": "Chicken",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7676521986566278430",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Texas Roadhouse",
+      "place": "2105 State Route 35 Ste 103",
+      "address": "2105 State Route 35 Ste 103, Holmdel, NJ 07733, United States",
+      "score": 4.7,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7676505455090257183",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Little Venice Restaurant",
+      "place": "111 Chenango St",
+      "address": "111 Chenango St, Binghamton, NY 13901, USA",
+      "score": 5.0,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 5.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7675928047912029470",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -6499,6 +7379,91 @@ window.RATINGS_AUTO = {
       "name": "Habit Burger & Grill",
       "videoId": "7701821291132652830",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Gilligan's Clam Bar & Grill",
+      "videoId": "7701824952747511070",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7678878161857285407",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Cornell",
+      "videoId": "7678877171858902302",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Cornell",
+      "videoId": "7678873762518928671",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7678729307031620895",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7678521037142740254",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7678518321565764894",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7678509509865704734",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Courtside Bar & Grill",
+      "videoId": "7678053478622596383",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7677798212933143838",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7677683185014050079",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7677366724512976141",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7676591024008940830",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton",
+      "videoId": "7676343002238848287",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7676314079618796831",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Florida State University",
+      "videoId": "7676249248328928543",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Binghamton University",
+      "videoId": "7675927453059108127",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
