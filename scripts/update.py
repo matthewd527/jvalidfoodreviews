@@ -9,7 +9,9 @@ Writes:
 
 Design rule: this script must NEVER make the site worse. If the scrape looks
 wrong (empty, zeroed, or an implausible collapse in followers) it keeps the last
-known-good data, writes nothing, and exits non-zero so CI goes red.
+known-good data and writes nothing. One bad run is a blip the next run fixes,
+so it only exits non-zero - CI goes red and emails - once the site has gone
+STALE_AFTER_HOURS without fresh numbers.
 
 Usage:
   python3 scripts/update.py             # normal run
@@ -19,6 +21,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import collections
 import datetime as dt
 import json
 import os
@@ -74,6 +77,40 @@ COUNTIES = [
     ("westchester", "Westchester", "NY", ["westchester"]),
     ("orange", "Orange County", "NY", ["orangecounty"]),
 ]
+
+# Misspellings he has actually tagged, folded into the real county so one place
+# doesn't show up as two rows on the page.
+COUNTY_ALIASES = {"dutches": "dutchess", "passiac": "passaic", "deleware": "delaware"}
+
+# Which state each county is in, for the ones he has filmed in so far. Only a
+# fallback: a "#broomecountyny" tag outranks it, and a county that isn't listed
+# here takes its state from the towns of the videos tagged with it.
+COUNTY_STATE = {key: st for st, keys in {
+    "NY": "rockland westchester orange putnam dutchess broome tioga chenango "
+          "delaware cortland ulster sullivan otsego chemung cayuga nassau "
+          "onondaga suffolk oswego erie jefferson genesee madison tompkins",
+    "NJ": "bergen passaic essex hudson morris ocean somerset middlesex capemay burlington",
+    "PA": "susquehanna bradford",
+    "WI": "dane",
+}.items() for key in keys.split()}
+COUNTY_NAMES = {"westchester": "Westchester", "capemay": "Cape May County"}
+
+# Where he lives and films most. A town anywhere else has to be backed up by
+# the video itself before it is shown - see assign_places().
+HOME_STATES = {"NY", "NJ"}
+
+US_STATES = set(
+    "AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS "
+    "MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY".split())
+
+
+def as_ts(value) -> int | None:
+    """A unix timestamp as an int. Older embed payloads sent createTime as a
+    string, so 21 archived videos carry "1786279233" where the rest have ints."""
+    try:
+        return int(value) or None
+    except (TypeError, ValueError):
+        return None
 
 
 def created_from_id(video_id: str) -> int | None:
@@ -141,7 +178,10 @@ def city_from_place(text: str) -> tuple[str, str] | None:
     if not text:
         return None
     parts = [p.strip() for p in re.sub(r"\s*\(.*?\)\s*", " ", text).split(",") if p.strip()]
-    while parts and parts[-1].lower().rstrip(".") in ("usa", "us", "united states"):
+    # TikTok sometimes localises the country: "River Edge, NJ 07661, EUA" is
+    # Portuguese, and read naively it put a town called "Eua" on the map.
+    while parts and parts[-1].lower().rstrip(".") in (
+            "usa", "us", "united states", "eua", "estados unidos", "ee. uu", "ee.uu"):
         parts.pop()
     if len(parts) < 2:
         return None
@@ -179,28 +219,79 @@ def counties_for(caption: str) -> list[str]:
     # He often suffixes the state onto the tag (#orangecountyny), so allow one.
     # Without this, a county not already in the seed list above would be dropped
     # purely because of how he happened to write it.
-    for m in re.finditer(r'#([a-z]+?)county(?:ny|nj|ct|pa)?\b', text):
-        if m.group(1) not in keys:
-            keys.append(m.group(1))
+    for key, _ in county_tags(text):
+        if key not in keys:
+            keys.append(key)
     return keys
 
 
+def county_tags(caption: str) -> list[tuple[str, str]]:
+    """(county_key, state) for every #...county tag; state is "" if he left it off."""
+    out = []
+    for m in re.finditer(r'#([a-z]+?)county([a-z]{2})?\b', caption.lower()):
+        st = (m.group(2) or "").upper()
+        if st and st not in US_STATES:
+            continue   # two letters that aren't a state: not a county tag at all
+        out.append((COUNTY_ALIASES.get(m.group(1), m.group(1)), st))
+    return out
+
+
 # ── fetching ──────────────────────────────────────────────────────────────────
-def get(url: str, tries: int = 4, timeout: int = 30) -> bytes:
-    """GET with retries and jittered backoff. Raises on final failure."""
+class RateLimited(RuntimeError):
+    """The server answered 429: it wants fewer requests, not the same one again."""
+
+
+def get(url: str, tries: int = 4, timeout: int = 30, patient: bool = True) -> bytes:
+    """GET with retries and jittered backoff. Raises on final failure.
+
+    A 429 is not a blip. Retrying it three times inside twenty seconds - what
+    this used to do - can never outlast a rate limit, and it's what turned one
+    throttled request into a failed run on 2026-10-28. So a 429 now waits as
+    long as Retry-After asks (capped), or backs off hard when it doesn't say.
+    Optional work passes patient=False to stop at the first 429 instead of
+    spending the run waiting on it.
+    """
     last = None
     for attempt in range(1, tries + 1):
         try:
             req = urllib.request.Request(url, headers=HEADERS)
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.read()
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code != 429:
+                nap = attempt * 3 + random.uniform(0, 2)
+            elif not patient:
+                raise RateLimited(f"429 from {url}") from e
+            else:
+                try:
+                    asked = float((e.headers or {}).get("Retry-After") or "")
+                except ValueError:   # missing, or an HTTP date - just back off
+                    asked = attempt * 25 + random.uniform(0, 10)
+                nap = min(asked, 90)
         except Exception as e:  # noqa: BLE001 - want to retry on anything transient
             last = e
-            if attempt < tries:
-                nap = attempt * 3 + random.uniform(0, 2)
-                print(f"    retry {attempt}/{tries - 1} after {nap:.1f}s ({type(e).__name__}: {e})")
-                time.sleep(nap)
+            nap = attempt * 3 + random.uniform(0, 2)
+        if attempt < tries:
+            print(f"    retry {attempt}/{tries - 1} after {nap:.1f}s ({type(last).__name__}: {last})")
+            time.sleep(nap)
     raise RuntimeError(f"GET failed after {tries} tries: {url} ({last})")
+
+
+def video_page(video_id: str) -> tuple[int | None, dict]:
+    """(statusCode, itemStruct) from a video's public page.
+
+    statusCode 10204 means the video is gone ("status_deleted", or "item
+    doesn't exist"); 0 means it's live. Raises RateLimited on a 429 and
+    RuntimeError on any other failure to load the page.
+    """
+    html = get(f"https://www.tiktok.com/@{HANDLE}/video/{video_id}",
+               tries=2, timeout=30, patient=False).decode("utf-8", "ignore")
+    m = re.search(r'id="__UNIVERSAL_DATA_FOR_REHYDRATION__"[^>]*>(.*?)</script>', html, re.S)
+    if not m:
+        raise RuntimeError("video page had no state blob")
+    detail = json.loads(m.group(1)).get("__DEFAULT_SCOPE__", {}).get("webapp.video-detail", {})
+    return detail.get("statusCode"), (detail.get("itemInfo") or {}).get("itemStruct") or {}
 
 
 def scrape_tiktok() -> dict:
@@ -284,7 +375,8 @@ def scrape_total_videos() -> int | None:
     the run - the caller falls back to the number of videos we know about.
     """
     try:
-        html = get(f"https://www.tiktok.com/@{HANDLE}", tries=2, timeout=25).decode("utf-8", "ignore")
+        html = get(f"https://www.tiktok.com/@{HANDLE}", tries=2, timeout=25,
+                   patient=False).decode("utf-8", "ignore")
         m = re.search(
             r'id="__UNIVERSAL_DATA_FOR_REHYDRATION__"[^>]*>(.*?)</script>', html, re.S
         )
@@ -369,25 +461,19 @@ def extract_scores(text: str) -> list[tuple[float, str]]:
 
 
 def fetch_video_details(video_id: str) -> dict:
-    """Place tag + transcript scores for one video. Never raises.
+    """Place tag + transcript scores for one video.
 
-    Returns {"status": "scored"|"no_scores"|"no_transcript"|"error", ...}.
+    Returns {"status": "scored"|"no_scores"|"no_transcript"|"gone"|"error", ...}.
     A brand-new upload often has no ASR transcript yet, so 'no_transcript'
-    is retried on later runs.
+    is retried on later runs. Raises RateLimited, so the caller stops asking
+    rather than spending every remaining video's attempt on a 429.
     """
     try:
-        url = f"https://www.tiktok.com/@{HANDLE}/video/{video_id}"
-        html = get(url, tries=2, timeout=30).decode("utf-8", "ignore")
-        m = re.search(
-            r'id="__UNIVERSAL_DATA_FOR_REHYDRATION__"[^>]*>(.*?)</script>', html, re.S)
-        if not m:
-            return {"status": "error", "why": "no state blob"}
-        item = (json.loads(m.group(1))
-                .get("__DEFAULT_SCOPE__", {})
-                .get("webapp.video-detail", {})
-                .get("itemInfo", {}).get("itemStruct", {}))
+        code, item = video_page(video_id)
+        if code == 10204:
+            return {"status": "gone"}   # deleted; nothing to score, ever
         if not item:
-            return {"status": "error", "why": "no itemStruct"}
+            return {"status": "error", "why": f"no itemStruct (statusCode {code})"}
 
         poi = item.get("poi") or {}
         out = {
@@ -401,7 +487,7 @@ def fetch_video_details(video_id: str) -> dict:
             out["status"] = "no_transcript"
             return out
 
-        vtt = get(subs[0]["Url"], tries=2).decode("utf-8", "ignore")
+        vtt = get(subs[0]["Url"], tries=2, patient=False).decode("utf-8", "ignore")
         lines, seen = [], set()
         for line in vtt.splitlines():
             line = line.strip()
@@ -415,17 +501,17 @@ def fetch_video_details(video_id: str) -> dict:
         out["status"] = "scored" if scores else "no_scores"
         out["items"] = [{"item": lbl, "score": s} for s, lbl in scores]
         return out
+    except RateLimited:
+        raise
     except Exception as e:  # noqa: BLE001
         return {"status": "error", "why": f"{type(e).__name__}: {e}"}
 
 
-def assign_cities(payload: dict) -> None:
-    """Stamp each video with the town its venue is in, where we know it.
+def known_places() -> dict[str, tuple[str, str]]:
+    """{video_id: (town, state)} from both verified sources; state may be "".
 
-    Two sources, both verified rather than inferred: the TikTok place tag
-    captured while auto-scoring, and the town from the curated spreadsheet.
-    Videos with no tagged place simply have no town, which is why The Turf
-    lists towns separately from counties instead of pretending they're equal.
+    The sources are the TikTok place tag captured while auto-scoring, and the
+    town from the curated spreadsheet.
     """
     known: dict[str, tuple[str, str]] = {}
 
@@ -454,28 +540,94 @@ def assign_cities(payload: dict) -> None:
             hit = city_from_place(m.group(1))
             if hit:
                 known.setdefault(m.group(2), hit)
+    return known
+
+
+def county_info(videos: list[dict], known: dict[str, tuple[str, str]]) -> dict:
+    """{key: {"name", "state"}} for every county the site shows.
+
+    The state comes from, in order of trust: the state he wrote into the tag
+    itself (#broomecountyny), the COUNTY_STATE table, then the towns of the
+    videos tagged with that county and no other.
+    """
+    tagged = collections.defaultdict(collections.Counter)
+    towns = collections.defaultdict(collections.Counter)
+    for v in videos:
+        for key, st in county_tags(v.get("cap", "")):
+            if st:
+                tagged[key][st] += 1
+        st = known.get(v["id"], ("", ""))[1]
+        if st and len(v.get("counties") or []) == 1:
+            towns[v["counties"][0]][st] += 1
+
+    info = {}
+    for key in sorted({k for v in videos for k in v.get("counties") or []}):
+        votes = tagged.get(key) or (
+            collections.Counter([COUNTY_STATE[key]]) if key in COUNTY_STATE else towns.get(key))
+        info[key] = {
+            "name": COUNTY_NAMES.get(key, key.title() + " County"),
+            "state": votes.most_common(1)[0][0] if votes else "",
+        }
+    return info
+
+
+def assign_places(payload: dict) -> None:
+    """Stamp each video with the town its venue is in, and write the county
+    table (name + state) the page labels The Turf with.
+
+    Videos with no tagged place simply have no town, which is why The Turf
+    lists towns separately from counties instead of pretending they're equal.
+
+    A place tag is only as good as the one he picked, and choosing a chain's
+    generic page drops the venue wherever that page says it is: Sweet Frog in
+    Vestal came back as Lumberton, NC, and a Dave & Buster's as Dallas. So a
+    town outside HOME_STATES needs backing from the video itself - the town
+    named in the caption, a county tag in the same state, or another video
+    that passed one of those. Unbacked towns are left off rather than putting
+    a trip he never took on the map.
+    """
+    videos = [v for v in payload.get("videos", []) if not v.get("gone")]
+    known = known_places()
+    info = county_info(videos, known)
+    payload["countyInfo"] = info
 
     # One Binghamton address ends "United States" instead of "NY", which would
     # otherwise split one town into two rows. Fill blanks from any sighting of
-    # the same town that did carry a state.
+    # the same town that did carry a state, failing that from the video's
+    # county.
     states = {}
     for city, st in known.values():
         if st:
             states.setdefault(city.lower(), st)
 
+    squash = lambda s: re.sub(r"[^a-z]", "", s.lower())  # noqa: E731
+    placed, backed = {}, set()
+    for v in videos:
+        if v["id"] not in known:
+            continue
+        city, st = known[v["id"]]
+        in_states = {info[k]["state"] for k in v.get("counties") or []} - {""}
+        st = st or states.get(city.lower()) or (min(in_states) if len(in_states) == 1 else "")
+        if not st:
+            continue   # a town that can't be put in a state can't go on the map
+        placed[v["id"]] = (city, st)
+        if st in HOME_STATES or st in in_states or squash(city) in squash(v.get("cap", "")):
+            backed.add((city, st))
+
     for v in payload.get("videos", []):
-        hit = known.get(v["id"])
-        if hit:
-            city, st = hit
-            v["city"], v["cityState"] = city, st or states.get(city.lower(), "")
+        hit = placed.get(v["id"])
+        if hit in backed:
+            v["city"], v["cityState"] = hit
         else:
             v.pop("city", None)
             v.pop("cityState", None)
 
-    n = sum(1 for v in payload.get("videos", []) if v.get("city"))
-    towns = sorted({v["city"] for v in payload.get("videos", []) if v.get("city")})
-    print(f"  towns: {n}/{len(payload.get('videos', []))} videos placed "
-          f"across {len(towns)} town(s)")
+    n = sum(1 for v in videos if v.get("city"))
+    left_off = sorted({f"{c}, {s}" for c, s in set(placed.values()) - backed})
+    print(f"  towns: {n}/{len(videos)} videos placed across {len(backed)} town(s)"
+          + (f"; left off as unbacked: {'; '.join(left_off)}" if left_off else ""))
+    print(f"  counties: {len(info)}, in "
+          f"{len({i['state'] for i in info.values()} - {''})} state(s)")
 
 
 def refresh_auto_ratings(new_ids: list[str], payload: dict) -> None:
@@ -507,7 +659,7 @@ def refresh_auto_ratings(new_ids: list[str], payload: dict) -> None:
     for v in payload.get("videos", []):
         vid = v["id"]
         rec = store.get(vid, {})
-        if vid in curated_ids or rec.get("status") in ("scored", "no_scores"):
+        if vid in curated_ids or v.get("gone") or rec.get("status") in ("scored", "no_scores", "gone"):
             continue
         if rec and rec.get("status") in ("error", "no_transcript") and rec.get("attempts", 0) >= 5:
             continue   # gave up after five tries; overrides.json can still fill it in
@@ -517,7 +669,12 @@ def refresh_auto_ratings(new_ids: list[str], payload: dict) -> None:
         if i:
             time.sleep(2 + random.uniform(0, 2))   # politeness between page loads
         print(f"  → reading video page for {vid}")
-        det = fetch_video_details(vid)
+        try:
+            det = fetch_video_details(vid)
+        except RateLimited:
+            # not this video's fault, so it doesn't cost it one of its attempts
+            print("    TikTok asked us to slow down - the rest wait for the next run")
+            break
         det["attempts"] = store.get(vid, {}).get("attempts", 0) + 1
         store[vid] = det
         n = len(det.get("items", []))
@@ -538,7 +695,8 @@ def refresh_auto_ratings(new_ids: list[str], payload: dict) -> None:
         except json.JSONDecodeError:
             pass
 
-    by_id = {v["id"]: v for v in payload.get("videos", [])}
+    # a deleted video leaves the ranking with it: its "watch" link would be dead
+    by_id = {v["id"]: v for v in payload.get("videos", []) if not v.get("gone")}
     entries, unscored = [], []
     for vid, rec in store.items():
         if vid in curated_ids or vid not in by_id:
@@ -588,12 +746,115 @@ def refresh_auto_ratings(new_ids: list[str], payload: dict) -> None:
         print(f"  auto ratings: {len(entries)} scored, {len(unscored)} unscored")
 
 
+# ── view counts for older videos ──────────────────────────────────────────────
+CHECKS_FILE = DATA / "view_checks.json"
+CHECKS_PER_RUN = 20
+
+
+def refresh_views(payload: dict, feed_ids: set[str]) -> None:
+    """Re-read the play counts of older videos, a handful per run.
+
+    The embed only carries the newest ten, so without this every older video's
+    views froze at whatever they were when it scrolled out - about a day into
+    its life - which also made "biggest" a race among newborns. Each run
+    re-reads the videos that are most overdue, where a video falls due again
+    once its age has doubled since the last read (never more often than every
+    12 hours, never less than every 60 days). So the young ones that are still
+    climbing get read far more often than the old ones that have levelled off.
+
+    The same page says when a video has been deleted, so dead links leave the
+    grid on their own: two reads in a row of "deleted" mark it gone.
+
+    Nothing here can fail the run. The first 429 ends the pass, and whatever
+    is left simply waits for the next run.
+    """
+    checks = {}
+    if CHECKS_FILE.exists():
+        try:
+            checks = json.loads(CHECKS_FILE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            checks = {}
+
+    now = time.time()
+    for vid in feed_ids:   # the embed has just read these
+        checks[vid] = {"t": int(now)}
+
+    def due(v: dict) -> float:
+        c = checks.get(v["id"], {})
+        if c.get("miss"):
+            return 99.0   # looked deleted last time: confirm it straight away
+        made = as_ts(v.get("created")) or created_from_id(v["id"]) or now
+        wait = min(max((now - made) / 2, 12 * 3600), 60 * 86400)
+        # Capped so that the never-read backlog ties, and the newest go first.
+        return min((now - (c.get("t") or made)) / wait, 2.0)
+
+    queue = sorted(
+        (v for v in payload["videos"]
+         if not v.get("gone") and v["id"] not in feed_ids and due(v) >= 1),
+        key=lambda v: (due(v), int(v["id"])), reverse=True)
+
+    read = bumped = fails = 0
+    gone = []
+    for v in queue[:CHECKS_PER_RUN]:
+        if read or fails:
+            time.sleep(1 + random.uniform(0, 1.5))   # politeness between page loads
+        try:
+            code, item = video_page(v["id"])
+        except RateLimited:
+            print("  views: TikTok asked us to slow down - the rest wait for the next run")
+            break
+        except Exception as e:  # noqa: BLE001
+            fails += 1
+            print(f"    couldn't read {v['id']} ({e})")
+            if fails >= 3:
+                break   # three in a row: probably blocked, stop asking
+            continue
+        fails = 0
+        read += 1
+        prev = checks.get(v["id"], {})
+        checks[v["id"]] = c = {"t": int(now)}
+        if code == 10204:
+            c["miss"] = prev.get("miss", 0) + 1
+            if c["miss"] >= 2:
+                v["gone"] = True
+                gone.append(v["id"])
+            continue
+        plays = int((item.get("stats") or {}).get("playCount") or 0)
+        if plays > v.get("views", 0):
+            v["views"] = plays
+            bumped += 1
+
+    # one line per video keeps each run's diff to the handful it touched
+    ids = {v["id"] for v in payload["videos"]}
+    CHECKS_FILE.write_text(
+        "{\n" + ",\n".join(f'  "{k}": {json.dumps(checks[k])}' for k in sorted(checks) if k in ids)
+        + "\n}\n", encoding="utf-8")
+
+    left = len(queue) - read
+    print(f"  views: re-read {read} older video(s), {bumped} had climbed"
+          + (f", {len(gone)} deleted on TikTok and hidden" if gone else "")
+          + (f"; {left} more due next run" if left > 0 else ""))
+
+
+def mark_biggest(videos: list[dict]) -> None:
+    live = [v for v in videos if not v.get("gone")]
+    top = max(live, key=lambda v: v["views"])["id"] if live else None
+    for v in videos:
+        v["hot"] = (v["id"] == top)
+
+
 # ── instagram ─────────────────────────────────────────────────────────────────
 # Stats only - videos come exclusively from TikTok, so nothing here ever adds
 # to the video grid. Uses the same anonymous web endpoint the instagram.com
-# profile page calls: no token, no app, no login, nothing to expire. It IS
-# rate-limited per IP and fails on some days; the merge below keeps the last
-# good numbers and flags them stale rather than ever losing them.
+# profile page calls: no token, no app, no login, nothing to expire.
+#
+# But Instagram turns datacenter IPs away wholesale. Tested 2026-10-28: four
+# GitHub runners got 429 on all ten routes tried (API, profile page, eight
+# link-preview crawler user agents), and Cloudflare's network got 401s and
+# login redirects. Only home connections get through. So in CI this mostly
+# fails, and the merge below keeps the last good numbers - stamped with when
+# they were read, which the page shows once they're old - rather than ever
+# losing them. Refresh by hand with IG_JSON (see the README).
 # Set IG_HANDLE="" to disable.
 IG_HANDLE = os.environ.get("IG_HANDLE", "jvalidfoodreviews").lstrip("@").strip()
 IG_APP_ID = "936619743392459"
@@ -608,31 +869,36 @@ def scrape_instagram() -> dict | None:
     if not IG_HANDLE:
         return None
 
-    url = (
-        "https://www.instagram.com/api/v1/users/web_profile_info/"
-        f"?username={urllib.parse.quote(IG_HANDLE)}"
-    )
-    req = urllib.request.Request(url, headers={**HEADERS, "x-ig-app-id": IG_APP_ID})
-    try:
-        # Deliberately no retry loop. This endpoint rate-limits by IP and
-        # answers a burst with a 401 lockout lasting 30+ minutes, so one polite
-        # request a day is the whole strategy.
-        with urllib.request.urlopen(req, timeout=25) as r:
-            payload = json.loads(r.read().decode("utf-8", "ignore"))
-    except urllib.error.HTTPError as e:
-        if e.code in (401, 429):
-            # Expected and common. Instagram meters this endpoint hard per IP,
-            # and CI runners share a pool that other people are also hitting,
-            # so some runs simply will not get through. Yesterday's numbers stay
-            # on the site and we try again tomorrow from a different IP.
-            print(f"  instagram: rate-limited ({e.code}) - keeping last known "
-                  "numbers, will retry tomorrow")
-        else:
-            print(f"  instagram: HTTP {e.code} - skipping this run")
-        return None
-    except Exception as e:  # noqa: BLE001
-        print(f"  instagram: unavailable ({type(e).__name__}) - skipping this run")
-        return None
+    saved = os.environ.get("IG_JSON")
+    if saved:
+        # The same response, saved from a browser on a home connection - the
+        # one kind of network Instagram still answers.
+        payload = json.loads(pathlib.Path(saved).read_text(encoding="utf-8"))
+        print(f"  instagram: reading the saved response in {saved}")
+    else:
+        url = (
+            "https://www.instagram.com/api/v1/users/web_profile_info/"
+            f"?username={urllib.parse.quote(IG_HANDLE)}"
+        )
+        req = urllib.request.Request(url, headers={**HEADERS, "x-ig-app-id": IG_APP_ID})
+        try:
+            # Deliberately no retry loop. This endpoint rate-limits by IP and
+            # answers a burst with a 401 lockout lasting 30+ minutes, so one
+            # polite request per run is the whole strategy.
+            with urllib.request.urlopen(req, timeout=25) as r:
+                payload = json.loads(r.read().decode("utf-8", "ignore"))
+        except urllib.error.HTTPError as e:
+            if e.code in (401, 429):
+                # Expected - see the note above. The last good numbers stay on
+                # the site, and the next run tries again from a different IP.
+                print(f"  instagram: rate-limited ({e.code}) - keeping the last "
+                      "good numbers")
+            else:
+                print(f"  instagram: HTTP {e.code} - skipping this run")
+            return None
+        except Exception as e:  # noqa: BLE001
+            print(f"  instagram: unavailable ({type(e).__name__}) - skipping this run")
+            return None
 
     user = (payload.get("data") or {}).get("user")
     if not user:
@@ -676,6 +942,9 @@ def scrape_instagram() -> dict | None:
         "likesTracked": sum(p["likes"] for p in posts),
         "postsTracked": len(posts),
         "posts": posts,
+        # carried forward untouched on every run that can't reach Instagram,
+        # so the page can say how old the numbers are
+        "fetchedAt": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
     }
 
 
@@ -690,7 +959,7 @@ def merge_instagram(fresh_ig: dict | None, prev_ig: dict | None) -> dict | None:
     """
     if fresh_ig is None:
         if prev_ig:
-            print("  instagram: keeping yesterday's numbers")
+            print(f"  instagram: keeping the numbers read {prev_ig.get('fetchedAt') or 'on an earlier run'}")
             out = dict(prev_ig)
             out["stale"] = True
             return out
@@ -822,37 +1091,42 @@ def merge(fresh: dict, prev: dict, overrides: dict) -> dict:
     prev_videos = {v["id"]: v for v in (prev.get("videos") or [])}
     merged, new_ids = [], []
 
+    def tags(vid: str, cap: str) -> dict:
+        pin = overrides.get(vid, {})
+        cat, label = categorise(cap)
+        return {
+            "cat": pin.get("cat") or cat,
+            "label": pin.get("label") or label,
+            "counties": pin.get("counties") or counties_for(cap),
+        }
+
     for v in fresh["videos"]:
         old = prev_videos.get(v["id"], {})
         if not old:
             new_ids.append(v["id"])
 
-        pin = overrides.get(v["id"], {})
-        cat, label = categorise(v["cap"])
-
+        cap = v["cap"] or old.get("cap", "")
         merged.append({
             "id": v["id"],
-            "cap": v["cap"] or old.get("cap", ""),
+            "cap": cap,
             # views only ever move forward; a transient 0 must not erase a real number
             "views": max(v["views"], old.get("views", 0)),
-            "cat": pin.get("cat") or cat,
-            "label": pin.get("label") or label,
-            "counties": pin.get("counties") or counties_for(v["cap"]),
-            "created": v.get("created") or old.get("created"),
+            **tags(v["id"], cap),
+            "created": as_ts(v.get("created")) or as_ts(old.get("created")),
         })
 
     # Keep videos we've seen before that have scrolled out of the 10-item embed
-    # window, so the archive on the site only ever grows.
+    # window, so the archive on the site only ever grows. Their tags are worked
+    # out again from the caption every run, so a fix to the categoriser or a
+    # new county alias reaches the whole archive, not just the newest ten.
     seen = {v["id"] for v in merged}
     for vid, old in prev_videos.items():
         if vid not in seen:
-            merged.append(old)
+            merged.append({**old, **tags(vid, old.get("cap", "")),
+                           "created": as_ts(old.get("created")) or created_from_id(vid)})
 
     merged.sort(key=lambda v: int(v["id"]), reverse=True)
-
-    biggest = max(merged, key=lambda v: v["views"])["id"] if merged else None
-    for v in merged:
-        v["hot"] = (v["id"] == biggest)
+    mark_biggest(merged)
 
     return {
         "updated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
@@ -883,12 +1157,13 @@ def write_history(payload: dict) -> None:
             hist = []
 
     today = dt.date.today().isoformat()
+    live = [v for v in payload["videos"] if not v.get("gone")]
     snap = {
         "date": today,
         "followers": payload["profile"]["followers"],
         "likes": payload["profile"]["likes"],
-        "videos": len(payload["videos"]),
-        "views": sum(v["views"] for v in payload["videos"]),
+        "videos": len(live),
+        "views": sum(v["views"] for v in live),
     }
     if payload.get("instagram"):
         snap["ig_followers"] = payload["instagram"].get("followers")
@@ -897,6 +1172,38 @@ def write_history(payload: dict) -> None:
     hist.append(snap)
     hist.sort(key=lambda h: h["date"])
     f.write_text(json.dumps(hist, indent=2) + "\n", encoding="utf-8")
+
+
+# How long the site may go without fresh numbers before a run that can't
+# refresh them counts as a failure. See skip_or_fail().
+STALE_AFTER_HOURS = 18
+
+
+def skip_or_fail(prev: dict, reason: str) -> int:
+    """Exit code for a run that couldn't refresh. The old data stays up either way.
+
+    While that data is still fresh, a failed run is a blip - one 429, one bad
+    response - that the next run three hours later papers over, and an email
+    about each one would only teach whoever reads them to ignore the emails.
+    So it passes with a warning on the run page, and it is only once nothing
+    has succeeded for STALE_AFTER_HOURS (about six runs in a row) that CI goes
+    red and the email means something.
+    """
+    try:
+        age = (dt.datetime.now(dt.timezone.utc)
+               - dt.datetime.fromisoformat(prev["updated"])).total_seconds() / 3600
+    except (KeyError, TypeError, ValueError):
+        age = None   # no previous data at all, so nothing to fall back on
+    # GitHub's annotation syntax: one line, with "%" escaped
+    reason = reason.replace("%", "%25").replace("\r", " ").replace("\n", " ")
+    if age is not None and age < STALE_AFTER_HOURS:
+        print(f"::warning title=Refresh skipped::{reason}. The site keeps its numbers "
+              f"from {age:.1f}h ago; this only fails after {STALE_AFTER_HOURS}h "
+              "without a good run.")
+        return 0
+    print(f"::error title=Site data is going stale::{reason}. "
+          + (f"No good run for {age:.0f}h." if age is not None else "No previous data."))
+    return 1
 
 
 def main() -> int:
@@ -923,9 +1230,9 @@ def main() -> int:
         print(f"\n✗ could not read TikTok: {e}", file=sys.stderr)
         print("  The site still has its last good data; nothing was overwritten.",
               file=sys.stderr)
-        print("  If this repeats for days, TikTok likely changed the embed page "
+        print("  If this keeps happening, TikTok likely changed the embed page "
               "and scripts/update.py needs a fix.", file=sys.stderr)
-        return 1
+        return skip_or_fail(prev, f"Couldn't read TikTok ({e})")
 
     print(f"  got {fresh['followers']} followers, {fresh['likes']} likes, "
           f"{len(fresh['videos'])} videos in the feed")
@@ -944,7 +1251,7 @@ def main() -> int:
         print("\n✗ scrape failed validation - keeping existing data:", file=sys.stderr)
         for p in problems:
             print(f"    - {p}", file=sys.stderr)
-        return 1
+        return skip_or_fail(prev, f"TikTok's numbers failed validation ({'; '.join(problems)})")
 
     payload, new_ids = merge(fresh, prev, overrides)
 
@@ -984,10 +1291,14 @@ def main() -> int:
         print(f"  holding back {dropped} video(s) with no thumbnail yet")
     payload["videos"] = keep
 
-    # Scoring runs first: it is what discovers each video's place tag, which
-    # assign_cities then reads. Both must happen before site.js is written.
+    # Views first, since that pass is also what notices deleted videos, which
+    # then drop out of the ranking. Scoring next: it is what discovers each
+    # video's place tag, which assign_places then reads. All of it must happen
+    # before site.js is written.
+    refresh_views(payload, {v["id"] for v in fresh["videos"]})
+    mark_biggest(payload["videos"])
     refresh_auto_ratings(new_ids, payload)
-    assign_cities(payload)
+    assign_places(payload)
 
     (DATA / "site.js").write_text(
         "// Generated by scripts/update.py - do not edit by hand.\n"

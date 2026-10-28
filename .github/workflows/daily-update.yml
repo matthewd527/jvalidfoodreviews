@@ -2,18 +2,23 @@ name: Stats refresh
 
 on:
   schedule:
-    # Five times a day, roughly every five hours (UTC; GitHub cron ignores DST).
+    # Every three hours (UTC; GitHub cron ignores DST).
     #
-    # Why five and not one: the TikTok embed feed only ever exposes his ten most
-    # recent videos, and he posts three or four a day. A single daily check
-    # leaves less than three days of slack before a video scrolls out of that
-    # window and is lost for good. Checking every five hours means roughly one
-    # new video per run, so the window can never overflow between runs - and if
-    # GitHub drops or delays a run under load, four others still cover the day.
+    # Why so often: the TikTok embed feed only exposes his newest ten-or-so
+    # videos, and by October 2026 he was posting about eight a day, so the
+    # window covers barely a day and a half. A video that scrolls out of it
+    # between two successful runs is never picked up. GitHub also quietly
+    # drops about one scheduled run in four (measured over 60 days: 3.75 of 5
+    # a day ran), so a gap is always longer than the schedule says. Every three
+    # hours keeps even a bad stretch far inside the window, and each run also
+    # re-reads ~20 older videos' view counts, so more runs = fresher numbers.
     #
     # The odd minute matters: workflows scheduled on the hour queue behind
     # everyone else's and are the first to be delayed or dropped.
-    - cron: "12 2,7,12,17,22 * * *"
+    #
+    # Budget: each run pushes at most once, and Cloudflare Pages' free plan
+    # allows 500 builds a month. Eight a day is under 250.
+    - cron: "23 */3 * * *"
   workflow_dispatch: {} # lets you run it by hand from the Actions tab
 
 # Only one refresh at a time; a manual run supersedes a queued scheduled one.
@@ -30,9 +35,11 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: actions/checkout@v4
+      # v7 of both run on Node 24. The v4/v5 they replace ran on Node 20, which
+      # GitHub has deprecated and is forcing over to 24 ahead of removing it.
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -63,10 +70,12 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      # A scheduled workflow is disabled automatically after 60 days with no
-      # repository activity. Bot pushes made with GITHUB_TOKEN do NOT reset that
-      # clock, so on quiet stretches we touch a heartbeat file to keep the
-      # schedule alive without needing a human commit.
+      # A public repo's scheduled workflows are switched off after 60 days with
+      # no repository activity, and once this is handed off the only commits
+      # it gets are this job's. Commits made with GITHUB_TOKEN do count - it is
+      # what keepalive actions such as efrecon/gh-action-keepalive rely on - so
+      # any run that finds something new keeps the schedule alive by itself,
+      # and on a run that finds nothing, this heartbeat commit does it instead.
       - name: Keep the schedule alive
         if: steps.commit.outputs.changed == 'false'
         run: |
@@ -74,7 +83,11 @@ jobs:
           date -u +%Y-%m-%dT%H:%M:%SZ > .github/last-run.txt
           git add .github/last-run.txt
           git commit -m "chore: heartbeat $(date -u +%Y-%m-%d)" || exit 0
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main && git push && break
+            echo "push attempt $attempt failed, retrying"
+            sleep 5
+          done
 
 # Deployment is Cloudflare Pages' job: it watches this repo and publishes on
 # every push, including the ones this workflow makes. Nothing to do here.

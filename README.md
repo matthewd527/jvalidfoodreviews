@@ -2,10 +2,10 @@
 
 **Live at [jvalidfoodreviews.com](https://jvalidfoodreviews.com)** — hosted on
 Cloudflare Pages, which redeploys automatically on every push to this repo,
-including the five-times-daily data refreshes GitHub Actions commits.
+including the data refreshes GitHub Actions commits every three hours.
 
 A one-page, heavily animated site for [@jvalidfoodreviews](https://www.tiktok.com/@jvalidfoodreviews),
-which **refreshes its own numbers once a day** with no human involvement.
+which **refreshes its own numbers every three hours** with no human involvement.
 
 ## Caching (two settings, one in the repo and one not)
 
@@ -40,9 +40,10 @@ python3 -m http.server 8777
 index.html            markup (numbers are placeholders, filled at runtime)
 css/style.css         styling + animation
 js/main.js            reads window.SITE_DATA and renders everything
-data/site.js            ← SCRAPED DATA. Regenerated daily. Do not hand-edit.
+data/site.js            ← SCRAPED DATA. Regenerated every run. Do not hand-edit.
 data/ratings.js         ← RESEARCHED DATA. Imported from the spreadsheet.
 data/history.json       one dated snapshot per day, for growth over time
+data/view_checks.json   when each video's view count was last re-read
 data/overrides.json     optional: pin a video's category by hand (see below)
 assets/                 avatar + one committed thumbnail per video
 scripts/update.py       the daily updater
@@ -60,8 +61,8 @@ A `fetch()` would hit CORS on `file://`.
 ## How the refresh works
 
 One request to `https://www.tiktok.com/embed/@jvalidfoodreviews` returns
-everything: follower count, total likes, and the 10 newest videos with captions
-and play counts. No API key, no OAuth, no login, nothing that expires. A second
+follower count, total likes, and his newest ten-or-so videos with captions and
+play counts. No API key, no OAuth, no login, nothing that expires. A second
 best-effort request to the profile page picks up his true total video count.
 
 Each run:
@@ -69,20 +70,43 @@ Each run:
 1. Fetches and parses the embed payload.
 2. **Validates before trusting it** — see below.
 3. Merges into the existing data, keeping videos that have scrolled out of the
-   10-item window so the archive only grows.
-4. Categorises any new video from its caption.
+   embed's window so the archive only grows.
+4. Categorises any new video from its caption, and re-tags the whole archive
+   the same way, so a fix to the rules reaches old videos too.
 5. Downloads thumbnails for new videos only.
-6. Writes `data/site.js`, appends to `data/history.json`, commits, pushes.
-7. GitHub Pages redeploys.
+6. **Re-reads ~20 older videos' view counts** — see below.
+7. Reads each new video's page for its place tag and spoken scores.
+8. Writes `data/site.js`, appends to `data/history.json`, commits, pushes.
+9. Cloudflare Pages redeploys.
+
+**Why every three hours:** by October 2026 he was posting about eight videos a
+day, so the embed's window covers barely a day and a half. A video that scrolls
+out of it between two good runs is never picked up. GitHub also quietly drops
+about a quarter of scheduled runs, so the real gap is always longer than the
+schedule says. Eight runs a day keeps even a bad stretch well inside the window,
+and stays under Cloudflare's free 500 builds a month.
+
+### Older videos keep their numbers current
+
+The embed only carries the newest videos, so on its own every older video's
+view count would freeze about a day into its life. Each run therefore re-reads
+the ~20 most overdue videos from their own pages. A video falls due again once
+its age has doubled since the last read, so a two-day-old video still climbing
+is read daily while a two-month-old one waits weeks; nothing goes more than 60
+days. A 429 from TikTok just ends the pass early; the rest wait for next run.
+
+The same page says when a video has been **deleted** (`statusCode 10204`). Two
+such reads in a row mark it `gone`: it leaves the grid, the counts and the
+ranking's links, but stays in `data/site.js` so a wrong call can be undone.
 
 ### It cannot corrupt the site
 
 This is the important part of an unattended job. A run is **rejected outright**,
-leaving the previous data untouched and exiting non-zero, if:
+leaving the previous data untouched, if:
 
 - the follower or like count comes back as 0
 - the video list is empty, or every video reports 0 views
-- followers or likes fell by more than 50% since yesterday
+- followers or likes fell by more than 50% since the last run
 
 Per-video view counts are also clamped so they can only ever move up — a
 transient bad read can't erase a real number. Videos whose thumbnail failed to
@@ -90,6 +114,19 @@ download are held back rather than shipped as a hole in the grid.
 
 Tested by pointing it at a dead handle and by feeding it faked payloads:
 `data/site.js` came back byte-identical every time.
+
+### When it emails you
+
+A rejected or failed run only goes red — which is what sends GitHub's failure
+email — once the site has gone **18 hours** without a good run (about six
+failures in a row). Before that it passes with a yellow warning on the run
+page, because a single failure is almost always TikTok throttling one runner,
+and the next run three hours later fixes it. So an email means it's really
+broken, typically because TikTok changed the embed page.
+
+Rate limits are handled rather than hammered: a 429 waits as long as TikTok's
+`Retry-After` asks (or backs off 25s, then 50s, …), instead of retrying three
+times in twenty seconds as it once did.
 
 ### Categorising
 
@@ -99,7 +136,24 @@ the caption wins — that's what separates "smash burger and a milkshake" (burge
 from "milkshake, then a burger" (dessert). Nothing matches → `misc`.
 
 Counties are extracted separately and are multi-valued, since one post is tagged
-both `#orangecounty` and `#rocklandcounty`.
+both `#orangecounty` and `#rocklandcounty`. Any `#somethingcounty` tag counts,
+so new turf appears by itself. Misspellings he has used (`#dutchescounty`,
+`#passiaccounty`, `#delewarecounty`) are folded into the real county by
+`COUNTY_ALIASES` in `scripts/update.py`; add to it if a new one turns up.
+
+Each county's state comes from the state he writes into the tag
+(`#broomecountyny`), else a small table in the script, else the towns of the
+videos tagged with it — so a county outside that table still gets labelled.
+
+### Towns
+
+Towns come from the venue's address in the TikTok place tag (or the curated
+spreadsheet), never from guessing at hashtags. But he sometimes tags a chain's
+generic page, which files the venue wherever that page says — a Sweet Frog in
+Vestal came back as Lumberton, NC. So a town outside NY/NJ is only shown when
+the video backs it up: the town named in the caption, a county tag in the same
+state, or another video that does. Unbacked ones are listed in the run log as
+"left off as unbacked".
 
 Scores 13/13 on a spot-check set including tricky overlaps.
 
@@ -186,35 +240,56 @@ Notes:
 - To change where mail goes, generate a new key against a different address and
   swap it — nothing else changes.
 
-## Adding Instagram
+## Instagram
 
-Instagram support is written and off by default. Set `IG_HANDLE` to switch it on:
+Instagram is stats-only — follower count, plus likes on the posts it lets us
+see. Every video on the site comes from TikTok. It's on by default; set
+`IG_HANDLE: ""` in the workflow to turn it off.
 
-```bash
-IG_HANDLE=hishandle python3 scripts/update.py --dry-run
+**It can't be refreshed automatically for free. This was tested, not assumed.**
+Instagram turns datacenter networks away wholesale. On 2026-10-28, four GitHub
+runners got `429` on all ten routes tried (the anonymous web API, the profile
+page, and eight link-preview crawler user agents), and a Cloudflare Pages
+Function got `401`s and login redirects. Only home connections get through.
+So:
+
+- Each run still tries once. It costs nothing, and it picks back up by itself
+  if Instagram ever relents. On failure it keeps the last good numbers — they
+  are never lost or zeroed — and TikTok is unaffected either way.
+- Those numbers carry the time they were read (`fetchedAt`). Once they're more
+  than three days old, the Instagram tile says "as of <date>" instead of
+  passing them off as live.
+
+**To refresh by hand**, from a home connection: `git pull`, then run
+`python3 scripts/update.py`, then commit and push `data` and `assets`. If
+Instagram refuses that too (`401`), save the response from a browser instead:
+on instagram.com, run this in the developer console, which downloads `ig.json`:
+
+```js
+fetch('/api/v1/users/web_profile_info/?username=jvalidfoodreviews', {headers: {'x-ig-app-id': '936619743392459'}})
+  .then(r => r.text()).then(t => Object.assign(document.createElement('a'),
+    {href: URL.createObjectURL(new Blob([t])), download: 'ig.json'}).click())
 ```
 
-**Read this before relying on it.** Unlike TikTok, there is no dependable free
-and hands-off route:
+and feed it to the updater:
 
-- The anonymous endpoint the site uses (`/api/v1/users/web_profile_info/`) works
-  with no token and nothing that expires — but it is metered hard per IP. In
-  testing it returned `200` twice from CI, then `429` from every subsequent
-  runner, and `401` from a home connection for 40+ minutes after a burst of
-  requests. **Expect it to fail on plenty of days.**
-- The code treats that as normal: on a 401/429 it keeps yesterday's Instagram
-  numbers, flags them `stale`, and retries tomorrow from a different IP. TikTok
-  is unaffected either way — the two run independently.
-- It is also against Meta's terms of service, which is worth deciding on
-  knowingly rather than by accident.
+```bash
+IG_JSON=~/Downloads/ig.json python3 scripts/update.py
+```
+
+Notes:
+
+- Reading Instagram this way is against Meta's terms of service, which is worth
+  deciding on knowingly rather than by accident.
 - Instagram publishes no lifetime-likes figure, so `likesTracked` is a sum over
-  only the ~12 posts the endpoint returns. Label it as such; it is not
-  comparable to TikTok's total.
-
-The dependable alternative is Meta's official API, which needs his account to be
-a Business/Creator account and a one-time OAuth grant **from him**. Its long-lived
-token lasts 60 days and auto-refreshes, but if the refresh ever fails for 60
-straight days the token dies for good and only he can restore it.
+  the posts we've seen (each read shows the ~12 newest). It is not comparable
+  to TikTok's total.
+- **For exact numbers that update themselves**, the only route is Meta's
+  official Graph API ("Business Discovery"), which does answer servers. It needs
+  an Instagram Business/Creator account linked to a Facebook Page, a Meta
+  developer app, and a Page access token stored as a GitHub secret. A Page token
+  made from a long-lived user token doesn't expire on a timer, so it's set up
+  once — but it takes someone's Meta login, so it isn't wired in.
 
 ## Updating it by hand
 
@@ -229,7 +304,14 @@ python3 scripts/update.py             # do it
 
 Nothing here expires — no token, no card, no annual renewal. But TikTok changes
 the shape of that embed payload a few times a year without warning. When it does,
-the job fails loudly (red X, failure email) rather than writing garbage, and the
-fix is usually a small path correction in `scrape_tiktok()`.
+the job keeps the old data rather than writing garbage, and once that has lasted
+18 hours it fails loudly (red X, failure email). The fix is usually a small path
+correction in `scrape_tiktok()`.
 
-Budget one or two of those a year. Everything else runs itself.
+Budget one or two of those a year. Everything else runs itself — except the
+Instagram numbers, which only move when someone refreshes them by hand (above).
+
+The schedule itself can't quietly die after the handoff: GitHub switches off a
+public repo's scheduled workflows after 60 days without activity, but every run
+commits (data, or a heartbeat file when nothing changed), and those commits
+count.
