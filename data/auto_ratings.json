@@ -4989,5 +4989,11 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7701821291132652830": {
+    "name": "Habit Burger & Grill",
+    "address": "22 Farm Vw, Montvale, NJ 07645, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }

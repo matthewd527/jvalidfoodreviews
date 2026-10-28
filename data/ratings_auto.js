@@ -3059,7 +3059,7 @@ window.RATINGS_AUTO = {
     {
       "n": null,
       "name": "Untagged pizza spot",
-      "place": "Deleware",
+      "place": "Delaware",
       "address": "",
       "score": 3.6,
       "tier": "fine",
@@ -6494,6 +6494,11 @@ window.RATINGS_AUTO = {
       "name": "The Pier at 192",
       "videoId": "7701543723288579358",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Habit Burger & Grill",
+      "videoId": "7701821291132652830",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
