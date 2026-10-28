@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
 """
 One-time backfill of videos that had already scrolled out of TikTok's
-10-item embed window before this site existed.
+embed window before the updater saw them.
 
 TikTok's profile grid loads through a signed internal API, so there is no
-polite way to enumerate an account's full history - but we don't need one:
-the ratings spreadsheet links every video it covered, so data/ratings.js
-already holds the IDs. This script fetches each missing video's own page once
-(caption, view count, post time, cover image), writes it into data/site.js,
-and never needs to run again: from here on the 5-a-day updater catches every
-new video while it is still inside the embed window.
+polite way for a script to enumerate an account's full history. Two ways
+round that: the ratings spreadsheet links every video it covered, so
+data/ratings.js already holds those IDs (the default), or pass IDs in - read
+off the profile grid in a browser, which shows video links even logged out.
+Either way it fetches each missing video's own page once (caption, view
+count, post time, cover image) and writes it into data/site.js. From then on
+the updater, running every three hours, catches each new video while it is
+still inside the embed window.
 
 Usage:
-  python3 scripts/backfill.py            # fetch whatever is missing
-  python3 scripts/backfill.py --dry-run  # just list what it would fetch
+  python3 scripts/backfill.py              # fetch what ratings.js links but the site lacks
+  python3 scripts/backfill.py ID [ID ...]  # fetch these, if the site lacks them
+  python3 scripts/backfill.py --dry-run    # just list what it would fetch
 """
 
 from __future__ import annotations
@@ -28,8 +31,8 @@ import time
 # reuse the updater's fetching, categorisation and thumbnail plumbing
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
 from update import (  # noqa: E402
-    ASSETS, DATA, HANDLE, categorise, counties_for, created_from_id,
-    fetch_thumb, get, load_previous,
+    DATA, RateLimited, as_ts, categorise, counties_for, created_from_id,
+    fetch_thumb, load_previous, mark_biggest, video_page,
 )
 
 
@@ -41,17 +44,17 @@ def known_ids_from_ratings() -> set[str]:
 
 
 def fetch_video_record(vid: str) -> dict | None:
-    """Everything the site needs for one video, from its own page."""
+    """Everything the site needs for one video, from its own page.
+
+    Raises RateLimited, so the run stops rather than burning through the list.
+    """
     try:
-        html = get(f"https://www.tiktok.com/@{HANDLE}/video/{vid}", tries=2).decode("utf-8", "ignore")
-        m = re.search(r'id="__UNIVERSAL_DATA_FOR_REHYDRATION__"[^>]*>(.*?)</script>', html, re.S)
-        if not m:
-            print(f"    {vid}: no state blob (anti-bot page?)")
+        code, item = video_page(vid)
+        if code == 10204:
+            print(f"    {vid}: deleted on TikTok - skipping")
             return None
-        item = (json.loads(m.group(1)).get("__DEFAULT_SCOPE__", {})
-                .get("webapp.video-detail", {}).get("itemInfo", {}).get("itemStruct", {}))
         if not item:
-            print(f"    {vid}: no itemStruct")
+            print(f"    {vid}: no itemStruct (statusCode {code})")
             return None
         cap = (item.get("desc") or "").strip()
         cat, label = categorise(cap)
@@ -62,9 +65,11 @@ def fetch_video_record(vid: str) -> dict | None:
             "cat": cat,
             "label": label,
             "counties": counties_for(cap),
-            "created": item.get("createTime") or created_from_id(vid),
+            "created": as_ts(item.get("createTime")) or created_from_id(vid),
             "cover": (item.get("video") or {}).get("cover"),
         }
+    except RateLimited:
+        raise
     except Exception as e:  # noqa: BLE001
         print(f"    {vid}: {type(e).__name__}: {e}")
         return None
@@ -72,6 +77,8 @@ def fetch_video_record(vid: str) -> dict | None:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
+    ap.add_argument("ids", nargs="*",
+                    help="video ids to fetch (default: every one ratings.js links)")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -80,7 +87,8 @@ def main() -> int:
         sys.exit("data/site.js is empty - run scripts/update.py first")
 
     have = {v["id"] for v in prev["videos"]}
-    missing = sorted(known_ids_from_ratings() - have, key=int, reverse=True)
+    wanted = {i.strip() for i in args.ids if i.strip().isdigit()} or known_ids_from_ratings()
+    missing = sorted(wanted - have, key=int, reverse=True)
     print(f"{len(have)} videos on the site, {len(missing)} known-but-missing")
     if not missing:
         print("nothing to backfill")
@@ -95,7 +103,11 @@ def main() -> int:
         if i:
             time.sleep(2 + random.uniform(0, 2))
         print(f"→ {vid} ({i + 1}/{len(missing)})")
-        rec = fetch_video_record(vid)
+        try:
+            rec = fetch_video_record(vid)
+        except RateLimited:
+            print("    TikTok asked us to slow down - stopping here; run it again later")
+            break
         if not rec:
             continue
         cover = rec.pop("cover", None)
@@ -111,9 +123,7 @@ def main() -> int:
         return 1
 
     prev["videos"].sort(key=lambda v: int(v["id"]), reverse=True)
-    biggest = max(prev["videos"], key=lambda v: v["views"])["id"]
-    for v in prev["videos"]:
-        v["hot"] = (v["id"] == biggest)
+    mark_biggest(prev["videos"])
     prev["profile"]["videoCount"] = max(
         prev["profile"].get("videoCount") or 0, len(prev["videos"]))
 

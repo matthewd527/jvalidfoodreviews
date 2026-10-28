@@ -9,7 +9,7 @@ window.SITE_DATA = {
     "followers": 11400,
     "likes": 324000,
     "following": 259,
-    "videoCount": 560
+    "videoCount": 581
   },
   "instagram": {
     "handle": "jvalidfoodreviews",
@@ -6404,6 +6404,202 @@ window.SITE_DATA = {
       "hot": false
     },
     {
+      "id": "7679071988903595295",
+      "cap": "#barebells #protienbar #gymfood #Highprotien #gym  @Barebells USA THANK YOU FOR THE GREAT BAR",
+      "views": 1107,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787923302,
+      "hot": false
+    },
+    {
+      "id": "7679062869081689375",
+      "cap": "#binghamton #college #collegefootball #collegelife #collegehacks",
+      "views": 4946,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787921162,
+      "hot": false
+    },
+    {
+      "id": "7678949104658992415",
+      "cap": "#halal #ithaca #tompkinscounty #binghamton #pizza",
+      "views": 3697,
+      "cat": "pizza",
+      "label": "Pizza",
+      "counties": [
+        "tompkins"
+      ],
+      "created": 1787894675,
+      "hot": false
+    },
+    {
+      "id": "7678899138179763486",
+      "cap": "#nyc #nycpizza #ithaca #tompkinscounty",
+      "views": 1822,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [
+        "tompkins"
+      ],
+      "created": 1787883047,
+      "hot": false
+    },
+    {
+      "id": "7678878161857285407",
+      "cap": "#hotel #funny #foryoupage",
+      "views": 1197,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787878161,
+      "hot": false
+    },
+    {
+      "id": "7678877171858902302",
+      "cap": "#cornelluniversity #ivy #ivyleague #college",
+      "views": 6057,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787877931,
+      "hot": false
+    },
+    {
+      "id": "7678873762518928671",
+      "cap": "#ithaca #cornelluniversity #ithacany",
+      "views": 712,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787877141,
+      "hot": false
+    },
+    {
+      "id": "7678759658055535902",
+      "cap": "#endicott #binghamton #owego #endwell #pizza",
+      "views": 13100,
+      "cat": "pizza",
+      "label": "Pizza",
+      "counties": [],
+      "created": 1787850585,
+      "hot": false
+    },
+    {
+      "id": "7678729307031620895",
+      "cap": "",
+      "views": 885,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787843514,
+      "hot": false
+    },
+    {
+      "id": "7678698073605852447",
+      "cap": "#binghamton #college #collegefootball #collegelife",
+      "views": 9964,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787836251,
+      "hot": false
+    },
+    {
+      "id": "7678525246936206623",
+      "cap": "#broomecounty #binghamton #pizza #upstateny",
+      "views": 12100,
+      "cat": "pizza",
+      "label": "Pizza",
+      "counties": [
+        "broome"
+      ],
+      "created": 1787795987,
+      "hot": false
+    },
+    {
+      "id": "7678524054013283615",
+      "cap": "#pizza",
+      "views": 3151,
+      "cat": "pizza",
+      "label": "Pizza",
+      "counties": [],
+      "created": 1787795711,
+      "hot": false
+    },
+    {
+      "id": "7678521037142740254",
+      "cap": "",
+      "views": 775,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787795007,
+      "hot": false
+    },
+    {
+      "id": "7678518321565764894",
+      "cap": "#barber #haircut",
+      "views": 1819,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787794378,
+      "hot": false
+    },
+    {
+      "id": "7678509509865704734",
+      "cap": "GET CHUCK E 1 BILL",
+      "views": 1056,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787792331,
+      "hot": false
+    },
+    {
+      "id": "7678435201453706527",
+      "cap": "#pizza #owego #binghamton #ny #nyc",
+      "views": 24500,
+      "cat": "pizza",
+      "label": "Pizza",
+      "counties": [],
+      "created": 1787775032,
+      "hot": false
+    },
+    {
+      "id": "7678432330150677790",
+      "cap": "WHERE IS THE WORST PIZZA #pizza #foryoupage #binghamton",
+      "views": 1722,
+      "cat": "pizza",
+      "label": "Pizza",
+      "counties": [],
+      "created": 1787774362,
+      "hot": false
+    },
+    {
+      "id": "7678329925325081887",
+      "cap": "#college #binghamton #clavicular #collegelife",
+      "views": 1859,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787750508,
+      "hot": false
+    },
+    {
+      "id": "7678326342315822367",
+      "cap": "",
+      "views": 5074,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787749682,
+      "hot": false
+    },
+    {
       "id": "7678147944205372702",
       "cap": "",
       "views": 15600,
@@ -6416,6 +6612,120 @@ window.SITE_DATA = {
       "cityState": "NY"
     },
     {
+      "id": "7678091702313192734",
+      "cap": "#binghamton",
+      "views": 2322,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787695049,
+      "hot": false
+    },
+    {
+      "id": "7678053478622596383",
+      "cap": "",
+      "views": 759,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787686150,
+      "hot": false
+    },
+    {
+      "id": "7678035523830631711",
+      "cap": "#binghamton",
+      "views": 3121,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787681973,
+      "hot": false
+    },
+    {
+      "id": "7678002898998988062",
+      "cap": "#binghamton #broomecountyny #pizza",
+      "views": 1260,
+      "cat": "pizza",
+      "label": "Pizza",
+      "counties": [
+        "broome"
+      ],
+      "created": 1787674384,
+      "hot": false
+    },
+    {
+      "id": "7677958318236634399",
+      "cap": "#binghamton #college #collegelife #cortland",
+      "views": 5336,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787664011,
+      "hot": false
+    },
+    {
+      "id": "7677799030658764062",
+      "cap": "#binghamton #upstateny #cortland #college #foo",
+      "views": 1067,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787626904,
+      "hot": false
+    },
+    {
+      "id": "7677798212933143838",
+      "cap": "",
+      "views": 1141,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787626722,
+      "hot": false
+    },
+    {
+      "id": "7677708870503910686",
+      "cap": "#binghamton #foryoupage #college",
+      "views": 8682,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787605913,
+      "hot": false
+    },
+    {
+      "id": "7677683185014050079",
+      "cap": "#resturant #food",
+      "views": 867,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787599940,
+      "hot": false
+    },
+    {
+      "id": "7677679217663806751",
+      "cap": "#binghamton #college #foryou",
+      "views": 1519,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787599013,
+      "hot": false
+    },
+    {
+      "id": "7677642084253240607",
+      "cap": "#binghamton #broomecountyny #upstateny",
+      "views": 5655,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [
+        "broome"
+      ],
+      "created": 1787590377,
+      "hot": false
+    },
+    {
       "id": "7677583280132099358",
       "cap": "#foryou #college #binghamton #collegefood #collegehacks",
       "views": 53000,
@@ -6423,6 +6733,192 @@ window.SITE_DATA = {
       "label": "Off-menu",
       "counties": [],
       "created": 1787576656,
+      "hot": false
+    },
+    {
+      "id": "7677366724512976141",
+      "cap": "#college #binghamton #foryoupage #funny",
+      "views": 2739,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787526252,
+      "hot": false
+    },
+    {
+      "id": "7677334964962217246",
+      "cap": "#binghamton #college #food",
+      "views": 5052,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787518856,
+      "hot": false
+    },
+    {
+      "id": "7677305035054648606",
+      "cap": "#met #baseball #foryoupage #food",
+      "views": 1427,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787511889,
+      "hot": false
+    },
+    {
+      "id": "7677227139116092702",
+      "cap": "#binghamton #binghamtonny #broomecountyny #college #pizza",
+      "views": 6657,
+      "cat": "pizza",
+      "label": "Pizza",
+      "counties": [
+        "broome"
+      ],
+      "created": 1787493756,
+      "hot": false
+    },
+    {
+      "id": "7677003440152694046",
+      "cap": "#chipotle #burrito #foryoupage #mexican",
+      "views": 2878,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787441667,
+      "hot": false
+    },
+    {
+      "id": "7676958207100685598",
+      "cap": "#foryoupage #dessert #cookie#binghamtonu #cake",
+      "views": 12700,
+      "cat": "dessert",
+      "label": "Ice cream",
+      "counties": [],
+      "created": 1787431138,
+      "hot": false
+    },
+    {
+      "id": "7676911417009704222",
+      "cap": "#icecream #binghamtonu #coldstone #dessert",
+      "views": 1498,
+      "cat": "dessert",
+      "label": "Ice cream",
+      "counties": [],
+      "created": 1787420243,
+      "hot": false
+    },
+    {
+      "id": "7676650787124088095",
+      "cap": "#broomecounty #binghamton #endicott #upstateny #foryoupage",
+      "views": 19200,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [
+        "broome"
+      ],
+      "created": 1787359559,
+      "hot": false
+    },
+    {
+      "id": "7676606051084422430",
+      "cap": "#clav #clavicular #foryou #college",
+      "views": 3543,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787349139,
+      "hot": false
+    },
+    {
+      "id": "7676591024008940830",
+      "cap": "#clavicular #foryoupage #binghamtonny #college",
+      "views": 3979,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787345641,
+      "hot": false
+    },
+    {
+      "id": "7676533350143626526",
+      "cap": "#binghamton #foryoupage #food #college",
+      "views": 6925,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787332209,
+      "hot": false
+    },
+    {
+      "id": "7676521986566278430",
+      "cap": "#binghamtonny #binghamton #college",
+      "views": 5618,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787329567,
+      "hot": false
+    },
+    {
+      "id": "7676505455090257183",
+      "cap": "#texasroadhouse #foryou #resturant #college",
+      "views": 2733,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787325716,
+      "hot": false
+    },
+    {
+      "id": "7676343002238848287",
+      "cap": "#clav #clavicular #comedy #funny #college",
+      "views": 22400,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787287900,
+      "hot": false
+    },
+    {
+      "id": "7676314079618796831",
+      "cap": "#clavicular #binghamton #clav",
+      "views": 5669,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787281167,
+      "hot": false
+    },
+    {
+      "id": "7676249248328928543",
+      "cap": "#fsu #binghamton #foryou #funny #florida",
+      "views": 2809,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787266062,
+      "hot": false
+    },
+    {
+      "id": "7675928047912029470",
+      "cap": "#binghamton #foryoupage #italian #broomecountyny",
+      "views": 8983,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [
+        "broome"
+      ],
+      "created": 1787191280,
+      "hot": false
+    },
+    {
+      "id": "7675927453059108127",
+      "cap": "#bing #college #binghamton #collegeinterview #foryoupage",
+      "views": 1559,
+      "cat": "misc",
+      "label": "Off-menu",
+      "counties": [],
+      "created": 1787191148,
       "hot": false
     },
     {
