@@ -99,9 +99,18 @@ COUNTY_NAMES = {"westchester": "Westchester", "capemay": "Cape May County"}
 # the video itself before it is shown - see assign_places().
 HOME_STATES = {"NY", "NJ"}
 
-US_STATES = set(
-    "AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS "
-    "MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY".split())
+# code -> name, the name with its spaces taken out to match a hashtag (#florida)
+US_STATES = dict(pair.split(":") for pair in (
+    "AL:alabama AK:alaska AZ:arizona AR:arkansas CA:california CO:colorado "
+    "CT:connecticut DE:delaware DC:districtofcolumbia FL:florida GA:georgia "
+    "HI:hawaii ID:idaho IL:illinois IN:indiana IA:iowa KS:kansas KY:kentucky "
+    "LA:louisiana ME:maine MD:maryland MA:massachusetts MI:michigan "
+    "MN:minnesota MS:mississippi MO:missouri MT:montana NE:nebraska NV:nevada "
+    "NH:newhampshire NJ:newjersey NM:newmexico NY:newyork NC:northcarolina "
+    "ND:northdakota OH:ohio OK:oklahoma OR:oregon PA:pennsylvania "
+    "RI:rhodeisland SC:southcarolina SD:southdakota TN:tennessee TX:texas "
+    "UT:utah VT:vermont VA:virginia WA:washington WV:westvirginia "
+    "WI:wisconsin WY:wyoming").split())
 
 
 def as_ts(value) -> int | None:
@@ -581,10 +590,10 @@ def assign_places(payload: dict) -> None:
     A place tag is only as good as the one he picked, and choosing a chain's
     generic page drops the venue wherever that page says it is: Sweet Frog in
     Vestal came back as Lumberton, NC, and a Dave & Buster's as Dallas. So a
-    town outside HOME_STATES needs backing from the video itself - the town
-    named in the caption, a county tag in the same state, or another video
-    that passed one of those. Unbacked towns are left off rather than putting
-    a trip he never took on the map.
+    town outside HOME_STATES needs backing from the video itself - the town or
+    its state named in the caption (#tallahassee, #florida), a county tag in
+    the same state, or another video that passed one of those. Unbacked towns
+    are left off rather than putting a trip he never took on the map.
     """
     videos = [v for v in payload.get("videos", []) if not v.get("gone")]
     known = known_places()
@@ -611,7 +620,9 @@ def assign_places(payload: dict) -> None:
         if not st:
             continue   # a town that can't be put in a state can't go on the map
         placed[v["id"]] = (city, st)
-        if st in HOME_STATES or st in in_states or squash(city) in squash(v.get("cap", "")):
+        cap = squash(v.get("cap", ""))
+        if (st in HOME_STATES or st in in_states
+                or squash(city) in cap or US_STATES.get(st, "~") in cap):
             backed.add((city, st))
 
     for v in payload.get("videos", []):
