@@ -478,6 +478,13 @@ body:not(.is-loaded) .word{animation-play-state:paused}
   font-family:var(--f-mono);font-size:.7rem;letter-spacing:.17em;
   text-transform:uppercase;color:rgba(255,244,223,.55);
 }
+/* "as of Oct 28" under a number that couldn't be refreshed lately */
+.stat__asof{
+  display:block;margin-top:.3rem;
+  font-family:var(--f-mono);font-size:.62rem;letter-spacing:.1em;
+  color:rgba(255,244,223,.38);
+}
+.stat__asof[hidden]{display:none}
 
 /* ─── Filters ──────────────────────────────────── */
 
@@ -804,28 +811,63 @@ body:not(.is-loaded) .word{animation-play-state:paused}
 
 /* ─── Turf ─────────────────────────────────────── */
 
-.turf__list{display:flex;flex-direction:column;gap:.4rem}
-.turf__row{
-  display:grid;grid-template-columns:auto minmax(160px,1.1fr) 3fr auto;
-  align-items:center;gap:clamp(.7rem,2vw,1.6rem);
-  padding:1.15rem .4rem;border-bottom:2px solid rgba(255,244,223,.1);
-  transition:background .35s,padding-left .35s var(--ease-out);
+/* Two panels side by side on a desktop, stacked on a phone. Each starts with
+   its top few and pages with its own button; see main.js. */
+.turf__board{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);
+  gap:clamp(1rem,2.2vw,1.7rem);align-items:start;
 }
-.turf__row:hover{background:rgba(255,244,223,.045);padding-left:1.1rem}
-.turf__rank{font-family:var(--f-mono);font-size:.75rem;color:rgba(255,244,223,.35)}
-.turf__name{font-family:var(--f-display);text-transform:uppercase;font-size:clamp(1.1rem,3.4vw,2.1rem);line-height:1;letter-spacing:.01em}
+.turf__panel{
+  background:var(--ink-2);
+  border:2.5px solid rgba(255,244,223,.12);border-radius:22px;
+  padding:clamp(1.05rem,2.2vw,1.6rem) clamp(1.05rem,2.4vw,1.8rem);
+  scroll-margin-top:84px;   /* "Show fewer" scrolls here; clears the fixed nav */
+}
+.turf__panel[hidden]{display:none}
+.turf__head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:1rem;
+  padding-bottom:.75rem;margin-bottom:.15rem;
+  border-bottom:2px solid rgba(255,244,223,.1);
+}
+.turf__sub{
+  font-family:var(--f-mono);font-size:.68rem;letter-spacing:.2em;
+  text-transform:uppercase;color:rgba(255,244,223,.5);font-weight:400;
+}
+.turf__total{font-family:var(--f-sign);font-size:.95rem;color:var(--mustard);line-height:1}
+
+/* Name and count on one line, the bar under them. Rows and chips start hidden
+   and are shown by .in from turfIO, which also staggers them in. */
+.turf__list{display:flex;flex-direction:column}
+.turf__row{
+  display:grid;grid-template-columns:1.9rem minmax(0,1fr) auto;
+  grid-template-areas:"r n v" ". b b";
+  align-items:center;column-gap:.8rem;row-gap:.55rem;
+  padding:.85rem .15rem;border-bottom:2px solid rgba(255,244,223,.07);
+  opacity:0;transform:translateY(16px);
+  transition:opacity .6s var(--ease-out),transform .6s var(--ease-out),background .3s;
+}
+.turf__row:last-child{border-bottom:0}
+.turf__row.in{opacity:1;transform:none}
+.turf__row:hover{background:rgba(255,244,223,.035)}
+.turf__rank{grid-area:r;font-family:var(--f-mono);font-size:.74rem;color:rgba(255,244,223,.35)}
+.turf__name{
+  grid-area:n;font-family:var(--f-display);text-transform:uppercase;
+  font-size:clamp(1.15rem,2.1vw,1.55rem);line-height:1.05;letter-spacing:.01em;
+}
 .turf__name i{font-style:normal;color:var(--ketchup);font-size:.62em;margin-left:.35em}
-.turf__bar{display:block;height:11px;border-radius:99px;background:rgba(255,244,223,.1);overflow:hidden}
+.turf__n{grid-area:v;font-family:var(--f-display);font-size:clamp(1.25rem,2.3vw,1.7rem);color:var(--mustard);line-height:1}
+.turf__bar{grid-area:b;display:block;height:9px;border-radius:99px;background:rgba(255,244,223,.08);overflow:hidden}
 .turf__bar i{
   display:block;height:100%;width:0;border-radius:99px;
   background:linear-gradient(90deg,var(--ketchup),var(--mustard));
-  transition:width 1.3s var(--ease-out);
+  transition:width 1.2s var(--ease-out) .12s;
 }
 .turf__row.in .turf__bar i{width:var(--p)}
-.turf__n{font-family:var(--f-display);font-size:clamp(1.3rem,3.4vw,2.2rem);color:var(--mustard);line-height:1}
-@media (max-width:700px){
-  .turf__row{grid-template-columns:auto 1fr auto;grid-template-areas:"r n v" ". b b";row-gap:.6rem}
-  .turf__rank{grid-area:r}.turf__name{grid-area:n}.turf__n{grid-area:v}.turf__bar{grid-area:b}
+
+.turf__more{margin-top:1rem}
+
+@media (max-width:900px){
+  .turf__board{grid-template-columns:minmax(0,1fr)}
 }
 
 /* ─── Footer ───────────────────────────────────── */
@@ -907,29 +949,32 @@ body:not(.is-loaded) .word{animation-play-state:paused}
 }
 .lb__x:hover{transform:rotate(90deg) scale(1.1);background:var(--ketchup);color:var(--cream)}
 
-/* towns, under the county table */
-.turf__towns{margin-top:clamp(1.6rem,4vw,2.4rem)}
-.turf__towns[hidden]{display:none}
-.turf__sub{
-  font-family:var(--f-mono);font-size:.68rem;letter-spacing:.2em;
-  text-transform:uppercase;color:rgba(255,244,223,.45);
-  margin-bottom:.9rem;font-weight:400;
-}
-.turf__chips{display:flex;flex-wrap:wrap;gap:.5rem}
+/* towns, in the second turf panel */
+.turf__chips{display:flex;flex-wrap:wrap;gap:.5rem;padding-top:1rem}
 .turf__chip{
   display:inline-flex;align-items:center;gap:.4rem;
   font-family:var(--f-sign);font-size:.74rem;
   padding:.42rem .8rem;border-radius:999px;
   border:2px solid rgba(255,244,223,.16);
-  color:rgba(255,244,223,.82);background:var(--ink-2);
-  transition:border-color .25s,color .25s,transform .25s var(--ease-bounce);
+  color:rgba(255,244,223,.82);background:var(--ink);
+  opacity:0;transform:scale(.86);
+  transition:opacity .45s var(--ease-out),transform .45s var(--ease-bounce),border-color .25s,color .25s;
 }
-.turf__chip:hover{border-color:var(--mustard);color:var(--cream);transform:translateY(-2px)}
+.turf__chip.in{opacity:1;transform:none}
+.turf__chip.in:hover{border-color:var(--mustard);color:var(--cream);transform:translateY(-2px)}
 .turf__chip i{font-style:normal;font-size:.62rem;color:var(--ketchup)}
 .turf__chip b{
   font-family:var(--f-mono);font-size:.62rem;font-weight:500;
   color:var(--ink);background:var(--mustard);
   padding:.05rem .35rem;border-radius:99px;
+}
+/* On a phone the panel is ~300px wide and a full-size chip is ~165px, so they
+   went one to a line. A little tighter and they pair up. Kept after the base
+   rules on purpose: a media query adds no specificity, so it must come later. */
+@media (max-width:640px){
+  .turf__panel{padding:1rem .85rem 1.1rem}
+  .turf__chips{gap:.4rem}
+  .turf__chip{font-size:.66rem;padding:.36rem .6rem;gap:.32rem}
 }
 
 /* ─── Booking form ─────────────────────────────── */
@@ -1073,7 +1118,7 @@ button.nav__cta{line-height:1.2;font-family:var(--f-sign)}
     animation-duration:.001ms!important;animation-iteration-count:1!important;
     transition-duration:.001ms!important;scroll-behavior:auto!important;
   }
-  .reveal,.card,.word,.pull__text .w{opacity:1!important;transform:none!important}
+  .reveal,.card,.word,.pull__text .w,.turf__row,.turf__chip{opacity:1!important;transform:none!important}
   .grain{display:none}
   .turf__row .turf__bar i{width:var(--p)}
 }

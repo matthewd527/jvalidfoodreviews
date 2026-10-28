@@ -137,6 +137,7 @@
     <div class="stat reveal" data-d="1" id="igStat" hidden>
       <span class="stat__num" data-count="0" data-from="igFollowers">0</span>
       <span class="stat__lbl">Instagram followers</span>
+      <span class="stat__asof" id="igAsOf" hidden></span>
     </div>
     <div class="stat reveal" data-d="2">
       <span class="stat__num" data-count="0" data-from="videoCount">0</span>
@@ -230,13 +231,35 @@
 <section class="section turf" id="turf">
   <div class="sec-head">
     <h2 class="sec-title reveal" data-d="0">THE <em>TURF</em></h2>
-    <p class="sec-sub reveal" data-d="1">So far: Two states, <span data-fill="counties">four</span> counties, one Jvalid Honda.</p>
+    <p class="sec-sub reveal" data-d="1">So far: <span data-fill="statesPhrase">Two states</span>, <span data-fill="countiesPhrase">four counties</span>, one Jvalid Honda.</p>
   </div>
-  <div class="turf__list" id="turfList"><!-- injected from data/site.js --></div>
 
-  <div class="turf__towns" id="turfTowns" hidden>
-    <h3 class="turf__sub reveal">And the towns</h3>
-    <div class="turf__chips" id="turfChips"><!-- injected --></div>
+  <div class="turf__board">
+    <div class="turf__panel">
+      <div class="turf__head reveal">
+        <h3 class="turf__sub">Counties, by reviews</h3>
+        <span class="turf__total" data-fill="counties">0</span>
+      </div>
+      <div class="turf__list" id="turfList"><!-- injected from data/site.js --></div>
+      <div class="grid__more turf__more">
+        <button class="btn btn--ghost" id="turfMore" data-cursor="tap" data-magnet hidden>
+          <span id="turfMoreLabel">Show more</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="turf__panel" id="turfTowns" hidden>
+      <div class="turf__head reveal">
+        <h3 class="turf__sub">And the towns</h3>
+        <span class="turf__total" data-fill="towns">0</span>
+      </div>
+      <div class="turf__chips" id="turfChips"><!-- injected --></div>
+      <div class="grid__more turf__more">
+        <button class="btn btn--ghost" id="townMore" data-cursor="tap" data-magnet hidden>
+          <span id="townMoreLabel">Show more</span>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
 

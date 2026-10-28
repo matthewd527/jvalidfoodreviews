@@ -8,30 +8,16 @@
 const DATA = window.SITE_DATA || { profile: {}, videos: [] };
 const PROFILE = DATA.profile || {};
 const HANDLE = PROFILE.handle || 'jvalidfoodreviews';
-const VIDEOS = (DATA.videos || []).slice();
+// The updater marks a video gone once TikTok says it was deleted; it stays in
+// the data (so a wrong call can be undone) but leaves every part of the page.
+const VIDEOS = (DATA.videos || []).filter(v => !v.gone);
+const GONE = new Set((DATA.videos || []).filter(v => v.gone).map(v => v.id));
 
-/* Known counties get a proper name and state; anything else the updater
-   detects (any "#somethingcounty" tag) is labelled from its key so brand-new
-   turf shows up without a code change. */
-const COUNTY_META = {
-  bergen:      { name: 'Bergen County',   state: 'NJ' },
-  rockland:    { name: 'Rockland County', state: 'NY' },
-  westchester: { name: 'Westchester',     state: 'NY' },
-  orange:      { name: 'Orange County',   state: 'NY' },
-  passaic:     { name: 'Passaic County',  state: 'NJ' },
-  putnam:      { name: 'Putnam County',   state: 'NY' },
-  dutchess:    { name: 'Dutchess County', state: 'NY' },
-  essex:       { name: 'Essex County',    state: 'NJ' },
-  hudson:      { name: 'Hudson County',   state: 'NJ' },
-  morris:      { name: 'Morris County',   state: 'NJ' },
-  // he is at SUNY Binghamton now, so the upstate cluster gets proper labels too
-  broome:      { name: 'Broome County',   state: 'NY' },
-  tioga:       { name: 'Tioga County',    state: 'NY' },
-  chenango:    { name: 'Chenango County', state: 'NY' },
-  delaware:    { name: 'Delaware County', state: 'NY' },
-  cortland:    { name: 'Cortland County', state: 'NY' },
-};
-const countyMeta = key => COUNTY_META[key] ||
+/* Names and states come from the updater, which works each county's state out
+   from his own tags ("#broomecountyny") and the towns he's reviewed in - so
+   brand-new turf shows up properly labelled, without a code change. */
+const COUNTY_INFO = DATA.countyInfo || {};
+const countyMeta = key => COUNTY_INFO[key] ||
   { name: key.charAt(0).toUpperCase() + key.slice(1) + ' County', state: '' };
 
 const $  = (s, r = document) => r.querySelector(s);
@@ -112,21 +98,52 @@ setTimeout(() => document.body.classList.add('is-loaded'), 3200);
 /* ─── Fill everything that is driven by the data ─ */
 const counties = [...new Set(VIDEOS.flatMap(v => v.counties || []))];
 
+// Towns, most-reviewed first. Only videos with a tagged place have one.
+const towns = (() => {
+  const tally = new Map();
+  VIDEOS.forEach(v => {
+    if (!v.city) return;
+    const key = `${v.city}|${v.cityState || ''}`;
+    tally.set(key, (tally.get(key) || 0) + 1);
+  });
+  return [...tally.entries()]
+    .map(([key, n]) => { const [city, st] = key.split('|'); return { city, st, n }; })
+    .sort((a, b) => b.n - a.n || a.city.localeCompare(b.city));
+})();
+
 // Instagram is stats-only: videos come exclusively from TikTok. The block is
 // null until the first successful fetch, and keeps its last good numbers
 // (flagged stale) when Instagram won't answer - so the tile never shows a zero.
 const IG = DATA.instagram || null;
 const followersTotal = (PROFILE.followers ?? 0) + (IG?.followers ?? 0);
 
-// "NY & NJ" derives from the states of the counties he has actually reviewed
-// in, so a first Connecticut video would update the hero line by itself.
-const states = [...new Set(counties.map(k => countyMeta(k).state).filter(Boolean))];
-const statesLabel = states.length > 1
-  ? states.slice(0, -1).join(', ') + ' & ' + states[states.length - 1]
+// The states come from where he has actually filmed - his counties and his
+// towns - so a first Connecticut video updates every line that names them.
+// Ordered by how many reviews each holds, so the home state reads first.
+const stateCount = new Map();
+VIDEOS.forEach(v => {
+  const here = new Set((v.counties || []).map(k => countyMeta(k).state));
+  if (v.city) here.add(v.cityState);
+  here.forEach(st => { if (st) stateCount.set(st, (stateCount.get(st) || 0) + 1); });
+});
+const states = [...stateCount.keys()].sort((a, b) => stateCount.get(b) - stateCount.get(a));
+// past three, a list of postcodes stops reading like a sentence
+const statesLabel = states.length > 3 ? `${states.length} states`
+  : states.length > 1 ? states.slice(0, -1).join(', ') + ' & ' + states[states.length - 1]
   : (states[0] || 'NY & NJ');
+
+// "Five states, 34 counties": small numbers read better as words
+const WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+const phrase = (n, one, many, cap = false) => {
+  const w = WORDS[n] ?? n.toLocaleString();
+  return `${cap ? w.charAt(0).toUpperCase() + w.slice(1) : w} ${n === 1 ? one : many}`;
+};
 
 const FILL = {
   states:              statesLabel,
+  statesPhrase:        phrase(states.length, 'state', 'states', true),
+  countiesPhrase:      phrase(counties.length, 'county', 'counties'),
+  towns:               towns.length,
   followers:           PROFILE.followers  ?? 0,
   followersPlus1:      (PROFILE.followers ?? 0) + 1,
   igFollowers:         IG?.followers ?? 0,
@@ -142,6 +159,16 @@ const FILL = {
 if (IG?.followers) {
   $('#igStat')?.removeAttribute('hidden');
   $('#fpIg')?.removeAttribute('hidden');   // Instagram row in the follow picker
+}
+
+// Instagram turns the updater away from most networks it runs on, so these
+// numbers can sit still for a while. Once they're more than a few days old,
+// the tile says when they were read rather than passing them off as live.
+const igAsOf = $('#igAsOf');
+const igRead = new Date(IG?.fetchedAt || NaN);
+if (igAsOf && !isNaN(igRead) && Date.now() - igRead > 3 * 864e5) {
+  igAsOf.textContent = 'as of ' + igRead.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+  igAsOf.hidden = false;
 }
 // the strip's column count follows how many tiles are actually visible
 const statsWrap = $('.stats__wrap');
@@ -171,54 +198,88 @@ if (stamp && DATA.updated && DATA.updated !== 'seed') {
   }
 }
 
-// turf table, ranked by how many reviews came out of each county
+/* ─── The Turf ─────────────────────────────────────
+   Counties ranked by how many reviews came out of each, and the towns beside
+   them. Towns are kept apart rather than mixed in: a town is inside a county,
+   so one list would double-count, and only videos with a tagged place have a
+   town at all. Both lists run long - 30-odd counties, ~100 towns - so each
+   shows its top few and pages with its own button, fewer at a time on a phone,
+   the same way the video grid does. */
+const PHONE = matchMedia('(max-width: 640px)').matches;
+
+// Rows and chips are added after the page-load observer runs, and again on
+// every press of a button, so they get their own (as the grid's cards do).
+const turfIO = makeRevealObserver({ threshold: 0.1, rootMargin: '0px 0px -4% 0px' });
+
+function pageList({ list, btn, label, items, init, step, render, noun }) {
+  let shown = init;
+  const draw = (keep = 0) => {
+    list.innerHTML = items.slice(0, shown).map(render).join('');
+    [...list.children].forEach((el, i) => {
+      // ones already on screen stay put; only the new ones animate in
+      if (i < keep) { el.classList.add('in'); return; }
+      el.style.transitionDelay = `${Math.min(i - keep, 12) * 40}ms`;
+      turfIO.observe(el);
+    });
+    const left = items.length - Math.min(shown, items.length);
+    btn.hidden = items.length <= init;
+    label.textContent = left > 0 ? `Show ${Math.min(step, left)} more` : `Show fewer ${noun}`;
+    btn.setAttribute('aria-label', left > 0
+      ? `Show more ${noun}, ${left} remaining` : `Show fewer ${noun}`);
+  };
+  btn.addEventListener('click', () => {
+    if (shown < items.length) {
+      const before = shown;
+      shown += step;
+      draw(before);
+      return;
+    }
+    // fully open: fold back to the short list, and if that leaves the reader
+    // somewhere below it, take them back up to the top of the panel
+    shown = init;
+    draw(init);
+    const panel = list.closest('.turf__panel');
+    if (panel.getBoundingClientRect().top < 0) {
+      panel.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+    }
+  });
+  draw();
+}
+
 const turfList = $('#turfList');
 if (turfList) {
-  const keys = [...new Set(VIDEOS.flatMap(v => v.counties || []))];
-  const rows = keys
+  const rows = counties
     .map(key => ({
-      key, ...countyMeta(key),
+      ...countyMeta(key),
       n: VIDEOS.filter(v => (v.counties || []).includes(key)).length,
     }))
     .filter(r => r.n > 0)
-    .sort((a, b) => b.n - a.n);
-
+    .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
   const top = rows.length ? rows[0].n : 1;
-  turfList.innerHTML = rows.map((r, i) => `
-    <div class="turf__row reveal" data-d="${Math.min(i, 3)}" style="--p:${Math.round((r.n / top) * 100)}%">
-      <span class="turf__rank">${String(i + 1).padStart(2, '0')}</span>
-      <span class="turf__name">${r.name}${r.state ? ` <i>${r.state}</i>` : ''}</span>
-      <span class="turf__bar"><i></i></span>
-      <span class="turf__n">${r.n}</span>
-    </div>
-  `).join('');
+
+  pageList({
+    list: turfList, btn: $('#turfMore'), label: $('#turfMoreLabel'), noun: 'counties',
+    items: rows, init: PHONE ? 4 : 6, step: PHONE ? 5 : 8,
+    render: (r, i) => `
+      <div class="turf__row" style="--p:${Math.max(3, Math.round((r.n / top) * 100))}%">
+        <span class="turf__rank">${String(i + 1).padStart(2, '0')}</span>
+        <span class="turf__name">${r.name}${r.state ? ` <i>${r.state}</i>` : ''}</span>
+        <span class="turf__n">${r.n}</span>
+        <span class="turf__bar"><i></i></span>
+      </div>`,
+  });
 }
 
-/* Towns sit below the counties rather than mixed in: a town is inside a county,
-   so one list would double-count. Only videos with a tagged place have a town,
-   which is why this is a quieter chip row and not a ranked table. */
 const turfTowns = $('#turfTowns');
-if (turfTowns) {
-  const tally = new Map();
-  VIDEOS.forEach(v => {
-    if (!v.city) return;
-    const key = `${v.city}|${v.cityState || ''}`;
-    tally.set(key, (tally.get(key) || 0) + 1);
+if (turfTowns && towns.length) {
+  turfTowns.removeAttribute('hidden');
+  pageList({
+    list: $('#turfChips'), btn: $('#townMore'), label: $('#townMoreLabel'), noun: 'towns',
+    // 24 on a desktop fills the panel to about the height of the counties beside it
+    items: towns, init: PHONE ? 8 : 24, step: PHONE ? 12 : 24,
+    render: t => `
+      <span class="turf__chip">${t.city}${t.st ? ` <i>${t.st}</i>` : ''}${t.n > 1 ? `<b>${t.n}</b>` : ''}</span>`,
   });
-
-  const towns = [...tally.entries()]
-    .map(([key, n]) => { const [city, st] = key.split('|'); return { city, st, n }; })
-    .sort((a, b) => b.n - a.n || a.city.localeCompare(b.city));
-
-  if (towns.length) {
-    turfTowns.removeAttribute('hidden');
-    $('#turfChips').innerHTML = towns.map(t => `
-      <span class="turf__chip">
-        ${t.city}${t.st ? ` <i>${t.st}</i>` : ''}
-        ${t.n > 1 ? `<b>${t.n}</b>` : ''}
-      </span>
-    `).join('');
-  }
 }
 
 /* ─── Video grid, ten at a time ─────────────────── */
@@ -363,7 +424,8 @@ if (RANK && RANK.ranked?.length) {
   const tierVar = t => `var(--t-${t})`;
   const fmtScore = s => Number.isInteger(s) ? `${s}.0` : String(+s.toFixed(2));
 
-  const ttUrl = e => e.videoId
+  // no link to a video he has since deleted - it would open on an error page
+  const ttUrl = e => e.videoId && !GONE.has(e.videoId)
     ? `https://www.tiktok.com/@${HANDLE}/video/${e.videoId}` : null;
 
   /* summary strip */
@@ -495,7 +557,8 @@ const io = makeRevealObserver({ threshold: 0.14, rootMargin: '0px 0px -8% 0px' }
 // Every selector here starts at opacity:0 in the stylesheet and is only made
 // visible by the .in class, so anything omitted stays permanently invisible
 // while still occupying its space. Keep this list in sync with the CSS.
-$$('.reveal, .turf__row, .pull, .pod').forEach(el => io.observe(el));  // .card has its own (cardIO)
+// (.card, .turf__row and .turf__chip have their own: cardIO and turfIO.)
+$$('.reveal, .pull, .pod').forEach(el => io.observe(el));
 
 
 /* ─── Animated counters ────────────────────────── */
