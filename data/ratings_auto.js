@@ -7136,11 +7136,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Wawa",
-      "videoId": "7696715651792129310",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "Nellies Place",
       "videoId": "7696699284485410079",
       "why": "no numerical food score spoken on camera"
@@ -7168,11 +7163,6 @@ window.RATINGS_AUTO = {
     {
       "name": "The Ice Factory",
       "videoId": "7697336803619048734",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
-      "name": "Seconda Vita",
-      "videoId": "7697502139874069790",
       "why": "no numerical food score spoken on camera"
     },
     {
