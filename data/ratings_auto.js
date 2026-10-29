@@ -7062,11 +7062,6 @@ window.RATINGS_AUTO = {
     },
     {
       "name": "Untagged off-menu spot",
-      "videoId": "7695213519452523807",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
-      "name": "Untagged off-menu spot",
       "videoId": "7695403378167401759",
       "why": "no numerical food score spoken on camera"
     },
@@ -7368,12 +7363,12 @@ window.RATINGS_AUTO = {
     {
       "name": "Habit Burger & Grill",
       "videoId": "7701821291132652830",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Gilligan's Clam Bar & Grill",
       "videoId": "7701824952747511070",
-      "why": "transcript not available yet - will keep trying"
+      "why": "no numerical food score spoken on camera"
     },
     {
       "name": "Untagged off-menu spot",

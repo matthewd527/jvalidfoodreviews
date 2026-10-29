@@ -4993,14 +4993,16 @@
   "7701821291132652830": {
     "name": "Habit Burger & Grill",
     "address": "22 Farm Vw, Montvale, NJ 07645, USA",
-    "status": "no_transcript",
-    "attempts": 3
+    "status": "no_scores",
+    "items": [],
+    "attempts": 4
   },
   "7701824952747511070": {
     "name": "Gilligan's Clam Bar & Grill",
     "address": "366 US-202, Pomona, NY 10970, USA",
-    "status": "no_transcript",
-    "attempts": 2
+    "status": "no_scores",
+    "items": [],
+    "attempts": 3
   },
   "7679071988903595295": {
     "name": "",
@@ -5119,7 +5121,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7678698073605852447": {
     "name": "Binghamton University",
@@ -5187,7 +5189,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7678435201453706527": {
     "name": "Mario's Pizza | Italian",
@@ -5281,7 +5283,7 @@
     "name": "Courtside Bar & Grill",
     "address": "56 Court St, Binghamton, NY 13901, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7678035523830631711": {
     "name": "",
@@ -5378,7 +5380,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7677679217663806751": {
     "name": "",
@@ -5641,7 +5643,7 @@
     "name": "Binghamton University",
     "address": "4400 Vestal Pkwy E, Binghamton, NY 13902, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
   },
   "7676249248328928543": {
     "name": "Florida State University",
