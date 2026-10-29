@@ -7449,6 +7449,11 @@ window.RATINGS_AUTO = {
       "name": "Binghamton University",
       "videoId": "7675927453059108127",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Kinchley's Tavern",
+      "videoId": "7701914290302831902",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
