@@ -6701,11 +6701,6 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Binghamton",
-      "videoId": "7689687451803208991",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Walmart Supercenter",
       "videoId": "7689637472950570270",
       "why": "no numerical food score spoken on camera"
