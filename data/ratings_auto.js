@@ -6841,11 +6841,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "McDonald's",
-      "videoId": "7691127613082979615",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "The Spiedie & Rib Pit",
       "videoId": "7691117430759836958",
       "why": "no numerical food score spoken on camera"
