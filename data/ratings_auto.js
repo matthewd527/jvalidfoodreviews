@@ -7449,6 +7449,16 @@ window.RATINGS_AUTO = {
       "name": "Kinchley's Tavern",
       "videoId": "7701914290302831902",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7702297283148156190",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Morgan Steakhouse",
+      "videoId": "7702291610767314207",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
