@@ -5696,6 +5696,13 @@
     "name": "State University of New York at New Paltz",
     "address": "1 Hawk Dr, New Paltz, NY 12561, USA",
     "status": "no_transcript",
-    "attempts": 2
+    "attempts": 3
+  },
+  "7703271499485957407": {
+    "name": "Cascarino's Italian Restaurant",
+    "address": "121 Hawkins Dr, Montgomery, NY 12549, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }

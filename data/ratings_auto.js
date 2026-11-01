@@ -6241,11 +6241,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "University of Maryland",
-      "videoId": "7684639601771695391",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "Westfield Garden State Plaza",
       "videoId": "7684684109217549598",
       "why": "no numerical food score spoken on camera"
@@ -7454,6 +7449,11 @@ window.RATINGS_AUTO = {
       "name": "State University of New York at New Paltz",
       "videoId": "7703006266339151134",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Cascarino's Italian Restaurant",
+      "videoId": "7703271499485957407",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
