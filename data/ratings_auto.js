@@ -6411,11 +6411,6 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Untagged off-menu spot",
-      "videoId": "7686276627508022558",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "McDonald's",
       "videoId": "7686239589614308639",
       "why": "transcript not available yet - will keep trying"
