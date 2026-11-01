@@ -7449,6 +7449,11 @@ window.RATINGS_AUTO = {
       "name": "Morgan Steakhouse",
       "videoId": "7702291610767314207",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "State University of New York at New Paltz",
+      "videoId": "7703006266339151134",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };

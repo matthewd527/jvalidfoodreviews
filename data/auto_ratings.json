@@ -5691,5 +5691,11 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7703006266339151134": {
+    "name": "State University of New York at New Paltz",
+    "address": "1 Hawk Dr, New Paltz, NY 12561, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }
