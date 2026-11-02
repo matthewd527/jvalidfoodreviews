@@ -5696,7 +5696,7 @@
     "name": "State University of New York at New Paltz",
     "address": "1 Hawk Dr, New Paltz, NY 12561, USA",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7703271499485957407": {
     "name": "Cascarino's Italian Restaurant",
@@ -5715,6 +5715,13 @@
   "7703304529776741662": {
     "name": "Hudson & Packard",
     "address": "29 Academy St, Poughkeepsie, NY 12601, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7703443752945208607": {
+    "name": "Amici's Restaurant",
+    "address": "28 W Pleasant Ave, Maywood, NJ 07607, EE. UU.",
     "status": "no_scores",
     "items": [],
     "attempts": 1

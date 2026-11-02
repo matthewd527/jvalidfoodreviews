@@ -7459,6 +7459,11 @@ window.RATINGS_AUTO = {
       "name": "Hudson & Packard",
       "videoId": "7703304529776741662",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Amici's Restaurant",
+      "videoId": "7703443752945208607",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
