@@ -6221,11 +6221,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Dane County Courthouse",
-      "videoId": "7684117931713744158",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "New Paltz",
       "videoId": "7684241944310074655",
       "why": "no numerical food score spoken on camera"
@@ -7453,6 +7448,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Cascarino's Italian Restaurant",
       "videoId": "7703271499485957407",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Prima Pizza",
+      "videoId": "7703318114015972639",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Hudson & Packard",
+      "videoId": "7703304529776741662",
       "why": "no numerical food score spoken on camera"
     }
   ]

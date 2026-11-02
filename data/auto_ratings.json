@@ -5696,11 +5696,25 @@
     "name": "State University of New York at New Paltz",
     "address": "1 Hawk Dr, New Paltz, NY 12561, USA",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7703271499485957407": {
     "name": "Cascarino's Italian Restaurant",
     "address": "121 Hawkins Dr, Montgomery, NY 12549, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7703318114015972639": {
+    "name": "Prima Pizza",
+    "address": "252 Main St, Cornwall, NY 12518, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7703304529776741662": {
+    "name": "Hudson & Packard",
+    "address": "29 Academy St, Poughkeepsie, NY 12601, USA",
     "status": "no_scores",
     "items": [],
     "attempts": 1
