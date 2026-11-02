@@ -7464,6 +7464,16 @@ window.RATINGS_AUTO = {
       "name": "Amici's Restaurant",
       "videoId": "7703443752945208607",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Brick Church Cemetery",
+      "videoId": "7703683680446778655",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Jumbo King Burger",
+      "videoId": "7703601736153369887",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
