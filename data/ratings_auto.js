@@ -7474,6 +7474,16 @@ window.RATINGS_AUTO = {
       "name": "Jumbo King Burger",
       "videoId": "7703601736153369887",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Frozen D Lite",
+      "videoId": "7703774042863586591",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Mike's Burgers",
+      "videoId": "7703764927269391646",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
