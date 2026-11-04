@@ -5753,5 +5753,33 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7704163141017423134": {
+    "name": "Bagel Supreme of Oakland",
+    "address": "350 Ramapo Valley Rd, Oakland, NJ 07436, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7704147167455366431": {
+    "name": "Blueberry Oakland Frozen Yogurt, Acai Bowl, Bubble Tea and Smoothie",
+    "address": "350 Ramapo Valley Rd, Oakland, NJ 07436, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7704134567233375518": {
+    "name": "7-Eleven",
+    "address": "14 College Rd, Monsey, NY 10952, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7704084308687949086": {
+    "name": "Muscle Maker Grill",
+    "address": "184 Essex St, Lodi, NJ 07644, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }

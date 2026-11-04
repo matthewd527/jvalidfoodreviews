@@ -6061,11 +6061,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Untagged pizza spot",
-      "videoId": "7680958949901749535",
-      "why": "transcript not available yet - will keep trying"
-    },
-    {
       "name": "Skylark Diner",
       "videoId": "7680926542553206046",
       "why": "transcript not available yet - will keep trying"
@@ -7483,6 +7478,26 @@ window.RATINGS_AUTO = {
     {
       "name": "Mike's Burgers",
       "videoId": "7703764927269391646",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Bagel Supreme of Oakland",
+      "videoId": "7704163141017423134",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Blueberry Oakland Frozen Yogurt, Acai Bowl, Bubble Tea and Smoothie",
+      "videoId": "7704147167455366431",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "7-Eleven",
+      "videoId": "7704134567233375518",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Muscle Maker Grill",
+      "videoId": "7704084308687949086",
       "why": "no numerical food score spoken on camera"
     }
   ]
