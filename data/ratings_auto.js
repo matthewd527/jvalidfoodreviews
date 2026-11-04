@@ -6051,11 +6051,6 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Untagged off-menu spot",
-      "videoId": "7680690133347192094",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "DICK'S House of Sport",
       "videoId": "7680680704174198046",
       "why": "no numerical food score spoken on camera"
