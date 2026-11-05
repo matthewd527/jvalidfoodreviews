@@ -7494,6 +7494,16 @@ window.RATINGS_AUTO = {
       "name": "Muscle Maker Grill",
       "videoId": "7704084308687949086",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Perusia",
+      "videoId": "7704516253745990943",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Mike's Burgers",
+      "videoId": "7704503040329518366",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
