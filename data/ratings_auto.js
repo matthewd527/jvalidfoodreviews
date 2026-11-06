@@ -7514,6 +7514,11 @@ window.RATINGS_AUTO = {
       "name": "Ramsey",
       "videoId": "7704798814372121886",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "IL VERO",
+      "videoId": "7704906663664405790",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
