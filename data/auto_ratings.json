@@ -5816,5 +5816,19 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7705180659173575966": {
+    "name": "Chipotle Mexican Grill",
+    "address": "79 Rockland Plaza, Nanuet, NY 10954, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7705163722490252575": {
+    "name": "",
+    "address": "",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }

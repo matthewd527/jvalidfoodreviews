@@ -7456,11 +7456,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "The Brick Church Cemetery",
-      "videoId": "7703683680446778655",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "Jumbo King Burger",
       "videoId": "7703601736153369887",
       "why": "no numerical food score spoken on camera"
@@ -7518,6 +7513,16 @@ window.RATINGS_AUTO = {
     {
       "name": "IL VERO",
       "videoId": "7704906663664405790",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Chipotle Mexican Grill",
+      "videoId": "7705180659173575966",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7705163722490252575",
       "why": "no numerical food score spoken on camera"
     }
   ]
