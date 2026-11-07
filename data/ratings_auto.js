@@ -7524,6 +7524,11 @@ window.RATINGS_AUTO = {
       "name": "Untagged off-menu spot",
       "videoId": "7705163722490252575",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Tavern 5",
+      "videoId": "7705287657206648095",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
