@@ -7501,11 +7501,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Mangiamo Pizza Restaurant & Catering",
-      "videoId": "7704818930132585758",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "Ramsey",
       "videoId": "7704798814372121886",
       "why": "no numerical food score spoken on camera"
