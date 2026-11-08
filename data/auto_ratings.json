@@ -5837,5 +5837,11 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7705566032596880671": {
+    "name": "Palisades Center",
+    "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
+    "status": "no_transcript",
+    "attempts": 1
   }
 }

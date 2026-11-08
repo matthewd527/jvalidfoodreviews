@@ -7524,6 +7524,11 @@ window.RATINGS_AUTO = {
       "name": "Tavern 5",
       "videoId": "7705287657206648095",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Palisades Center",
+      "videoId": "7705566032596880671",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
