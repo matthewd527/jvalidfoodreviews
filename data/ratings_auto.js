@@ -7566,6 +7566,16 @@ window.RATINGS_AUTO = {
       "name": "McDonald's - Mahwah",
       "videoId": "7705618360997907743",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Kosher Castle",
+      "videoId": "7705926312854064414",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7705883190057078046",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
