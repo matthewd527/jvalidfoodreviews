@@ -5967,6 +5967,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Palisades Center",
+      "place": "1000 Palisades Center Dr",
+      "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
+      "score": 3.4,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.4
+        }
+      ],
+      "posted": null,
+      "videoId": "7705566032596880671",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -7526,9 +7548,24 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Palisades Center",
-      "videoId": "7705566032596880671",
-      "why": "transcript not available yet - will keep trying"
+      "name": "Wendy's - 1358 New Jersey 17",
+      "videoId": "7705667913537047839",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Ernie's Ice Cream",
+      "videoId": "7705633105930964254",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Panera Bread - Ramsey Square",
+      "videoId": "7705627887939898654",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "McDonald's - Mahwah",
+      "videoId": "7705618360997907743",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

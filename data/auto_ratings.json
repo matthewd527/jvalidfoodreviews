@@ -5841,7 +5841,41 @@
   "7705566032596880671": {
     "name": "Palisades Center",
     "address": "1000 Palisades Center Dr, West Nyack, NY 10994, USA",
-    "status": "no_transcript",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 3.4
+      }
+    ],
+    "attempts": 2
+  },
+  "7705667913537047839": {
+    "name": "Wendy's - 1358 New Jersey 17",
+    "address": "1358 NJ-17, Ramsey, NJ 07446, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7705633105930964254": {
+    "name": "Ernie's Ice Cream",
+    "address": "78 Franklin Turnpike, Mahwah, NJ 07430, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7705627887939898654": {
+    "name": "Panera Bread - Ramsey Square",
+    "address": "1300 NJ-17, Ramsey, NJ 07446, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7705618360997907743": {
+    "name": "McDonald's - Mahwah",
+    "address": "150 NJ-17, Mahwah, NJ 07430, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }
