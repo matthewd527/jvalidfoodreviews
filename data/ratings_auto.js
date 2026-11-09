@@ -7576,6 +7576,21 @@ window.RATINGS_AUTO = {
       "name": "Untagged off-menu spot",
       "videoId": "7705883190057078046",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Wawa",
+      "videoId": "7706033347406925086",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Matthews Diner",
+      "videoId": "7705999254002683166",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Rita's Italian Ice & Frozen Custard - Monsey",
+      "videoId": "7705940164492692766",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

@@ -5891,5 +5891,26 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7706033347406925086": {
+    "name": "Wawa",
+    "address": "966 NJ-17, Ramsey, NJ 07446, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7705999254002683166": {
+    "name": "Matthews Diner",
+    "address": "4 Franklin Turnpike, Waldwick, NJ 07463, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7705940164492692766": {
+    "name": "Rita's Italian Ice & Frozen Custard - Monsey",
+    "address": "421 NY-59 Ste 8, Monsey, NY 10952, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }
