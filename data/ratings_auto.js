@@ -7596,6 +7596,11 @@ window.RATINGS_AUTO = {
       "name": "Norcina",
       "videoId": "7706377439835884831",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Carvel - New City",
+      "videoId": "7706397838023888159",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
