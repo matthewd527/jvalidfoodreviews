@@ -7591,6 +7591,11 @@ window.RATINGS_AUTO = {
       "name": "Rita's Italian Ice & Frozen Custard - Monsey",
       "videoId": "7705940164492692766",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Norcina",
+      "videoId": "7706377439835884831",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
