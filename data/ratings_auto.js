@@ -7573,11 +7573,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Untagged off-menu spot",
-      "videoId": "7705883190057078046",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "Wawa",
       "videoId": "7706033347406925086",
       "why": "no numerical food score spoken on camera"
@@ -7600,6 +7595,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Carvel - New City",
       "videoId": "7706397838023888159",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Raising Cane's Chicken Fingers",
+      "videoId": "7706685470700342559",
       "why": "no numerical food score spoken on camera"
     }
   ]
