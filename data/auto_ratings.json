@@ -5933,5 +5933,38 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7706760631227075870": {
+    "name": "Louie's Ice Cream",
+    "address": "533 Western Hwy S, Blauvelt, NY 10913, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7706747170921221406": {
+    "name": "Raising Cane's Chicken Fingers",
+    "address": "643 US-46, Fairfield, NJ 07004, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7706741890590280991": {
+    "name": "Backstage Tattoo & Piercing Palisades Mall",
+    "address": "4472 Palisades Center Dr, West Nyack, NY 10994, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7706739442857430303": {
+    "name": "Little Buddha",
+    "address": "4532 Palisades Center Dr, West Nyack, NY 10994, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 2.8
+      }
+    ],
+    "attempts": 1
   }
 }

@@ -5989,6 +5989,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Little Buddha",
+      "place": "4532 Palisades Center Dr",
+      "address": "4532 Palisades Center Dr, West Nyack, NY 10994, USA",
+      "score": 2.8,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 2.8
+        }
+      ],
+      "posted": null,
+      "videoId": "7706739442857430303",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -7600,6 +7622,21 @@ window.RATINGS_AUTO = {
     {
       "name": "Raising Cane's Chicken Fingers",
       "videoId": "7706685470700342559",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Louie's Ice Cream",
+      "videoId": "7706760631227075870",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Raising Cane's Chicken Fingers",
+      "videoId": "7706747170921221406",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Backstage Tattoo & Piercing Palisades Mall",
+      "videoId": "7706741890590280991",
       "why": "no numerical food score spoken on camera"
     }
   ]
