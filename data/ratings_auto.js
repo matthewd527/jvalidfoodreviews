@@ -7643,6 +7643,16 @@ window.RATINGS_AUTO = {
       "name": "Goshen",
       "videoId": "7707036888640621854",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7707113887186898206",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Main Street Cafe",
+      "videoId": "7707104281899437326",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
