@@ -7620,11 +7620,6 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Raising Cane's Chicken Fingers",
-      "videoId": "7706685470700342559",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "Louie's Ice Cream",
       "videoId": "7706760631227075870",
       "why": "no numerical food score spoken on camera"
@@ -7637,6 +7632,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Backstage Tattoo & Piercing Palisades Mall",
       "videoId": "7706741890590280991",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Village Pizzeria Goshen",
+      "videoId": "7707048487728270622",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Goshen",
+      "videoId": "7707036888640621854",
       "why": "no numerical food score spoken on camera"
     }
   ]

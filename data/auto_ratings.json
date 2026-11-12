@@ -5966,5 +5966,19 @@
       }
     ],
     "attempts": 1
+  },
+  "7707048487728270622": {
+    "name": "Village Pizzeria Goshen",
+    "address": "100 Greenwich Ave, Goshen, NY 10924, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7707036888640621854": {
+    "name": "Goshen",
+    "address": "New York, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }
