@@ -7690,6 +7690,16 @@ window.RATINGS_AUTO = {
       "name": "Geo Fuel Enterprises",
       "videoId": "7707412565168622862",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Stony Point Family Diner",
+      "videoId": "7707518107497106719",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Monsey",
+      "videoId": "7707499479213149471",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
