@@ -6011,6 +6011,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Badabing Pizzeria",
+      "place": "28 County Rd 78",
+      "address": "28 County Rd 78, Middletown, NY 10940, USA",
+      "score": 2.7,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 2.7
+        }
+      ],
+      "posted": null,
+      "videoId": "7707429481895529759",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -7652,6 +7674,21 @@ window.RATINGS_AUTO = {
     {
       "name": "Main Street Cafe",
       "videoId": "7707104281899437326",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Sorrento Gourmet Pizza",
+      "videoId": "7707438720340806942",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "El Rancho Mexican Restaurant",
+      "videoId": "7707424993512017183",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Geo Fuel Enterprises",
+      "videoId": "7707412565168622862",
       "why": "no numerical food score spoken on camera"
     }
   ]

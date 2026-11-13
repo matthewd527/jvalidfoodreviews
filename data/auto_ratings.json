@@ -5994,5 +5994,38 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7707438720340806942": {
+    "name": "Sorrento Gourmet Pizza",
+    "address": "15 Main St, Goshen, NY 10924, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7707429481895529759": {
+    "name": "Badabing Pizzeria",
+    "address": "28 County Rd 78, Middletown, NY 10940, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 2.7
+      }
+    ],
+    "attempts": 1
+  },
+  "7707424993512017183": {
+    "name": "El Rancho Mexican Restaurant",
+    "address": "3 New St, Goshen, NY 10924, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7707412565168622862": {
+    "name": "Geo Fuel Enterprises",
+    "address": "4932 NY-17M, New Hampton, NY 10958, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }
