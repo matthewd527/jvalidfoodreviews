@@ -7705,6 +7705,11 @@ window.RATINGS_AUTO = {
       "name": "Ed's Pizza & Kitchen",
       "videoId": "7707803429132913951",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Spring valley",
+      "videoId": "7708097395489361182",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
