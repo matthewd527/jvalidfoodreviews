@@ -7700,6 +7700,11 @@ window.RATINGS_AUTO = {
       "name": "Monsey",
       "videoId": "7707499479213149471",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Ed's Pizza & Kitchen",
+      "videoId": "7707803429132913951",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
