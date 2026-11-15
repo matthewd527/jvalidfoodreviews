@@ -7720,6 +7720,11 @@ window.RATINGS_AUTO = {
       "name": "Willowbrook",
       "videoId": "7708244067313896735",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7708415529496628494",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
