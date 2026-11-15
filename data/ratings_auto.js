@@ -7710,6 +7710,16 @@ window.RATINGS_AUTO = {
       "name": "Spring valley",
       "videoId": "7708097395489361182",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Breakfast & Burger Club - NEW CITY",
+      "videoId": "7708260991372397854",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Willowbrook",
+      "videoId": "7708244067313896735",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
