@@ -6033,6 +6033,50 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Mille Luci Pizzeria",
+      "place": "170 N Main St",
+      "address": "170 N Main St, New City, NY 10956, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7708605526531214623",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
+    },
+    {
+      "n": null,
+      "name": "Starbucks - New City",
+      "place": "83 S Main St",
+      "address": "83 S Main St, New City, NY 10956, USA",
+      "score": 4.9,
+      "tier": "elite",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 4.9
+        }
+      ],
+      "posted": null,
+      "videoId": "7708595295633820958",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -7724,6 +7768,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Untagged off-menu spot",
       "videoId": "7708415529496628494",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Body & Brain Yoga Tai Chi",
+      "videoId": "7708610473163328799",
       "why": "no numerical food score spoken on camera"
     }
   ]
