@@ -6107,5 +6107,24 @@
       }
     ],
     "attempts": 1
+  },
+  "7708974597214965023": {
+    "name": "Nanuet Diner",
+    "address": "120 NY-59, Nanuet, NY 10954, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 2.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7708963434720808205": {
+    "name": "Haverstraw",
+    "address": "New York, United States",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }

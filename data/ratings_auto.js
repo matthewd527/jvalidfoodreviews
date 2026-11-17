@@ -6077,6 +6077,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Nanuet Diner",
+      "place": "120 NY-59",
+      "address": "120 NY-59, Nanuet, NY 10954, USA",
+      "score": 2.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 2.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7708974597214965023",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -7773,6 +7795,11 @@ window.RATINGS_AUTO = {
     {
       "name": "Body & Brain Yoga Tai Chi",
       "videoId": "7708610473163328799",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Haverstraw",
+      "videoId": "7708963434720808205",
       "why": "no numerical food score spoken on camera"
     }
   ]
