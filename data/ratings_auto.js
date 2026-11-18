@@ -7806,6 +7806,11 @@ window.RATINGS_AUTO = {
       "name": "Mom's kitchen to go",
       "videoId": "7709247219014143263",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Mill at Sutter's",
+      "videoId": "7709350678128364831",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
