@@ -7801,6 +7801,11 @@ window.RATINGS_AUTO = {
       "name": "Haverstraw",
       "videoId": "7708963434720808205",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Mom's kitchen to go",
+      "videoId": "7709247219014143263",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
