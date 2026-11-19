@@ -7826,6 +7826,11 @@ window.RATINGS_AUTO = {
       "name": "Raices Modern Mexican",
       "videoId": "7709713649165667615",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7709898875359743262",
+      "why": "transcript not available yet - will keep trying"
     }
   ]
 };
