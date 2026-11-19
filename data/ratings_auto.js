@@ -7816,6 +7816,16 @@ window.RATINGS_AUTO = {
       "name": "Panera Bread - Suffern",
       "videoId": "7709637855936646413",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged off-menu spot",
+      "videoId": "7709723765512391949",
+      "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Raices Modern Mexican",
+      "videoId": "7709713649165667615",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
