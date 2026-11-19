@@ -7811,6 +7811,11 @@ window.RATINGS_AUTO = {
       "name": "The Mill at Sutter's",
       "videoId": "7709350678128364831",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Panera Bread - Suffern",
+      "videoId": "7709637855936646413",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
