@@ -7853,6 +7853,11 @@ window.RATINGS_AUTO = {
       "name": "Van Dyk's Homemade Ice Cream",
       "videoId": "7710093649807265055",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Monaco\u2019s Cafe",
+      "videoId": "7710282127174126879",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

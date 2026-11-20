@@ -6152,7 +6152,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7709713649165667615": {
     "name": "Raices Modern Mexican",
@@ -6165,7 +6165,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 3
+    "attempts": 4
   },
   "7710093649807265055": {
     "name": "Van Dyk's Homemade Ice Cream",
@@ -6184,6 +6184,13 @@
         "score": 3.4
       }
     ],
+    "attempts": 1
+  },
+  "7710282127174126879": {
+    "name": "Monaco\u2019s Cafe",
+    "address": "139 Franklin Turnpike, Mahwah, NJ 07430, USA",
+    "status": "no_scores",
+    "items": [],
     "attempts": 1
   }
 }
