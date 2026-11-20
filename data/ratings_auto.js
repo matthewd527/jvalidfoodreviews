@@ -6099,6 +6099,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Paramus Park",
+      "place": "700 Paramus Park",
+      "address": "700 Paramus Park, Paramus, NJ 07652, USA",
+      "score": 3.4,
+      "tier": "fine",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 3.4
+        }
+      ],
+      "posted": null,
+      "videoId": "7710079177461992734",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -7823,14 +7845,14 @@ window.RATINGS_AUTO = {
       "why": "transcript not available yet - will keep trying"
     },
     {
-      "name": "Raices Modern Mexican",
-      "videoId": "7709713649165667615",
-      "why": "no numerical food score spoken on camera"
-    },
-    {
       "name": "Untagged off-menu spot",
       "videoId": "7709898875359743262",
       "why": "transcript not available yet - will keep trying"
+    },
+    {
+      "name": "Van Dyk's Homemade Ice Cream",
+      "videoId": "7710093649807265055",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
