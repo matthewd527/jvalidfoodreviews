@@ -7858,6 +7858,11 @@ window.RATINGS_AUTO = {
       "name": "Monaco\u2019s Cafe",
       "videoId": "7710282127174126879",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Suffern",
+      "videoId": "7710373675874241823",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };

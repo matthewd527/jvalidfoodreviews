@@ -6165,7 +6165,7 @@
     "name": "",
     "address": "",
     "status": "no_transcript",
-    "attempts": 4
+    "attempts": 5
   },
   "7710093649807265055": {
     "name": "Van Dyk's Homemade Ice Cream",
@@ -6189,6 +6189,13 @@
   "7710282127174126879": {
     "name": "Monaco\u2019s Cafe",
     "address": "139 Franklin Turnpike, Mahwah, NJ 07430, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7710373675874241823": {
+    "name": "Suffern",
+    "address": "New York, United States",
     "status": "no_scores",
     "items": [],
     "attempts": 1
