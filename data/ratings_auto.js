@@ -7863,6 +7863,11 @@ window.RATINGS_AUTO = {
       "name": "Suffern",
       "videoId": "7710373675874241823",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Martio's Pizza",
+      "videoId": "7710450709682031885",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
