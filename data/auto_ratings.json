@@ -6206,5 +6206,31 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7710858448061189407": {
+    "name": "7 Brew Coffee",
+    "address": "45 US-9W, West Haverstraw, NY 10993, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
+  },
+  "7710848675395751199": {
+    "name": "Planet Wings of Haverstraw",
+    "address": "240 US-9W, Haverstraw, NY 10927, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 2.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7710828446288547102": {
+    "name": "Los Andes Restaurant & Bar",
+    "address": "43 N Liberty Dr, Stony Point, NY 10980, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }

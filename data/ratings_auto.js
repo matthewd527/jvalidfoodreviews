@@ -6121,6 +6121,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Planet Wings of Haverstraw",
+      "place": "240 US-9W",
+      "address": "240 US-9W, Haverstraw, NY 10927, USA",
+      "score": 2.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Spoken score",
+          "score": 2.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7710848675395751199",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -7867,6 +7889,16 @@ window.RATINGS_AUTO = {
     {
       "name": "Martio's Pizza",
       "videoId": "7710450709682031885",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "7 Brew Coffee",
+      "videoId": "7710858448061189407",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Los Andes Restaurant & Bar",
+      "videoId": "7710828446288547102",
       "why": "no numerical food score spoken on camera"
     }
   ]
