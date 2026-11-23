@@ -6143,6 +6143,28 @@ window.RATINGS_AUTO = {
       ],
       "verified": "auto",
       "auto": true
+    },
+    {
+      "n": null,
+      "name": "Regal Nanuet",
+      "place": "6201 Fashion Dr",
+      "address": "6201 Fashion Dr, Nanuet, United States",
+      "score": 1.0,
+      "tier": "rough",
+      "overall": null,
+      "items": [
+        {
+          "item": "Pizza",
+          "score": 1.0
+        }
+      ],
+      "posted": null,
+      "videoId": "7711215834365971742",
+      "caveats": [
+        "Scored automatically from the video's own transcript."
+      ],
+      "verified": "auto",
+      "auto": true
     }
   ],
   "unscored": [
@@ -7897,13 +7919,13 @@ window.RATINGS_AUTO = {
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Los Andes Restaurant & Bar",
-      "videoId": "7710828446288547102",
+      "name": "Nanuet Mall",
+      "videoId": "7711142117812210975",
       "why": "no numerical food score spoken on camera"
     },
     {
-      "name": "Nanuet Mall",
-      "videoId": "7711142117812210975",
+      "name": "Gilligan's Clam Bar & Grill",
+      "videoId": "7711196967551913229",
       "why": "no numerical food score spoken on camera"
     }
   ]

@@ -6239,5 +6239,24 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7711215834365971742": {
+    "name": "Regal Nanuet",
+    "address": "6201 Fashion Dr, Nanuet, United States",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Pizza",
+        "score": 1.0
+      }
+    ],
+    "attempts": 1
+  },
+  "7711196967551913229": {
+    "name": "Gilligan's Clam Bar & Grill",
+    "address": "366 US-202, Pomona, NY 10970, USA",
+    "status": "no_scores",
+    "items": [],
+    "attempts": 1
   }
 }
