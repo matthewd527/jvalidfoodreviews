@@ -7900,6 +7900,11 @@ window.RATINGS_AUTO = {
       "name": "Los Andes Restaurant & Bar",
       "videoId": "7710828446288547102",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Nanuet Mall",
+      "videoId": "7711142117812210975",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
