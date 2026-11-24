@@ -6272,5 +6272,17 @@
     "status": "no_scores",
     "items": [],
     "attempts": 1
+  },
+  "7711595249776233759": {
+    "name": "Hard Wok Buffet",
+    "address": "732 NY-304, New City, NY 10956, USA",
+    "status": "scored",
+    "items": [
+      {
+        "item": "Spoken score",
+        "score": 2.0
+      }
+    ],
+    "attempts": 1
   }
 }
