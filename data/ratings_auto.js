@@ -7927,6 +7927,16 @@ window.RATINGS_AUTO = {
       "name": "Gilligan's Clam Bar & Grill",
       "videoId": "7711196967551913229",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Bagel Train",
+      "videoId": "7711495440734145822",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "The Best Diner - Family Restaurant",
+      "videoId": "7711482433773866271",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
