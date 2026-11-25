@@ -7959,6 +7959,11 @@ window.RATINGS_AUTO = {
       "name": "The Best Diner - Family Restaurant",
       "videoId": "7711482433773866271",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Yummy's Pizza - Monsey",
+      "videoId": "7712184608971935006",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
