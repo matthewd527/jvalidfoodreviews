@@ -7964,6 +7964,16 @@ window.RATINGS_AUTO = {
       "name": "Yummy's Pizza - Monsey",
       "videoId": "7712184608971935006",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Blu Fig",
+      "videoId": "7712273413594811678",
+      "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Zimi Bagel Cafe and Deli",
+      "videoId": "7712199256710450463",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
