@@ -7974,6 +7974,11 @@ window.RATINGS_AUTO = {
       "name": "Zimi Bagel Cafe and Deli",
       "videoId": "7712199256710450463",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Bagel Boys Cafe",
+      "videoId": "7712564498825104671",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
