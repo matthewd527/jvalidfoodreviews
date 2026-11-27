@@ -7979,6 +7979,11 @@ window.RATINGS_AUTO = {
       "name": "Bagel Boys Cafe",
       "videoId": "7712564498825104671",
       "why": "no numerical food score spoken on camera"
+    },
+    {
+      "name": "Untagged ice cream spot",
+      "videoId": "7712992503158295839",
+      "why": "no numerical food score spoken on camera"
     }
   ]
 };
